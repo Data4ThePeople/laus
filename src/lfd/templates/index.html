@@ -16,6 +16,7 @@
   @media (prefers-color-scheme: dark){
     .lfd:not(.framed){ --paper:#181A1B; --ink:#E4E2DC; --ink-2:#BBBDC0; --ink-3:#8C9094; --line:#33373A;
       --panel:#202325; --grid:#2A2E31; --accent:#8FBFAF; --accent-ink:#181A1B; }
+    .lfd:not(.framed) .brand .logo-light{display:none} .lfd:not(.framed) .brand .logo-dark{display:block}
   }
   .lfd *{box-sizing:border-box}
   .lfd.framed .hdr .sub{display:none}
@@ -29,10 +30,19 @@
   .lfd.framed .lists{font-size:11.5px; line-height:1.3}
   .lfd.framed .foot{margin-top:6px}
   .lfd.framed .hdr h1{font-size:16px}
+  .lfd.framed .hdr{margin-bottom:2px}
   .lfd.framed .ctl{margin:2px 0 6px}
-  .hdr{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 14px; margin-bottom:6px}
+  .hdr{display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:6px 14px; margin-bottom:6px}
+  .hdr-text{display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 14px; flex:1 1 300px; min-width:0}
   .hdr h1{font-size:18px; margin:0; font-weight:700; color:var(--ink)}
   .hdr .sub{color:var(--ink-2); font-size:13px}
+  .brand{flex:0 0 auto; display:block; line-height:0; margin-top:1px}
+  .brand .logo{height:26px; width:auto; display:block}
+  .brand .logo-dark{display:none}
+  .lfd.dark .brand .logo-light{display:none} .lfd.dark .brand .logo-dark{display:block}
+  .lfd.framed .foot{align-items:center}
+  .lfd.framed .foot .brand{margin:0 4px 0 0}
+  .lfd.framed .foot .brand .logo{height:20px}
   .ctl{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:4px 0 8px}
   .ctl button{font:inherit; font-size:13px; padding:5px 10px; border:1px solid var(--line); background:var(--panel);
     color:var(--ink); border-radius:6px; cursor:pointer; min-height:32px}
@@ -42,9 +52,11 @@
   .ctl .spd button{border-radius:0; margin-left:-1px}
   .ctl .spd button:first-child{border-radius:6px 0 0 6px}
   .ctl .spd button:last-child{border-radius:0 6px 6px 0}
-  .ctl .month{font-size:22px; font-weight:700; min-width:150px; color:var(--ink)}
+  .ctl .month{font-size:22px; font-weight:700; min-width:140px; color:var(--ink)}
   .ctl input[type=range]{flex:1 1 160px; min-width:120px; accent-color:var(--accent)}
-  .ctl label.tog{display:flex; align-items:center; gap:5px; font-size:13px; color:var(--ink-2); cursor:pointer}
+  .hdr-ctl{display:flex; align-items:center; gap:10px; flex:0 0 auto}
+  .hdr-ctl label.tog{display:flex; align-items:center; gap:5px; font-size:13px; color:var(--ink-2); cursor:pointer; white-space:nowrap}
+  .hdr-ctl select{font:inherit; font-size:13px; padding:4px 6px; border:1px solid var(--line); background:var(--panel); color:var(--ink); border-radius:6px; min-height:30px; max-width:170px}
   .main{display:grid; grid-template-columns:minmax(0,1fr); grid-template-areas:"map" "side" "movers"; gap:10px}
   .mapwrap{grid-area:map} .side{grid-area:side} .mcard{grid-area:movers}
   .lcard summary{display:block}
@@ -54,6 +66,7 @@
     .lcard summary{display:none}
   }
   @container (min-width: 900px){ .lfd .movers{grid-template-columns:1fr auto 1fr auto; column-gap:22px} }
+  @container (max-width: 899.9px){ .lfd.framed #method{display:none} }
   .mapwrap{position:relative; width:100%; min-width:0}
   .mapwrap canvas{display:block; width:100%; height:auto}
   .note{position:absolute; left:8px; top:6px; max-width:60%; font-size:12px; color:var(--coral); background:var(--paper);
@@ -85,7 +98,8 @@
   .lists li{display:flex; gap:6px; white-space:nowrap}
   .lists li .nm{flex:1 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis}
   .lists li .v{flex:0 0 auto; font-variant-numeric:tabular-nums; color:var(--ink-2)}
-  .foot{display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 12px; margin-top:8px; font-size:11px; color:var(--ink-3)}
+  .foot{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:4px 12px; margin-top:8px; font-size:11px; color:var(--ink-3)}
+  .foot > span{flex:1 1 300px; min-width:0}
   .foot b{color:var(--ink-2)}
   .loading{padding:40px; text-align:center; color:var(--ink-2)}
   .legend{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:12px; margin:6px 0 0}
@@ -98,8 +112,18 @@
 <body>
 <div class="lfd" id="lfd">
   <div class="hdr">
-    <h1>Mapping the Spread of Labor Force Decline</h1>
-    <span class="sub">Every U.S. county and Puerto Rico municipio by its 20-year change in civilian labor force, month by month since 2010.</span>
+    <div class="hdr-text">
+      <h1>Mapping the Spread of Labor Force Decline</h1>
+      <span class="sub">Every U.S. county and Puerto Rico municipio by its 20-year change in civilian labor force, month by month since 2010.</span>
+    </div>
+    <div class="hdr-ctl">
+      <select id="state" aria-label="State or territory"><option value="">All states</option></select>
+      <label class="tog"><input type="checkbox" id="watch"> Watch flags</label>
+    </div>
+    <a class="brand" href="https://www.data4thepeople.com" target="_blank" rel="noopener" title="Data 4 The People">
+      <!--__LOGO_ON_LIGHT__-->
+      <!--__LOGO_ON_DARK__-->
+    </a>
   </div>
   <div class="loading" id="loading">Loading county data…</div>
   <div id="app" hidden>
@@ -112,7 +136,6 @@
       <input type="range" id="slider" min="0" max="0" value="0" aria-label="Month">
       <button id="next" aria-label="Next month">›</button>
       <span class="month" id="month"></span>
-      <label class="tog"><input type="checkbox" id="watch"> Watch flags</label>
     </div>
     <div class="main">
       <div class="mapwrap" id="mapwrap">
@@ -120,7 +143,7 @@
         <div class="note" id="note" hidden></div>
       </div>
       <div class="card mcard">
-        <h2>Change from a year earlier</h2>
+        <h2 id="movers-h">Change from a year earlier</h2>
         <div class="movers" id="movers"></div>
       </div>
       <div class="side">
@@ -131,7 +154,7 @@
           <canvas id="chart"></canvas>
         </div>
         <div class="card">
-          <h2>Counties by band</h2>
+          <h2 id="bands-h">Counties by band</h2>
           <div class="bands" id="bands"></div>
         </div>
         <div class="card lcard">
@@ -151,8 +174,11 @@
 (async function () {
   const root = document.getElementById('lfd');
   const framed = window.self !== window.top;
-  if (framed) root.classList.add('framed');
   const $ = id => document.getElementById(id);
+  if (framed) { root.classList.add('framed');
+    // Header space is tight in the Prismic frame: the logo travels to the footer.
+    const brand = root.querySelector('.brand'), foot = root.querySelector('.foot');
+    if (brand && foot) foot.insertBefore(brand, foot.firstChild); }
 
   if (!('DecompressionStream' in window)) {
     $('loading').textContent = 'This browser cannot decode the map data. Please use a current version of Chrome, Safari, Firefox or Edge.';
@@ -222,57 +248,74 @@
 
   // ---- state
   let f = nF - 1, playing = false, speed = 1, hover = -1, pinned = -1, showWatch = false;
+  let state = '', mask = null;   // mask: Uint8Array of counties in the selected state
+  const STATE_NAMES = {AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',CT:'Connecticut',DE:'Delaware',DC:'District of Columbia',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',PA:'Pennsylvania',PR:'Puerto Rico',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming'};
+  const stateBox = {};   // state -> [x0,y0,x1,y1] in reference px
+  for (let i = 0; i < nC; i++) { const st = M.counties[i].s, b = bbox[i]; if (!st || !b) continue;
+    const sb = stateBox[st] || (stateBox[st] = [1e9, 1e9, -1e9, -1e9]);
+    if (b[0] < sb[0]) sb[0] = b[0]; if (b[1] < sb[1]) sb[1] = b[1]; if (b[2] > sb[2]) sb[2] = b[2]; if (b[3] > sb[3]) sb[3] = b[3]; }
   const SPEED_MPS = { 1: 3, 2: 6, 5: 15 };   // months per second
 
   // ---- map canvas
   const wrap = $('mapwrap'), canvas = $('map'), ctx = canvas.getContext('2d');
-  let cw = 0, ch = 0, dpr = 1, S = 1;
+  let cw = 0, ch = 0, dpr = 1, S = 1, TX = 0, TY = 0;
+  function setView() {
+    const b = state && stateBox[state];
+    if (!b) { S = canvas.width / REF_W; TX = 0; TY = 0; return; }
+    const pad = 0.06; const bw = (b[2] - b[0]) * (1 + 2 * pad), bh = (b[3] - b[1]) * (1 + 2 * pad);
+    S = Math.min(canvas.width / bw, canvas.height / bh);
+    TX = (canvas.width - (b[2] - b[0]) * S) / 2 - b[0] * S; TY = (canvas.height - (b[3] - b[1]) * S) / 2 - b[1] * S;
+  }
   function resize() {
     const wide = root.clientWidth >= 680; if (wide && !$('listsbox').open) { $('listsbox').open = true; drawLists(); }
     const w = Math.max(200, wrap.clientWidth); const h = Math.round(w * REF_H / REF_W);
     dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
-    canvas.style.height = h + 'px'; cw = w; ch = h; S = canvas.width / REF_W;
+    canvas.style.height = h + 'px'; cw = w; ch = h; setView();
     drawMap(); drawChart();
   }
   const stripes = (color) => { const c = document.createElement('canvas'); c.width = c.height = 6; const g = c.getContext('2d');
     g.strokeStyle = color; g.lineWidth = 1.2; g.beginPath(); g.moveTo(-1, 7); g.lineTo(7, -1); g.moveTo(-1, 1); g.lineTo(1, -1); g.moveTo(5, 7); g.lineTo(7, 5); g.stroke(); return g.canvas; };
   let patPos = null, patNeg = null, borders = null, bordersKey = '';
+  function inView(i) { const b = bbox[i]; if (!b) return false;
+    return b[2] * S + TX >= 0 && b[0] * S + TX <= canvas.width && b[3] * S + TY >= 0 && b[1] * S + TY <= canvas.height; }
   function borderLayer(cs) {
-    const key = canvas.width + 'x' + canvas.height + cs.getPropertyValue('--paper');
+    const key = canvas.width + 'x' + canvas.height + '|' + S + '|' + TX + '|' + TY + cs.getPropertyValue('--paper');
     if (borders && bordersKey === key) return borders;
     const off = document.createElement('canvas'); off.width = canvas.width; off.height = canvas.height;
-    const g = off.getContext('2d'); g.setTransform(S, 0, 0, S, 0, 0); g.lineJoin = 'round';
-    g.lineWidth = 0.55 / S * (dpr > 1 ? 1.3 : 1); g.strokeStyle = cs.getPropertyValue('--paper').trim() || '#fff';
-    for (let i = 0; i < nC; i++) if (paths[i]) g.stroke(paths[i]);
+    const g = off.getContext('2d'); g.setTransform(S, 0, 0, S, TX, TY); g.lineJoin = 'round';
+    g.lineWidth = Math.min(0.55 / S * (dpr > 1 ? 1.3 : 1), 1.2 / S * dpr); g.strokeStyle = cs.getPropertyValue('--paper').trim() || '#fff';
+    for (let i = 0; i < nC; i++) if (paths[i] && inView(i)) g.stroke(paths[i]);
     bordersKey = key; return borders = off;
   }
   function drawMap() {
     if (!cw) return;
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.setTransform(S, 0, 0, S, 0, 0);
+    ctx.setTransform(S, 0, 0, S, TX, TY);
     const row = f * nC;
     const cs = getComputedStyle(root);
-    for (let i = 0; i < nC; i++) { const p = paths[i]; if (!p) continue;
-      const c = cat[row + i]; ctx.fillStyle = c === 255 ? M.nodata : M.colors[c]; ctx.fill(p); }
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(borderLayer(cs), 0, 0); ctx.setTransform(S, 0, 0, S, 0, 0);
+    for (let i = 0; i < nC; i++) { const p = paths[i]; if (!p || (mask && !inView(i))) continue;
+      const c = cat[row + i]; ctx.globalAlpha = (mask && !mask[i]) ? 0.22 : 1;
+      ctx.fillStyle = c === 255 ? M.nodata : M.colors[c]; ctx.fill(p); }
+    ctx.globalAlpha = 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(borderLayer(cs), 0, 0); ctx.setTransform(S, 0, 0, S, TX, TY);
     if (showWatch) {
       if (!patPos) { patPos = ctx.createPattern(stripes(M.palette.teal), 'repeat'); patNeg = ctx.createPattern(stripes('#F7F5EF'), 'repeat'); }
       ctx.save(); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      for (let i = 0; i < nC; i++) { const w = watch[row + i]; if (!w || !paths[i]) continue;
-        ctx.save(); ctx.setTransform(S, 0, 0, S, 0, 0); ctx.clip(paths[i]); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      for (let i = 0; i < nC; i++) { const w = watch[row + i]; if (!w || !paths[i] || (mask && !mask[i]) || !inView(i)) continue;
+        ctx.save(); ctx.setTransform(S, 0, 0, S, TX, TY); ctx.clip(paths[i]); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         ctx.fillStyle = w === 1 ? patPos : patNeg; ctx.fillRect(0, 0, cw, ch); ctx.restore(); }
-      ctx.restore(); ctx.setTransform(S, 0, 0, S, 0, 0);
+      ctx.restore(); ctx.setTransform(S, 0, 0, S, TX, TY);
     }
-    ctx.strokeStyle = cs.getPropertyValue('--line').trim(); ctx.lineWidth = 0.8 / S;
-    for (const k in M.insets) { const b = M.insets[k]; ctx.strokeRect(b[0], b[1], b[2], b[3]); }
+    if (!mask) { ctx.strokeStyle = cs.getPropertyValue('--line').trim(); ctx.lineWidth = 0.8 / S;
+      for (const k in M.insets) { const b = M.insets[k]; ctx.strokeRect(b[0], b[1], b[2], b[3]); } }
     const sel = pinned >= 0 ? pinned : hover;
     if (sel >= 0 && paths[sel]) { ctx.strokeStyle = cs.getPropertyValue('--ink').trim(); ctx.lineWidth = 1.6 / S; ctx.stroke(paths[sel]); }
     const note = M.notes[f]; $('note').hidden = !note; if (note) $('note').textContent = note;
   }
   function hit(px, py) {   // px,py in CSS pixels within the canvas
-    const cx = px * dpr, cy = py * dpr, rx = cx / S, ry = cy / S;
-    ctx.setTransform(S, 0, 0, S, 0, 0);
+    const cx = px * dpr, cy = py * dpr, rx = (cx - TX) / S, ry = (cy - TY) / S;
+    ctx.setTransform(S, 0, 0, S, TX, TY);
     for (let i = nC - 1; i >= 0; i--) { const b = bbox[i]; if (!b || rx < b[0] || rx > b[2] || ry < b[1] || ry > b[3]) continue;
       if (ctx.isPointInPath(paths[i], cx, cy)) return i; }
     return -1;
@@ -329,18 +372,18 @@
   }
 
   // ---- stats
-  const moversCache = new Array(nF).fill(null);
+  let moversCache = new Array(nF).fill(null);
   function movers(fr) {
     if (moversCache[fr]) return moversCache[fr];
     const counts = new Array(NB).fill(0); let total = 0, posSL = 0, negOut = 0, slPrev = 0;
     let inSL = 0, outSL = 0, down = 0, up = 0, better = 0, worse = 0, comparable = 0;
     const row = fr * nC, prev = (fr - 12) * nC, has = fr >= 12;
-    for (let i = 0; i < nC; i++) { const c = cat[row + i]; if (c === 255) continue; counts[c]++; total++;
+    for (let i = 0; i < nC; i++) { if (mask && !mask[i]) continue; const c = cat[row + i]; if (c === 255) continue; counts[c]++; total++;
       const w = watch[row + i]; if (w === 1 && c === SL) posSL++; if (w === 2 && c !== SL) negOut++;
       if (!has) continue; const c0 = cat[prev + i]; if (c0 === 255) continue; if (c0 === SL) slPrev++; comparable++;
       if (c === SL && c0 !== SL) inSL++; if (c0 === SL && c !== SL) outSL++; if (c < c0) down++; if (c > c0) up++;
       const d = pct[row + i] - pct[prev + i]; if (d > 0) better++; else if (d < 0) worse++; }
-    let slPrevAll = 0; if (has) for (let i = 0; i < nC; i++) if (cat[prev + i] === SL) slPrevAll++;
+    let slPrevAll = 0; if (has) for (let i = 0; i < nC; i++) if (cat[prev + i] === SL && !(mask && !mask[i])) slPrevAll++;
     return moversCache[fr] = { counts, total, posSL, negOut, inSL, outSL, down, up, better, worse, comparable, has, slPrevAll };
   }
   function drawStats() {
@@ -349,6 +392,8 @@
       html += '<span><i class="sw" style="background:' + M.colors[k] + '"></i>' + M.labels[k] + '</span><span class="bar"><i style="width:' + share.toFixed(1) + '%;background:' + M.colors[k] + '"></i></span><span class="n">' + fmtN(s.counts[k]) + '</span>'; }
     html += '<span>Counties with data</span><span></span><span class="n">' + fmtN(s.total) + '</span>';
     $('bands').innerHTML = html;
+    $('bands-h').textContent = 'Counties by band' + (state ? ' · ' + (STATE_NAMES[state] || state) : '');
+    $('movers-h').textContent = 'Change from a year earlier' + (state ? ' · ' + (STATE_NAMES[state] || state) : '');
     let m = '';
     if (s.has) {
       m += '<span>Structural Loss a year earlier</span><span class="n">' + fmtN(s.slPrevAll) + '</span>';
@@ -368,7 +413,7 @@
     if ($('listsbox').open) drawLists();
   }
   function topList(filter, n) { const row = f * nC, mEnd = m0 + f; const arr = [];
-    for (let i = 0; i < nC; i++) if (filter(i, row)) { const v = lfAt(i, mEnd); if (v != null) arr.push([i, v]); }
+    for (let i = 0; i < nC; i++) if (!(mask && !mask[i]) && filter(i, row)) { const v = lfAt(i, mEnd); if (v != null) arr.push([i, v]); }
     arr.sort((a, b) => b[1] - a[1]); return arr.slice(0, n); }
   const compact = v => v >= 1e6 ? (v / 1e6).toFixed(2) + 'M' : v >= 1e4 ? (v / 1e3).toFixed(0) + 'K' : v >= 1e3 ? (v / 1e3).toFixed(1) + 'K' : String(Math.round(v));
   function li(rows) { return '<ol>' + rows.map(([i, v]) => '<li><span class="nm">' + short(M.counties[i].n) + '</span><span class="v">' + compact(v) + ' · ' + pctText(pct[f * nC + i]) + '</span></li>').join('') + '</ol>'; }
@@ -398,6 +443,16 @@
   for (const b of document.querySelectorAll('.spd button')) b.addEventListener('click', () => { speed = +b.dataset.spd;
     for (const o of document.querySelectorAll('.spd button')) o.classList.toggle('on', o === b); });
   $('watch').addEventListener('change', e => { showWatch = e.target.checked; drawMap(); });
+  { const sel = $('state'); const codes = Object.keys(stateBox).sort((a, b) => (STATE_NAMES[a] || a).localeCompare(STATE_NAMES[b] || b));
+    for (const c of codes) { const o = document.createElement('option'); o.value = c; o.textContent = STATE_NAMES[c] || c; sel.appendChild(o); }
+    sel.addEventListener('change', () => setState(sel.value)); }
+  function setState(st) {
+    state = stateBox[st] ? st : '';
+    $('state').value = state;
+    if (state) { mask = new Uint8Array(nC); for (let i = 0; i < nC; i++) if (M.counties[i].s === state) mask[i] = 1; } else mask = null;
+    moversCache = new Array(nF).fill(null); if (pinned >= 0 && mask && !mask[pinned]) pinned = -1;
+    setView(); drawMap(); drawChart(); drawStats();
+  }
   document.addEventListener('keydown', e => { if (e.target.tagName === 'INPUT' && e.target.type !== 'range') return;
     if (e.key === ' ') { e.preventDefault(); playing ? stop() : play(); }
     else if (e.key === 'ArrowLeft') { stop(); setFrame(f - 1); } else if (e.key === 'ArrowRight') { stop(); setFrame(f + 1); } });
@@ -409,11 +464,13 @@
   $('src').textContent = M.source + ' Latest month ' + M.latest + '. Data 4 The People analysis.';
   $('method').textContent = 'Bands: change in labor force versus the same month 20 years earlier; the 20-year change also moves when the month 20 years back leaves the window. Positive watch: 12-month average at least 2% above its 5-year low, the low at least a year old, average rising, 3-year change positive. Negative watch: 12-month average down at least 1% in a year and 3-year change of −2% or worse.';
 
-  // ---- deep link: #fips=26145&month=2026-04&watch=1
+  // ---- deep link: #fips=26145&month=2026-04&watch=1&state=MI
   { const h = new URLSearchParams(location.hash.slice(1));
     if (h.get('month')) { const [y, m] = h.get('month').split('-').map(Number); const nf = (y - fy) * 12 + (m - fm); if (nf >= 0 && nf < nF) f = nf; }
     if (h.get('fips')) { const i = M.counties.findIndex(c => c.f === h.get('fips')); if (i >= 0) pinned = i; }
-    if (h.get('watch') === '1') { showWatch = true; $('watch').checked = true; } }
+    if (h.get('watch') === '1') { showWatch = true; $('watch').checked = true; }
+    if (h.get('state')) { const st = h.get('state').toUpperCase(); if (stateBox[st]) { state = st; $('state').value = st;
+      mask = new Uint8Array(nC); for (let i = 0; i < nC; i++) if (M.counties[i].s === st) mask[i] = 1; } } }
 
   // ---- go
   $('loading').hidden = true; $('app').hidden = false;

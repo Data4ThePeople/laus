@@ -42,6 +42,9 @@ from lfd.geo import GEO_OUT
 from lfd.watch import WATCH_PATH
 
 TEMPLATE = Path(__file__).parent / "templates" / "index.html"
+ASSETS = Path(__file__).resolve().parents[2] / "assets"
+LOGO_ON_LIGHT = ASSETS / "d4tp-text-dark.svg"     # dark plate, white type
+LOGO_ON_DARK = ASSETS / "d4tp-text-light_3.svg"   # white plate, dark type
 OUT = DIST / "index.html"
 FIRST_FRAME = "2010-01"
 
@@ -103,12 +106,15 @@ def build() -> dict:
     cl = pd.read_parquet(CLASSIFIED_PATH)
     watch = pd.read_parquet(WATCH_PATH)
 
-    laus_names = panel.drop_duplicates("fips").set_index("fips")["area"]
+    first = panel.drop_duplicates("fips").set_index("fips")
+    laus_names, laus_state = first["area"], first["state"]
     geo_names = {c["fips"]: f'{c["name"]}, {c["state"]}' for c in geo["counties"]}
+    geo_state = {c["fips"]: c["state"] for c in geo["counties"]}
     fips_order = sorted(set(laus_names.index) | set(geo_names))
     index = {f: i for i, f in enumerate(fips_order)}
     n = len(fips_order)
-    counties = [{"f": f, "n": laus_names.get(f, geo_names.get(f))} for f in fips_order]
+    counties = [{"f": f, "n": laus_names.get(f, geo_names.get(f)), "s": laus_state.get(f, geo_state.get(f))}
+                for f in fips_order]
 
     months = pd.period_range(panel.date.min(), panel.date.max(), freq="M").to_timestamp()
     frames = pd.period_range(FIRST_FRAME, panel.date.max(), freq="M").to_timestamp()
@@ -181,6 +187,16 @@ def render(out: Path = OUT) -> Path:
               + "const BLOCKS = " + json.dumps(built["blocks"], separators=(",", ":")) + ";")
     assert "/*__DATA__*/" in html
     html = html.replace("/*__DATA__*/", inject)
+    for marker, path, cls in (("<!--__LOGO_ON_LIGHT__-->", LOGO_ON_LIGHT, "logo logo-light"),
+                              ("<!--__LOGO_ON_DARK__-->", LOGO_ON_DARK, "logo logo-dark")):
+        svg = path.read_text()
+        svg = svg[svg.index("<svg"):]
+        svg = svg.replace("<svg ", f'<svg class="{cls}" role="img" aria-label="Data 4 The People" ', 1)
+        # scope the SVG's own style rule so two inline copies do not collide
+        svg = svg.replace('<style>.cls-1{fill:#fff;}</style>', "")
+        svg = svg.replace('class="cls-1"', 'fill="#fff"')
+        assert marker in html
+        html = html.replace(marker, svg)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html)
     sizes = {k: len(v) / 1e6 for k, v in built["blocks"].items()}

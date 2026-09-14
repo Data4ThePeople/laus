@@ -33,7 +33,10 @@ dist/                 built viz
 
 Run with the project venv, in order: `python -m lfd.ingest`, `lfd.classify`,
 `lfd.watch`, `lfd.geo`, `lfd.viz`. Tests: `.venv/bin/python -m pytest`.
-Deep links into the viz: `dist/index.html#fips=26145&month=2026-04&watch=1`.
+Deep links into the viz: `dist/index.html#fips=26145&month=2026-04&watch=1&state=MI`.
+The state selector zooms the map, fades other states, and filters every
+stat card. Logos live in `assets/` and are inlined at build time; the logo
+sits in the header standalone and moves to the footer inside the Prismic frame.
 Preview at sizes with headless Chrome; note it enforces a minimum window
 width of about 500px, so test phone width through a 390px iframe wrapper.
 
