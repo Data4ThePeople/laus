@@ -81,9 +81,16 @@ def download(name: str, refresh: bool = False, raw_dir: Path = RAW) -> Path:
     return dest
 
 
-def _read_flat(path: Path, **kw) -> pd.DataFrame:
+def _cols(names: list[str]):
+    """usecols callable: BLS pads header names with spaces."""
+    wanted = set(names)
+    return lambda c: c.strip() in wanted
+
+
+def _read_flat(path: Path, usecols: list[str], **kw) -> pd.DataFrame:
     """BLS flat files are tab separated with padded cells; strip everything."""
-    df = pd.read_csv(path, sep="\t", dtype=str, keep_default_na=False, **kw)
+    df = pd.read_csv(path, sep="\t", dtype=str, keep_default_na=False,
+                     usecols=_cols(usecols), **kw)
     df.columns = [c.strip() for c in df.columns]
     for c in df.columns:
         df[c] = df[c].str.strip()
@@ -115,7 +122,7 @@ def load_observations(series: pd.DataFrame, raw_dir: Path = RAW) -> pd.DataFrame
     keep = set(series.series_id)
     parts = []
     for chunk in pd.read_csv(path, sep="\t", dtype=str, keep_default_na=False,
-                             usecols=["series_id", "year", "period", "value"],
+                             usecols=_cols(["series_id", "year", "period", "value"]),
                              chunksize=2_000_000):
         chunk.columns = [c.strip() for c in chunk.columns]
         chunk["series_id"] = chunk["series_id"].str.strip()
