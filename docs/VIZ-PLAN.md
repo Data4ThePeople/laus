@@ -222,8 +222,14 @@ needs 1990, but a shorter chart window could start at 2005 for a 40% saving).
 - Frames run Jan 2010 to the latest month. 2010 is the floor because the
   20-year window needs data from 1990. Confirm that range, or pick a
   shorter one (2015 onward, say) for a quicker loop.
-- Oct 2025: if LAUS carries nulls for that month, show the frame as
-  "no data" gray, or skip the frame.
+- Oct 2025 is confirmed null for every county except Puerto Rico. Mar and
+  Apr 2020 are null for Puerto Rico. Show those frames with the affected
+  counties in "no data" gray and a note in the month label, or skip the
+  Oct 2025 frame. My recommendation: draw it gray with the note, so the
+  gap is visible and honest.
+- Seven Alaska areas created in 2010 or 2020 have no 20-year history and
+  stay gray through the whole animation. Fine, or hide the Alaska inset's
+  gray areas behind a note.
 - Puerto Rico in the map inset, yes or no. The June 2026 decision was to
   include it in tables.
 - Thresholds for the watch flags, once the five spot-check counties are

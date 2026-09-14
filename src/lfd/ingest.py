@@ -149,6 +149,7 @@ def build_panel(raw_dir: Path = RAW) -> pd.DataFrame:
         raise ValueError(f"{missing.sum()} observations have no area name; "
                          f"codes: {panel.loc[missing, 'area_code'].unique()[:10]}")
     panel["state"] = panel["area"].str.rsplit(", ", n=1).str[-1]
+    panel.loc[panel["area"] == "District of Columbia", "state"] = "DC"
     panel["date"] = pd.to_datetime(dict(year=panel.year, month=panel.month, day=1))
     panel = panel[["fips", "area", "state", "year", "month", "date", "labor_force"]]
     panel = panel.sort_values(["fips", "date"]).reset_index(drop=True)

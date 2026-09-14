@@ -51,6 +51,32 @@ Run with the project venv: `.venv/bin/python -m lfd.ingest`, then
 - Palette for tables: teal `#085041`, coral `#712B13`, paper `#F7F5EF`.
   Source line: `U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.`
 
+## Data facts learned from the first real run (Sep 14, 2026)
+
+- Panel: 3,225 county series, Jan 1990 to Jul 2026. 2026 months are
+  preliminary until the spring revision.
+- Oct 2025 (appropriations lapse): null for every county except Puerto
+  Rico's 78 municipios. Every classified frame for Oct 2025 and Oct 2045 is
+  therefore almost empty.
+- Hurricane Katrina: seven New Orleans-area parishes are null Sep 2005 to
+  Jun 2006, so they drop out of the classified universe Sep 2025 to Jun 2026
+  and return Jul 2026. Four of them were in Structural Loss at Apr 2025; that
+  is the "four parishes" in the June 2026 piece. Coverage gap, not recovery.
+- Puerto Rico: null Mar and Apr 2020 (survey suspended), so PR is absent
+  from the Mar and Apr 2040 frames too.
+- Alaska: four areas end in Dec 2009 or Dec 2019 and seven begin Jan 2010 or
+  Jan 2020 (plus Yakutat from 1994). The new ones cannot be classified until
+  they have 20 years of history. Draw them as "no data".
+- Connecticut is on the nine planning regions (FIPS 09110 to 09190) for the
+  whole history, which matches the Census 2022+ shapes.
+- Extreme 20-year changes (Loving TX, Douglas CO, McMullen TX) are real, not
+  errors. Small resort and fishing counties swing 15%+ month to month, which
+  is why every comparison is same-month.
+- Validation on this run: Apr 2025 SL 1,028 exact; Apr 2026 SL 1,156 vs the
+  published 1,160 (BLS revisions since the Tableau extract; 47 counties sit
+  within a quarter point of the line). Apr25 to Apr26 = +128 vs published +132.
+- The spec's Saginaw figure (85,594) is its Apr 2025 labor force, not Apr 2026.
+
 ## Validation targets (must reproduce from raw LAUS before trusting anything new)
 
 | Snapshot | Hyper | Superstars | Keeping | Below | At-risk | SL | Total |
