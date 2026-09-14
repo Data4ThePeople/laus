@@ -438,7 +438,7 @@
     const steps = Math.floor(acc); if (steps > 0) { acc -= steps; if (f + steps >= nF - 1) { setFrame(nF - 1); stop(); return; } setFrame(f + steps); }
     requestAnimationFrame(tick); }
   function play() { if (f >= nF - 1) setFrame(0); playing = true; last = 0; acc = 0; $('play').textContent = '❚❚ Pause'; $('play').classList.add('on'); requestAnimationFrame(tick); }
-  function stop() { playing = false; $('play').textContent = f >= nF - 1 ? '↻ Replay' : '▶ Play'; $('play').classList.remove('on'); }
+  function stop() { playing = false; $('play').textContent = '▶ Play'; $('play').classList.remove('on'); }
   $('play').addEventListener('click', () => playing ? stop() : play());
   for (const b of document.querySelectorAll('.spd button')) b.addEventListener('click', () => { speed = +b.dataset.spd;
     for (const o of document.querySelectorAll('.spd button')) o.classList.toggle('on', o === b); });
