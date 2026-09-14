@@ -371,9 +371,15 @@
     const dot = (t, v) => { cctx.beginPath(); cctx.arc(X(t), Y(v), 3.5, 0, Math.PI * 2); cctx.fillStyle = cctx.strokeStyle; cctx.fill(); cctx.lineWidth = 1.5; cctx.strokeStyle = cs.getPropertyValue('--panel').trim(); cctx.stroke(); };
     dot(0, 100); if (idx[WINDOW] != null) dot(WINDOW, idx[WINDOW]);
     cctx.fillStyle = ink3; cctx.textAlign = 'left'; cctx.textBaseline = 'alphabetic';
-    const sy = fy + Math.floor((fm - 1 + f) / 12) - 20; cctx.fillText(MONTHS[(fm - 1 + f) % 12].slice(0, 3) + ' ' + sy, L, h - 5);
-    cctx.textAlign = 'right'; cctx.fillText(MONTHS[(fm - 1 + f) % 12].slice(0, 3) + ' ' + (sy + 20), w - R, h - 5);
-    cctx.textAlign = 'center'; cctx.fillText('start of window = 100' + (compressed ? ' · compressed scale' : ''), L + pw / 2, h - 5);
+    const sy = fy + Math.floor((fm - 1 + f) / 12) - 20, mon = MONTHS[(fm - 1 + f) % 12].slice(0, 3);
+    const lt = mon + ' ' + sy, rt = mon + ' ' + (sy + 20), midNote = 'start of window = 100';
+    cctx.fillText(lt, L, h - 5);
+    cctx.textAlign = 'right'; cctx.fillText(rt, w - R, h - 5);
+    // center note only when it clears both date labels by 10px
+    const free = (w - R - cctx.measureText(rt).width) - (L + cctx.measureText(lt).width);
+    if (cctx.measureText(midNote).width + 20 <= free) { cctx.textAlign = 'center'; cctx.fillText(midNote, L + pw / 2, h - 5); }
+    if (compressed) { const rising = idx[WINDOW] != null && idx[WINDOW] > 100; cctx.textAlign = rising ? 'left' : 'right'; cctx.textBaseline = 'top';
+      cctx.fillText('compressed scale', rising ? L + 4 : w - R, T); cctx.textBaseline = 'alphabetic'; }
   }
 
   // ---- stats
