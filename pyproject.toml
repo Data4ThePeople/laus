@@ -1,0 +1,28 @@
+[project]
+name = "lfd"
+version = "0.1.0"
+description = "Structural labor force decline: classify U.S. counties by 20-year change in civilian labor force (BLS LAUS)."
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "requests>=2.32",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+map = ["shapely>=2.0", "pyproj>=3.6"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+lfd = "lfd.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

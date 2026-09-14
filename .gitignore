@@ -1,0 +1,20 @@
+# data
+data/raw/*
+!data/raw/.gitkeep
+data/*.parquet
+outputs/*
+!outputs/.gitkeep
+
+# python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+.pytest_cache/
+
+# secrets
+.env
+
+# ide
+.DS_Store
