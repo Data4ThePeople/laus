@@ -12,6 +12,13 @@ same-month percent change in civilian labor force (BLS LAUS, county level,
 not seasonally adjusted) into six bands. Headline metric: the count of
 counties in Structural Loss (strictly below -10%).
 
+## Repo and hosting
+
+GitHub: https://github.com/Data4ThePeople/laus (public, in the Data4ThePeople
+org, never under esp-D4TP). GitHub Pages serves `dist/` at
+https://data4thepeople.github.io/laus/ via `.github/workflows/pages.yml` on
+every push to main that touches `dist/`. That URL is the Prismic embed.
+
 ## Layout
 
 ```
