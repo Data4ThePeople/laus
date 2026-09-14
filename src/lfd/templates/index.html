@@ -342,7 +342,7 @@
     const cs = getComputedStyle(root); const ink = cs.getPropertyValue('--ink').trim(), ink3 = cs.getPropertyValue('--ink-3').trim(), grid = cs.getPropertyValue('--grid').trim();
     if (i < 0) { $('who').textContent = 'Hover or tap a county';
       $('what').innerHTML = 'Labor force each month over the 20 years behind the color, indexed to the start of the window. Same vertical scale for every county.';
-      cctx.fillStyle = ink3; cctx.font = '12px sans-serif'; cctx.fillText('No county selected', 8, h / 2); return; }
+      cctx.fillStyle = ink3; cctx.font = '12px sans-serif'; cctx.textAlign = 'center'; cctx.textBaseline = 'middle'; cctx.fillText('No county selected', w / 2, h / 2); return; }
     const mEnd = m0 + f, mStart = mEnd - WINDOW;
     const vals = new Array(WINDOW + 1); for (let t = 0; t <= WINDOW; t++) vals[t] = lfAt(i, mStart + t);
     const c = cat[f * nC + i], p = pct[f * nC + i], wf = watch[f * nC + i];
@@ -354,7 +354,7 @@
     if (wf) what += ' · <span class="flag">' + (wf === 1 ? 'Positive watch' : 'Negative watch') + '</span>';
     $('what').innerHTML = what;
     const base = vals[0];
-    if (base == null) { cctx.fillStyle = ink3; cctx.font = '12px sans-serif'; cctx.fillText('No data at the start of this window', 8, h / 2); return; }
+    if (base == null) { cctx.fillStyle = ink3; cctx.font = '12px sans-serif'; cctx.textAlign = 'center'; cctx.textBaseline = 'middle'; cctx.fillText('No data at the start of this window', w / 2, h / 2); return; }
     const idx = vals.map(v => v == null ? null : v / base * 100);
     let lo = Infinity, hi = -Infinity; for (const v of idx) if (v != null) { if (v < lo) lo = v; if (v > hi) hi = v; }
     let span = SPAN, compressed = false; if (hi - lo > SPAN) { span = (hi - lo) * 1.08; compressed = true; }
