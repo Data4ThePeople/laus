@@ -105,7 +105,8 @@
   .legend{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:12px; margin:6px 0 0}
   .legend span{white-space:nowrap}
   .legend .sw{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:4px; vertical-align:-1px}
-  .legend .str{background:repeating-linear-gradient(135deg, var(--ink) 0 1px, transparent 1px 4px)}
+  .legend .str-pos, .bands .str-pos{background:#B08670 repeating-linear-gradient(45deg, #fff 0 1.5px, transparent 1.5px 5px)}
+  .legend .str-neg, .bands .str-neg{background:#B08670 repeating-linear-gradient(135deg, #141A18 0 1.5px, transparent 1.5px 5px)}
   .sr{position:absolute; left:-9999px}
 </style>
 </head>
@@ -274,8 +275,12 @@
     canvas.style.height = h + 'px'; cw = w; ch = h; setView();
     drawMap(); drawChart();
   }
-  const stripes = (color) => { const c = document.createElement('canvas'); c.width = c.height = 6; const g = c.getContext('2d');
-    g.strokeStyle = color; g.lineWidth = 1.2; g.beginPath(); g.moveTo(-1, 7); g.lineTo(7, -1); g.moveTo(-1, 1); g.lineTo(1, -1); g.moveTo(5, 7); g.lineTo(7, 5); g.stroke(); return g.canvas; };
+  // Watch patterns: rising light stripes = positive watch, falling dark stripes = negative watch.
+  const stripes = (color, rising, lw) => { const n = 7, c = document.createElement('canvas'); c.width = c.height = n; const g = c.getContext('2d');
+    g.strokeStyle = color; g.lineWidth = lw; g.lineCap = 'square'; g.beginPath();
+    if (rising) { g.moveTo(-1, n + 1); g.lineTo(n + 1, -1); g.moveTo(-1, 1); g.lineTo(1, -1); g.moveTo(n - 1, n + 1); g.lineTo(n + 1, n - 1); }
+    else { g.moveTo(-1, -1); g.lineTo(n + 1, n + 1); g.moveTo(n - 1, -1); g.lineTo(n + 1, 1); g.moveTo(-1, n - 1); g.lineTo(1, n + 1); }
+    g.stroke(); return g.canvas; };
   let patPos = null, patNeg = null, borders = null, bordersKey = '';
   function inView(i) { const b = bbox[i]; if (!b) return false;
     return b[2] * S + TX >= 0 && b[0] * S + TX <= canvas.width && b[3] * S + TY >= 0 && b[1] * S + TY <= canvas.height; }
@@ -300,7 +305,7 @@
     ctx.globalAlpha = 1;
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(borderLayer(cs), 0, 0); ctx.setTransform(S, 0, 0, S, TX, TY);
     if (showWatch) {
-      if (!patPos) { patPos = ctx.createPattern(stripes(M.palette.teal), 'repeat'); patNeg = ctx.createPattern(stripes('#F7F5EF'), 'repeat'); }
+      if (!patPos) { patPos = ctx.createPattern(stripes('#FFFFFF', true, 1.6), 'repeat'); patNeg = ctx.createPattern(stripes('#141A18', false, 1.6), 'repeat'); }
       ctx.save(); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       for (let i = 0; i < nC; i++) { const w = watch[row + i]; if (!w || !paths[i] || (mask && !mask[i]) || !inView(i)) continue;
         ctx.save(); ctx.setTransform(S, 0, 0, S, TX, TY); ctx.clip(paths[i]); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -375,22 +380,24 @@
   let moversCache = new Array(nF).fill(null);
   function movers(fr) {
     if (moversCache[fr]) return moversCache[fr];
-    const counts = new Array(NB).fill(0); let total = 0, posSL = 0, negOut = 0, slPrev = 0;
+    const counts = new Array(NB).fill(0); let total = 0, posSL = 0, negOut = 0, slPrev = 0, posAll = 0, negAll = 0;
     let inSL = 0, outSL = 0, down = 0, up = 0, better = 0, worse = 0, comparable = 0;
     const row = fr * nC, prev = (fr - 12) * nC, has = fr >= 12;
     for (let i = 0; i < nC; i++) { if (mask && !mask[i]) continue; const c = cat[row + i]; if (c === 255) continue; counts[c]++; total++;
-      const w = watch[row + i]; if (w === 1 && c === SL) posSL++; if (w === 2 && c !== SL) negOut++;
+      const w = watch[row + i]; if (w === 1) posAll++; if (w === 2) negAll++; if (w === 1 && c === SL) posSL++; if (w === 2 && c !== SL) negOut++;
       if (!has) continue; const c0 = cat[prev + i]; if (c0 === 255) continue; if (c0 === SL) slPrev++; comparable++;
       if (c === SL && c0 !== SL) inSL++; if (c0 === SL && c !== SL) outSL++; if (c < c0) down++; if (c > c0) up++;
       const d = pct[row + i] - pct[prev + i]; if (d > 0) better++; else if (d < 0) worse++; }
     let slPrevAll = 0; if (has) for (let i = 0; i < nC; i++) if (cat[prev + i] === SL && !(mask && !mask[i])) slPrevAll++;
-    return moversCache[fr] = { counts, total, posSL, negOut, inSL, outSL, down, up, better, worse, comparable, has, slPrevAll };
+    return moversCache[fr] = { counts, total, posSL, negOut, posAll, negAll, inSL, outSL, down, up, better, worse, comparable, has, slPrevAll };
   }
   function drawStats() {
     const s = movers(f); let html = '';
     for (let k = NB - 1; k >= 0; k--) { const share = s.total ? s.counts[k] / s.total * 100 : 0;
       html += '<span><i class="sw" style="background:' + M.colors[k] + '"></i>' + M.labels[k] + '</span><span class="bar"><i style="width:' + share.toFixed(1) + '%;background:' + M.colors[k] + '"></i></span><span class="n">' + fmtN(s.counts[k]) + '</span>'; }
     html += '<span>Counties with data</span><span></span><span class="n">' + fmtN(s.total) + '</span>';
+    if (showWatch) { html += '<span><i class="sw str-pos"></i>Positive watch</span><span></span><span class="n">' + fmtN(s.posAll) + '</span>';
+      html += '<span><i class="sw str-neg"></i>Negative watch</span><span></span><span class="n">' + fmtN(s.negAll) + '</span>'; }
     $('bands').innerHTML = html;
     $('bands-h').textContent = 'Counties by band' + (state ? ' · ' + (STATE_NAMES[state] || state) : '');
     $('movers-h').textContent = 'Change from a year earlier' + (state ? ' · ' + (STATE_NAMES[state] || state) : '');
@@ -442,7 +449,7 @@
   $('play').addEventListener('click', () => playing ? stop() : play());
   for (const b of document.querySelectorAll('.spd button')) b.addEventListener('click', () => { speed = +b.dataset.spd;
     for (const o of document.querySelectorAll('.spd button')) o.classList.toggle('on', o === b); });
-  $('watch').addEventListener('change', e => { showWatch = e.target.checked; drawMap(); });
+  $('watch').addEventListener('change', e => { showWatch = e.target.checked; drawMap(); drawStats(); });
   { const sel = $('state'); const codes = Object.keys(stateBox).sort((a, b) => (STATE_NAMES[a] || a).localeCompare(STATE_NAMES[b] || b));
     for (const c of codes) { const o = document.createElement('option'); o.value = c; o.textContent = STATE_NAMES[c] || c; sel.appendChild(o); }
     sel.addEventListener('change', () => setState(sel.value)); }
@@ -459,7 +466,7 @@
 
   // ---- legend, footer
   { let html = ''; for (let k = NB - 1; k >= 0; k--) html += '<span><i class="sw" style="background:' + M.colors[k] + '"></i>' + M.labels[k] + '</span>';
-    html += '<span><i class="sw" style="background:' + M.nodata + '"></i>No data</span><span><i class="sw str"></i>Watch flag (toggle above)</span>';
+    html += '<span><i class="sw" style="background:' + M.nodata + '"></i>No data</span><span><i class="sw str-pos"></i>Positive watch</span><span><i class="sw str-neg"></i>Negative watch</span>';
     $('legend').innerHTML = html; }
   $('src').textContent = M.source + ' Latest month ' + M.latest + '. Data 4 The People analysis.';
   $('method').textContent = 'Bands: change in labor force versus the same month 20 years earlier; the 20-year change also moves when the month 20 years back leaves the window. Positive watch: 12-month average at least 2% above its 5-year low, the low at least a year old, average rising, 3-year change positive. Negative watch: 12-month average down at least 1% in a year and 3-year change of −2% or worse.';
