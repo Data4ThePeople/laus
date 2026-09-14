@@ -186,6 +186,74 @@ months, 5 years) are tunables; the first run prints Erie PA, Saginaw MI, San
 Juan PR, Lucas OH and Lincoln NE under each candidate so we can see which
 rule matches what the eye sees in their hover charts.
 
+**How to explain the flags (added Sep 14, 2026, after the build).**
+
+One sentence for readers: the color tells you where a county stands
+against 20 years ago; the stripes tell you which way it is heading right
+now.
+
+Positive watch, all four must hold:
+
+1. The labor force, averaged over the last 12 months, is at least 2% above
+   the lowest 12-month average of the past five years. It has climbed off a
+   bottom.
+2. That bottom is at least a year old. The climb has lasted; it is not last
+   month's bounce.
+3. The 12-month average is at least 1% higher than a year ago. It is still
+   climbing now.
+4. This month's labor force is higher than the same month three years ago.
+   The gain is not a one-year blip.
+
+Negative watch, both must hold:
+
+1. The 12-month average is at least 1% lower than a year ago. It is
+   shrinking now.
+2. This month's labor force is at least 2% below the same month three years
+   ago. The shrinking has gone on a while.
+
+Everything else is unflagged: flat, drifting, or too mixed to call.
+
+Why it is built this way:
+
+- The band alone cannot do this job. It compares today to one month 20
+  years ago and moves for two reasons: this month, and the month that
+  dropped out of the window. A county can "improve" in 2026 because 2006
+  was bad there. The flags ignore the 20-year window and look only at the
+  last one to five years.
+- A 12-month average because county data is noisy. LAUS county figures are
+  not seasonally adjusted and small counties jump month to month. A full
+  year of averaging cancels the seasons and softens odd months; comparing
+  the average to itself a year earlier gives a clean read on direction.
+- A three-year same-month check as a second witness. One year can be a
+  bounce or a dip. The flag needs two independent looks at the data to
+  agree. Same-month is the fair comparison for unadjusted data and matches
+  the bands' convention.
+- The bottom test only on the positive side. "Recovering" means recovering
+  from something, so there must be a measurable low, at least a year old,
+  so the turn has proven itself. "Still falling and smaller than three
+  years ago" is already the whole negative story. The positive flag is
+  stricter on purpose: calling a recovery is the stronger claim.
+- The first negative rule was dropped. "Within 1% of a five-year low"
+  missed Saginaw and Genesee, MI in 2026, both down about 5% over three
+  years but still above the 2021 COVID trough inside the window. The
+  year-over-year test on the average catches "falling now" regardless of
+  where old lows sit.
+- The thresholds are small on purpose. 1% on the average and 2% over three
+  years clear the noise in a county of 20,000 without demanding a dramatic
+  move. They are judgment calls and the only tunable parts; everything else
+  is direction and time.
+
+What to say when someone pushes back:
+
+- It describes movement, not cause. A negative watch says the labor force
+  is shrinking, not why.
+- Small counties flip flags on modest changes. The lists sort by labor
+  force so the big ones lead.
+- Recent months are preliminary and are revised each spring, so a flag on
+  the latest month is softer than one from a year ago.
+- A county can be in Structural Loss and on positive watch at once. That is
+  the point: hurt for 20 years, but turned. July 2026 has 169 of them.
+
 **Where it shows up.**
 
 - A "watch flags" toggle on the map draws a stripe pattern over flagged
