@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapping the Spread of Labor Force Decline</title>
+<style>
+  :root{
+    --paper:#F7F5EF; --ink:#1F2A27; --ink-2:#4E5B57; --ink-3:#7E8A86; --line:#D9D5CC;
+    --teal:#085041; --coral:#712B13; --panel:#FFFFFF; --accent:#085041; --accent-ink:#F7F5EF;
+    --grid:#E8E4DB;
+  }
+  .lfd{container-type:inline-size; background:var(--paper); color:var(--ink);
+    font:14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    padding:12px 16px 10px; box-sizing:border-box; max-width:100%; overflow-x:hidden}
+  @media (prefers-color-scheme: dark){
+    .lfd:not(.framed){ --paper:#181A1B; --ink:#E4E2DC; --ink-2:#BBBDC0; --ink-3:#8C9094; --line:#33373A;
+      --panel:#202325; --grid:#2A2E31; --accent:#8FBFAF; --accent-ink:#181A1B; }
+  }
+  .lfd *{box-sizing:border-box}
+  .lfd.framed .hdr .sub{display:none}
+  .lfd.framed{padding-top:8px}
+  .lfd.framed .chart canvas{height:112px}
+  .lfd.framed .card{padding:6px 10px}
+  .lfd.framed .main{gap:8px}
+  .lfd.framed .side{gap:6px}
+  .lfd.framed .bands, .lfd.framed .movers{font-size:12px; line-height:1.3}
+  .lfd.framed .chart .what{min-height:0}
+  .lfd.framed .lists{font-size:11.5px; line-height:1.3}
+  .lfd.framed .foot{margin-top:6px}
+  .lfd.framed .hdr h1{font-size:16px}
+  .lfd.framed .ctl{margin:2px 0 6px}
+  .hdr{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 14px; margin-bottom:6px}
+  .hdr h1{font-size:18px; margin:0; font-weight:700; color:var(--ink)}
+  .hdr .sub{color:var(--ink-2); font-size:13px}
+  .ctl{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:4px 0 8px}
+  .ctl button{font:inherit; font-size:13px; padding:5px 10px; border:1px solid var(--line); background:var(--panel);
+    color:var(--ink); border-radius:6px; cursor:pointer; min-height:32px}
+  .ctl button.on{background:var(--accent); color:var(--accent-ink); border-color:var(--accent)}
+  .ctl button:disabled{opacity:.45; cursor:default}
+  .ctl .spd{display:flex; gap:0}
+  .ctl .spd button{border-radius:0; margin-left:-1px}
+  .ctl .spd button:first-child{border-radius:6px 0 0 6px}
+  .ctl .spd button:last-child{border-radius:0 6px 6px 0}
+  .ctl .month{font-size:22px; font-weight:700; min-width:150px; color:var(--ink)}
+  .ctl input[type=range]{flex:1 1 160px; min-width:120px; accent-color:var(--accent)}
+  .ctl label.tog{display:flex; align-items:center; gap:5px; font-size:13px; color:var(--ink-2); cursor:pointer}
+  .main{display:grid; grid-template-columns:minmax(0,1fr); grid-template-areas:"map" "side" "movers"; gap:10px}
+  .mapwrap{grid-area:map} .side{grid-area:side} .mcard{grid-area:movers}
+  .lcard summary{display:block}
+  @container (min-width: 680px){
+    .main{grid-template-columns:minmax(0,1fr) 300px; grid-template-areas:"map side" "movers side"; align-items:start}
+    .lfd .legend{display:none}
+    .lcard summary{display:none}
+  }
+  @container (min-width: 900px){ .lfd .movers{grid-template-columns:1fr auto 1fr auto; column-gap:22px} }
+  .mapwrap{position:relative; width:100%; min-width:0}
+  .mapwrap canvas{display:block; width:100%; height:auto}
+  .note{position:absolute; left:8px; top:6px; max-width:60%; font-size:12px; color:var(--coral); background:var(--paper);
+    padding:3px 6px; border-radius:4px; opacity:.95}
+  .side{display:grid; gap:8px; grid-template-columns:1fr; min-width:0; align-content:start}
+  @container (min-width: 520px) and (max-width: 679.9px){ .side{grid-template-columns:1fr 1fr} .lcard{grid-column:1 / -1} }
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:8px 10px; min-width:0}
+  .card h2{font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-3); margin:0 0 6px; font-weight:600}
+  .chart canvas{display:block; width:100%; height:150px}
+  .lfd.framed .chart canvas{height:112px}
+  .chart .who{font-weight:700; font-size:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .chart .what{color:var(--ink-2); font-size:12px; margin:0 0 4px; min-height:32px}
+  .chart .flag{font-weight:600}
+  .bands{display:grid; grid-template-columns:auto 1fr auto; gap:2px 8px; font-size:13px; align-items:center}
+  .bands .sw{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:6px; vertical-align:-1px}
+  .bands .n{text-align:right; font-variant-numeric:tabular-nums}
+  .bands .bar{height:6px; border-radius:3px; background:var(--grid); overflow:hidden}
+  .bands .bar i{display:block; height:100%}
+  .movers{font-size:13px; display:grid; grid-template-columns:1fr auto; gap:2px 8px}
+  .movers .n{text-align:right; font-variant-numeric:tabular-nums; font-weight:600}
+  .movers .neg{color:var(--coral)} .movers .pos{color:var(--teal)}
+  .lfd.dark .movers .pos{color:#8FBFAF}
+  .movers .cap{grid-column:1 / -1; color:var(--ink-3); font-size:11px; margin-top:4px}
+  details summary{cursor:pointer; font-size:12px; color:var(--ink-2); margin-top:4px}
+  .lists{font-size:12px; margin-top:4px}
+  .lists h3{font-size:12px; margin:6px 0 2px; color:var(--ink-2); font-weight:600}
+  .lists h3:first-child{margin-top:0}
+  .lists ol{margin:0; padding-left:18px}
+  .lists li{display:flex; gap:6px; white-space:nowrap}
+  .lists li .nm{flex:1 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis}
+  .lists li .v{flex:0 0 auto; font-variant-numeric:tabular-nums; color:var(--ink-2)}
+  .foot{display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 12px; margin-top:8px; font-size:11px; color:var(--ink-3)}
+  .foot b{color:var(--ink-2)}
+  .loading{padding:40px; text-align:center; color:var(--ink-2)}
+  .legend{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:12px; margin:6px 0 0}
+  .legend span{white-space:nowrap}
+  .legend .sw{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:4px; vertical-align:-1px}
+  .legend .str{background:repeating-linear-gradient(135deg, var(--ink) 0 1px, transparent 1px 4px)}
+  .sr{position:absolute; left:-9999px}
+</style>
+</head>
+<body>
+<div class="lfd" id="lfd">
+  <div class="hdr">
+    <h1>Mapping the Spread of Labor Force Decline</h1>
+    <span class="sub">Every U.S. county and Puerto Rico municipio by its 20-year change in civilian labor force, month by month since 2010.</span>
+  </div>
+  <div class="loading" id="loading">Loading county data…</div>
+  <div id="app" hidden>
+    <div class="ctl">
+      <button id="play" aria-label="Play">▶ Play</button>
+      <span class="spd" role="group" aria-label="Speed">
+        <button data-spd="1" class="on">1×</button><button data-spd="2">2×</button><button data-spd="5">5×</button>
+      </span>
+      <button id="prev" aria-label="Previous month">‹</button>
+      <input type="range" id="slider" min="0" max="0" value="0" aria-label="Month">
+      <button id="next" aria-label="Next month">›</button>
+      <span class="month" id="month"></span>
+      <label class="tog"><input type="checkbox" id="watch"> Watch flags</label>
+    </div>
+    <div class="main">
+      <div class="mapwrap" id="mapwrap">
+        <canvas id="map" role="img" aria-label="County map colored by 20-year labor force change"></canvas>
+        <div class="note" id="note" hidden></div>
+      </div>
+      <div class="card mcard">
+        <h2>Change from a year earlier</h2>
+        <div class="movers" id="movers"></div>
+      </div>
+      <div class="side">
+        <div class="card chart">
+          <h2>County trend, 20-year window</h2>
+          <p class="who" id="who">Hover or tap a county</p>
+          <p class="what" id="what">Labor force each month over the 20 years behind the color, indexed to the start of the window. Same vertical scale for every county.</p>
+          <canvas id="chart"></canvas>
+        </div>
+        <div class="card">
+          <h2>Counties by band</h2>
+          <div class="bands" id="bands"></div>
+        </div>
+        <div class="card lcard">
+          <details id="listsbox"><summary>Top counties this month</summary><div class="lists" id="lists"></div></details>
+        </div>
+      </div>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="foot">
+      <span><b>Built by Data 4 The People</b> · Source: <span id="src"></span></span>
+      <span id="method"></span>
+    </div>
+  </div>
+</div>
+<script>
+/*__DATA__*/
+(async function () {
+  const root = document.getElementById('lfd');
+  const framed = window.self !== window.top;
+  if (framed) root.classList.add('framed');
+  const $ = id => document.getElementById(id);
+
+  if (!('DecompressionStream' in window)) {
+    $('loading').textContent = 'This browser cannot decode the map data. Please use a current version of Chrome, Safari, Firefox or Edge.';
+    return;
+  }
+  async function decode(b64, Type) {
+    const bin = atob(b64), bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    const buf = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
+    return new Type(buf);
+  }
+  const [geoRaw, cat, pctRaw, lfRaw, watch] = await Promise.all([
+    decode(BLOCKS.geo, Int16Array), decode(BLOCKS.cat, Uint8Array), decode(BLOCKS.pct, Uint8Array),
+    decode(BLOCKS.lf, Uint8Array), decode(BLOCKS.watch, Uint8Array)]);
+
+  const M = META, nC = M.nC, nF = M.nF, nM = M.nM, m0 = M.m0, U = M.units;
+  const [REF_W, REF_H] = M.ref;
+  const NB = M.labels.length, SL = 0;   // band 0 is Structural Loss
+
+  // ---- geometry -> Path2D in reference pixels
+  const paths = new Array(nC).fill(null), bbox = new Array(nC).fill(null);
+  { let p = 0;
+    for (let i = 0; i < nC; i++) {
+      const nr = geoRaw[p++]; if (!nr) continue;
+      const path = new Path2D(); let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+      for (let r = 0; r < nr; r++) {
+        const np_ = geoRaw[p++]; let x = 0, y = 0;
+        for (let k = 0; k < np_; k++) {
+          x += geoRaw[p++]; y += geoRaw[p++];
+          const px = x / U, py = y / U;
+          if (k === 0) path.moveTo(px, py); else path.lineTo(px, py);
+          if (px < x0) x0 = px; if (px > x1) x1 = px; if (py < y0) y0 = py; if (py > y1) y1 = py;
+        }
+        path.closePath();
+      }
+      paths[i] = path; bbox[i] = [x0, y0, x1, y1];
+    }
+    if (p !== geoRaw.length) throw new Error('geometry block length mismatch');
+  }
+
+  // ---- 20-year change: undo frame-to-frame delta coding (int16, -32768 = none)
+  const pct = new Int16Array(nF * nC);
+  { const half = nF * nC;
+    for (let i = 0; i < nC; i++) { let v = 0;
+      for (let fr = 0; fr < nF; fr++) { const k = fr * nC + i; v = (v + (pctRaw[k] | (pctRaw[half + k] << 8))) & 0xFFFF; pct[k] = v; } }
+  }
+
+  // ---- labor force: undo delta coding
+  const lfq = new Uint16Array(nC * nM);
+  { const half = nC * nM;
+    for (let i = 0; i < nC; i++) { let q = 0; const base = i * nM;
+      for (let t = 0; t < nM; t++) { const d = lfRaw[base + t] | (lfRaw[half + base + t] << 8); q = (q + d) & 0xFFFF; lfq[base + t] = q; } }
+  }
+  const lfAt = (i, m) => { const q = lfq[i * nM + m]; return q === 65535 ? null : q * M.lfScale[i]; };
+  const lfText = (i, m) => { const v = lfAt(i, m); if (v == null) return 'no data';
+    return M.lfScale[i] > 1 ? 'about ' + (Math.round(v / 10) * 10).toLocaleString('en-US') : Math.round(v).toLocaleString('en-US'); };
+
+  // ---- helpers
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const [fy, fm] = M.frameStart.split('-').map(Number);
+  const frameLabel = f => { const mi = fm - 1 + f; return MONTHS[mi % 12] + ' ' + (fy + Math.floor(mi / 12)); };
+  const frameYM = f => { const mi = fm - 1 + f; return (fy + Math.floor(mi / 12)) + '-' + String(mi % 12 + 1).padStart(2, '0'); };
+  const pctText = v => (v < 0 ? '−' : v > 0 ? '+' : '') + (Math.abs(v) / 10).toFixed(1) + '%';
+  const short = s => s.replace(' County', '').replace(' Municipio', '').replace(' Parish', ' Par.').replace(' Census Area', ' CA').replace(' Borough', ' Bor.');
+  const fmtN = n => n.toLocaleString('en-US');
+  const signed = n => (n > 0 ? '+' : n < 0 ? '−' : '') + fmtN(Math.abs(n));
+
+  // ---- state
+  let f = nF - 1, playing = false, speed = 1, hover = -1, pinned = -1, showWatch = false;
+  const SPEED_MPS = { 1: 3, 2: 6, 5: 15 };   // months per second
+
+  // ---- map canvas
+  const wrap = $('mapwrap'), canvas = $('map'), ctx = canvas.getContext('2d');
+  let cw = 0, ch = 0, dpr = 1, S = 1;
+  function resize() {
+    const wide = root.clientWidth >= 680; if (wide && !$('listsbox').open) { $('listsbox').open = true; drawLists(); }
+    const w = Math.max(200, wrap.clientWidth); const h = Math.round(w * REF_H / REF_W);
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+    canvas.style.height = h + 'px'; cw = w; ch = h; S = canvas.width / REF_W;
+    drawMap(); drawChart();
+  }
+  const stripes = (color) => { const c = document.createElement('canvas'); c.width = c.height = 6; const g = c.getContext('2d');
+    g.strokeStyle = color; g.lineWidth = 1.2; g.beginPath(); g.moveTo(-1, 7); g.lineTo(7, -1); g.moveTo(-1, 1); g.lineTo(1, -1); g.moveTo(5, 7); g.lineTo(7, 5); g.stroke(); return g.canvas; };
+  let patPos = null, patNeg = null, borders = null, bordersKey = '';
+  function borderLayer(cs) {
+    const key = canvas.width + 'x' + canvas.height + cs.getPropertyValue('--paper');
+    if (borders && bordersKey === key) return borders;
+    const off = document.createElement('canvas'); off.width = canvas.width; off.height = canvas.height;
+    const g = off.getContext('2d'); g.setTransform(S, 0, 0, S, 0, 0); g.lineJoin = 'round';
+    g.lineWidth = 0.55 / S * (dpr > 1 ? 1.3 : 1); g.strokeStyle = cs.getPropertyValue('--paper').trim() || '#fff';
+    for (let i = 0; i < nC; i++) if (paths[i]) g.stroke(paths[i]);
+    bordersKey = key; return borders = off;
+  }
+  function drawMap() {
+    if (!cw) return;
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.setTransform(S, 0, 0, S, 0, 0);
+    const row = f * nC;
+    const cs = getComputedStyle(root);
+    for (let i = 0; i < nC; i++) { const p = paths[i]; if (!p) continue;
+      const c = cat[row + i]; ctx.fillStyle = c === 255 ? M.nodata : M.colors[c]; ctx.fill(p); }
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(borderLayer(cs), 0, 0); ctx.setTransform(S, 0, 0, S, 0, 0);
+    if (showWatch) {
+      if (!patPos) { patPos = ctx.createPattern(stripes(M.palette.teal), 'repeat'); patNeg = ctx.createPattern(stripes('#F7F5EF'), 'repeat'); }
+      ctx.save(); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      for (let i = 0; i < nC; i++) { const w = watch[row + i]; if (!w || !paths[i]) continue;
+        ctx.save(); ctx.setTransform(S, 0, 0, S, 0, 0); ctx.clip(paths[i]); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.fillStyle = w === 1 ? patPos : patNeg; ctx.fillRect(0, 0, cw, ch); ctx.restore(); }
+      ctx.restore(); ctx.setTransform(S, 0, 0, S, 0, 0);
+    }
+    ctx.strokeStyle = cs.getPropertyValue('--line').trim(); ctx.lineWidth = 0.8 / S;
+    for (const k in M.insets) { const b = M.insets[k]; ctx.strokeRect(b[0], b[1], b[2], b[3]); }
+    const sel = pinned >= 0 ? pinned : hover;
+    if (sel >= 0 && paths[sel]) { ctx.strokeStyle = cs.getPropertyValue('--ink').trim(); ctx.lineWidth = 1.6 / S; ctx.stroke(paths[sel]); }
+    const note = M.notes[f]; $('note').hidden = !note; if (note) $('note').textContent = note;
+  }
+  function hit(px, py) {   // px,py in CSS pixels within the canvas
+    const cx = px * dpr, cy = py * dpr, rx = cx / S, ry = cy / S;
+    ctx.setTransform(S, 0, 0, S, 0, 0);
+    for (let i = nC - 1; i >= 0; i--) { const b = bbox[i]; if (!b || rx < b[0] || rx > b[2] || ry < b[1] || ry > b[3]) continue;
+      if (ctx.isPointInPath(paths[i], cx, cy)) return i; }
+    return -1;
+  }
+  canvas.addEventListener('mousemove', e => { const r = canvas.getBoundingClientRect(); const i = hit(e.clientX - r.left, e.clientY - r.top);
+    if (i !== hover) { hover = i; drawMap(); drawChart(); } });
+  canvas.addEventListener('mouseleave', () => { if (hover !== -1) { hover = -1; drawMap(); drawChart(); } });
+  canvas.addEventListener('click', e => { const r = canvas.getBoundingClientRect(); const i = hit(e.clientX - r.left, e.clientY - r.top);
+    pinned = (i === pinned) ? -1 : i; drawMap(); drawChart(); });
+
+  // ---- hover chart: fixed scale, sliding window
+  const chart = $('chart'), cctx = chart.getContext('2d');
+  const SPAN = 40, WINDOW = 240;
+  function drawChart() {
+    const i = pinned >= 0 ? pinned : hover;
+    const w = chart.clientWidth || 280, h = chart.clientHeight || 150; const d = Math.min(window.devicePixelRatio || 1, 2);
+    if (chart.width !== Math.round(w * d)) { chart.width = Math.round(w * d); chart.height = Math.round(h * d); }
+    cctx.setTransform(d, 0, 0, d, 0, 0); cctx.clearRect(0, 0, w, h);
+    const cs = getComputedStyle(root); const ink = cs.getPropertyValue('--ink').trim(), ink3 = cs.getPropertyValue('--ink-3').trim(), grid = cs.getPropertyValue('--grid').trim();
+    if (i < 0) { $('who').textContent = 'Hover or tap a county';
+      $('what').innerHTML = 'Labor force each month over the 20 years behind the color, indexed to the start of the window. Same vertical scale for every county.';
+      cctx.fillStyle = ink3; cctx.font = '12px sans-serif'; cctx.fillText('No county selected', 8, h / 2); return; }
+    const mEnd = m0 + f, mStart = mEnd - WINDOW;
+    const vals = new Array(WINDOW + 1); for (let t = 0; t <= WINDOW; t++) vals[t] = lfAt(i, mStart + t);
+    const c = cat[f * nC + i], p = pct[f * nC + i], wf = watch[f * nC + i];
+    const name = M.counties[i].n;
+    $('who').textContent = name;
+    let what = 'Labor force ' + lfText(i, mEnd);
+    if (c !== 255) what += ' · ' + pctText(p) + ' over 20 years · <span style="color:' + (c <= 1 ? M.palette.coral : M.palette.teal) + '">' + M.labels[c] + '</span>';
+    else what += ' · no 20-year comparison this month';
+    if (wf) what += ' · <span class="flag">' + (wf === 1 ? 'Positive watch' : 'Negative watch') + '</span>';
+    $('what').innerHTML = what;
+    const base = vals[0];
+    if (base == null) { cctx.fillStyle = ink3; cctx.font = '12px sans-serif'; cctx.fillText('No data at the start of this window', 8, h / 2); return; }
+    const idx = vals.map(v => v == null ? null : v / base * 100);
+    let lo = Infinity, hi = -Infinity; for (const v of idx) if (v != null) { if (v < lo) lo = v; if (v > hi) hi = v; }
+    let span = SPAN, compressed = false; if (hi - lo > SPAN) { span = (hi - lo) * 1.08; compressed = true; }
+    const mid = (hi + lo) / 2; const y0 = mid - span / 2, y1 = mid + span / 2;
+    const L = 34, R = 8, T = 8, B = 18; const pw = w - L - R, ph = h - T - B;
+    const X = t => L + t / WINDOW * pw, Y = v => T + (y1 - v) / span * ph;
+    cctx.font = '10px sans-serif'; cctx.textAlign = 'right'; cctx.textBaseline = 'middle';
+    const step = compressed ? Math.max(10, Math.round(span / 4 / 10) * 10) : 10;
+    for (let g = Math.ceil(y0 / step) * step; g <= y1; g += step) { cctx.strokeStyle = g === 100 ? ink3 : grid; cctx.lineWidth = g === 100 ? 1 : 0.5;
+      cctx.beginPath(); cctx.moveTo(L, Y(g)); cctx.lineTo(w - R, Y(g)); cctx.stroke(); cctx.fillStyle = ink3; cctx.fillText(g === 100 ? '100' : String(g), L - 4, Y(g)); }
+    cctx.strokeStyle = c === 255 ? ink3 : (c <= 1 ? M.palette.coral : M.palette.teal); cctx.lineWidth = 1.5; cctx.lineJoin = 'round'; cctx.beginPath(); let pen = false;
+    for (let t = 0; t <= WINDOW; t++) { const v = idx[t]; if (v == null) { pen = false; continue; } if (!pen) { cctx.moveTo(X(t), Y(v)); pen = true; } else cctx.lineTo(X(t), Y(v)); }
+    cctx.stroke();
+    const dot = (t, v) => { cctx.beginPath(); cctx.arc(X(t), Y(v), 3.5, 0, Math.PI * 2); cctx.fillStyle = cctx.strokeStyle; cctx.fill(); cctx.lineWidth = 1.5; cctx.strokeStyle = cs.getPropertyValue('--panel').trim(); cctx.stroke(); };
+    dot(0, 100); if (idx[WINDOW] != null) dot(WINDOW, idx[WINDOW]);
+    cctx.fillStyle = ink3; cctx.textAlign = 'left'; cctx.textBaseline = 'alphabetic';
+    const sy = fy + Math.floor((fm - 1 + f) / 12) - 20; cctx.fillText(MONTHS[(fm - 1 + f) % 12].slice(0, 3) + ' ' + sy, L, h - 5);
+    cctx.textAlign = 'right'; cctx.fillText(MONTHS[(fm - 1 + f) % 12].slice(0, 3) + ' ' + (sy + 20), w - R, h - 5);
+    cctx.textAlign = 'center'; cctx.fillText('start of window = 100' + (compressed ? ' · compressed scale' : ''), L + pw / 2, h - 5);
+  }
+
+  // ---- stats
+  const moversCache = new Array(nF).fill(null);
+  function movers(fr) {
+    if (moversCache[fr]) return moversCache[fr];
+    const counts = new Array(NB).fill(0); let total = 0, posSL = 0, negOut = 0, slPrev = 0;
+    let inSL = 0, outSL = 0, down = 0, up = 0, better = 0, worse = 0, comparable = 0;
+    const row = fr * nC, prev = (fr - 12) * nC, has = fr >= 12;
+    for (let i = 0; i < nC; i++) { const c = cat[row + i]; if (c === 255) continue; counts[c]++; total++;
+      const w = watch[row + i]; if (w === 1 && c === SL) posSL++; if (w === 2 && c !== SL) negOut++;
+      if (!has) continue; const c0 = cat[prev + i]; if (c0 === 255) continue; if (c0 === SL) slPrev++; comparable++;
+      if (c === SL && c0 !== SL) inSL++; if (c0 === SL && c !== SL) outSL++; if (c < c0) down++; if (c > c0) up++;
+      const d = pct[row + i] - pct[prev + i]; if (d > 0) better++; else if (d < 0) worse++; }
+    let slPrevAll = 0; if (has) for (let i = 0; i < nC; i++) if (cat[prev + i] === SL) slPrevAll++;
+    return moversCache[fr] = { counts, total, posSL, negOut, inSL, outSL, down, up, better, worse, comparable, has, slPrevAll };
+  }
+  function drawStats() {
+    const s = movers(f); let html = '';
+    for (let k = NB - 1; k >= 0; k--) { const share = s.total ? s.counts[k] / s.total * 100 : 0;
+      html += '<span><i class="sw" style="background:' + M.colors[k] + '"></i>' + M.labels[k] + '</span><span class="bar"><i style="width:' + share.toFixed(1) + '%;background:' + M.colors[k] + '"></i></span><span class="n">' + fmtN(s.counts[k]) + '</span>'; }
+    html += '<span>Counties with data</span><span></span><span class="n">' + fmtN(s.total) + '</span>';
+    $('bands').innerHTML = html;
+    let m = '';
+    if (s.has) {
+      m += '<span>Structural Loss a year earlier</span><span class="n">' + fmtN(s.slPrevAll) + '</span>';
+      m += '<span>Structural Loss now</span><span class="n">' + fmtN(s.counts[SL]) + '</span>';
+      m += '<span>Entered Structural Loss</span><span class="n neg">' + fmtN(s.inSL) + '</span>';
+      m += '<span>Left Structural Loss</span><span class="n pos">' + fmtN(s.outSL) + '</span>';
+      m += '<span>Net, counties in both months</span><span class="n ' + (s.inSL - s.outSL > 0 ? 'neg' : 'pos') + '">' + signed(s.inSL - s.outSL) + '</span>';
+      m += '<span>Moved down a band</span><span class="n neg">' + fmtN(s.down) + '</span>';
+      m += '<span>Moved up a band</span><span class="n pos">' + fmtN(s.up) + '</span>';
+      m += '<span>20-year change worsened</span><span class="n">' + fmtN(s.worse) + '</span>';
+      m += '<span>20-year change improved</span><span class="n">' + fmtN(s.better) + '</span>';
+    } else m += '<span class="cap">No same-month comparison a year earlier for the first year of frames.</span>';
+    m += '<span>Structural Loss, positive watch</span><span class="n pos">' + fmtN(s.posSL) + '</span>';
+    m += '<span>Other bands, negative watch</span><span class="n neg">' + fmtN(s.negOut) + '</span>';
+    m += '<span class="cap">Versus the same month a year earlier, counties with data in both months' + (s.has ? ' (' + fmtN(s.comparable) + ')' : '') + '.</span>';
+    $('movers').innerHTML = m;
+    if ($('listsbox').open) drawLists();
+  }
+  function topList(filter, n) { const row = f * nC, mEnd = m0 + f; const arr = [];
+    for (let i = 0; i < nC; i++) if (filter(i, row)) { const v = lfAt(i, mEnd); if (v != null) arr.push([i, v]); }
+    arr.sort((a, b) => b[1] - a[1]); return arr.slice(0, n); }
+  const compact = v => v >= 1e6 ? (v / 1e6).toFixed(2) + 'M' : v >= 1e4 ? (v / 1e3).toFixed(0) + 'K' : v >= 1e3 ? (v / 1e3).toFixed(1) + 'K' : String(Math.round(v));
+  function li(rows) { return '<ol>' + rows.map(([i, v]) => '<li><span class="nm">' + short(M.counties[i].n) + '</span><span class="v">' + compact(v) + ' · ' + pctText(pct[f * nC + i]) + '</span></li>').join('') + '</ol>'; }
+  function drawLists() {
+    const prev = (f - 12) * nC, N = framed ? 3 : 5; let html = '';
+    if (f >= 12) html += '<h3>Entered Structural Loss, by labor force</h3>' + li(topList((i, row) => cat[row + i] === SL && cat[prev + i] !== 255 && cat[prev + i] !== SL, N));
+    html += '<h3>Structural Loss, positive watch</h3>' + li(topList((i, row) => cat[row + i] === SL && watch[row + i] === 1, N));
+    html += '<h3>Negative watch outside Structural Loss</h3>' + li(topList((i, row) => cat[row + i] !== 255 && cat[row + i] !== SL && watch[row + i] === 2, N));
+    $('lists').innerHTML = html;
+  }
+  $('listsbox').addEventListener('toggle', e => { if (e.target.open) drawLists(); });
+
+  // ---- controls
+  const slider = $('slider'); slider.max = nF - 1; slider.value = f;
+  function setFrame(nf, fromSlider) { f = Math.max(0, Math.min(nF - 1, nf)); if (!fromSlider) slider.value = f;
+    $('month').textContent = frameLabel(f); drawMap(); drawChart(); drawStats(); }
+  slider.addEventListener('input', () => setFrame(+slider.value, true));
+  $('prev').addEventListener('click', () => { stop(); setFrame(f - 1); });
+  $('next').addEventListener('click', () => { stop(); setFrame(f + 1); });
+  let last = 0, acc = 0;
+  function tick(ts) { if (!playing) return; if (!last) last = ts; acc += (ts - last) / 1000 * SPEED_MPS[speed]; last = ts;
+    const steps = Math.floor(acc); if (steps > 0) { acc -= steps; if (f + steps >= nF - 1) { setFrame(nF - 1); stop(); return; } setFrame(f + steps); }
+    requestAnimationFrame(tick); }
+  function play() { if (f >= nF - 1) setFrame(0); playing = true; last = 0; acc = 0; $('play').textContent = '❚❚ Pause'; $('play').classList.add('on'); requestAnimationFrame(tick); }
+  function stop() { playing = false; $('play').textContent = f >= nF - 1 ? '↻ Replay' : '▶ Play'; $('play').classList.remove('on'); }
+  $('play').addEventListener('click', () => playing ? stop() : play());
+  for (const b of document.querySelectorAll('.spd button')) b.addEventListener('click', () => { speed = +b.dataset.spd;
+    for (const o of document.querySelectorAll('.spd button')) o.classList.toggle('on', o === b); });
+  $('watch').addEventListener('change', e => { showWatch = e.target.checked; drawMap(); });
+  document.addEventListener('keydown', e => { if (e.target.tagName === 'INPUT' && e.target.type !== 'range') return;
+    if (e.key === ' ') { e.preventDefault(); playing ? stop() : play(); }
+    else if (e.key === 'ArrowLeft') { stop(); setFrame(f - 1); } else if (e.key === 'ArrowRight') { stop(); setFrame(f + 1); } });
+
+  // ---- legend, footer
+  { let html = ''; for (let k = NB - 1; k >= 0; k--) html += '<span><i class="sw" style="background:' + M.colors[k] + '"></i>' + M.labels[k] + '</span>';
+    html += '<span><i class="sw" style="background:' + M.nodata + '"></i>No data</span><span><i class="sw str"></i>Watch flag (toggle above)</span>';
+    $('legend').innerHTML = html; }
+  $('src').textContent = M.source + ' Latest month ' + M.latest + '. Data 4 The People analysis.';
+  $('method').textContent = 'Bands: change in labor force versus the same month 20 years earlier; the 20-year change also moves when the month 20 years back leaves the window. Positive watch: 12-month average at least 2% above its 5-year low, the low at least a year old, average rising, 3-year change positive. Negative watch: 12-month average down at least 1% in a year and 3-year change of −2% or worse.';
+
+  // ---- deep link: #fips=26145&month=2026-04&watch=1
+  { const h = new URLSearchParams(location.hash.slice(1));
+    if (h.get('month')) { const [y, m] = h.get('month').split('-').map(Number); const nf = (y - fy) * 12 + (m - fm); if (nf >= 0 && nf < nF) f = nf; }
+    if (h.get('fips')) { const i = M.counties.findIndex(c => c.f === h.get('fips')); if (i >= 0) pinned = i; }
+    if (h.get('watch') === '1') { showWatch = true; $('watch').checked = true; } }
+
+  // ---- go
+  $('loading').hidden = true; $('app').hidden = false;
+  new ResizeObserver(resize).observe(wrap);
+  resize(); setFrame(f); stop();
+})().catch(err => { document.getElementById('loading').textContent = 'Could not load the map: ' + err.message; console.error(err); });
+</script>
+</body>
+</html>

@@ -1,6 +1,9 @@
 # Interactive map: enhancement plan
 
-Status: draft for Eric's review. Nothing here has been run or built.
+Status: built Sep 14, 2026 as `dist/index.html` (about 3.9 MB). Deviations
+from the plan below are noted in place. Labor force values in the hover
+chart and lists are exact for counties under 65,000 and rounded to the
+nearest 10 above that ("about"), a trade for the 16-bit encoding.
 
 Covers Stage E (the map), which replaces the Tableau embed and the ffmpeg
 timelapse, plus a new Stage C2 (watch flags) that feeds both the map and the
@@ -168,9 +171,13 @@ out:
 
 **Recommendation: candidate 2 with candidate 3 as a confirmation.**
 Positive watch = 12-month average LF at least 2% above its 5-year low, the
-low at least 12 months old, and the 3-year change positive. Negative watch =
-12-month average within 1% of a 5-year low set in the last 12 months, and the
-3-year change at or below -2%. Reason: the trough rule is exactly the
+low at least 12 months old, the average up at least 1% from a year earlier,
+and the 3-year change positive. Negative watch = 12-month average down at
+least 1% from a year earlier and the 3-year change at or below -2%.
+(Built Sep 14, 2026. The first negative rule, "within 1% of a 5-year low
+set in the last 12 months", missed Saginaw and Genesee, MI in 2026, both
+down about 5% in three years but still above their 2021 COVID trough. The
+year-over-year test on the average replaced it.) Reason: the trough rule is exactly the
 "bottomed out and recovering" idea in plain words, the 12-month average
 keeps a single odd month from tripping it, and the 3-year check stops a
 one-year bounce from counting as a recovery. Both are same-month safe and

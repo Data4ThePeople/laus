@@ -18,18 +18,24 @@ counties in Structural Loss (strictly below -10%).
 src/lfd/ingest.py     Stage A: download + cache BLS flat files -> data/laus_county_lf.parquet
 src/lfd/classify.py   Stage B: 20-year pct_change + bands -> data/classified.parquet
                       BINS and LABELS live here and nowhere else.
-src/lfd/compare.py    Stage C: two-snapshot comparison (to build)
+src/lfd/compare.py    Stage C: two-snapshot comparison, `python -m lfd.compare 2025-04 2026-04`
+src/lfd/watch.py      Stage C2: positive / negative watch flags -> data/watch.parquet
 src/lfd/tables.py     Stage D: matplotlib tables, 200 DPI (to build)
-src/lfd/viz.py        Stage E: self-contained interactive map -> dist/index.html (to build)
-src/lfd/cli.py        `lfd ingest`, `lfd classify`, later `lfd snapshot`, `lfd viz`
+src/lfd/geo.py        Stage E1: Census county shapes, composite Albers with AK/HI/PR insets -> data/geo.json
+src/lfd/viz.py        Stage E2: encodes blocks + templates/index.html -> dist/index.html
+src/lfd/templates/    the page: vanilla JS, no library; carries no data of its own
+src/lfd/cli.py        `lfd ingest | classify | snapshot | viz`
 tests/                pytest; boundary cases and small synthetic panels
 data/raw/             BLS flat files, gitignored, several hundred MB
 outputs/              rendered tables
 dist/                 built viz
 ```
 
-Run with the project venv: `.venv/bin/python -m lfd.ingest`, then
-`.venv/bin/python -m lfd.classify --snapshot 2026-04`. Tests: `.venv/bin/python -m pytest`.
+Run with the project venv, in order: `python -m lfd.ingest`, `lfd.classify`,
+`lfd.watch`, `lfd.geo`, `lfd.viz`. Tests: `.venv/bin/python -m pytest`.
+Deep links into the viz: `dist/index.html#fips=26145&month=2026-04&watch=1`.
+Preview at sizes with headless Chrome; note it enforces a minimum window
+width of about 500px, so test phone width through a 390px iframe wrapper.
 
 ## Rules
 

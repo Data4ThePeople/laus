@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-map = ["shapely>=2.0", "pyproj>=3.6"]
+map = ["shapely>=2.0", "pyproj>=3.6", "pyshp>=2.3"]
 dev = ["pytest>=8"]
 
 [project.scripts]

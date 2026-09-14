@@ -5,12 +5,13 @@ from __future__ import annotations
 
 import sys
 
-from lfd import classify, compare, ingest
+from lfd import classify, compare, ingest, viz
 
 COMMANDS = {
     "ingest": ingest.main,
     "classify": classify.main,
     "snapshot": compare.main,
+    "viz": viz.main,
 }
 
 

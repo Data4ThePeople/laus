@@ -18,3 +18,4 @@ build/
 
 # ide
 .DS_Store
+data/*.json
