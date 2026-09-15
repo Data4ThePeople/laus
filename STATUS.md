@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: labor-force-history-viz (update of the live Visualization methodology page; a second Data 4 Thought post follows)
-Step: 2c
+Step: 2d
 Since: 2026-09-15
 
 ## Steps
@@ -16,7 +16,7 @@ Since: 2026-09-15
 | 1  | Exploration and analysis | 2026-09-14 | Pipeline, comparison, watch flags and interactive map built; live at https://data4thepeople.github.io/laus/. Tie-out in ~/.claude/plans/snazzy-sniffing-coral.md |
 | 2a | Draft with brackets resolved | 2026-09-15 | Full rewrite of the Visualization methodology page modeled on the petroleum inventory page; tables in tables.html |
 | 2b | Eric's edit, Claude's look-over | 2026-09-15 | No edits from Eric; 15 look-over items accepted |
-| 2c | Slice markup | | |
+| 2c | Slice markup | 2026-09-15 | 67 slices; no drop cap or dividers, matching the petroleum page; 2 empty table embeds |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
@@ -35,3 +35,4 @@ None.
 - 2026-09-15 Step 2a done for labor-force-history-viz. Step 2b opened: Eric edits POST.md directly, then asks for the look-over. A separate STATUS for the Data 4 Thought post is planned once the viz post is through the process.
 - 2026-09-15 Step 2b look-over: 15 items, all accepted and applied. Map note no longer states a cause for the missing Puerto Rico months. README added. No LICENSE added; the free-to-use answer now defers to the site's terms of use.
 - 2026-09-15 Step 2b done. Step 2c opened: slice markup.
+- 2026-09-15 Step 2c done. Step 2d opened: hero.
