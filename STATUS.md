@@ -50,3 +50,4 @@ None.
 - 2026-09-15 Step 2g: Eric approved the email with the five feature lead-ins bolded.
 - 2026-09-15 Step 2g done. labor-force-history-viz complete: every step 1 through 2g confirmed. Next: the Data 4 Thought main-takeaways post, with its own STATUS file.
 - 2026-09-15 Social video: posts/labor-force-history-viz/labor-force-history-viz-timelapse-1080p.mp4, 1920x1080, 38.7s, 7.5 MB. Jan 2010 to Jul 2026 at 6 months a second (the page's 2x speed), Saginaw pinned. Rebuild with scripts/make_video.py after each data update.
+- 2026-09-15 After completion: added a limitations note on the January 2026 population-control break and the within-year slowdown (checked against the national CPS series and the BLS control-adjustment table). POST.md edited and the Prismic draft re-pushed; formally this reopens 2b through 2f if Eric wants the gates re-run.

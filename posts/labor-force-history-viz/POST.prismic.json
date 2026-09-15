@@ -1155,6 +1155,18 @@
           },
           {
             "type": "list-item",
+            "text": "2026 sits on the far side of a population-control break. Every January the household survey adopts new Census population estimates, and they are never applied to earlier months. The January 2026 update used estimates with much lower net international migration, and BLS puts its one-time effect at about 355,000 fewer people in the national labor force, or 0.2%. Any comparison that crosses January 2026, including the change panel on this page, carries that step. It accounts for roughly a tenth of the swing in the national year-over-year rate. The slowdown itself is wider than the break: from January to July 2026, 38% of counties lost labor force, against 19% to 30% in every year since 2010 except 2020, and that window contains no control change. This year's annual revision of county data was also delayed by the appropriations lapse, so the 2026 months rest on a less settled base than usual.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 56,
+                "type": "strong"
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "list-item",
             "text": "Same-month only. Because the data is not seasonally adjusted, the tool never compares one month to the month before it. Every comparison on the page is same-month: 20 years back for the bands, one year back for the change panel, three years back for the flags.",
             "spans": [
               {
