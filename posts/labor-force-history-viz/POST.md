@@ -32,7 +32,7 @@ dividers: false
 
 *This post includes an interactive data visualization, which is best viewed on a computer or tablet. However, if you must use your phone, at least turn it landscape.*
 
-The map below shows every county's 20-year change in labor force, month by month since January 2010.
+The map below shows every U.S. county's 20-year change in civilian labor force, month by month since January 2010, built from the Bureau of Labor Statistics' Local Area Unemployment Statistics.
 
 <iframe src="https://data4thepeople.github.io/laus/" width="100%" height="780" style="border:0" title="Twenty-year change in labor force by county"></iframe>
 
@@ -52,6 +52,8 @@ The tool provides four views of the same data:
 2. **The play animation**, the same map moving month by month, so the spread of structural loss is visible as it happens
 3. **The hover chart**, one county's labor force over the exact 20-year window behind its color
 4. **The watch flags and stats panels**, which show which counties are turning up or down right now, and how the counts have moved since a year earlier
+
+The visualization is free, and we rebuild it after BLS publishes each new month of county data.
 
 ## How to use
 
@@ -231,7 +233,7 @@ Each time BLS publishes a new month of county data, roughly a month to six weeks
 
 ### Why do the counts here differ from the June 2026 article?
 
-BLS revised the county data after that article was written. The April 2026 Structural Loss count moved from 1,160 to 1,156, and the one-year change from 132 to 128. This page reflects the latest data.
+BLS revised the county data after [that article](https://www.data4thepeople.com/p/geographic-virus-accelerating/) was written. The April 2026 Structural Loss count moved from 1,160 to 1,156, and the one-year change from 132 to 128. This page reflects the latest data.
 
 ### Is the visualization free to use?
 

@@ -30,7 +30,7 @@
           },
           {
             "type": "paragraph",
-            "text": "The map below shows every county's 20-year change in labor force, month by month since January 2010.",
+            "text": "The map below shows every U.S. county's 20-year change in civilian labor force, month by month since January 2010, built from the Bureau of Labor Statistics' Local Area Unemployment Statistics.",
             "spans": [],
             "direction": "ltr"
           }
@@ -170,6 +170,12 @@
                 "type": "strong"
               }
             ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "The visualization is free, and we rebuild it after BLS publishes each new month of county data.",
+            "spans": [],
             "direction": "ltr"
           }
         ]
@@ -1571,7 +1577,18 @@
           {
             "type": "paragraph",
             "text": "BLS revised the county data after that article was written. The April 2026 Structural Loss count moved from 1,160 to 1,156, and the one-year change from 132 to 128. This page reflects the latest data.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 34,
+                "end": 46,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/geographic-virus-accelerating/",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           }
         ]

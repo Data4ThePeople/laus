@@ -37,3 +37,4 @@ None.
 - 2026-09-15 Step 2b done. Step 2c opened: slice markup.
 - 2026-09-15 Step 2c done. Step 2d opened: hero.
 - 2026-09-15 Step 2d done. Step 2e opened: SEO.
+- 2026-09-15 Step 2e: Eric approved the assumed searches (labor force by county, county labor force data, labor force map by county, labor force decline by county) and accepted crawlable-text edits 1 to 3.
