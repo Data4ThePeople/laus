@@ -5,8 +5,8 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 
 ## Current
 
-Post: labor-force-history-viz (update of the live Visualization methodology page; a second Data 4 Thought post follows)
-Step: 2g
+Post: labor-force-history-viz (complete)
+Step: complete
 Since: 2026-09-15
 
 ## Steps
@@ -20,7 +20,7 @@ Since: 2026-09-15
 | 2d | Hero 1680x1080 + alt text | 2026-09-15 | Padded snapshot of the viz, July 2026, Saginaw pinned; alt 438 chars |
 | 2e | SEO | 2026-09-15 | Meta title 56 chars, description 136, 8 keywords; Dataset + WebApplication + FAQPage schema; 3 crawlable edits |
 | 2f | Pushed to Prismic (draft) | 2026-09-15 | Update of live doc abfuCxQAACYAxMRO in the Migration Release; tables inline (Default variation); limitations blurb; divider before FAQ; embed margin reset |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-09-15 | Rebuild announcement only; Nebraska watch-flag image; feature lead-ins bolded |
 
 ## Stale
 
@@ -48,3 +48,4 @@ None.
 - 2026-09-15 Step 2f done. Step 2g opened: announcement email for the rebuild and new functionality only.
 - 2026-09-15 Step 2g: EMAIL.md drafted as a rebuild announcement (no findings in the text). Image: Nebraska map with watch flags, cropped so it carries no numbers. Email hero JPG 206KB. Waiting on approve or reject.
 - 2026-09-15 Step 2g: Eric approved the email with the five feature lead-ins bolded.
+- 2026-09-15 Step 2g done. labor-force-history-viz complete: every step 1 through 2g confirmed. Next: the Data 4 Thought main-takeaways post, with its own STATUS file.
