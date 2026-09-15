@@ -66,9 +66,10 @@
     .lcard summary{display:none}
   }
   @container (min-width: 900px){ .lfd .movers{grid-template-columns:1fr auto 1fr auto; column-gap:22px} }
-  @container (max-width: 899.9px){ .lfd.framed #method{display:none} }
+  .lfd.framed #method{display:none}
   .mapwrap{position:relative; width:100%; min-width:0}
-  .mapwrap canvas{display:block; width:100%; height:auto}
+  html, body{margin:0}
+  .mapwrap canvas{display:block; width:100%; height:auto; margin:0 auto}
   .note{position:absolute; left:8px; top:6px; max-width:60%; font-size:12px; color:var(--coral); background:var(--paper);
     padding:3px 6px; border-radius:4px; opacity:.95}
   .side{display:grid; gap:8px; grid-template-columns:1fr; min-width:0; align-content:start}
@@ -174,7 +175,7 @@
 /*__DATA__*/
 (async function () {
   const root = document.getElementById('lfd');
-  const framed = window.self !== window.top;
+  const framed = window.self !== window.top || /(^|[#&])framed=1\b/.test(location.hash);
   const $ = id => document.getElementById(id);
   if (framed) { root.classList.add('framed');
     // Header space is tight in the Prismic frame: the logo travels to the footer.
@@ -267,13 +268,38 @@
     S = Math.min(canvas.width / bw, canvas.height / bh);
     TX = (canvas.width - (b[2] - b[0]) * S) / 2 - b[0] * S; TY = (canvas.height - (b[3] - b[1]) * S) / 2 - b[1] * S;
   }
-  function resize() {
-    const wide = root.clientWidth >= 680; if (wide && !$('listsbox').open) { $('listsbox').open = true; drawLists(); }
-    const w = Math.max(200, wrap.clientWidth); const h = Math.round(w * REF_H / REF_W);
+  function sizeCanvas(w, h) {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
-    canvas.style.height = h + 'px'; cw = w; ch = h; setView();
-    drawMap(); drawChart();
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px'; cw = w; ch = h;
+  }
+  let lastKey = '';
+  function refit() { lastKey = ''; resize(); }
+  function resize() {
+    const wide = root.clientWidth >= 680; if (wide && !$('listsbox').open) { $('listsbox').open = true; drawLists(); }
+    const full = Math.max(200, wrap.clientWidth);
+    // The map's height grows with its width. Inside a fixed-height frame on a wide
+    // screen that pushes the page past the frame and adds a second scrollbar, so
+    // when embedded in a multi-column layout the map shrinks until the page fits.
+    const key = full + 'x' + window.innerHeight;
+    if (key === lastKey) return;   // our own height change re-fires the observer
+    lastKey = key;
+    let w = full, h = Math.round(w * REF_H / REF_W);
+    sizeCanvas(w, h);
+    if (framed && wide) {
+      const doc = document.documentElement;
+      for (let pass = 0; pass < 3; pass++) {
+        const over = doc.scrollHeight - window.innerHeight;
+        if (over <= 0) break;
+        const nh = Math.max(240, h - over - 1);
+        if (nh >= h) break;
+        const before = doc.scrollHeight;
+        h = nh; w = Math.round(h * REF_W / REF_H); sizeCanvas(w, h);
+        if (doc.scrollHeight >= before) break;   // another column sets the height; shrinking cannot help
+      }
+    }
+    root.dataset.fit = document.documentElement.scrollHeight + '/' + window.innerHeight + '@' + window.innerWidth;
+    setView(); drawMap(); drawChart();
   }
   // Watch patterns: rising light stripes = positive watch, falling dark stripes = negative watch.
   const stripes = (color, rising, lw) => { const n = 7, c = document.createElement('canvas'); c.width = c.height = n; const g = c.getContext('2d');
@@ -464,7 +490,7 @@
     $('state').value = state;
     if (state) { mask = new Uint8Array(nC); for (let i = 0; i < nC; i++) if (M.counties[i].s === state) mask[i] = 1; } else mask = null;
     moversCache = new Array(nF).fill(null); if (pinned >= 0 && mask && !mask[pinned]) pinned = -1;
-    setView(); drawMap(); drawChart(); drawStats();
+    setView(); drawMap(); drawChart(); drawStats(); refit();
   }
   document.addEventListener('keydown', e => { if (e.target.tagName === 'INPUT' && e.target.type !== 'range') return;
     if (e.key === ' ') { e.preventDefault(); playing ? stop() : play(); }
@@ -488,7 +514,11 @@
   // ---- go
   $('loading').hidden = true; $('app').hidden = false;
   new ResizeObserver(resize).observe(wrap);
+  window.addEventListener('resize', resize);
   resize(); setFrame(f); stop();
+  // Fit again once the stats panels hold their full text; the first pass ran
+  // before they were drawn and measured a page that was too short.
+  refit(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
 })().catch(err => { document.getElementById('loading').textContent = 'Could not load the map: ' + err.message; console.error(err); });
 </script>
 </body>

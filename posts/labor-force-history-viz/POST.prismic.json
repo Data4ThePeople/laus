@@ -376,7 +376,7 @@
     {
       "slice_type": "html_embed",
       "slice_label": null,
-      "variation": "fullWidth",
+      "variation": "default",
       "version": "initial",
       "items": [],
       "primary": {
@@ -538,7 +538,7 @@
     {
       "slice_type": "html_embed",
       "slice_label": null,
-      "variation": "fullWidth",
+      "variation": "default",
       "version": "initial",
       "items": [],
       "primary": {
