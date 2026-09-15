@@ -25,18 +25,6 @@ dividers: false
 
 ::: spacer 40px
 
-## How to use
-
-**Observe.** The map is a heat map of every U.S. county and Puerto Rico municipio, colored by the change in its civilian labor force over the 20 years ending in the month shown. Six colors run from deepest teal for the fastest-growing counties to darkest coral for the counties in structural loss. The month is in large type above the map.
-
-**Play.** Press Play to watch the map move one month at a time from January 2010 to the latest month. The 1x, 2x and 5x buttons set the speed. The slider and the arrow buttons step to any month by hand, and the left and right arrow keys do the same.
-
-**Hover or tap.** Hover over any county, or tap it on a touch screen, to see its labor force, its 20-year change, its band, and a trend chart of the 20 years behind the color. Tap a county to pin it while the map plays. Hovering is essential. Some counties in structural loss have labor forces that have started to recover over the past three to five years. Others have continued to decline. You cannot see that difference on the map alone.
-
-**Filter by state or territory.** The selector at the top zooms the map to one state or territory and fades the rest. Every count on the page then describes that state only.
-
-**Watch flags.** Tick the box to add stripes to counties whose labor force is turning. Rising white stripes mark a positive watch. Falling dark stripes mark a negative watch. The definitions are in Part 4 below.
-
 ## Purpose
 
 This visualization answers one question at a glance: is this county's labor force growing or shrinking over the long run, and is that changing now?
@@ -51,6 +39,18 @@ The tool provides four views of the same data:
 2. **The play animation**, the same map moving month by month, so the spread of structural loss is visible as it happens
 3. **The hover chart**, one county's labor force over the exact 20-year window behind its color
 4. **The watch flags and stats panels**, which show which counties are turning up or down right now, and how the counts have moved since a year earlier
+
+## How to use
+
+**Observe.** The map is a heat map of every U.S. county and Puerto Rico municipio, colored by the change in its civilian labor force over the 20 years ending in the month shown. Six colors run from deepest teal for the fastest-growing counties to darkest coral for the counties in structural loss. The month is in large type above the map.
+
+**Play.** Press Play to watch the map move one month at a time from January 2010 to the latest month. The 1x, 2x and 5x buttons set the speed. The slider and the arrow buttons step to any month by hand, and the left and right arrow keys do the same.
+
+**Hover or tap.** Hover over any county, or tap it on a touch screen, to see its labor force, its 20-year change, its band, and a trend chart of the 20 years behind the color. Tap a county to pin it while the map plays. Hovering is essential. Some counties in structural loss have labor forces that have started to recover over the past three to five years. Others have continued to decline. You cannot see that difference on the map alone.
+
+**Filter by state or territory.** The selector at the top zooms the map to one state or territory and fades the rest. Every count on the page then describes that state only.
+
+**Watch flags.** Tick the box to add stripes to counties whose labor force is turning. Rising white stripes mark a positive watch. Falling dark stripes mark a negative watch. The definitions are in Part 4 below.
 
 ## What this page is
 
@@ -195,3 +195,41 @@ BLS revises county data each spring. When that happens the whole history is rebu
 Everything needed is public. The repository at [github.com/Data4ThePeople/laus](https://github.com/Data4ThePeople/laus) holds the code, the tests, and this method. Run the five commands in its README in order: ingest, classify, watch, geo, viz. The first downloads about 340 megabytes from BLS; the last writes the page. The band edges, the watch thresholds and the color scale each live in one named place in the code.
 
 If you rebuild it and get a different answer, we want to know. [Contact us](mailto:connect@data4thepeople.com).
+
+## Common questions
+
+### What is the civilian labor force?
+
+It is the number of people age 16 and over who are either working or actively looking for work. It leaves out people who have retired, stopped looking, or moved away. That is why it can shrink while the unemployment rate looks fine: a person who leaves the workforce is not counted as unemployed.
+
+### Why compare each county to 20 years ago instead of last year?
+
+A one-year change is mostly noise in a small county, and it says nothing about whether a place is on a long slide or a long climb. Twenty years covers a full generation of workers entering and leaving, so the change shows the structure of a local economy rather than one good or bad year. The page also shows the one-year and three-year picture through the change panel and the watch flags.
+
+### What does Structural Loss mean?
+
+A county is in Structural Loss when its labor force is down more than 10% from the same month 20 years earlier. The name is ours, not the government's. We chose it because a decline of that size over that long a period is rarely a cycle. It usually reflects an aging population that is not being replaced by younger workers.
+
+### Why is the map gray for October 2025?
+
+BLS did not publish county data for October 2025 because of the federal appropriations lapse. Only Puerto Rico, which runs its own survey, has figures for that month. The map shows the gap as it is rather than filling it in. The same gap appears for seven New Orleans-area parishes from September 2025 through June 2026, because their data 20 years earlier is missing after Hurricane Katrina.
+
+### What is a positive watch or a negative watch?
+
+They are flags for counties whose labor force is turning right now, separate from the 20-year band. A positive watch means the labor force has climbed at least 2% off a low that is at least a year old, is still rising, and is above where it was three years ago. A negative watch means it is down at least 1% from a year ago and at least 2% from three years ago. Part 4 above has the full rules.
+
+### Why does the hover chart not start at zero?
+
+An axis that starts at zero squashes a 15% decline into a nearly flat line, which hides the very thing the tool is meant to show. Instead the chart uses the same vertical scale for every county and slides its window to fit the data. A 10% drop looks the same in a county of 500 workers as in one of 500,000, and it is never stretched to look bigger than it is.
+
+### How often is the page updated?
+
+Each time BLS publishes a new month of county data, roughly a month to six weeks after the month ends. The rebuild is a script, not a manual edit, so every count and every flag updates at once. BLS also revises county data each spring, and the whole history is rebuilt when that happens.
+
+### Why do the counts here differ from the June 2026 article?
+
+BLS revised the county data after that article was written. The April 2026 Structural Loss count moved from 1,160 to 1,156, and the one-year change from 132 to 128. Differences of that size are normal after a revision, and this page always reflects the latest data.
+
+### Is the visualization free to use?
+
+Yes. The page, the code and the data pipeline are public, and you may embed the visualization or rebuild it for your own use. We ask only that you credit Data 4 The People and the U.S. Bureau of Labor Statistics.
