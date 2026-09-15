@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: labor-force-history-viz (update of the live Visualization methodology page; a second Data 4 Thought post follows)
-Step: 2e
+Step: 2f
 Since: 2026-09-15
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-09-15
 | 2b | Eric's edit, Claude's look-over | 2026-09-15 | No edits from Eric; 15 look-over items accepted |
 | 2c | Slice markup | 2026-09-15 | 67 slices; no drop cap or dividers, matching the petroleum page; 2 empty table embeds |
 | 2d | Hero 1680x1080 + alt text | 2026-09-15 | Padded snapshot of the viz, July 2026, Saginaw pinned; alt 438 chars |
-| 2e | SEO | | |
+| 2e | SEO | 2026-09-15 | Meta title 56 chars, description 136, 8 keywords; Dataset + WebApplication + FAQPage schema; 3 crawlable edits |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -38,3 +38,4 @@ None.
 - 2026-09-15 Step 2c done. Step 2d opened: hero.
 - 2026-09-15 Step 2d done. Step 2e opened: SEO.
 - 2026-09-15 Step 2e: Eric approved the assumed searches (labor force by county, county labor force data, labor force map by county, labor force decline by county) and accepted crawlable-text edits 1 to 3.
+- 2026-09-15 Step 2e done. Step 2f opened: push to Prismic as a draft over the live page.
