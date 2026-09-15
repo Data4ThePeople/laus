@@ -64,12 +64,8 @@ We use one measure, the civilian labor force, at one geography, counties and equ
 
 **The files we read, from the BLS bulk download at download.bls.gov/pub/time.series/la/:**
 
-| File | What it holds |
-|---|---|
-| la.data.64.County | every monthly county observation, all measures |
-| la.series | which series is which measure and area |
-| la.area | area codes to county names |
-| la.measure | measure codes; the labor force is measure 06 |
+<!-- table 1 from tables.html goes in this embed -->
+::: embed 240px
 
 The county shapes on the map come from the U.S. Census Bureau's 2024 cartographic boundary files at the 1:5,000,000 scale, which include Puerto Rico. Counties are joined to their data on the five-digit county FIPS code.
 
@@ -87,14 +83,8 @@ Because LAUS county data begins in January 1990, the first month with a 20-year 
 
 ### Step 2: Sort the result into six bands
 
-| Band | 20-year change |
-|---|---|
-| Hyper-Growth | 40% or more |
-| Superstars | 20% up to 40% |
-| Keeping Pace | 10% up to 20% |
-| Below-trend Growth | 0% up to 10% |
-| At-risk Contraction | down less than 10% |
-| Structural Loss | down more than 10% |
+<!-- table 2 from tables.html goes in this embed -->
+::: embed 320px
 
 Each edge belongs to the band above it. A county at exactly -10.0% is At-risk, not Structural Loss. A county at exactly +20.0% is a Superstar. The band edges live in one place in the code and every table, count and color on the page derives from them.
 
