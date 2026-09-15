@@ -39,3 +39,4 @@ None.
 - 2026-09-15 Step 2d done. Step 2e opened: SEO.
 - 2026-09-15 Step 2e: Eric approved the assumed searches (labor force by county, county labor force data, labor force map by county, labor force decline by county) and accepted crawlable-text edits 1 to 3.
 - 2026-09-15 Step 2e done. Step 2f opened: push to Prismic as a draft over the live page.
+- 2026-09-15 Step 2f: pushed as an update to live document abfuCxQAACYAxMRO (id found in the site's public page payload). Draft lands in the Migration Release; tags and author empty. Label "Visualization: Labor Force History". Two empty table embeds await the code from tables.html.

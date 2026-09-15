@@ -3,7 +3,7 @@ title: Visualizing Labor Force Trends by County
 subtitle: Where every U.S. county's labor force stands against 20 years ago, month by month since 2010, and exactly how we built it.
 slug: labor-force-history-viz
 prismic_label: "Visualization: Labor Force History"
-prismic_id:
+prismic_id: abfuCxQAACYAxMRO
 date: 2026-03-16
 updated: 2026-09-15
 section: Visualization
