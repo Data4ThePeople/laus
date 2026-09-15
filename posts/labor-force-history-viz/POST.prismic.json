@@ -1133,19 +1133,14 @@
       }
     },
     {
-      "slice_type": "paragarph_text",
+      "slice_type": "highlited_page_blurb",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
       "primary": {
-        "paragraph_text": [
-          {
-            "type": "heading2",
-            "text": "Honest notes and limitations",
-            "spans": [],
-            "direction": "ltr"
-          },
+        "title": "Honest notes and limitations",
+        "content": [
           {
             "type": "list-item",
             "text": "Recent months are preliminary. BLS county figures for the current year are estimates and are revised the following spring. A band or a flag on the latest month is softer than one from a year ago. Between the June 2026 article and this update, revisions moved the April 2026 Structural Loss count from 1,160 to 1,156.",

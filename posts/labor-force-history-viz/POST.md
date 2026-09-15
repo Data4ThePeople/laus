@@ -246,8 +246,7 @@ We rebuild the page after BLS publishes a new month of county data, which arrive
 
 BLS revises county data each spring. When that happens the whole history is rebuilt, and counts for past months can shift by a few counties.
 
-## Honest notes and limitations
-
+::: blurb Honest notes and limitations
 - **Recent months are preliminary.** BLS county figures for the current year are estimates and are revised the following spring. A band or a flag on the latest month is softer than one from a year ago. Between the June 2026 article and this update, revisions moved the April 2026 Structural Loss count from 1,160 to 1,156.
 - **Same-month only.** Because the data is not seasonally adjusted, the tool never compares one month to the month before it. Every comparison on the page is same-month: 20 years back for the bands, one year back for the change panel, three years back for the flags.
 - **The band edges are sharp.** In April 2026, 47 counties sat within a quarter of a percentage point of the -10% line. Small revisions move counties across it. Lead with the trend, not with the exact count.
@@ -256,6 +255,7 @@ BLS revises county data each spring. When that happens the whole history is rebu
 - **Labor force labels over 65,000 are rounded**, as Part 3 explains.
 - **Color.** The band scale was checked in a perceptual color model for lightness order and contrast, and the watch flags use stripe direction rather than hue so they read without color. The gray used for counties with no data is close to the lightest teal band, so the hover label is the surest way to tell them apart.
 - **We did not invent the data.** Every number on the page comes from BLS. Our contribution is the reorganization: the same-month 20-year comparison, the bands, the watch rules, and the interactivity.
+:::
 
 ## Reproduce it yourself
 
