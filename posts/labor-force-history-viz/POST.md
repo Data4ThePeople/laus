@@ -8,7 +8,7 @@ date: 2026-03-16
 updated: 2026-09-15
 section: Visualization
 hero: images/labor-force-history-viz-hero-1680x1080.png
-hero_alt:
+hero_alt: Screenshot of the Data 4 The People interactive map of 20-year change in labor force by county for July 2026. U.S. counties, with Alaska, Hawaii and Puerto Rico in insets, are shaded from dark teal for growth to dark coral for loss, and dark coral covers much of the Great Plains, the Midwest and Appalachia. A side panel shows Saginaw County, Michigan, down 18.2% over 20 years, and a count of 1,281 of 3,214 counties in Structural Loss.
 meta_title:
 description:
 keywords:
