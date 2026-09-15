@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: labor-force-history-viz (update of the live Visualization methodology page; a second Data 4 Thought post follows)
-Step: 2d
+Step: 2e
 Since: 2026-09-15
 
 ## Steps
@@ -17,7 +17,7 @@ Since: 2026-09-15
 | 2a | Draft with brackets resolved | 2026-09-15 | Full rewrite of the Visualization methodology page modeled on the petroleum inventory page; tables in tables.html |
 | 2b | Eric's edit, Claude's look-over | 2026-09-15 | No edits from Eric; 15 look-over items accepted |
 | 2c | Slice markup | 2026-09-15 | 67 slices; no drop cap or dividers, matching the petroleum page; 2 empty table embeds |
-| 2d | Hero 1680x1080 + alt text | | |
+| 2d | Hero 1680x1080 + alt text | 2026-09-15 | Padded snapshot of the viz, July 2026, Saginaw pinned; alt 438 chars |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -36,3 +36,4 @@ None.
 - 2026-09-15 Step 2b look-over: 15 items, all accepted and applied. Map note no longer states a cause for the missing Puerto Rico months. README added. No LICENSE added; the free-to-use answer now defers to the site's terms of use.
 - 2026-09-15 Step 2b done. Step 2c opened: slice markup.
 - 2026-09-15 Step 2c done. Step 2d opened: hero.
+- 2026-09-15 Step 2d done. Step 2e opened: SEO.
