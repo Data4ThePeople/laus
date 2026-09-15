@@ -9,10 +9,19 @@ updated: 2026-09-15
 section: Visualization
 hero: images/labor-force-history-viz-hero-1680x1080.png
 hero_alt: Screenshot of the Data 4 The People interactive map of 20-year change in labor force by county for July 2026. U.S. counties, with Alaska, Hawaii and Puerto Rico in insets, are shaded from dark teal for growth to dark coral for loss, and dark coral covers much of the Great Plains, the Midwest and Appalachia. A side panel shows Saginaw County, Michigan, down 18.2% over 20 years, and a count of 1,281 of 3,214 counties in Structural Loss.
-meta_title:
-description:
-keywords:
+meta_title: Labor Force by County: 20-Year Change Map, 2010 to Today
+description: See how every U.S. county's labor force changed over 20 years, month by month since 2010. Free interactive map built on BLS county data.
+keywords: labor force by county, county labor force data, labor force map by county, BLS LAUS county data, labor force decline by county, counties losing workers, county labor force trends, structural labor force decline
 schema_type: dataset
+license: https://www.data4thepeople.com/terms-of-use
+temporal: 1990-01/2026-07
+spatial: United States and Puerto Rico, all counties and county equivalents
+measured: Civilian labor force|persons; 20-year change in civilian labor force, same month|percent
+sources: https://www.bls.gov/lau/ | https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html
+credit: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.
+app_url: https://data4thepeople.github.io/laus/
+app_name: Twenty-year change in labor force by county
+app_category: ReferenceApplication
 drop_cap: false
 heading_spacer: 20px
 caption_spacer: 20px
