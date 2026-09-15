@@ -13,6 +13,7 @@ dependencies = [
 [project.optional-dependencies]
 map = ["shapely>=2.0", "pyproj>=3.6", "pyshp>=2.3"]
 dev = ["pytest>=8"]
+video = ["imageio-ffmpeg>=0.5", "pillow>=10"]
 
 [project.scripts]
 lfd = "lfd.cli:main"

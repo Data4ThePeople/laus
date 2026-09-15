@@ -49,3 +49,4 @@ None.
 - 2026-09-15 Step 2g: EMAIL.md drafted as a rebuild announcement (no findings in the text). Image: Nebraska map with watch flags, cropped so it carries no numbers. Email hero JPG 206KB. Waiting on approve or reject.
 - 2026-09-15 Step 2g: Eric approved the email with the five feature lead-ins bolded.
 - 2026-09-15 Step 2g done. labor-force-history-viz complete: every step 1 through 2g confirmed. Next: the Data 4 Thought main-takeaways post, with its own STATUS file.
+- 2026-09-15 Social video: posts/labor-force-history-viz/labor-force-history-viz-timelapse-1080p.mp4, 1920x1080, 38.7s, 7.5 MB. Jan 2010 to Jul 2026 at 6 months a second (the page's 2x speed), Saginaw pinned. Rebuild with scripts/make_video.py after each data update.
