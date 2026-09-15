@@ -41,3 +41,4 @@ None.
 - 2026-09-15 Step 2e done. Step 2f opened: push to Prismic as a draft over the live page.
 - 2026-09-15 Step 2f: pushed as an update to live document abfuCxQAACYAxMRO (id found in the site's public page payload). Draft lands in the Migration Release; tags and author empty. Label "Visualization: Labor Force History". Two empty table embeds await the code from tables.html.
 - 2026-09-15 Plan split into two posts. (1) labor-force-history-viz: its 2g email is only an announcement of the rebuild and the new functionality (play, one map with AK/HI/PR, fair-scale hover chart, state selector, watch flags). No findings or takeaways in it. (2) The Data 4 Thought "main takeaways" post is a separate post worked the next day, with its own STATUS file.
+- 2026-09-15 Step 2f re-push: both tables now go straight into their embeds through a new `::: html` fence in the importer (documented in SLICES.md), and a divider sits before Common questions. Same draft, abfuCxQAACYAxMRO.

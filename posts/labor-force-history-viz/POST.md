@@ -79,7 +79,34 @@ We use one measure, the civilian labor force, at one geography, counties and equ
 
 **The files we read, from the BLS bulk download at download.bls.gov/pub/time.series/la/:**
 
-::: embed 240px
+::: html 240px
+<table style="border-collapse:collapse;width:100%;max-width:640px;font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.5;color:#bbbdc0;">
+    <thead>
+      <tr>
+        <th style="border:1px solid #4D5052;padding:8px 14px;text-align:left;font-weight:700;color:#ffffff;background:rgba(255,255,255,0.07);">File</th>
+        <th style="border:1px solid #4D5052;padding:8px 14px;text-align:left;font-weight:700;color:#ffffff;background:rgba(255,255,255,0.07);">What it holds</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">la.data.64.County</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">every monthly county observation, all measures</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">la.series</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">which series is which measure and area</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">la.area</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">area codes to county names</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">la.measure</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">measure codes; the labor force is measure 06</td>
+      </tr>
+    </tbody>
+  </table>
+:::
 
 The county shapes on the map come from the U.S. Census Bureau's 2024 cartographic boundary files at the 1:5,000,000 scale, which include Puerto Rico. Counties are joined to their data on the five-digit county FIPS code.
 
@@ -99,7 +126,42 @@ Because LAUS county data begins in January 1990, the first month with a 20-year 
 
 The six bands and their ranges are below.
 
-::: embed 320px
+::: html 320px
+<table style="border-collapse:collapse;width:100%;max-width:640px;font-family:'Open Sans',sans-serif;font-size:16px;line-height:1.5;color:#bbbdc0;">
+    <thead>
+      <tr>
+        <th style="border:1px solid #4D5052;padding:8px 14px;text-align:left;font-weight:700;color:#ffffff;background:rgba(255,255,255,0.07);">Band</th>
+        <th style="border:1px solid #4D5052;padding:8px 14px;text-align:left;font-weight:700;color:#ffffff;background:rgba(255,255,255,0.07);">20-year change</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">Hyper-Growth</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">40% or more</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">Superstars</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">20% up to 40%</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">Keeping Pace</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">10% up to 20%</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">Below-trend Growth</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">0% up to 10%</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">At-risk Contraction</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">down less than 10%</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">Structural Loss</td>
+        <td style="border:1px solid #4D5052;padding:8px 14px;">down more than 10%</td>
+      </tr>
+    </tbody>
+  </table>
+:::
 
 Each edge belongs to the band above it. A county at exactly -10.0% is At-risk, not Structural Loss. A county at exactly +20.0% is a Superstar. The band edges live in one place in the code and every table, count and color on the page derives from them.
 
@@ -200,6 +262,8 @@ BLS revises county data each spring. When that happens the whole history is rebu
 Everything needed is public. The repository at [github.com/Data4ThePeople/laus](https://github.com/Data4ThePeople/laus) holds the code, the tests, and this method. Run the five commands in its README in order: ingest, classify, watch, geo, viz. The first downloads about 340 megabytes from BLS; the last writes the page. The band edges, the watch thresholds and the color scale each live in one named place in the code.
 
 If you rebuild it and get a different answer, we want to know. [Contact us](mailto:connect@data4thepeople.com).
+
+::: divider
 
 ## Common questions
 
