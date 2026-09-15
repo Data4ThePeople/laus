@@ -6,7 +6,7 @@ Process: ~/.claude/d4tp-process/PROCESS.md
 ## Current
 
 Post: labor-force-history-viz (update of the live Visualization methodology page; a second Data 4 Thought post follows)
-Step: 2f
+Step: 2g
 Since: 2026-09-15
 
 ## Steps
@@ -19,7 +19,7 @@ Since: 2026-09-15
 | 2c | Slice markup | 2026-09-15 | 67 slices; no drop cap or dividers, matching the petroleum page; 2 empty table embeds |
 | 2d | Hero 1680x1080 + alt text | 2026-09-15 | Padded snapshot of the viz, July 2026, Saginaw pinned; alt 438 chars |
 | 2e | SEO | 2026-09-15 | Meta title 56 chars, description 136, 8 keywords; Dataset + WebApplication + FAQPage schema; 3 crawlable edits |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-09-15 | Update of live doc abfuCxQAACYAxMRO in the Migration Release; tables inline (Default variation); limitations blurb; divider before FAQ; embed margin reset |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -45,3 +45,4 @@ None.
 - 2026-09-15 Step 2f re-push: Honest notes and limitations moved into a titled highlighted page blurb.
 - 2026-09-15 Embed fix: on wide screens the page ran past the 780px frame and scrolled inside it. The map now shrinks to fit when embedded at 680px or wider, and the footer method line is hidden when framed. Checked in a real 780px iframe at 820 to 1800 wide. Table embeds re-pushed in the Default (text-column) variation; the map iframe stays Full Width.
 - 2026-09-15 Second scrollbar traced to the site: each embed renders inside its own iframe with an 8px default body margin, so a 780px map overflowed its 780px slice by 16px. The importer now adds a margin reset to every iframe embed. Draft re-pushed. (Eric's other double scrollbar was a cached copy of the old viz.)
+- 2026-09-15 Step 2f done. Step 2g opened: announcement email for the rebuild and new functionality only.
