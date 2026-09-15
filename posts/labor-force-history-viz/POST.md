@@ -23,6 +23,8 @@ dividers: false
 
 *This post includes an interactive data visualization, which is best viewed on a computer or tablet. However, if you must use your phone, at least turn it landscape.*
 
+The map below shows every county's 20-year change in labor force, month by month since January 2010.
+
 <iframe src="https://data4thepeople.github.io/laus/" width="100%" height="780" style="border:0" title="Twenty-year change in labor force by county"></iframe>
 
 ::: spacer 40px
@@ -31,7 +33,7 @@ dividers: false
 
 This visualization answers one question at a glance: is this county's labor force growing or shrinking over the long run, and is that changing now?
 
-The labor force is the number of people in a county who are working or looking for work. Unlike the unemployment rate, it counts the people who have left the workforce or moved away. A county can post a low unemployment rate and still be losing the workers who pay for its schools, fire departments and roads. We made that case in [Mapping the Viral Spread of Labor Force Decline](https://www.data4thepeople.com/p/viral-labor-force-decline/), and this page is the tool behind it.
+The labor force is the number of people in a county who are working or looking for work. Unlike the unemployment rate, it shrinks when people leave the workforce or move away. A county can post a low unemployment rate and still be losing the workers who pay for its schools, fire departments and roads. We made that case in [Mapping the Viral Spread of Labor Force Decline](https://www.data4thepeople.com/p/viral-labor-force-decline/), and this page is the tool behind it.
 
 The challenge is that a labor force number means little on its own. A county of 20,000 workers may be thriving or collapsing. So this tool compares every county to itself, 20 years earlier in the same calendar month, and sorts the result into six bands. The band we care most about is Structural Loss, a labor force down more than 10% over two decades.
 
@@ -85,6 +87,8 @@ Because LAUS county data begins in January 1990, the first month with a 20-year 
 
 ### Step 2: Sort the result into six bands
 
+The six bands and their ranges are below.
+
 <!-- table 2 from tables.html goes in this embed -->
 ::: embed 320px
 
@@ -92,7 +96,7 @@ Each edge belongs to the band above it. A county at exactly -10.0% is At-risk, n
 
 ### Step 3: Color by band
 
-The six bands use a diverging scale: teal for growth, coral for loss, with the two bands nearest zero in the lightest shades. The scale was checked for lightness order and text contrast so the order of the bands reads without a legend. Counties with no 20-year comparison in a month are drawn in a neutral gray.
+The six bands use a diverging scale: teal for growth, coral for loss, with the two bands nearest zero in the lightest shades. The scale was checked for lightness order and text contrast so darker always means farther from zero on either side. Counties with no 20-year comparison in a month are drawn in a neutral gray.
 
 ### Step 4: Handle the months and counties with no comparison
 
@@ -100,7 +104,7 @@ A county gets no band in a month when either end of the 20-year comparison is mi
 
 - **October 2025.** BLS published no county data for that month except for Puerto Rico, because of the federal appropriations lapse. The map shows October 2025 as gray with a note, and the same hole will appear in October 2045 when that month becomes the base.
 - **Hurricane Katrina.** BLS published no data for seven New Orleans-area parishes from September 2005 through June 2006. Those parishes drop out of the map from September 2025 through June 2026 and return in July 2026.
-- **Puerto Rico in March and April 2020.** The household survey was suspended. Puerto Rico drops out of those two frames and will drop out again in 2040.
+- **Puerto Rico in March and April 2020.** BLS published no Puerto Rico data for those two months. Puerto Rico drops out of those two frames and will drop out again in 2040.
 - **Alaska.** Seven census areas were created in 2010 or 2020 and do not yet have 20 years of history. They stay gray throughout.
 
 ### Step 5: Controls
@@ -123,13 +127,13 @@ Hover or tap a county and the chart shows its monthly labor force over the exact
 
 Every series is indexed to 100 at the start of its window. The vertical scale is the same for every county: one index point is the same number of pixels whether you are looking at a county of 500 workers or five million. The chart window slides up or down to center on the county's line.
 
-We did this because the two obvious choices both mislead. An axis that starts at zero flattens every county into a straight line and hides the change. An axis that stretches each county to fill the chart turns a 3% wiggle into a cliff. With a fixed scale, a 10% drop has the same slope in every county, and a flat county looks flat.
+We did this because the two obvious choices both mislead. An axis that starts at zero flattens most counties into a nearly straight line and hides the change. An axis that stretches each county to fill the chart turns a 3% wiggle into a cliff. With a fixed scale, a 10% drop has the same slope in every county, and a flat county looks flat.
 
 The default window spans 40 index points. When a county's line moves more than that, a hyper-growth county at +60% for example, the scale compresses to fit and the chart says "compressed scale" in the corner.
 
 ### About the labor force label
 
-Labor force values in the label and in the lists are exact for counties with fewer than 65,000 workers. Above that, the value is rounded to the nearest ten and shown as "about." This is a trade for a page that loads as one file with no server behind it. The BLS figure to the person is in the public data and in our repository.
+Labor force values in the label and in the lists are exact for counties whose labor force has never topped 65,000. For larger counties the value is within about 40 workers and shown as "about." This is a trade for a page that loads as one file with no server behind it. The BLS figure to the person is in the public BLS files.
 
 ## Part 4, Watch flags (new)
 
@@ -161,25 +165,25 @@ A county can be in Structural Loss and on positive watch at the same time. That 
 
 **Change from a year earlier.** Every count compares the month on the map to the same calendar month one year earlier, among counties with data in both months. The rows are: Structural Loss a year earlier and now; counties that entered and left Structural Loss; counties that moved down or up a band; counties whose 20-year change worsened or improved; Structural Loss counties on positive watch; and counties outside Structural Loss on negative watch.
 
-**Top counties this month.** The five largest counties, by labor force, that entered Structural Loss since a year earlier; the five largest in Structural Loss on positive watch; and the five largest outside Structural Loss on negative watch.
+**Top counties this month.** The largest counties, five on a full screen and three in the embedded view, by labor force, that entered Structural Loss since a year earlier; the largest in Structural Loss on positive watch; and the largest outside Structural Loss on negative watch.
 
 All three panels follow the state selector.
 
 ## Updating
 
-The page is rebuilt when BLS publishes a new month of county data, which arrives roughly a month to six weeks after the month ends. The process is mechanical. A script downloads the BLS files, computes every 20-year change and band, computes the watch flags, and writes the page. The page is one file with no server behind it, published from the public repository. No number on it is typed by hand.
+We rebuild the page after BLS publishes a new month of county data, which arrives roughly a month to six weeks after the month ends. The process is mechanical. A script downloads the BLS files, computes every 20-year change and band, computes the watch flags, and writes the page. The page is one file with no server behind it, published from the public repository. No number on it is typed by hand.
 
 BLS revises county data each spring. When that happens the whole history is rebuilt, and counts for past months can shift by a few counties.
 
 ## Honest notes and limitations
 
-- **Recent months are preliminary.** BLS county figures for the current year are estimates and are revised the following spring. A band or a flag on the latest month is softer than one from a year ago. Between the June 2026 update to this page and this one, revisions moved the April 2026 Structural Loss count from 1,160 to 1,156.
+- **Recent months are preliminary.** BLS county figures for the current year are estimates and are revised the following spring. A band or a flag on the latest month is softer than one from a year ago. Between the June 2026 article and this update, revisions moved the April 2026 Structural Loss count from 1,160 to 1,156.
 - **Same-month only.** Because the data is not seasonally adjusted, the tool never compares one month to the month before it. Every comparison on the page is same-month: 20 years back for the bands, one year back for the change panel, three years back for the flags.
 - **The band edges are sharp.** In April 2026, 47 counties sat within a quarter of a percentage point of the -10% line. Small revisions move counties across it. Lead with the trend, not with the exact count.
 - **The county universe changes.** Seven Louisiana parishes drop out for ten months because of Katrina. Connecticut's data is on its nine planning regions, not its eight historical counties. Four Alaska areas were discontinued in 2009 or 2019 and seven were created. The page draws what BLS publishes and grays out the rest.
 - **The flags describe movement, not cause.** A negative watch says the labor force is shrinking, not why. Small counties can flip a flag on modest changes; the lists sort by labor force so the large ones lead. The thresholds, 1% on the average and 2% over three years, are judgment calls, and they are the only tunable parts.
 - **Labor force labels over 65,000 are rounded**, as Part 3 explains.
-- **Color.** The band scale was checked in a perceptual color model for lightness order and contrast, and the watch flags use stripe direction rather than hue so they read without color. The two lightest bands are close to each other by design and are best told apart by the hover label.
+- **Color.** The band scale was checked in a perceptual color model for lightness order and contrast, and the watch flags use stripe direction rather than hue so they read without color. The gray used for counties with no data is close to the lightest teal band, so the hover label is the surest way to tell them apart.
 - **We did not invent the data.** Every number on the page comes from BLS. Our contribution is the reorganization: the same-month 20-year comparison, the bands, the watch rules, and the interactivity.
 
 ## Reproduce it yourself
@@ -200,11 +204,11 @@ A one-year change is mostly noise in a small county, and it says nothing about w
 
 ### What does Structural Loss mean?
 
-A county is in Structural Loss when its labor force is down more than 10% from the same month 20 years earlier. The name is ours, not the government's. We chose it because a decline of that size over that long a period is rarely a cycle. It usually reflects an aging population that is not being replaced by younger workers.
+A county is in Structural Loss when its labor force is down more than 10% from the same month 20 years earlier. The name is ours, not the government's. We chose it because a decline of that size over that long a period is rarely a cycle. In our view, it often reflects an aging population that is not being replaced by younger workers.
 
 ### Why is the map gray for October 2025?
 
-BLS did not publish county data for October 2025 because of the federal appropriations lapse. Only Puerto Rico, which runs its own survey, has figures for that month. The map shows the gap as it is rather than filling it in. The same gap appears for seven New Orleans-area parishes from September 2025 through June 2026, because their data 20 years earlier is missing after Hurricane Katrina.
+BLS did not publish county data for October 2025 because of the federal appropriations lapse. Only Puerto Rico has figures for that month. The map shows the gap as it is rather than filling it in. The same gap appears for seven New Orleans-area parishes from September 2025 through June 2026, because their data 20 years earlier is missing after Hurricane Katrina.
 
 ### What is a positive watch or a negative watch?
 
@@ -212,7 +216,7 @@ They are flags for counties whose labor force is turning right now, separate fro
 
 ### Why does the hover chart not start at zero?
 
-An axis that starts at zero squashes a 15% decline into a nearly flat line, which hides the very thing the tool is meant to show. Instead the chart uses the same vertical scale for every county and slides its window to fit the data. A 10% drop looks the same in a county of 500 workers as in one of 500,000, and it is never stretched to look bigger than it is.
+An axis that starts at zero shrinks a 15% decline to a small dip near the top of the chart, which makes the change hard to see. Instead the chart uses the same vertical scale for every county and slides its window to fit the data. A 10% drop looks the same in a county of 500 workers as in one of 500,000, and it is never stretched to look bigger than it is.
 
 ### How often is the page updated?
 
@@ -220,8 +224,8 @@ Each time BLS publishes a new month of county data, roughly a month to six weeks
 
 ### Why do the counts here differ from the June 2026 article?
 
-BLS revised the county data after that article was written. The April 2026 Structural Loss count moved from 1,160 to 1,156, and the one-year change from 132 to 128. Differences of that size are normal after a revision, and this page always reflects the latest data.
+BLS revised the county data after that article was written. The April 2026 Structural Loss count moved from 1,160 to 1,156, and the one-year change from 132 to 128. This page reflects the latest data.
 
 ### Is the visualization free to use?
 
-Yes. The page, the code and the data pipeline are public, and you may embed the visualization or rebuild it for your own use. We ask only that you credit Data 4 The People and the U.S. Bureau of Labor Statistics.
+Yes. The page is free to view, and the code is public to read. Use follows our terms of use.

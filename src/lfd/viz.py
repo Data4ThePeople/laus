@@ -57,8 +57,6 @@ PALETTE = {"teal": "#085041", "coral": "#712B13", "paper": "#F7F5EF", "ink": "#1
 # Known causes for months with missing data; the affected counts come from the data.
 GAP_CAUSES = {
     "2025-10": "the federal appropriations lapse",
-    "2020-03": "the household survey was suspended in Puerto Rico",
-    "2020-04": "the household survey was suspended in Puerto Rico",
 }
 
 
