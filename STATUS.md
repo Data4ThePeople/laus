@@ -47,3 +47,4 @@ None.
 - 2026-09-15 Second scrollbar traced to the site: each embed renders inside its own iframe with an 8px default body margin, so a 780px map overflowed its 780px slice by 16px. The importer now adds a margin reset to every iframe embed. Draft re-pushed. (Eric's other double scrollbar was a cached copy of the old viz.)
 - 2026-09-15 Step 2f done. Step 2g opened: announcement email for the rebuild and new functionality only.
 - 2026-09-15 Step 2g: EMAIL.md drafted as a rebuild announcement (no findings in the text). Image: Nebraska map with watch flags, cropped so it carries no numbers. Email hero JPG 206KB. Waiting on approve or reject.
+- 2026-09-15 Step 2g: Eric approved the email with the five feature lead-ins bolded.
