@@ -23,14 +23,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -77,14 +75,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -131,14 +127,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -156,7 +150,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Our map flags a county as sliding when its labor force is below both a year ago and three years ago (i.e., \"negative watch\"). In five states, most counties carry that flag.",
+            "text": "Our map puts a county on negative watch when its labor force is below both a year ago and three years ago. In five states, most counties carry that flag.",
             "spans": [],
             "direction": "ltr"
           }
@@ -171,13 +165,13 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Horizontal bar chart of the five states with the largest share of counties on negative watch in July 2026. Vermont leads at 93%, or 13 of 14 counties, then Michigan at 87% with 72 of 83, Wyoming at 83% with 19 of 23, Colorado at 56% with 36 of 64, and Illinois at 49% with 50 of 102. Only Illinois has any counties recovering, with four.",
+          "alt": "Horizontal bar chart of the five states with the largest share of counties on negative watch in July 2026. Vermont leads at 93%, or 13 of 14 counties, then Michigan at 87% with 72 of 83, Wyoming at 83% with 19 of 23, Colorado at 56% with 36 of 64, and Illinois at 49% with 50 of 102. Only Illinois has any counties on positive watch, with four.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "A sliding county is on what the map calls a negative watch. Source: BLS LAUS.",
+            "text": "Negative watch: labor force below both a year ago and three years ago. Source: BLS LAUS.",
             "spans": [],
             "direction": "ltr"
           }
@@ -219,7 +213,7 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Map of Michigan's 83 counties for July 2026. Seventy-two are shaded coral for negative watch and eleven are gray. The gray exceptions include the Detroit metro counties of Wayne, Oakland and Macomb, which are labeled. No Michigan county is recovering.",
+          "alt": "Map of Michigan's 83 counties for July 2026. Seventy-two are shaded coral for negative watch and eleven are gray. The gray exceptions include the Detroit metro counties of Wayne, Oakland and Macomb, which are labeled. No Michigan county is on positive watch.",
           "copyright": null
         },
         "source_text": [
@@ -252,7 +246,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Colorado is fourth on the list, and it is the opposite story from Michigan. There the big metro counties are holding while the rest slides. In Colorado every one of the ten largest counties is shrinking, Denver included, and the flags have not caught up yet.",
+            "text": "Colorado is fourth on the list, and it is the opposite story from Michigan. In Michigan the big metro counties are holding while the rest of the state is on negative watch. In Colorado the decline starts with the big counties: every one of the ten largest is shrinking, Denver included, and the flags have not caught up yet.",
             "spans": [],
             "direction": "ltr"
           }
@@ -267,13 +261,13 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Horizontal bar chart of the year-over-year change in labor force for Colorado's ten largest counties, July 2025 to July 2026. Every bar is negative, from Larimer at 0.8% down to Mesa at 2.7%. Denver, the largest at 448,000 workers, is down 1.8%. Only Boulder carries the map's sliding flag.",
+          "alt": "Horizontal bar chart of the year-over-year change in labor force for Colorado's ten largest counties, July 2025 to July 2026. Every bar is negative, from Larimer at 0.8% down to Mesa at 2.7%. Denver, the largest at 448,000 workers, is down 1.8%. Only Boulder is on negative watch.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "Only Boulder meets the sliding flag, which also asks for a three-year decline. Source: BLS LAUS.",
+            "text": "Only Boulder is on negative watch, which also asks for a three-year decline. Source: BLS LAUS.",
             "spans": [],
             "direction": "ltr"
           }
@@ -281,14 +275,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -321,13 +313,13 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Horizontal bar chart of the five states with the largest share of counties on positive watch in July 2026. South Carolina leads at 85%, or 39 of 46 counties, then Nevada at 76% with 13 of 17, North Dakota at 68% with 36 of 53, Arkansas at 52% with 39 of 75, and Alaska at 48% with 11 of 23. No South Carolina county is sliding.",
+          "alt": "Horizontal bar chart of the five states with the largest share of counties on positive watch in July 2026. South Carolina leads at 85%, or 39 of 46 counties, then Nevada at 76% with 13 of 17, North Dakota at 68% with 36 of 53, Arkansas at 52% with 39 of 75, and Alaska at 48% with 11 of 23. No South Carolina county is on negative watch.",
           "copyright": null
         },
         "source_text": [
           {
             "type": "paragraph",
-            "text": "A county turning up is on what the map calls a positive watch. South Carolina is the strongest of the five. Source: BLS LAUS.",
+            "text": "Positive watch: labor force climbing off a multi-year low and above where it was three years ago. South Carolina is the strongest of the five. Source: BLS LAUS.",
             "spans": [],
             "direction": "ltr"
           }
@@ -369,7 +361,7 @@
       "items": [],
       "primary": {
         "image": {
-          "alt": "Map of South Carolina's 46 counties for July 2026. Thirty-nine are shaded teal for positive watch and seven are gray, including Orangeburg, Georgetown and Cherokee, which are labeled. No county in the state is sliding.",
+          "alt": "Map of South Carolina's 46 counties for July 2026. Thirty-nine are shaded teal for positive watch and seven are gray, including Orangeburg, Georgetown and Cherokee, which are labeled. No county in the state is on negative watch.",
           "copyright": null
         },
         "source_text": [
@@ -383,14 +375,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -466,7 +456,7 @@
     {
       "slice_type": "image_carousel",
       "slice_label": null,
-      "variation": "default",
+      "variation": "fullWidth",
       "version": "initial",
       "items": [
         {
@@ -529,14 +519,12 @@
       "primary": {}
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -590,14 +578,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "40px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -684,14 +670,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",

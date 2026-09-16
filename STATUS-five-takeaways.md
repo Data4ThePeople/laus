@@ -17,7 +17,7 @@ Since: 2026-09-16
 | 1  | Exploration and analysis | 2026-09-14 | Shared with the viz page; research in docs/RECOVERY-RESEARCH.md |
 | 2a | Draft with brackets resolved | 2026-09-16 | Spare draft, charts carry the story |
 | 2b | Eric's edit, Claude's look-over | 2026-09-16 | Eric edited; 10 items proposed and all accepted |
-| 2c | Slice markup | | |
+| 2c | Slice markup | | 44 slices; dividers on between takeaways; carousel full width |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
@@ -43,3 +43,4 @@ None.
   the Denver metro counties are NOT on negative watch (the flag also needs a three-year decline), though all
   ten of Colorado's largest counties are down year over year. New chart 03c-co-largest-counties.png.
   The December 2025 structural loss share was 33%. Step 2c opened.
+- 2026-09-16 Step 2c: dividers turned on between top-level sections, carousel set to the full-width variation. 44 slices, 8 carousel slides, 3 FAQ entries in the schema, 16 images all with alt text.

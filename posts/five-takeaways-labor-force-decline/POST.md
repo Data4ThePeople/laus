@@ -15,7 +15,7 @@ schema_type: article
 drop_cap: true
 heading_spacer: 20px
 caption_spacer: 20px
-dividers: false
+dividers: true
 ---
 
 # Five takeaways from our new labor force map
@@ -74,7 +74,7 @@ Hyper-growth counties are those whose labor force is more than 40% above its lev
 
 Some of the best known growth counties in the country peaked in the past two years and have been falling since. A few are still climbing. Flip through the image carousel and see.
 
-::: carousel
+::: carousel-full
 ![Line chart of Wake County, North Carolina's monthly labor force from 2016 to July 2026. It climbs from about 550,000 to a peak near 705,000 in July 2025, then flattens and slips to about 696,000, down 1.4% over the past year.](images/05-1-wake-nc.png)
 *Wake County, North Carolina. Up 58% over 20 years, down 1.4% in the past year.*
 ![Line chart of Mecklenburg County, North Carolina's monthly labor force from 2016 to July 2026, peaking in July 2025 and falling 2.3% over the past year.](images/05-2-mecklenburg-nc.png)
