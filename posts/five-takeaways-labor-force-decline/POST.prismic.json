@@ -26,7 +26,7 @@
                 "type": "hyperlink",
                 "data": {
                   "link_type": "Web",
-                  "url": "https://www.data4thepeople.com/p/viral-labor-force-decline/",
+                  "url": "https://www.data4thepeople.com/p/labor-force-history-viz",
                   "target": "_blank"
                 }
               }
@@ -100,7 +100,13 @@
           {
             "type": "paragraph",
             "text": "Counties whose labor force is more than 10% below the same month 20 years earlier. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 100,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -159,7 +165,13 @@
           {
             "type": "paragraph",
             "text": "January and July fall in the same year, so this comparison is not affected by the January change in population estimates. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 139,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -218,7 +230,13 @@
           {
             "type": "paragraph",
             "text": "Negative watch: labor force below both a year ago and three years ago. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 88,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -271,7 +289,13 @@
           {
             "type": "paragraph",
             "text": "The counties shaded coral hold 54% of Michigan's workers. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 75,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -324,7 +348,13 @@
           {
             "type": "paragraph",
             "text": "Only Boulder is on negative watch, which also asks for a three-year decline. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 94,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -383,7 +413,13 @@
           {
             "type": "paragraph",
             "text": "Positive watch: labor force climbing off a multi-year low and above where it was three years ago. South Carolina is the strongest of the five. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 160,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -436,7 +472,13 @@
           {
             "type": "paragraph",
             "text": "The counties shaded teal hold 95% of South Carolina's workers. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 80,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -495,7 +537,13 @@
           {
             "type": "paragraph",
             "text": "Hyper-growth means a labor force more than 40% above its level 20 years earlier. Source: BLS LAUS.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 0,
+                "end": 98,
+                "type": "em"
+              }
+            ],
             "direction": "ltr"
           }
         ]
