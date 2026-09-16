@@ -7,7 +7,7 @@ Sibling: STATUS.md, which covers the Visualization methodology page (complete)
 ## Current
 
 Post: five-takeaways-labor-force-decline
-Step: 2d
+Step: 2e
 Since: 2026-09-16
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-09-16
 | 2a | Draft with brackets resolved | 2026-09-16 | Spare draft, charts carry the story |
 | 2b | Eric's edit, Claude's look-over | 2026-09-16 | Eric edited; 10 items proposed and all accepted |
 | 2c | Slice markup | 2026-09-16 | 44 slices; one divider above the notes; carousel full width |
-| 2d | Hero 1680x1080 + alt text | | |
+| 2d | Hero 1680x1080 + alt text | 2026-09-16 | Takeaway 1 chart, minimal variant, one call-out |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -46,3 +46,5 @@ None.
 - 2026-09-16 Step 2c: dividers turned on between top-level sections, carousel set to the full-width variation. 44 slices, 8 carousel slides, 3 FAQ entries in the schema, 16 images all with alt text.
 - 2026-09-16 Step 2c corrected: dividers off. Section headings get the 20px spacer and a single divider sits above the methodology blurb, per PROCESS.md step 2c. Carousel stays full width.
 - 2026-09-16 Step 2c done. Step 2d opened: hero.
+- 2026-09-16 Step 2d done. Step 2e opened: SEO.
+- 2026-09-16 Step 2e: meta title 51 chars, description 152, 8 keywords, Article plus FAQ schema with three questions. Four crawlable-text edits accepted, including internal links to the March and June pieces. The shared schema builder now sets the house terms-of-use license on Article as well as Dataset pages, replacing a hard-coded Creative Commons default.

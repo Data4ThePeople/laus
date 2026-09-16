@@ -1,5 +1,5 @@
 ---
-title: Five things the labor force map shows
+title: Five takeaways from our new labor force map
 subtitle: Two in five U.S. counties now have fewer workers than they did 20 years ago. Here is where, and how fast it spread.
 slug: five-takeaways-labor-force-decline
 prismic_label: "Data 4 Thought: Five Takeaways, Labor Force"
@@ -8,9 +8,9 @@ date: 2026-09-17
 section: Data 4 Thought
 hero: images/five-takeaways-labor-force-decline-hero-1680x1080.png
 hero_alt: Line chart titled Counties in structural labor force loss, 2010 to 2026. It shows the share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier, every month from January 2010 to July 2026. The line rises from about 7% of counties to 40%, labeled as 1,281 of 3,214 counties in July 2026, the highest reading on record.
-meta_title:
-description:
-keywords:
+meta_title: Labor Force Decline by County: Five Charts for 2026
+description: Two in five U.S. counties have fewer workers than 20 years ago. Five charts on where labor force decline spread in 2026, and the places turning back up.
+keywords: labor force decline, labor force by county, structural labor force decline, counties losing workers, county labor force data, shrinking labor force, labor force 2026, labor force participation decline
 schema_type: article
 drop_cap: true
 heading_spacer: 20px
@@ -20,11 +20,11 @@ dividers: false
 
 # Five takeaways from our new labor force map
 
-We rebuilt our county labor force map this week and added data through July 2026. Five things stood out to us. We usually give you a lot of words. Today the charts do the talking.
+We rebuilt [our county labor force map](https://www.data4thepeople.com/p/viral-labor-force-decline/) this week and added data through July 2026. Five things stood out to us. We usually give you a lot of words. Today the charts do the talking.
 
 ## 1. Two in five counties are shrinking
 
-A county is in structural loss when its labor force is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record. At the end of 2025, the data behind our first map, it was 33%.
+A county is in structural loss when its civilian labor force, as measured by the Bureau of Labor Statistics, is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record. At the end of 2025, the data behind our first map, it was 33%. In [June we reported](https://www.data4thepeople.com/p/geographic-virus-accelerating/) that the count had grown by 132 counties in a year.
 
 ![Line chart of the share of U.S. counties in structural labor force loss, every month from January 2010 through July 2026. The line climbs from 7% of counties, or 219, at the start to 40%, or 1,281 of 3,214, in July 2026, which is the highest reading on record. It passes the previous peak of 38.8% set in May 2020.](images/01-structural-loss-over-time.png)
 *Counties whose labor force is more than 10% below the same month 20 years earlier. Source: BLS LAUS.*

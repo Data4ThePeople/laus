@@ -1,8 +1,11 @@
 {
-  "page_title": "Five things the labor force map shows",
+  "page_title": "Five takeaways from our new labor force map",
   "page_subtitle": "Two in five U.S. counties now have fewer workers than they did 20 years ago. Here is where, and how fast it spread.",
   "published_date": "2026-09-17",
   "updated_date": "2026-09-17",
+  "meta_title": "Labor Force Decline by County: Five Charts for 2026",
+  "meta_description": "Two in five U.S. counties have fewer workers than 20 years ago. Five charts on where labor force decline spread in 2026, and the places turning back up.",
+  "meta_keywords": "labor force decline, labor force by county, structural labor force decline, counties losing workers, county labor force data, shrinking labor force, labor force 2026, labor force participation decline",
   "make_this_main_post": false,
   "slices": [
     {
@@ -16,7 +19,18 @@
           {
             "type": "paragraph",
             "text": "We rebuilt our county labor force map this week and added data through July 2026. Five things stood out to us. We usually give you a lot of words. Today the charts do the talking.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 11,
+                "end": 37,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/viral-labor-force-decline/",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -48,8 +62,19 @@
           },
           {
             "type": "paragraph",
-            "text": "A county is in structural loss when its labor force is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record. At the end of 2025, the data behind our first map, it was 33%.",
-            "spans": [],
+            "text": "A county is in structural loss when its civilian labor force, as measured by the Bureau of Labor Statistics, is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record. At the end of 2025, the data behind our first map, it was 33%. In June we reported that the count had grown by 132 counties in a year.",
+            "spans": [
+              {
+                "start": 302,
+                "end": 318,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/geographic-virus-accelerating/",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -808,5 +833,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"Five things the labor force map shows\",\n      \"description\": \"\",\n      \"datePublished\": \"2026-09-17T07:00:00-04:00\",\n      \"dateModified\": \"2026-09-17T07:00:00-04:00\",\n      \"articleSection\": \"Data 4 Thought\",\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/five-takeaways-labor-force-decline\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/five-takeaways-labor-force-decline#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/five-takeaways-labor-force-decline#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is the labor force?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"It is the number of people age 16 and over who are working or actively looking for work, counted where they live. It leaves out people who have retired or stopped looking.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Why compare each county to 20 years ago?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"A one-year change in a small county is mostly noise. Twenty years covers a full generation of workers entering and leaving, so it shows the structure of a local economy rather than one good or bad year.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What does structural loss mean?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"A labor force more than 10% below the same month 20 years earlier. The name is ours, not the government's.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"Five takeaways from our new labor force map\",\n      \"description\": \"Two in five U.S. counties have fewer workers than 20 years ago. Five charts on where labor force decline spread in 2026, and the places turning back up.\",\n      \"datePublished\": \"2026-09-17T07:00:00-04:00\",\n      \"dateModified\": \"2026-09-17T07:00:00-04:00\",\n      \"articleSection\": \"Data 4 Thought\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"labor force decline\",\n        \"labor force by county\",\n        \"structural labor force decline\",\n        \"counties losing workers\",\n        \"county labor force data\",\n        \"shrinking labor force\",\n        \"labor force 2026\",\n        \"labor force participation decline\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/five-takeaways-labor-force-decline\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/five-takeaways-labor-force-decline#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/five-takeaways-labor-force-decline#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is the labor force?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"It is the number of people age 16 and over who are working or actively looking for work, counted where they live. It leaves out people who have retired or stopped looking.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Why compare each county to 20 years ago?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"A one-year change in a small county is mostly noise. Twenty years covers a full generation of workers entering and leaving, so it shows the structure of a local economy rather than one good or bad year.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What does structural loss mean?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"A labor force more than 10% below the same month 20 years earlier. The name is ours, not the government's.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }
