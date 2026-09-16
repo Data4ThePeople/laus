@@ -3,8 +3,8 @@
 Post URL: https://www.data4thepeople.com/p/five-takeaways-labor-force-decline
 
 ```
-Subject:  Labor force decline in 40% of counties
-Preview:  We rebuilt our labor force map, added July data, and share our top five key takeaways.
+Subject:  40% of counties: structural labor force decline
+Preview:  Labor force down more than 10% over 20 years, and five charts showing where.
 ```
 
 ## 1. Hero
