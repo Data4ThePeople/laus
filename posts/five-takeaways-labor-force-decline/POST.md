@@ -18,56 +18,61 @@ caption_spacer: 20px
 dividers: false
 ---
 
-# Five things the labor force map shows
+# Five takeaways from our new the labor force map
 
-We rebuilt our county labor force map this week and added data through July 2026. Five things stand out. The charts do most of the talking.
+We rebuilt our county labor force map this week and added data through July 2026. Five things stood out to us. We normally make you read a lot of words, so today we'll try something new and tell the story almost exclusively using charts.
 
 ## 1. Two in five counties are shrinking
 
-A county is in structural loss when its labor force is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record.
+A county is in structural loss when its labor force is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record. That is up from [YY%] since the end of 2025 (the data we used for our initial publication).
 
 ![Line chart of the share of U.S. counties in structural labor force loss, every month from January 2010 through July 2026. The line climbs from 7% of counties, or 219, at the start to 40%, or 1,281 of 3,214, in July 2026, which is the highest reading on record. It passes the previous peak of 38.8% set in May 2020.](images/01-structural-loss-over-time.png)
 *Counties whose labor force is more than 10% below the same month 20 years earlier. Source: BLS LAUS.*
 
 ## 2. This year is the weakest spring since 2020
 
-Counties normally add workers between January and July. This year 38% of them lost workers instead, against a long-run figure of 21%.
+Counties normally add workers between January and July. This year 38% of them lost workers instead, against a long-run figure of 21%. Third place? 2025.
 
 ![Stacked bar chart, one bar per year from 1990 to 2026, showing the share of U.S. counties whose labor force fell between January and July of the same year. The coral share is 38% in 2026 and 35% in 2025, against a 1990 to 2019 median of 21%. Only 2020, at 61%, was worse.](images/02-january-to-july.png)
 *January and July fall in the same year, so this comparison is not affected by the January change in population estimates. Source: BLS LAUS.*
 
 ## 3. Some states are sliding almost everywhere
 
-Our map flags a county as sliding when its labor force is below both a year ago and three years ago. In five states, most counties carry that flag.
+Our map flags a county as sliding when its labor force is below both a year ago and three years ago (i.e., "negative watch"). In five states, most counties carry that flag.
 
 ![Horizontal bar chart of the five states with the largest share of counties on negative watch in July 2026. Vermont leads at 93%, or 13 of 14 counties, then Michigan at 87% with 72 of 83, Wyoming at 83% with 19 of 23, Colorado at 56% with 36 of 64, and Illinois at 49% with 50 of 102. Only Illinois has any counties recovering, with four.](images/03a-negative-watch-states.png)
 *A sliding county is on what the map calls a negative watch. Source: BLS LAUS.*
 
-Michigan is the clearest case. Its three largest labor markets are holding. Almost everything else is not.
+Michigan is the clearest case. Its three largest labor markets are holding. Almost everything else is not. 
+
 
 ![Map of Michigan's 83 counties for July 2026. Seventy-two are shaded coral for negative watch and eleven are gray. The gray exceptions include the Detroit metro counties of Wayne, Oakland and Macomb, which are labeled. No Michigan county is recovering.](images/03b-mi-negative-watch.png)
 *The counties shaded coral hold 54% of Michigan's workers. Source: BLS LAUS.*
 
-## 4. A few states are going the other way
+Meanwhile, Colorado is fourth on the list, but is the opposite story of Michigan. It's powerhouse growth counties in the Denver metro area are all on negative watch. 
 
-The same map flags a county as turning up when its labor force has climbed off a multi-year low and sits above where it was three years ago.
+[create the chart for CO and highlight the Denver metro area counties and suburb/exurb]
+
+## 4. It's not all doom and gloom...
+
+Some states have labor forces with positive momentum. The following chart shows the top five states by percent of counties on positive watch.
 
 ![Horizontal bar chart of the five states with the largest share of counties on positive watch in July 2026. South Carolina leads at 85%, or 39 of 46 counties, then Nevada at 76% with 13 of 17, North Dakota at 68% with 36 of 53, Arkansas at 52% with 39 of 75, and Alaska at 48% with 11 of 23. No South Carolina county is sliding.](images/04a-positive-watch-states.png)
 *A county turning up is on what the map calls a positive watch. Source: BLS LAUS.*
 
-South Carolina is the mirror image of Michigan. No county in the state is sliding.
+Look at the South Carolina map! Someone please reach out to us to explain what is going on here. We need to understand if this is policy driven, and if so, make sure South Carolina shares best practices with other states. 
 
 ![Map of South Carolina's 46 counties for July 2026. Thirty-nine are shaded teal for positive watch and seven are gray, including Orangeburg, Georgetown and Cherokee, which are labeled. No county in the state is sliding.](images/04b-sc-positive-watch.png)
 *The counties shaded teal hold 95% of South Carolina's workers. Source: BLS LAUS.*
 
 ## 5. Even the boom counties have stopped
 
-Hyper-growth counties are those whose labor force is more than 40% above its level 20 years ago. Two years ago, 3% of them were shrinking. Today 48% are.
+Hyper-growth counties are those whose labor force is more than 40% above its level 20 years ago. Our original key takeaway back in March was that U.S. counties had bifurcated into the haves and haven-nots re. their labor forces. Well, in 2026 we are seeing the have counties start to stall out and even retract. 
 
 ![Line chart of the share of hyper-growth counties whose labor force is below the same month a year earlier, monthly from 2010 to 2026. The share sits near 2% from 2022 through 2024, then climbs to 48% by July 2026. The pandemic peak was 77% in April 2020.](images/05a-hypergrowth-falling.png)
 *Hyper-growth means a labor force more than 40% above its level 20 years earlier. Source: BLS LAUS.*
 
-Some of the best known growth counties in the country peaked in the past two years and have been falling since. A few are still climbing.
+Some of the best known growth counties in the country peaked in the past two years and have been falling since. A few are still climbing. Flip through the image carousel and see.
 
 ::: carousel
 ![Line chart of Wake County, North Carolina's monthly labor force from 2016 to July 2026. It climbs from about 550,000 to a peak near 705,000 in July 2025, then flattens and slips to about 696,000, down 1.4% over the past year.](images/05-1-wake-nc.png)
@@ -87,6 +92,11 @@ Some of the best known growth counties in the country peaked in the past two yea
 ![Line chart of Midland County, Texas's monthly labor force from 2016 to July 2026, at a record high and up 2.2% over the past year.](images/05-8-midland-tx.png)
 *Midland County, Texas. Up 47% over 20 years, and still growing at 2.2% a year.*
 :::
+
+## What are you finding?
+
+Let us know! Or better yet, bring the discussion to social media and share your thoughts. Tagging our work and sharing the data is much appreciated. 
+
 
 ## Look up your own county
 
