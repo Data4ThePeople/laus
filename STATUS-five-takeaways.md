@@ -7,7 +7,7 @@ Sibling: STATUS.md, which covers the Visualization methodology page (complete)
 ## Current
 
 Post: five-takeaways-labor-force-decline
-Step: 2c
+Step: 2d
 Since: 2026-09-16
 
 ## Steps
@@ -17,7 +17,7 @@ Since: 2026-09-16
 | 1  | Exploration and analysis | 2026-09-14 | Shared with the viz page; research in docs/RECOVERY-RESEARCH.md |
 | 2a | Draft with brackets resolved | 2026-09-16 | Spare draft, charts carry the story |
 | 2b | Eric's edit, Claude's look-over | 2026-09-16 | Eric edited; 10 items proposed and all accepted |
-| 2c | Slice markup | | 37 slices; one divider above the notes; carousel full width |
+| 2c | Slice markup | 2026-09-16 | 44 slices; one divider above the notes; carousel full width |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
@@ -45,3 +45,4 @@ None.
   The December 2025 structural loss share was 33%. Step 2c opened.
 - 2026-09-16 Step 2c: dividers turned on between top-level sections, carousel set to the full-width variation. 44 slices, 8 carousel slides, 3 FAQ entries in the schema, 16 images all with alt text.
 - 2026-09-16 Step 2c corrected: dividers off. Section headings get the 20px spacer and a single divider sits above the methodology blurb, per PROCESS.md step 2c. Carousel stays full width.
+- 2026-09-16 Step 2c done. Step 2d opened: hero.
