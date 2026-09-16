@@ -3,102 +3,119 @@
     "id": "BcSI5WsmYi4bM8eO",
     "width": 1680,
     "height": 1000,
-    "url": "https://images.prismic.io/data4thepeople/BcSI5WsmYi4bM8eO_01-structural-loss-over-time.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/BcSI5WsmYi4bM8eO_01-structural-loss-over-time.png?auto=format,compress",
+    "stamp": "140720:1789575013"
   },
   "images/02-january-to-july.png": {
     "id": "XRYrycAzhiYNbWh5",
     "width": 1680,
     "height": 1000,
-    "url": "https://images.prismic.io/data4thepeople/XRYrycAzhiYNbWh5_02-january-to-july.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/XRYrycAzhiYNbWh5_02-january-to-july.png?auto=format,compress",
+    "stamp": "85768:1789589462"
   },
   "images/03a-negative-watch-states.png": {
     "id": "1QGrw8VsbJOJsXys",
     "width": 1680,
     "height": 920,
-    "url": "https://images.prismic.io/data4thepeople/1QGrw8VsbJOJsXys_03a-negative-watch-states.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/1QGrw8VsbJOJsXys_03a-negative-watch-states.png?auto=format,compress",
+    "stamp": "104683:1789583435"
   },
   "images/03b-mi-negative-watch.png": {
     "id": "qSaW9NtLbbv0AU-y",
     "width": 1680,
     "height": 1120,
-    "url": "https://images.prismic.io/data4thepeople/qSaW9NtLbbv0AU-y_03b-mi-negative-watch.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/qSaW9NtLbbv0AU-y_03b-mi-negative-watch.png?auto=format,compress",
+    "stamp": "142349:1789583435"
   },
   "images/03c-co-largest-counties.png": {
     "id": "t9rWOwCmLnjITIOL",
     "width": 1680,
     "height": 1000,
-    "url": "https://images.prismic.io/data4thepeople/t9rWOwCmLnjITIOL_03c-co-largest-counties.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/t9rWOwCmLnjITIOL_03c-co-largest-counties.png?auto=format,compress",
+    "stamp": "119856:1789583261"
   },
   "images/04a-positive-watch-states.png": {
     "id": "EOZHZTmx8d651AGP",
     "width": 1680,
     "height": 920,
-    "url": "https://images.prismic.io/data4thepeople/EOZHZTmx8d651AGP_04a-positive-watch-states.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/EOZHZTmx8d651AGP_04a-positive-watch-states.png?auto=format,compress",
+    "stamp": "108179:1789583435"
   },
   "images/04b-sc-positive-watch.png": {
     "id": "-OvZm5s9ipCx2ux3",
     "width": 1680,
     "height": 1120,
-    "url": "https://images.prismic.io/data4thepeople/-OvZm5s9ipCx2ux3_04b-sc-positive-watch.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/-OvZm5s9ipCx2ux3_04b-sc-positive-watch.png?auto=format,compress",
+    "stamp": "181358:1789583435"
   },
   "images/05a-hypergrowth-falling.png": {
     "id": "nN9Mu7fpMWdNmyUy",
     "width": 1680,
     "height": 1000,
-    "url": "https://images.prismic.io/data4thepeople/nN9Mu7fpMWdNmyUy_05a-hypergrowth-falling.png?auto=format,compress"
-  },
-  "images/05-1-wake-nc.png": {
-    "id": "smCOyX9Jw00WFmJT",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/smCOyX9Jw00WFmJT_05-1-wake-nc.png?auto=format,compress"
-  },
-  "images/05-2-mecklenburg-nc.png": {
-    "id": "X6rrf6mwZMokMnxt",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/X6rrf6mwZMokMnxt_05-2-mecklenburg-nc.png?auto=format,compress"
-  },
-  "images/05-3-denver-co.png": {
-    "id": "c_WFxonxNQR_HDJ2",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/c_WFxonxNQR_HDJ2_05-3-denver-co.png?auto=format,compress"
-  },
-  "images/05-4-loudoun-va.png": {
-    "id": "o5zmCs70fn87n3iV",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/o5zmCs70fn87n3iV_05-4-loudoun-va.png?auto=format,compress"
-  },
-  "images/05-5-pinal-az.png": {
-    "id": "dJs4Riez9LQcblrI",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/dJs4Riez9LQcblrI_05-5-pinal-az.png?auto=format,compress"
-  },
-  "images/05-6-benton-ar.png": {
-    "id": "8o9rvOySmE2JlzyT",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/8o9rvOySmE2JlzyT_05-6-benton-ar.png?auto=format,compress"
-  },
-  "images/05-7-charleston-sc.png": {
-    "id": "mz9I5za2gaB4u5qm",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/mz9I5za2gaB4u5qm_05-7-charleston-sc.png?auto=format,compress"
-  },
-  "images/05-8-midland-tx.png": {
-    "id": "JYgegKgzoC68pOn2",
-    "width": 1600,
-    "height": 900,
-    "url": "https://images.prismic.io/data4thepeople/JYgegKgzoC68pOn2_05-8-midland-tx.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/nN9Mu7fpMWdNmyUy_05a-hypergrowth-falling.png?auto=format,compress",
+    "stamp": "136769:1789575013"
   },
   "images/five-takeaways-labor-force-decline-hero-1680x1080.png": {
     "id": "MK1ShXE5RzFv34Gr",
     "width": 1680,
     "height": 1080,
-    "url": "https://images.prismic.io/data4thepeople/MK1ShXE5RzFv34Gr_five-takeaways-labor-force-decline-hero-1680x1080.png?auto=format,compress"
+    "url": "https://images.prismic.io/data4thepeople/MK1ShXE5RzFv34Gr_five-takeaways-labor-force-decline-hero-1680x1080.png?auto=format,compress",
+    "stamp": "233865:1789585728"
+  },
+  "images/05-1-wake-nc.png": {
+    "id": "9fXvw2IQqlnGT08J",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/9fXvw2IQqlnGT08J_05-1-wake-nc.png?auto=format,compress",
+    "stamp": "101851:1789590019"
+  },
+  "images/05-2-mecklenburg-nc.png": {
+    "id": "_gmBNfUEzDxBPMBw",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/_gmBNfUEzDxBPMBw_05-2-mecklenburg-nc.png?auto=format,compress",
+    "stamp": "106704:1789589918"
+  },
+  "images/05-3-denver-co.png": {
+    "id": "GRmDz-fOiE8lo5ux",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/GRmDz-fOiE8lo5ux_05-3-denver-co.png?auto=format,compress",
+    "stamp": "107335:1789589918"
+  },
+  "images/05-4-loudoun-va.png": {
+    "id": "ErPPvILy1HCPGm-m",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/ErPPvILy1HCPGm-m_05-4-loudoun-va.png?auto=format,compress",
+    "stamp": "98458:1789589918"
+  },
+  "images/05-5-pinal-az.png": {
+    "id": "oNLVDmzw1TSkFicD",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/oNLVDmzw1TSkFicD_05-5-pinal-az.png?auto=format,compress",
+    "stamp": "88082:1789589918"
+  },
+  "images/05-6-benton-ar.png": {
+    "id": "T2Y_QoJtz8rTJ9Vf",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/T2Y_QoJtz8rTJ9Vf_05-6-benton-ar.png?auto=format,compress",
+    "stamp": "90573:1789589918"
+  },
+  "images/05-7-charleston-sc.png": {
+    "id": "gkHqrAbCFFAWenVy",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/gkHqrAbCFFAWenVy_05-7-charleston-sc.png?auto=format,compress",
+    "stamp": "94871:1789589918"
+  },
+  "images/05-8-midland-tx.png": {
+    "id": "iBE_vhXKuCLVvKL6",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/iBE_vhXKuCLVvKL6_05-8-midland-tx.png?auto=format,compress",
+    "stamp": "83664:1789589918"
   }
 }
