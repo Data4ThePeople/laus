@@ -62,20 +62,6 @@
     "url": "https://images.prismic.io/data4thepeople/MK1ShXE5RzFv34Gr_five-takeaways-labor-force-decline-hero-1680x1080.png?auto=format,compress",
     "stamp": "233865:1789585728"
   },
-  "images/05-1-wake-nc.png": {
-    "id": "9fXvw2IQqlnGT08J",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/9fXvw2IQqlnGT08J_05-1-wake-nc.png?auto=format,compress",
-    "stamp": "101851:1789590019"
-  },
-  "images/05-2-mecklenburg-nc.png": {
-    "id": "_gmBNfUEzDxBPMBw",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/_gmBNfUEzDxBPMBw_05-2-mecklenburg-nc.png?auto=format,compress",
-    "stamp": "106704:1789589918"
-  },
   "images/05-3-denver-co.png": {
     "id": "GRmDz-fOiE8lo5ux",
     "width": 1600,
@@ -117,5 +103,19 @@
     "height": 1050,
     "url": "https://images.prismic.io/data4thepeople/iBE_vhXKuCLVvKL6_05-8-midland-tx.png?auto=format,compress",
     "stamp": "83664:1789589918"
+  },
+  "images/05-1-wake-nc.png": {
+    "id": "JzN4AhdnMoJNOkRJ",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/JzN4AhdnMoJNOkRJ_05-1-wake-nc.png?auto=format,compress",
+    "stamp": "101851:1789590046"
+  },
+  "images/05-2-mecklenburg-nc.png": {
+    "id": "ksA3d1gH_fl-H2aJ",
+    "width": 1600,
+    "height": 1050,
+    "url": "https://images.prismic.io/data4thepeople/ksA3d1gH_fl-H2aJ_05-2-mecklenburg-nc.png?auto=format,compress",
+    "stamp": "106704:1789590111"
   }
 }
