@@ -40,12 +40,12 @@ Counties normally add workers between January and July. This year 38% of them lo
 
 Our map puts a county on negative watch when its labor force is below both a year ago and three years ago. In five states, most counties carry that flag.
 
-![Horizontal bar chart of the five states with the largest share of counties on negative watch in July 2026. Vermont leads at 93%, or 13 of 14 counties, then Michigan at 87% with 72 of 83, Wyoming at 83% with 19 of 23, Colorado at 56% with 36 of 64, and Illinois at 49% with 50 of 102. Only Illinois has any counties recovering, with four.](images/03a-negative-watch-states.png)
+![Horizontal bar chart of the five states with the largest share of counties on negative watch in July 2026. Vermont leads at 93%, or 13 of 14 counties, then Michigan at 87% with 72 of 83, Wyoming at 83% with 19 of 23, Colorado at 56% with 36 of 64, and Illinois at 49% with 50 of 102. Only Illinois has any counties on positive watch, with four.](images/03a-negative-watch-states.png)
 *Negative watch: labor force below both a year ago and three years ago. Source: BLS LAUS.*
 
 Michigan is the clearest case. Its three largest labor markets are holding. Almost everything else is not.
 
-![Map of Michigan's 83 counties for July 2026. Seventy-two are shaded coral for negative watch and eleven are gray. The gray exceptions include the Detroit metro counties of Wayne, Oakland and Macomb, which are labeled. No Michigan county is recovering.](images/03b-mi-negative-watch.png)
+![Map of Michigan's 83 counties for July 2026. Seventy-two are shaded coral for negative watch and eleven are gray. The gray exceptions include the Detroit metro counties of Wayne, Oakland and Macomb, which are labeled. No Michigan county is on positive watch.](images/03b-mi-negative-watch.png)
 *The counties shaded coral hold 54% of Michigan's workers. Source: BLS LAUS.*
 
 Colorado is fourth on the list, and it is the opposite story from Michigan. In Michigan the big metro counties are holding while the rest of the state is on negative watch. In Colorado the decline starts with the big counties: every one of the ten largest is shrinking, Denver included, and the flags have not caught up yet.

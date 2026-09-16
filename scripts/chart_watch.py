@@ -48,7 +48,8 @@ def chart_states(s: pd.DataFrame, month: str, out: Path, flag: int, state: str, 
     """The five states with the largest share of counties carrying this flag."""
     rising = flag == POSITIVE
     colour, other = (TEAL, CORAL) if rising else (CORAL, TEAL)
-    word, opposite = ("recovering", "sliding") if rising else ("sliding", "recovering")
+    word = "on positive watch" if rising else "on negative watch"
+    opposite = "on negative watch" if rising else "on positive watch"
     g = s.groupby("state").apply(lambda d: pd.Series({
         "counties": len(d), "neg": int((d.flag == flag).sum()),
         "pos": int((d.flag == (POSITIVE if not rising else NEGATIVE)).sum()),
@@ -69,8 +70,8 @@ def chart_states(s: pd.DataFrame, month: str, out: Path, flag: int, state: str, 
                     f"{'none' if row.pos == 0 else int(row.pos)} {opposite}",
                     xy=(1.2, i), color=BG, fontsize=9.5, va="center", fontweight="bold")
     ax.tick_params(axis="y", pad=8)
-    title = ("Five states where the labor force is turning back up" if rising
-             else "Five states where the labor force is sliding almost everywhere")
+    title = ("Five states where most counties are on positive watch" if rising
+             else "Five states where most counties are on negative watch")
     sub = (f"Counties on positive watch, {pd.Timestamp(f'{month}-01'):%B %Y}: labor force climbing off a low and above where it was three years ago"
            if rising else
            f"Counties on negative watch, {pd.Timestamp(f'{month}-01'):%B %Y}: labor force down from a year ago and from three years ago")
@@ -127,7 +128,7 @@ def chart_state_map(s: pd.DataFrame, month: str, out: Path, flag: int, state: st
     n_other = int((fl == (NEGATIVE if rising else POSITIVE)).sum())
     name = STATE_NAMES.get(state, state)
     verb = "are turning back up" if rising else "are losing labor force"
-    other_word = "sliding" if rising else "recovering"
+    other_word = "on negative watch" if rising else "on positive watch"
     frame(fig, f"{name}: {n_flag} of {n_all} counties {verb}",
           f"Counties on {'positive' if rising else 'negative'} watch, {pd.Timestamp(f'{month}-01'):%B %Y}. "
           f"{'No ' + name + ' county is' if n_other == 0 else str(n_other) + ' are'} {other_word}.", top=0.86)
