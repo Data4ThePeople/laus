@@ -55,3 +55,4 @@ None.
 - 2026-09-16 Importer fix: a re-rendered image used to keep its old asset in Prismic, because uploads were cached by path alone. The cache now records size and modified time and re-uploads a changed file.
 - 2026-09-16 Step 2f done. Step 2g opened: Mailchimp teaser.
 - 2026-09-16 Step 2g: EMAIL.md drafted. Subject 34 chars, preview 64, hero JPG 89KB, one chart (January to July). Every number in it appears in the post. Waiting on approve or reject.
+- 2026-09-16 Email revised at Eric's request: hero chart only, no second chart, and the body sends readers to the post for the charts and the story.
