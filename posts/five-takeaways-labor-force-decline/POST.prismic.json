@@ -15,7 +15,7 @@
         "drop_cap_text": [
           {
             "type": "paragraph",
-            "text": "We rebuilt our county labor force map this week and added data through July 2026. Five things stand out. The charts do most of the talking.",
+            "text": "We rebuilt our county labor force map this week and added data through July 2026. Five things stood out to us. We usually give you a lot of words. Today the charts do the talking.",
             "spans": [],
             "direction": "ltr"
           }
@@ -48,7 +48,7 @@
           },
           {
             "type": "paragraph",
-            "text": "A county is in structural loss when its labor force is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record.",
+            "text": "A county is in structural loss when its labor force is more than 10% below where it stood 20 years earlier. In 2010 that was 7% of counties. It is now 40%, the highest on record. At the end of 2025, the data behind our first map, it was 33%.",
             "spans": [],
             "direction": "ltr"
           }
@@ -102,7 +102,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Counties normally add workers between January and July. This year 38% of them lost workers instead, against a long-run figure of 21%.",
+            "text": "Counties normally add workers between January and July. This year 38% of them lost workers instead, against a long-run figure of 21%. Second worst was last year.",
             "spans": [],
             "direction": "ltr"
           }
@@ -156,7 +156,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Our map flags a county as sliding when its labor force is below both a year ago and three years ago. In five states, most counties carry that flag.",
+            "text": "Our map flags a county as sliding when its labor force is below both a year ago and three years ago (i.e., \"negative watch\"). In five states, most counties carry that flag.",
             "spans": [],
             "direction": "ltr"
           }
@@ -251,14 +251,62 @@
       "primary": {
         "paragraph_text": [
           {
+            "type": "paragraph",
+            "text": "Colorado is fourth on the list, and it is the opposite story from Michigan. There the big metro counties are holding while the rest slides. In Colorado every one of the ten largest counties is shrinking, Denver included, and the flags have not caught up yet.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Horizontal bar chart of the year-over-year change in labor force for Colorado's ten largest counties, July 2025 to July 2026. Every bar is negative, from Larimer at 0.8% down to Mesa at 2.7%. Denver, the largest at 448,000 workers, is down 1.8%. Only Boulder carries the map's sliding flag.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "Only Boulder meets the sliding flag, which also asks for a three-year decline. Source: BLS LAUS.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
             "type": "heading2",
-            "text": "4. A few states are going the other way",
+            "text": "4. It's not all doom and gloom...",
             "spans": [],
             "direction": "ltr"
           },
           {
             "type": "paragraph",
-            "text": "The same map flags a county as turning up when its labor force has climbed off a multi-year low and sits above where it was three years ago.",
+            "text": "Some states have labor forces with positive momentum. The following chart shows the top five states by percent of counties on positive watch.",
             "spans": [],
             "direction": "ltr"
           }
@@ -279,7 +327,7 @@
         "source_text": [
           {
             "type": "paragraph",
-            "text": "A county turning up is on what the map calls a positive watch. Source: BLS LAUS.",
+            "text": "A county turning up is on what the map calls a positive watch. South Carolina is the strongest of the five. Source: BLS LAUS.",
             "spans": [],
             "direction": "ltr"
           }
@@ -306,7 +354,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "South Carolina is the mirror image of Michigan. No county in the state is sliding.",
+            "text": "Look at the South Carolina map. We looked for a reason and found migration, not a factory boom. Its counties gained people from other states, and its participation rate rose while the national rate fell. If you know the local story, we want to hear it.",
             "spans": [],
             "direction": "ltr"
           }
@@ -360,7 +408,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Hyper-growth counties are those whose labor force is more than 40% above its level 20 years ago. Two years ago, 3% of them were shrinking. Today 48% are.",
+            "text": "Hyper-growth counties are those whose labor force is more than 40% above its level 20 years ago. Our original key takeaway back in March was that U.S. counties had bifurcated into the haves and have-nots when it came to their labor forces. In 2026 the have counties are stalling, and some are shrinking. Two years ago, 3% of them were shrinking. Today 48% are.",
             "spans": [],
             "direction": "ltr"
           }
@@ -408,7 +456,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Some of the best known growth counties in the country peaked in the past two years and have been falling since. A few are still climbing.",
+            "text": "Some of the best known growth counties in the country peaked in the past two years and have been falling since. A few are still climbing. Flip through the image carousel and see.",
             "spans": [],
             "direction": "ltr"
           }
@@ -549,6 +597,39 @@
       "items": [],
       "primary": {
         "spacer_value": "40px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "What are you finding?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Let us know! Or better yet, bring the discussion to social media and share your thoughts. Tagging our work and sharing the data is much appreciated.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
       }
     },
     {

@@ -7,7 +7,7 @@ Sibling: STATUS.md, which covers the Visualization methodology page (complete)
 ## Current
 
 Post: five-takeaways-labor-force-decline
-Step: 2a
+Step: 2c
 Since: 2026-09-16
 
 ## Steps
@@ -15,8 +15,8 @@ Since: 2026-09-16
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-09-14 | Shared with the viz page; research in docs/RECOVERY-RESEARCH.md |
-| 2a | Draft with brackets resolved | | Charts and carousel placed; Eric's prose still to come |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2a | Draft with brackets resolved | 2026-09-16 | Spare draft, charts carry the story |
+| 2b | Eric's edit, Claude's look-over | 2026-09-16 | Eric edited; 10 items proposed and all accepted |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -39,3 +39,7 @@ None.
   charts, captions, alt text and the carousel fence. Title, prose, hero and SEO are still open.
   Every chart regenerates from scripts/chart_*.py.
 - 2026-09-16 Draft written at Eric's request, deliberately spare: 472 words of prose across the five takeaways, with the charts carrying the story. Every number tied out against the data. Title, hero and SEO still open.
+- 2026-09-16 Step 2b done. Eric's edits reviewed; both brackets resolved. The Colorado claim was corrected:
+  the Denver metro counties are NOT on negative watch (the flag also needs a three-year decline), though all
+  ten of Colorado's largest counties are down year over year. New chart 03c-co-largest-counties.png.
+  The December 2025 structural loss share was 33%. Step 2c opened.
