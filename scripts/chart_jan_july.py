@@ -56,8 +56,8 @@ def render(out: Path) -> Path:
     for y in (COVID, latest - 1, latest):
         ax.annotate(f"{t.loc[y, 'down']:.0f}%", xy=(y, t.loc[y, "down"]), xytext=(0, 6),
                     textcoords="offset points", color=INK, fontsize=9.5, fontweight="bold", ha="center")
-    frame(fig, "The weakest spring on record, outside the pandemic",
-          "Share of U.S. counties whose labor force fell from January to July, a season that normally adds workers")
+    frame(fig, "The weakest first seven months on record, outside the pandemic",
+          "Share of U.S. counties whose labor force fell from January to July, months that normally add workers")
     word_legend(fig, [("Lost labor force", CORAL), ("Gained or held", TEAL)])
 
     out.parent.mkdir(parents=True, exist_ok=True)

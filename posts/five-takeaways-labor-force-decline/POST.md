@@ -29,9 +29,9 @@ A county is in structural loss when its civilian labor force, as measured by the
 ![Line chart of the share of U.S. counties in structural labor force loss, every month from January 2010 through July 2026. The line climbs from 7% of counties, or 219, at the start to 40%, or 1,281 of 3,214, in July 2026, which is the highest reading on record. It passes the previous peak of 38.8% set in May 2020.](images/01-structural-loss-over-time.png)
 *Counties whose labor force is more than 10% below the same month 20 years earlier. Source: BLS LAUS.*
 
-## 2. This year is the weakest spring since 2020
+## 2. The first seven months were the weakest since 2020
 
-Counties normally add workers between January and July. This year 38% of them lost workers instead, against a long-run figure of 21%. Second worst was last year.
+Counties normally add workers over the first seven months of the year. This year 38% of them lost workers instead, against a long-run figure of 21%. Second worst was last year.
 
 ![Stacked bar chart, one bar per year from 1990 to 2026, showing the share of U.S. counties whose labor force fell between January and July of the same year. The coral share is 38% in 2026 and 35% in 2025, against a 1990 to 2019 median of 21%. Only 2020, at 61%, was worse.](images/02-january-to-july.png)
 *January and July fall in the same year, so this comparison is not affected by the January change in population estimates. Source: BLS LAUS.*
