@@ -6,8 +6,8 @@ Sibling: STATUS.md, which covers the Visualization methodology page (complete)
 
 ## Current
 
-Post: five-takeaways-labor-force-decline
-Step: 2g
+Post: five-takeaways-labor-force-decline (complete)
+Step: complete
 Since: 2026-09-16
 
 ## Steps
@@ -21,7 +21,7 @@ Since: 2026-09-16
 | 2d | Hero 1680x1080 + alt text | 2026-09-16 | Takeaway 1 chart, minimal variant, one call-out |
 | 2e | SEO | 2026-09-16 | Meta title 51 chars, description 152, 8 keywords, Article + FAQ schema |
 | 2f | Pushed to Prismic (draft) | 2026-09-16 | New draft aqrqxxEAACsAk4Np, 44 slices, 17 images |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-09-16 | Hero chart only; subject names the 40% and structural labor force decline |
 
 ## Stale
 
@@ -56,3 +56,4 @@ None.
 - 2026-09-16 Step 2f done. Step 2g opened: Mailchimp teaser.
 - 2026-09-16 Step 2g: EMAIL.md drafted. Subject 34 chars, preview 64, hero JPG 89KB, one chart (January to July). Every number in it appears in the post. Waiting on approve or reject.
 - 2026-09-16 Email revised at Eric's request: hero chart only, no second chart, and the body sends readers to the post for the charts and the story.
+- 2026-09-16 Step 2g done. five-takeaways-labor-force-decline complete: every step 1 through 2g confirmed. Draft aqrqxxEAACsAk4Np sits in the Migration Release for review and publishing.
