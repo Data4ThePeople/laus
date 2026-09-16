@@ -7,7 +7,7 @@ Sibling: STATUS.md, which covers the Visualization methodology page (complete)
 ## Current
 
 Post: five-takeaways-labor-force-decline
-Step: 2e
+Step: 2f
 Since: 2026-09-16
 
 ## Steps
@@ -19,7 +19,7 @@ Since: 2026-09-16
 | 2b | Eric's edit, Claude's look-over | 2026-09-16 | Eric edited; 10 items proposed and all accepted |
 | 2c | Slice markup | 2026-09-16 | 44 slices; one divider above the notes; carousel full width |
 | 2d | Hero 1680x1080 + alt text | 2026-09-16 | Takeaway 1 chart, minimal variant, one call-out |
-| 2e | SEO | | |
+| 2e | SEO | 2026-09-16 | Meta title 51 chars, description 152, 8 keywords, Article + FAQ schema |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -48,3 +48,5 @@ None.
 - 2026-09-16 Step 2c done. Step 2d opened: hero.
 - 2026-09-16 Step 2d done. Step 2e opened: SEO.
 - 2026-09-16 Step 2e: meta title 51 chars, description 152, 8 keywords, Article plus FAQ schema with three questions. Four crawlable-text edits accepted, including internal links to the March and June pieces. The shared schema builder now sets the house terms-of-use license on Article as well as Dataset pages, replacing a hard-coded Creative Commons default.
+- 2026-09-16 Step 2e done. Step 2f opened: push to Prismic as a draft.
+- 2026-09-16 Step 2f: pushed to Prismic. New draft aqrqxxEAACsAk4Np in the Migration Release, uid five-takeaways-labor-force-decline, label "Data 4 Thought: Five Takeaways, Labor Force". 17 images uploaded including the hero. Tags and author empty. Re-running updates this same draft.
