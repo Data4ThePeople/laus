@@ -28,7 +28,7 @@ A county is in structural loss when its labor force is more than 10% below where
 
 That is one of five things we found. The others are about where it is happening, and where it is not. Whole states are now moving together in both directions. Even the boom counties of the past 20 years have stalled, and some are shrinking.
 
-Each one is a chart, and the charts tell the story better than we can. They are in the post, along with the map itself, where you can look up your own county.
+We took a different approach with today's post. We usually give you a lot of words. This time we told the story through the charts, so to really see it you have to click through and read today's Data 4 Thought. The map is there too, and you can look up your own county.
 ```
 
 ## 4. Call to action
