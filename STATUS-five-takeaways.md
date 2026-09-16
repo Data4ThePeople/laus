@@ -38,3 +38,4 @@ None.
 - 2026-09-16 Charts copied into posts/five-takeaways-labor-force-decline/images. POST.md holds the
   charts, captions, alt text and the carousel fence. Title, prose, hero and SEO are still open.
   Every chart regenerates from scripts/chart_*.py.
+- 2026-09-16 Draft written at Eric's request, deliberately spare: 472 words of prose across the five takeaways, with the charts carrying the story. Every number tied out against the data. Title, hero and SEO still open.
