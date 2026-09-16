@@ -21,7 +21,7 @@ from lfd.chartstyle import BG, CORAL, GRID, INK, MUTED, TEAL, figure, frame
 HG = "Hyper-Growth (>40%)"
 # Prismic's carousel lays its caption over the bottom of the image, so each
 # county chart carries a band of empty background for that text to sit in.
-CAPTION_BAND = 150
+CAPTION_BAND = 100
 STALLING = ["37183", "37119", "08031", "51107", "04021"]      # Wake, Mecklenburg, Denver, Loudoun, Pinal
 STRONG = ["05007", "45019", "48329"]                           # Benton AR, Charleston SC, Midland TX
 TREND_FROM = "2016-01-01"

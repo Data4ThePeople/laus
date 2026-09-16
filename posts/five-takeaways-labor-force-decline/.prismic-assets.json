@@ -62,60 +62,60 @@
     "url": "https://images.prismic.io/data4thepeople/MK1ShXE5RzFv34Gr_five-takeaways-labor-force-decline-hero-1680x1080.png?auto=format,compress",
     "stamp": "233865:1789585728"
   },
-  "images/05-3-denver-co.png": {
-    "id": "GRmDz-fOiE8lo5ux",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/GRmDz-fOiE8lo5ux_05-3-denver-co.png?auto=format,compress",
-    "stamp": "107335:1789589918"
-  },
-  "images/05-4-loudoun-va.png": {
-    "id": "ErPPvILy1HCPGm-m",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/ErPPvILy1HCPGm-m_05-4-loudoun-va.png?auto=format,compress",
-    "stamp": "98458:1789589918"
-  },
-  "images/05-5-pinal-az.png": {
-    "id": "oNLVDmzw1TSkFicD",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/oNLVDmzw1TSkFicD_05-5-pinal-az.png?auto=format,compress",
-    "stamp": "88082:1789589918"
-  },
-  "images/05-6-benton-ar.png": {
-    "id": "T2Y_QoJtz8rTJ9Vf",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/T2Y_QoJtz8rTJ9Vf_05-6-benton-ar.png?auto=format,compress",
-    "stamp": "90573:1789589918"
-  },
-  "images/05-7-charleston-sc.png": {
-    "id": "gkHqrAbCFFAWenVy",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/gkHqrAbCFFAWenVy_05-7-charleston-sc.png?auto=format,compress",
-    "stamp": "94871:1789589918"
-  },
-  "images/05-8-midland-tx.png": {
-    "id": "iBE_vhXKuCLVvKL6",
-    "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/iBE_vhXKuCLVvKL6_05-8-midland-tx.png?auto=format,compress",
-    "stamp": "83664:1789589918"
-  },
   "images/05-1-wake-nc.png": {
-    "id": "JzN4AhdnMoJNOkRJ",
+    "id": "eTNRaQeFtPfJyr4T",
     "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/JzN4AhdnMoJNOkRJ_05-1-wake-nc.png?auto=format,compress",
-    "stamp": "101851:1789590046"
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/eTNRaQeFtPfJyr4T_05-1-wake-nc.png?auto=format,compress",
+    "stamp": "101311:1789590236"
   },
   "images/05-2-mecklenburg-nc.png": {
-    "id": "ksA3d1gH_fl-H2aJ",
+    "id": "gaNXESEgpb1eqA-T",
     "width": 1600,
-    "height": 1050,
-    "url": "https://images.prismic.io/data4thepeople/ksA3d1gH_fl-H2aJ_05-2-mecklenburg-nc.png?auto=format,compress",
-    "stamp": "106704:1789590111"
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/gaNXESEgpb1eqA-T_05-2-mecklenburg-nc.png?auto=format,compress",
+    "stamp": "106163:1789590236"
+  },
+  "images/05-3-denver-co.png": {
+    "id": "M8qTrzzg6FMc04vj",
+    "width": 1600,
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/M8qTrzzg6FMc04vj_05-3-denver-co.png?auto=format,compress",
+    "stamp": "106795:1789590236"
+  },
+  "images/05-4-loudoun-va.png": {
+    "id": "_0BzQ1RnqkRPk2rg",
+    "width": 1600,
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/_0BzQ1RnqkRPk2rg_05-4-loudoun-va.png?auto=format,compress",
+    "stamp": "97900:1789590236"
+  },
+  "images/05-5-pinal-az.png": {
+    "id": "9SLutvxLw_dQWvyd",
+    "width": 1600,
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/9SLutvxLw_dQWvyd_05-5-pinal-az.png?auto=format,compress",
+    "stamp": "87583:1789590236"
+  },
+  "images/05-6-benton-ar.png": {
+    "id": "0VsN1wO_IS85OA4R",
+    "width": 1600,
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/0VsN1wO_IS85OA4R_05-6-benton-ar.png?auto=format,compress",
+    "stamp": "90080:1789590236"
+  },
+  "images/05-7-charleston-sc.png": {
+    "id": "D-038nhK-qEldNw_",
+    "width": 1600,
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/D-038nhK-qEldNw__05-7-charleston-sc.png?auto=format,compress",
+    "stamp": "94353:1789590236"
+  },
+  "images/05-8-midland-tx.png": {
+    "id": "y5oZ6LYeaTBn_H8Z",
+    "width": 1600,
+    "height": 1000,
+    "url": "https://images.prismic.io/data4thepeople/y5oZ6LYeaTBn_H8Z_05-8-midland-tx.png?auto=format,compress",
+    "stamp": "83169:1789590236"
   }
 }
