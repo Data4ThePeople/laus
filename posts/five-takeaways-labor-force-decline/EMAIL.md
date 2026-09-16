@@ -3,7 +3,7 @@
 Post URL: https://www.data4thepeople.com/p/five-takeaways-labor-force-decline
 
 ```
-Subject:  Two in five counties are shrinking
+Subject:  40% of counties are losing labor force
 Preview:  We rebuilt the map, added July data, and pulled out five charts.
 ```
 
