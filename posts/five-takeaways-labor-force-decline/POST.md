@@ -21,7 +21,7 @@ dividers: false
 
 # Five takeaways from our new labor force map
 
-We rebuilt [our county labor force map](https://www.data4thepeople.com/p/viral-labor-force-decline/) this week and added data through July 2026. Five things stood out to us. We usually give you a lot of words. Today the charts do the talking.
+We rebuilt [our county labor force map](https://www.data4thepeople.com/p/labor-force-history-viz) this week and added data through July 2026. Five things stood out to us. We usually give you a lot of words. Today the charts do the talking.
 
 ## 1. Two in five counties are shrinking
 
