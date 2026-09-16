@@ -7,7 +7,7 @@ Sibling: STATUS.md, which covers the Visualization methodology page (complete)
 ## Current
 
 Post: five-takeaways-labor-force-decline
-Step: 2f
+Step: 2g
 Since: 2026-09-16
 
 ## Steps
@@ -20,7 +20,7 @@ Since: 2026-09-16
 | 2c | Slice markup | 2026-09-16 | 44 slices; one divider above the notes; carousel full width |
 | 2d | Hero 1680x1080 + alt text | 2026-09-16 | Takeaway 1 chart, minimal variant, one call-out |
 | 2e | SEO | 2026-09-16 | Meta title 51 chars, description 152, 8 keywords, Article + FAQ schema |
-| 2f | Pushed to Prismic (draft) | | |
+| 2f | Pushed to Prismic (draft) | 2026-09-16 | New draft aqrqxxEAACsAk4Np, 44 slices, 17 images |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -53,3 +53,5 @@ None.
 - 2026-09-16 Publication set to September 16, 2026 at 4:30pm Eastern (date plus a time line in front matter). Draft re-pushed.
 - 2026-09-16 Carousel images now carry a 150px band of background at the bottom, because Prismic lays the slide caption over the image and it was landing on the source line. Captions also keep their italics now (importer fix).
 - 2026-09-16 Importer fix: a re-rendered image used to keep its old asset in Prismic, because uploads were cached by path alone. The cache now records size and modified time and re-uploads a changed file.
+- 2026-09-16 Step 2f done. Step 2g opened: Mailchimp teaser.
+- 2026-09-16 Step 2g: EMAIL.md drafted. Subject 34 chars, preview 64, hero JPG 89KB, one chart (January to July). Every number in it appears in the post. Waiting on approve or reject.
