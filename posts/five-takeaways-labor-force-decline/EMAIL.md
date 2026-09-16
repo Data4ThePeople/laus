@@ -33,4 +33,4 @@ We took a different approach with today's post. We usually give you a lot of wor
 
 ## 4. Call to action
 
-**[See the five charts](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline)**
+**[See the story](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline)**
