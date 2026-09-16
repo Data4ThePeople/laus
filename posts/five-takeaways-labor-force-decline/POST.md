@@ -7,7 +7,7 @@ prismic_id:
 date: 2026-09-17
 section: Data 4 Thought
 hero: images/five-takeaways-labor-force-decline-hero-1680x1080.png
-hero_alt: Line chart titled Counties in structural labor force loss, 2010 to 2026. It shows the share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier, every month from January 2010 to July 2026. The line rises from 7% of counties, or 219, to 40%, or 1,281 of 3,214, the highest reading on record. It passes the previous peak of 38.8% set in May 2020. A gap is marked where no county data was published in October 2025.
+hero_alt: Line chart titled Counties in structural labor force loss, 2010 to 2026. It shows the share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier, every month from January 2010 to July 2026. The line rises from about 7% of counties to 40%, labeled as 1,281 of 3,214 counties in July 2026, the highest reading on record.
 meta_title:
 description:
 keywords:

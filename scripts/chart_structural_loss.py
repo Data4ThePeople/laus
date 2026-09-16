@@ -35,7 +35,7 @@ def series() -> pd.DataFrame:
     return g.reindex(pd.date_range(g.index.min(), g.index.max(), freq="MS"))   # gap stays a gap
 
 
-def render(out: Path) -> Path:
+def render(out: Path, minimal: bool = False) -> Path:
     g = series()
     first, last = g.dropna().iloc[0], g.dropna().iloc[-1]
     first_d, last_d = g.dropna().index[0], g.dropna().index[-1]
@@ -62,12 +62,25 @@ def render(out: Path) -> Path:
     ax.spines["bottom"].set_color(GRID)
     ax.tick_params(colors=MUTED, labelsize=9, length=0)
 
+    fig.text(0.055, 0.955, "Counties in structural labor force loss, 2010 to 2026",
+             color=INK, fontsize=15, fontweight="bold", va="top")
+    fig.text(0.055, 0.893,
+             "Share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier",
+             color=MUTED, fontsize=10, va="top")
+    fig.text(0.055, 0.035, SOURCE, color=MUTED, fontsize=8.5)
+    fig.text(0.945, 0.035, "Built by Data 4 The People", color=MUTED, fontsize=8.5, ha="right")
+    fig.subplots_adjust(left=0.075, right=0.975, top=0.80, bottom=0.115)
+
     arrow = dict(arrowstyle="-", color=MUTED, linewidth=0.9, shrinkA=0, shrinkB=4)
     ax.scatter([last_d], [last.share], s=44, color=CORAL, zorder=5, edgecolor=BG, linewidth=1.5)
     ax.annotate(f"July 2026: {last.share:.0f}% of counties,\n{int(last.sl):,} of {int(last.total):,}",
                 xy=(last_d, last.share), xytext=(-14, 34), textcoords="offset points",
                 color=INK, fontsize=10, fontweight="bold", ha="right", va="bottom",
                 linespacing=1.5, arrowprops=arrow)
+    if minimal:                      # hero version: one call-out, nothing else
+        fig.savefig(out, facecolor=BG)
+        print(f"wrote {out} (minimal)")
+        return out
     ax.annotate(f"COVID peak, {covid:%B %Y}: {g.loc[covid, 'share']:.1f}%",
                 xy=(covid, g.loc[covid, "share"]), xytext=(10, 26), textcoords="offset points",
                 color=MUTED, fontsize=9, ha="left", va="bottom", arrowprops=arrow)
@@ -78,15 +91,6 @@ def render(out: Path) -> Path:
                 xy=(pd.Timestamp("2025-10-01"), float(bridged.loc["2025-10-01"])),
                 xytext=(-18, -46), textcoords="offset points", color=MUTED, fontsize=8.5,
                 ha="right", va="center", linespacing=1.4, arrowprops=arrow)
-
-    fig.text(0.055, 0.955, "Counties in structural labor force loss, 2010 to 2026",
-             color=INK, fontsize=15, fontweight="bold", va="top")
-    fig.text(0.055, 0.893,
-             "Share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier",
-             color=MUTED, fontsize=10, va="top")
-    fig.text(0.055, 0.035, SOURCE, color=MUTED, fontsize=8.5)
-    fig.text(0.945, 0.035, "Built by Data 4 The People", color=MUTED, fontsize=8.5, ha="right")
-    fig.subplots_adjust(left=0.075, right=0.975, top=0.80, bottom=0.115)
 
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, facecolor=BG)
@@ -99,7 +103,9 @@ def render(out: Path) -> Path:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", type=Path, default=ROOT / "outputs" / "charts" / "01-structural-loss-over-time.png")
-    render(ap.parse_args().out)
+    ap.add_argument("--minimal", action="store_true", help="hero version: only the latest call-out")
+    a = ap.parse_args()
+    render(a.out, a.minimal)
 
 
 if __name__ == "__main__":
