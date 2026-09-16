@@ -38,17 +38,17 @@ Counties normally add workers between January and July. This year 38% of them lo
 
 ## 3. Some states are sliding almost everywhere
 
-Our map flags a county as sliding when its labor force is below both a year ago and three years ago (i.e., "negative watch"). In five states, most counties carry that flag.
+Our map puts a county on negative watch when its labor force is below both a year ago and three years ago. In five states, most counties carry that flag.
 
 ![Horizontal bar chart of the five states with the largest share of counties on negative watch in July 2026. Vermont leads at 93%, or 13 of 14 counties, then Michigan at 87% with 72 of 83, Wyoming at 83% with 19 of 23, Colorado at 56% with 36 of 64, and Illinois at 49% with 50 of 102. Only Illinois has any counties recovering, with four.](images/03a-negative-watch-states.png)
-*A sliding county is on what the map calls a negative watch. Source: BLS LAUS.*
+*Negative watch: labor force below both a year ago and three years ago. Source: BLS LAUS.*
 
 Michigan is the clearest case. Its three largest labor markets are holding. Almost everything else is not.
 
 ![Map of Michigan's 83 counties for July 2026. Seventy-two are shaded coral for negative watch and eleven are gray. The gray exceptions include the Detroit metro counties of Wayne, Oakland and Macomb, which are labeled. No Michigan county is recovering.](images/03b-mi-negative-watch.png)
 *The counties shaded coral hold 54% of Michigan's workers. Source: BLS LAUS.*
 
-Colorado is fourth on the list, and it is the opposite story from Michigan. In Michigan the big metro counties are holding while the rest of the state slides. In Colorado the decline starts with the big counties: every one of the ten largest is shrinking, Denver included, and the flags have not caught up yet.
+Colorado is fourth on the list, and it is the opposite story from Michigan. In Michigan the big metro counties are holding while the rest of the state is on negative watch. In Colorado the decline starts with the big counties: every one of the ten largest is shrinking, Denver included, and the flags have not caught up yet.
 
 ![Horizontal bar chart of the year-over-year change in labor force for Colorado's ten largest counties, July 2025 to July 2026. Every bar is negative, from Larimer at 0.8% down to Mesa at 2.7%. Denver, the largest at 448,000 workers, is down 1.8%. Only Boulder is on negative watch.](images/03c-co-largest-counties.png)
 *Only Boulder is on negative watch, which also asks for a three-year decline. Source: BLS LAUS.*
@@ -57,12 +57,12 @@ Colorado is fourth on the list, and it is the opposite story from Michigan. In M
 
 Some states have labor forces with positive momentum. The following chart shows the top five states by percent of counties on positive watch.
 
-![Horizontal bar chart of the five states with the largest share of counties on positive watch in July 2026. South Carolina leads at 85%, or 39 of 46 counties, then Nevada at 76% with 13 of 17, North Dakota at 68% with 36 of 53, Arkansas at 52% with 39 of 75, and Alaska at 48% with 11 of 23. No South Carolina county is sliding.](images/04a-positive-watch-states.png)
-*A county turning up is on what the map calls a positive watch. South Carolina is the strongest of the five. Source: BLS LAUS.*
+![Horizontal bar chart of the five states with the largest share of counties on positive watch in July 2026. South Carolina leads at 85%, or 39 of 46 counties, then Nevada at 76% with 13 of 17, North Dakota at 68% with 36 of 53, Arkansas at 52% with 39 of 75, and Alaska at 48% with 11 of 23. No South Carolina county is on negative watch.](images/04a-positive-watch-states.png)
+*Positive watch: labor force climbing off a multi-year low and above where it was three years ago. South Carolina is the strongest of the five. Source: BLS LAUS.*
 
 Look at the South Carolina map. We looked for a reason and found migration, not a factory boom. Its counties gained people from other states, and its participation rate rose while the national rate fell. If you know the local story, we want to hear it.
 
-![Map of South Carolina's 46 counties for July 2026. Thirty-nine are shaded teal for positive watch and seven are gray, including Orangeburg, Georgetown and Cherokee, which are labeled. No county in the state is sliding.](images/04b-sc-positive-watch.png)
+![Map of South Carolina's 46 counties for July 2026. Thirty-nine are shaded teal for positive watch and seven are gray, including Orangeburg, Georgetown and Cherokee, which are labeled. No county in the state is on negative watch.](images/04b-sc-positive-watch.png)
 *The counties shaded teal hold 95% of South Carolina's workers. Source: BLS LAUS.*
 
 ## 5. Even the boom counties have stopped
