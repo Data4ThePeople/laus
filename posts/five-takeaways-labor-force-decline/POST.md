@@ -15,7 +15,7 @@ schema_type: article
 drop_cap: true
 heading_spacer: 20px
 caption_spacer: 20px
-dividers: true
+dividers: false
 ---
 
 # Five takeaways from our new labor force map
@@ -105,6 +105,8 @@ The map is free. Press play to watch the last 16 years, pick your state, and hov
 
 Let us know! Or better yet, bring the discussion to social media and share your thoughts. Tagging our work and sharing the data is much appreciated.
 
+
+::: divider
 
 ::: blurb What this does and does not tell you
 The labor force counts people who are working or looking for work, where they live. It falls when people retire, stop looking, or move away, so a shrinking labor force is not the same as rising unemployment.

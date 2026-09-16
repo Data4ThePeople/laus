@@ -23,12 +23,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -75,12 +77,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -127,12 +131,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -275,12 +281,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -375,12 +383,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -519,12 +529,14 @@
       "primary": {}
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -578,12 +590,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "40px"
+      }
     },
     {
       "slice_type": "paragarph_text",
@@ -609,14 +623,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "highlited_page_blurb",
@@ -670,12 +682,14 @@
       }
     },
     {
-      "slice_type": "divider_dots",
+      "slice_type": "spacer",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {}
+      "primary": {
+        "spacer_value": "20px"
+      }
     },
     {
       "slice_type": "paragarph_text",
