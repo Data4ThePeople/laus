@@ -51,3 +51,4 @@ None.
 - 2026-09-16 Step 2e done. Step 2f opened: push to Prismic as a draft.
 - 2026-09-16 Step 2f: pushed to Prismic. New draft aqrqxxEAACsAk4Np in the Migration Release, uid five-takeaways-labor-force-decline, label "Data 4 Thought: Five Takeaways, Labor Force". 17 images uploaded including the hero. Tags and author empty. Re-running updates this same draft.
 - 2026-09-16 Publication set to September 16, 2026 at 4:30pm Eastern (date plus a time line in front matter). Draft re-pushed.
+- 2026-09-16 Carousel images now carry a 150px band of background at the bottom, because Prismic lays the slide caption over the image and it was landing on the source line. Captions also keep their italics now (importer fix).

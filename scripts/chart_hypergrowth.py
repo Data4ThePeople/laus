@@ -13,11 +13,15 @@ from pathlib import Path
 
 import pandas as pd
 from matplotlib.ticker import FuncFormatter
+from PIL import Image
 
 from lfd import CLASSIFIED_PATH, PANEL_PATH, ROOT
 from lfd.chartstyle import BG, CORAL, GRID, INK, MUTED, TEAL, figure, frame
 
 HG = "Hyper-Growth (>40%)"
+# Prismic's carousel lays its caption over the bottom of the image, so each
+# county chart carries a band of empty background for that text to sit in.
+CAPTION_BAND = 150
 STALLING = ["37183", "37119", "08031", "51107", "04021"]      # Wake, Mecklenburg, Denver, Loudoun, Pinal
 STRONG = ["05007", "45019", "48329"]                           # Benton AR, Charleston SC, Midland TX
 TREND_FROM = "2016-01-01"
@@ -95,6 +99,10 @@ def chart_county(cl: pd.DataFrame, lf: pd.DataFrame, fips: str, out: Path) -> No
     frame(fig, name, f"Labor force, monthly. Up {row['pct_change']*100:.0f}% over 20 years, and {change}.",
           top=0.82)
     fig.savefig(out, facecolor=BG)
+    im = Image.open(out).convert("RGB")
+    canvas = Image.new("RGB", (im.width, im.height + CAPTION_BAND), BG)
+    canvas.paste(im, (0, 0))
+    canvas.save(out)
     print(f"  {name}: {yoy:+.1f}% year over year, peak {peak_d:%Y-%m}")
 
 
