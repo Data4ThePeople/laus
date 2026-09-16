@@ -4,7 +4,8 @@ subtitle: Two in five U.S. counties now have fewer workers than they did 20 year
 slug: five-takeaways-labor-force-decline
 prismic_label: "Data 4 Thought: Five Takeaways, Labor Force"
 prismic_id:
-date: 2026-09-17
+date: 2026-09-16
+time: 16:30:00-04:00
 section: Data 4 Thought
 hero: images/five-takeaways-labor-force-decline-hero-1680x1080.png
 hero_alt: Line chart titled Counties in structural labor force loss, 2010 to 2026. It shows the share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier, every month from January 2010 to July 2026. The line rises from about 7% of counties to 40%, labeled as 1,281 of 3,214 counties in July 2026, the highest reading on record.
