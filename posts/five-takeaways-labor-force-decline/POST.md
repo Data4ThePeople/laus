@@ -50,8 +50,8 @@ Michigan is the clearest case. Its three largest labor markets are holding. Almo
 
 Colorado is fourth on the list, and it is the opposite story from Michigan. In Michigan the big metro counties are holding while the rest of the state slides. In Colorado the decline starts with the big counties: every one of the ten largest is shrinking, Denver included, and the flags have not caught up yet.
 
-![Horizontal bar chart of the year-over-year change in labor force for Colorado's ten largest counties, July 2025 to July 2026. Every bar is negative, from Larimer at 0.8% down to Mesa at 2.7%. Denver, the largest at 448,000 workers, is down 1.8%. Only Boulder carries the map's sliding flag.](images/03c-co-largest-counties.png)
-*Only Boulder meets the sliding flag, which also asks for a three-year decline. Source: BLS LAUS.*
+![Horizontal bar chart of the year-over-year change in labor force for Colorado's ten largest counties, July 2025 to July 2026. Every bar is negative, from Larimer at 0.8% down to Mesa at 2.7%. Denver, the largest at 448,000 workers, is down 1.8%. Only Boulder is on negative watch.](images/03c-co-largest-counties.png)
+*Only Boulder is on negative watch, which also asks for a three-year decline. Source: BLS LAUS.*
 
 ## 4. It's not all doom and gloom...
 

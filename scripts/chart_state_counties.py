@@ -48,8 +48,8 @@ def render(state: str, month: str, top: int, out: Path) -> None:
         ax.annotate(f"{row.labor_force/1000:,.0f}K workers", xy=(abs(lo) * 0.03, i),
                     color=MUTED, fontsize=9, va="center")
     flagged = g[g.flag == NEGATIVE].name.tolist()
-    note = ("None carries the map's sliding flag yet" if not flagged
-            else f"Only {' and '.join(flagged)} carries the map's sliding flag so far")
+    note = ("None is on negative watch yet" if not flagged
+            else f"Only {' and '.join(flagged)} is on negative watch so far")
     frame(fig, f"{NAMES.get(state, state)}'s largest counties are all shrinking",
           f"Change in labor force, {pd.Timestamp(year_ago):%B %Y} to {pd.Timestamp(d):%B %Y}. {note}.",
           top=0.82)
