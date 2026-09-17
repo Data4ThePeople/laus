@@ -57,3 +57,4 @@ None.
 - 2026-09-16 Step 2g: EMAIL.md drafted. Subject 34 chars, preview 64, hero JPG 89KB, one chart (January to July). Every number in it appears in the post. Waiting on approve or reject.
 - 2026-09-16 Email revised at Eric's request: hero chart only, no second chart, and the body sends readers to the post for the charts and the story.
 - 2026-09-16 Step 2g done. five-takeaways-labor-force-decline complete: every step 1 through 2g confirmed. Draft aqrqxxEAACsAk4Np sits in the Migration Release for review and publishing.
+- 2026-09-17 X thread drafted in THREAD.md: eight posts, all under 280 characters, every number tied back to the post. Images named per post.
