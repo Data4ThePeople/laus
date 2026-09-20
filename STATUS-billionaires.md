@@ -19,7 +19,7 @@ Since: 2026-09-20
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | 2026-09-20 | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
-| 2d | Hero 1680x1080 + alt text | | AI image path; prompt 1 chosen, waiting on the generated file |
+| 2d | Hero 1680x1080 + alt text | | AI image path; prompts 1 to 3 rejected, new directions open |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -30,8 +30,8 @@ None.
 
 ## Open items
 
-- Waiting on Eric to generate the hero from prompt 1 and drop it at
-  `posts/betting-the-house-on-billionaires/images/betting-the-house-on-billionaires-hero-source.<ext>`.
+- Hero concept is open. Prompt 1 (farmhouse on coin columns) did not work.
+  Eric is thinking about other directions.
 - Political content addressed in 2a: the fifth billionaire paragraph is now
   about the decisions rather than the officeholder, and the Middle East
   paragraph points at the documented conflict of interest rather than motive.
@@ -60,6 +60,9 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Prompt 1 rejected. Hero concept back open; Eric is working on
+  other directions before any new prompts are written.
 
 - 2026-09-20 Step 2c confirmed. Step 2d opened on the AI image path. Eric ruled
   out a still frame of either state map as the hero. Three prompts written;
