@@ -66,7 +66,7 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
   edits proposed and all accepted: a Common questions section with three
   questions (now an FAQPage in the schema), links from "many times" to the five
   takeaways post and the June piece, and a sentence saying the map is free and
-  the code is public. Post is now 20 slices.
+  the code is public. Post is now 25 slices.
 
 - 2026-09-20 Hero replaced with the round eight render. The clean green halo is
   gone: the green is now a ragged off-center band with several bare dead trees
