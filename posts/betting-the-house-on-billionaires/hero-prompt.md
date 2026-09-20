@@ -213,6 +213,47 @@ distance", and "deep focus from foreground to horizon". The round five prompt
 said "stretching to a flat horizon" and the generator read that as the prairie
 reaching the horizon, not the orchard.
 
+## Round seven: solid gold tree, full canopy, dead orchard to the horizon
+
+Combines the two open notes. Round four had a gold metal tree but bare and no
+bigger than its neighbors. Round five made it huge and full but turned it into
+an ordinary autumn cottonwood. Round six fixed the horizon. Prompt 13 wants all
+three at once: enormous, full canopy, and literally made of metal.
+
+## Prompt 13: the gold sculpture tree (recommended)
+
+> A vast dead orchard seen from a drone at about forty-five degrees, filling
+> the entire frame and running unbroken all the way to a distant flat horizon.
+> Hundreds of thousands of trees in rough rows, bare gray skeletons, dead and
+> leafless, covering every part of the land from the foreground to the horizon
+> line with no open fields, no farmland and no clearings anywhere in the
+> distance. At the center stands one enormous tree cast entirely from solid
+> gold metal, three times the height and canopy spread of anything else in the
+> frame. Its trunk, its bark, its branches and every one of its thousands of
+> leaves are gold metal: the leaves are thin hammered sheets of gold, dense and
+> countless, filling the canopy completely with no gaps, each one reflecting
+> the low sun so the whole crown glitters with hard specular highlights. It is
+> a metal sculpture of a tree in full summer leaf, heavy and solid and clearly
+> man-made, not a living tree and not autumn foliage. Ringed tightly around its
+> base, a small cluster of ordinary living deep green trees and thick green
+> grass. Just beyond that ring the trees thin and yellow, and beyond that they
+> are bare gray and stay bare gray for the entire rest of the image, out to the
+> horizon in every direction. The ground goes from green grass at the center to
+> dry cracked rust and clay earth everywhere else. The change is uneven, not a
+> clean circle: a few green trees stand far out alone, a few bare ones stand
+> close in. Warm low sunlight from the left, long shadows across the dead rows,
+> clear sky, late golden hour. The gold reflects real sunlight, polished and
+> metallic, and does not emit light: no glow, no light rays, no god rays, no
+> sparkle effects, no lens flare, nothing magical or fantasy. Realistic
+> documentary drone photography, deep focus from foreground to horizon, 3:2
+> landscape with open sky at the top. No people, no text, no logos.
+
+Two phrases are load bearing. "Thin hammered sheets of gold" keeps the canopy
+full while making the leaves metal, which is the thing round four and round
+five each got half right. "Not a living tree and not autumn foliage" is there
+because every generator's first instinct on "gold tree" is a yellow cottonwood
+in October, which is exactly what came back last time.
+
 ## Chosen
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
