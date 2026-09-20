@@ -9,9 +9,9 @@ time: 16:30:00-04:00
 section: Data 4 Thought
 hero: images/betting-the-house-on-billionaires-hero-1680x1080.jpg
 hero_alt: Aerial photograph of a vast dead orchard at sunset. Bare gray trees in long rows fill the frame to a flat horizon, standing in dry tan dirt. At the center stands one much larger tree made entirely of gold metal, its trunk, branches and thousands of leaves cast in gold and catching the low sun. A ragged band of green grass runs past its base, with several bare dead trees standing inside the green, and a handful of living green trees far out in the dead rows.
-meta_title:
-description:
-keywords:
+meta_title: Labor Force Decline in Nebraska and Arkansas, 2026
+description: Nebraska has 59 of 93 counties in structural labor force loss, Arkansas 45 of 75. The green that is left sits around Omaha and Bentonville.
+keywords: nebraska labor force, arkansas labor force, labor force decline by county, bentonville economy, omaha economy, counties losing workers, structural labor force decline, wealth concentration
 schema_type: article
 drop_cap: true
 heading_spacer: 20px
