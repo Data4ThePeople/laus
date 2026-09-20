@@ -3,6 +3,9 @@
   "page_subtitle": "Nebraska and Arkansas are turning red on our labor force map. Most of the green that is left sits next to two of the best-known fortunes in the country.",
   "published_date": "2026-09-20",
   "updated_date": "2026-09-20",
+  "meta_title": "Labor Force Decline in Nebraska and Arkansas, 2026",
+  "meta_description": "Nebraska has 59 of 93 counties in structural labor force loss, Arkansas 45 of 75. The green that is left sits around Omaha and Bentonville.",
+  "meta_keywords": "nebraska labor force, arkansas labor force, labor force decline by county, bentonville economy, omaha economy, counties losing workers, structural labor force decline, wealth concentration",
   "make_this_main_post": false,
   "slices": [
     {
@@ -214,7 +217,28 @@
           {
             "type": "paragraph",
             "text": "Here's what's interesting. When you play our labor force visualizations for Nebraska and Arkansas over time (from 2010 through 2026) what you will see is a wave of red engulfing both states. Recall that red signifies labor forces that are in structural decline \u2013 those that have dropped more than 10% over the past 20 years. Go find a city manager and talk to them (as I did). Ask them what keeps them up at night and they will likely tell you the labor force. That's because if the number of people working in your city grows, so does the tax base that funds it. And if people have jobs, they pay property tax and they spend money. The virtuous cycle of economic growth compounds. Now if your labor force is going in the opposite direction, it all works in reverse. Fewer people looking for work? Fewer employers will want to move operations to your city. We've written about this many times. It bears repeating again.",
-            "spans": [],
+            "spans": [
+              {
+                "start": 882,
+                "end": 886,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/five-takeaways-labor-force-decline",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 887,
+                "end": 892,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/geographic-virus-accelerating/",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           },
           {
@@ -498,7 +522,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Both maps come from the same county data as our labor force map: the civilian labor force by county from the Bureau of Labor Statistics Local Area Unemployment Statistics program, not seasonally adjusted. Each county is compared to the same calendar month 20 years earlier, so a July frame is always measured against July. A county is in structural loss, our red, when its labor force is more than 10% below that mark, and in hyper-growth, our darkest green, when it is more than 40% above it. The frames run from January 2010 to July 2026. Months from 2026 are preliminary until the spring revision.",
+            "text": "Both maps come from the same county data as our labor force map: the civilian labor force by county from the Bureau of Labor Statistics Local Area Unemployment Statistics program, not seasonally adjusted. Each county is compared to the same calendar month 20 years earlier, so a July frame is always measured against July. A county is in structural loss, our red, when its labor force is more than 10% below that mark, and in hyper-growth, our darkest green, when it is more than 40% above it. The frames run from January 2010 to July 2026. Months from 2026 are preliminary until the spring revision. The map is free to use, and the code behind it is public at github.com/Data4ThePeople/laus.",
             "spans": [
               {
                 "start": 44,
@@ -507,6 +531,16 @@
                 "data": {
                   "link_type": "Web",
                   "url": "https://www.data4thepeople.com/p/labor-force-history-viz",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 661,
+                "end": 691,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://github.com/Data4ThePeople/laus",
                   "target": "_blank"
                 }
               }
@@ -533,7 +567,133 @@
           }
         ]
       }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "Common questions",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "How many Nebraska counties are losing workers?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "In July 2026, 59 of Nebraska's 93 counties had a civilian labor force more than 10% below where it stood 20 years earlier. In January 2010 that was 4 counties.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Which Arkansas counties are growing fastest?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Benton County, where Walmart is headquartered, is up 71% over 20 years, the largest gain in the state. Washington County next to it is up 41%, and Saline County, outside Little Rock, is up 44%.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading3",
+            "text": "Do billionaires make their hometowns grow?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "This data cannot answer that. It shows that the fastest-growing counties in both states are the ones holding Omaha and Bentonville, and that most of both states is shrinking. It does not show why.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Is America betting the house on its billionaires?\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-09-20T16:30:00-04:00\",\n  \"dateModified\": \"2026-09-20T16:30:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"Is America betting the house on its billionaires?\",\n      \"description\": \"Nebraska has 59 of 93 counties in structural labor force loss, Arkansas 45 of 75. The green that is left sits around Omaha and Bentonville.\",\n      \"datePublished\": \"2026-09-20T16:30:00-04:00\",\n      \"dateModified\": \"2026-09-20T16:30:00-04:00\",\n      \"articleSection\": \"Data 4 Thought\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"nebraska labor force\",\n        \"arkansas labor force\",\n        \"labor force decline by county\",\n        \"bentonville economy\",\n        \"omaha economy\",\n        \"counties losing workers\",\n        \"structural labor force decline\",\n        \"wealth concentration\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many Nebraska counties are losing workers?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In July 2026, 59 of Nebraska's 93 counties had a civilian labor force more than 10% below where it stood 20 years earlier. In January 2010 that was 4 counties.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Which Arkansas counties are growing fastest?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Benton County, where Walmart is headquartered, is up 71% over 20 years, the largest gain in the state. Washington County next to it is up 41%, and Saline County, outside Little Rock, is up 44%.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Do billionaires make their hometowns grow?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"This data cannot answer that. It shows that the fastest-growing counties in both states are the ones holding Omaha and Bentonville, and that most of both states is shrinking. It does not show why.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }

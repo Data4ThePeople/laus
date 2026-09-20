@@ -19,8 +19,8 @@ Since: 2026-09-20
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | 2026-09-20 | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
-| 2d | Hero 1680x1080 + alt text | | Prompt 14 render in place, alt 461 chars, shipped as JPG |
-| 2e | SEO | | |
+| 2d | Hero 1680x1080 + alt text | 2026-09-20 | Prompt 14 render in place, alt 461 chars, shipped as JPG |
+| 2e | SEO | | Meta title 50 chars, description 139, 8 keywords; Article + FAQPage schema; 3 edits accepted |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -58,6 +58,15 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2d confirmed. Step 2e opened.
+- 2026-09-20 Step 2e: front matter written, meta title 50 characters,
+  description 139, 8 keywords weighted to the state and county searches rather
+  than the billionaire framing, which is crowded and low intent. Three text
+  edits proposed and all accepted: a Common questions section with three
+  questions (now an FAQPage in the schema), links from "many times" to the five
+  takeaways post and the June piece, and a sentence saying the map is free and
+  the code is public. Post is now 20 slices.
 
 - 2026-09-20 Hero replaced with the round eight render. The clean green halo is
   gone: the green is now a ragged off-center band with several bare dead trees

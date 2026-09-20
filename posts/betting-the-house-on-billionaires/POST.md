@@ -44,7 +44,7 @@ But this post is not about these billionaires. It's a post on the local labor fo
 
 You see, there are two states with very well-known billionaires (one is a family, not a person) who are tied to very specific cities that are off the beaten path. That's Warren Buffett (Omaha, NE) and Walmart founders, the Walton family (Bentonville, AR).
 
-Here's what's interesting. When you play our labor force visualizations for Nebraska and Arkansas over time (from 2010 through 2026) what you will see is a wave of red engulfing both states. Recall that red signifies labor forces that are in structural decline – those that have dropped more than 10% over the past 20 years. Go find a city manager and talk to them (as I did). Ask them what keeps them up at night and they will likely tell you the labor force. That's because if the number of people working in your city grows, so does the tax base that funds it. And if people have jobs, they pay property tax and they spend money. The virtuous cycle of economic growth compounds. Now if your labor force is going in the opposite direction, it all works in reverse. Fewer people looking for work? Fewer employers will want to move operations to your city. We've written about this many times. It bears repeating again.
+Here's what's interesting. When you play our labor force visualizations for Nebraska and Arkansas over time (from 2010 through 2026) what you will see is a wave of red engulfing both states. Recall that red signifies labor forces that are in structural decline – those that have dropped more than 10% over the past 20 years. Go find a city manager and talk to them (as I did). Ask them what keeps them up at night and they will likely tell you the labor force. That's because if the number of people working in your city grows, so does the tax base that funds it. And if people have jobs, they pay property tax and they spend money. The virtuous cycle of economic growth compounds. Now if your labor force is going in the opposite direction, it all works in reverse. Fewer people looking for work? Fewer employers will want to move operations to your city. We've written about this [many](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline) [times](https://www.data4thepeople.com/p/geographic-virus-accelerating/). It bears repeating again.
 
 So, take a look at these two maps. Watch the sea of red descend over these states like the plague and then notice the remaining green. The deepest darkest green sits in one metro in each state, and in each case it is the metro our billionaires call home. Arkansas's darkest county is Benton, where Walmart is headquartered. Benton County has experienced 71% growth in its labor force over the last 20 years. Nebraska's leader is Sarpy County, the county next door to Buffett's Omaha, with 52% growth over 20 years. Omaha's own Douglas County is right behind Sarpy at 24% growth.
 
@@ -80,8 +80,22 @@ Maybe that's why it feels like America has grown so weak.
 
 ## How we measured this
 
-Both maps come from the same county data as [our labor force map](https://www.data4thepeople.com/p/labor-force-history-viz): the civilian labor force by county from the Bureau of Labor Statistics Local Area Unemployment Statistics program, not seasonally adjusted. Each county is compared to the same calendar month 20 years earlier, so a July frame is always measured against July. A county is in structural loss, our red, when its labor force is more than 10% below that mark, and in hyper-growth, our darkest green, when it is more than 40% above it. The frames run from January 2010 to July 2026. Months from 2026 are preliminary until the spring revision.
+Both maps come from the same county data as [our labor force map](https://www.data4thepeople.com/p/labor-force-history-viz): the civilian labor force by county from the Bureau of Labor Statistics Local Area Unemployment Statistics program, not seasonally adjusted. Each county is compared to the same calendar month 20 years earlier, so a July frame is always measured against July. A county is in structural loss, our red, when its labor force is more than 10% below that mark, and in hyper-growth, our darkest green, when it is more than 40% above it. The frames run from January 2010 to July 2026. Months from 2026 are preliminary until the spring revision. The map is free to use, and the code behind it is public at [github.com/Data4ThePeople/laus](https://github.com/Data4ThePeople/laus).
 
 What this does not tell you: the labor force counts people who live in a county, not people who work there, so a county can grow because a neighboring county's workers moved in. The 20-year window also means a county's color today is partly a story about 2006. And nothing on these maps can separate what a single employer or a single family did from the migration, births, deaths and retirements happening around them.
 
 *U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
+
+## Common questions
+
+### How many Nebraska counties are losing workers?
+
+In July 2026, 59 of Nebraska's 93 counties had a civilian labor force more than 10% below where it stood 20 years earlier. In January 2010 that was 4 counties.
+
+### Which Arkansas counties are growing fastest?
+
+Benton County, where Walmart is headquartered, is up 71% over 20 years, the largest gain in the state. Washington County next to it is up 41%, and Saline County, outside Little Rock, is up 44%.
+
+### Do billionaires make their hometowns grow?
+
+This data cannot answer that. It shows that the fastest-growing counties in both states are the ones holding Omaha and Bentonville, and that most of both states is shrinking. It does not show why.
