@@ -35,8 +35,10 @@ None.
   animation will not survive the push.
 - Hero is not chosen. The post has no static chart, so 2d is either an AI image
   or a padded still frame from one of the two maps.
-- The post carries more political content than any previous D4TP piece. See
-  the note in the log.
+- Political content addressed in 2a: the fifth billionaire paragraph is now
+  about the decisions rather than the officeholder, and the Middle East
+  paragraph points at the documented conflict of interest rather than motive.
+  Worth a second read at 2b with the fiscal sponsor in mind.
 
 ## Tie-out, step 1
 
@@ -86,5 +88,12 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
   Arkansas, Sarpy at 52% in Nebraska with Douglas at 24%.
 - 2026-09-20 Standing-constraint flag raised with Eric: the fiscal sponsor does
   not permit political commentary, and the draft's fifth billionaire paragraph
-  attributes trade policy, immigration policy and a war to a sitting
-  officeholder. Eric's call.
+  attributed trade policy, immigration policy and a war to a sitting
+  officeholder.
+- 2026-09-20 Eric agreed. Paragraph five rewritten to be about the three
+  decisions and the fact that none of them needed a vote in Congress, keeping
+  both sources and the space lasers line, dropping "most polarizing billionaire
+  of our lifetimes", "presided over" and the Patek Philippe watch. The Middle
+  East paragraph now names the sovereign wealth in the envoy's own fund instead
+  of insinuating a motive. The DOGE sentence was left alone: it names a program
+  and a documented staffing outcome, not a party.
