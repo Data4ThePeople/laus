@@ -11,62 +11,61 @@ brand marks, no readable text or numbers in the image, no flags, no political
 symbols, no caricature. Text in an AI image comes out garbled and the post
 carries its own title.
 
-## Prompt 1: the house on a few pillars (recommended)
+Round one (farmhouse on coin columns, green island, tilted scale) was rejected
+on September 20, 2026. The idea of a thing propped up by money did not land, so
+round two drops propping entirely.
 
-> A single modest two-story American clapboard farmhouse, painted off-white,
-> photographed in soft overcast daylight from slightly below eye level. The
-> house has no foundation. It rests on five tall, thin stacked columns of
-> coins, each column slightly different in height, spaced far apart so most of
-> the space beneath the house is empty air. The ground beneath is dry cracked
-> prairie earth in dull rust and clay tones stretching to a flat horizon.
-> Muted, restrained color: bone white house, warm gray sky, rust-brown earth,
-> a single small patch of green grass at the base of one coin column. Realistic
-> architectural photography, shallow depth of field on the coin columns, 3:2
-> landscape, generous empty sky at the top for a headline. No people, no text,
-> no logos.
+## Prompt 4: the bridge with most of its planks gone (recommended)
 
-Why this one: it carries the title and the argument in the same picture. The
-house is the country, the five columns are the concentration, and the one green
-patch at the base of a column is the Bentonville and Omaha finding. It reads at
-thumbnail size, which matters because this image is also the Mailchimp hero and
-the social card.
+> A long rope-and-plank footbridge spanning a wide, deep canyon, photographed
+> from one end at eye level so the span runs away from the viewer toward the
+> far rim. Almost every plank is missing. Only five or six planks remain,
+> scattered far apart along the ropes, each one thick and solid and weathered.
+> Between them, nothing but open air and the drop. The far side is solid ground
+> in dull green. The canyon walls are rust, clay and bone. Overcast diffuse
+> light, no drama, documentary landscape photography, deep focus, cool muted
+> palette with one warm accent. 3:2 landscape with open sky at the top. No
+> people, no text, no logos.
 
-## Prompt 2: the green island
+Why this one: your title and your last line are both "only as strong as," and
+this is a picture of exactly that. A bridge is a thing everyone has to cross,
+which is the point about government. The missing planks are the concentration
+risk without arguing about anyone's politics. It also reads instantly at
+thumbnail size, which matters because this is the Mailchimp hero and the social
+card as well as the page hero.
 
-> Aerial drone photograph looking straight down at a vast agricultural
-> landscape in late autumn, fields and small towns stretching to every edge of
-> the frame, almost entirely in dead rust-red, clay and dull brown tones. In
-> the lower right third, one small area is vividly, impossibly green: a dense
-> cluster of trees, lawns, ball fields and new rooftops, sharply bounded, as if
-> watered by someone who could afford to. The rest of the land is dry. Natural
-> light, high altitude, fine detail, muted and documentary rather than
-> saturated. 3:2 landscape. No people, no text, no logos.
+## Prompt 5: the lit grid
 
-Why you might want it: it is the closest thing to a picture of the actual data,
-and it sets up the maps without repeating them. It is the safest choice for a
-post that touches politics, because there is nothing in it to argue with. It is
-weaker as a standalone thumbnail, because without the post around it the image
-reads as a farming story.
+> Aerial night photograph looking down at a vast flat landscape of small towns
+> and section roads stretching past every edge of the frame, the grid faintly
+> visible in the dark. Almost the entire frame is unlit and cold blue-black.
+> Two small clusters, far apart, blaze with warm amber light, dense and sharp
+> edged, every street in them glowing. Everything else is dark. High altitude,
+> long exposure, fine grain, realistic satellite or aircraft view, no color
+> grading tricks. 3:2 landscape. No people, no text, no logos.
 
-## Prompt 3: the tilted scale
+Why you might want it: it is the closest thing to a photograph of your two
+maps, and light is the most legible way to show that almost everything is one
+way and two places are another. The risk is that night-light imagery is
+familiar enough to read as generic.
 
-> A large weathered cast-iron balance scale on cracked dry ground under a wide
-> pale sky. On the high pan, hundreds of tiny identical houses, so small they
-> read as texture, spilling over the edges. On the low pan, resting far lower,
-> four or five smooth featureless gold monoliths, tall and heavy. The scale
-> tips hard toward the gold. Muted documentary color, warm grays and rust
-> browns, one small accent of deep teal. Realistic still-life photography,
-> slightly wide lens, 3:2 landscape, empty sky at the top. No people, no text,
-> no logos.
+## Prompt 6: the one tree
 
-Why you might want it: it is the clearest picture of "concentration risk,"
-which is the section of the post you said you actually wanted to argue. It is
-also the most editorial of the three, and the one most likely to read as taking
-a side.
+> A wide flat prairie under a pale overcast sky, stretching to a distant flat
+> horizon. The land is covered with bare dead trees, hundreds of them, thin and
+> gray and evenly spaced like an orchard that failed. In the middle distance,
+> one enormous living oak, full and deep green, its canopy spread wide, and
+> gathered in its shade a small tight cluster of houses and rooftops. Every
+> other tree is bare. Natural diffuse light, muted documentary color, rust and
+> bone ground tones, realistic landscape photography, 3:2 landscape. No people,
+> no text, no logos.
+
+Why you might want it: it picks up your own line about the billionaires putting
+down their roots, and it is the only one of the three that shows people
+benefiting rather than just a place doing better. The risk is that a single
+sheltering tree reads as warm, and the post is not warm.
 
 ## Chosen
-
-Prompt 1, the house on a few pillars. Chosen by Eric on September 20, 2026.
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
 Alt (under 500 characters): <written once the image exists>
