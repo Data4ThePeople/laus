@@ -73,6 +73,9 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
   people", a missing denominator, a trailing space, "median" to "typical", and
   the original "America is only as strong as its billionaires" restored as the
   last line so the closing echoes the opening.
+- 2026-09-20 Closing trimmed: "We are only as strong as those who hold the
+  money" cut, because it restated the line right after it. Ending is now
+  "we have no say. Money talks. America is only as strong as its billionaires."
 
 - 2026-09-20 Post opened as a spin-off from five-takeaways-labor-force-decline.
   Eric brought the full draft and two animated maps (Nebraska and Arkansas,
