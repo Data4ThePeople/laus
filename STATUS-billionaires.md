@@ -79,13 +79,19 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
   is a Little Rock suburb with no Walton connection. The draft's sentence about
   the darkest green counties is proposed for revision in step 2a.
 - 2026-09-20 Step 2a: POST.md written with Eric's prose verbatim, six brackets
-  resolved (Mark Cuban, Elon Musk, the two GIF embeds, the Bentonville simile,
-  and the sourcing pass), 11 source links added inline, and a "How we measured
+  resolved (the two GIF embeds, the Bentonville simile, and the sourcing pass),
+  11 source links added inline, and a "How we measured
   this" note added after a divider. 12 edits proposed in chat as a numbered
   list, waiting on accept/reject.
 - 2026-09-20 Step 2a: Eric accepted all 12 edits. Applied. The biggest one
   replaces the darkest-green sentence with the real counties: Benton at 71% in
   Arkansas, Sarpy at 52% in Nebraska with Douglas at 24%.
+- 2026-09-20 House rule for this post, set by Eric: the billionaires in the
+  opening section are described, never named. The link on the description is
+  how a reader who does not recognize them finds out who they are. The two
+  naming sentences added at 2a were removed and their links moved onto Eric's
+  own descriptive phrases. Buffett and the Waltons stay named in the second
+  section, where naming them is the point.
 - 2026-09-20 Standing-constraint flag raised with Eric: the fiscal sponsor does
   not permit political commentary, and the draft's fifth billionaire paragraph
   attributed trade policy, immigration policy and a war to a sitting
