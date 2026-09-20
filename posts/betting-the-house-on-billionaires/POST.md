@@ -71,7 +71,7 @@ You know that term, right? Every financial planner talks of the benefit of diver
 
 So, in my view we have bet the house on our billionaires. We are waiting for these [989 knights in shining armor](https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/) to save the rest of us.
 
-Some of them are really trying and I am grateful for their efforts. But that's beside the point. What they are doing is what functioning government and policy used to do. And we elect these people, so we used to have some say in this. But in this new model, we have no say. Money talks. America is only as strong as its billionaires.
+Some of them are really trying and I am grateful for their efforts. But that's beside the point. What they are doing is what functioning government and policy used to do. And we elect these people, so we used to have some say in this. But in this new model, we have no say. Money talks. And so, America is only as strong as its billionaires.
 
 Maybe that's why it feels like America has grown so weak.
 
