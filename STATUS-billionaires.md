@@ -17,7 +17,7 @@ Since: 2026-09-20
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-09-20 | Nebraska and Arkansas cut of the existing classified panel; DATASETS.md written; tie-out below |
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -63,6 +63,16 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2b: Eric edited POST.md directly. He cut the immigration
+  paragraph, split the Benton/Sarpy/Douglas numbers into their own sentences,
+  quantified the concentration-risk opener, and replaced the closing line with
+  "we have no say. Money talks." Look-over found 9 items, all accepted: the
+  $8.4 trillion figure and its link, two county capitalizations, a missing
+  percent sign, Sarpy described as a suburb rather than a county, "in such few
+  people", a missing denominator, a trailing space, "median" to "typical", and
+  the original "America is only as strong as its billionaires" restored as the
+  last line so the closing echoes the opening.
 
 - 2026-09-20 Post opened as a spin-off from five-takeaways-labor-force-decline.
   Eric brought the full draft and two animated maps (Nebraska and Arkansas,
