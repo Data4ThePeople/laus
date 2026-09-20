@@ -178,6 +178,41 @@ If the tool can work from the round four image, run this as a variation on it
 rather than from scratch. The frame, the horizon and the falling-away gradient
 are already right and worth keeping.
 
+## Round six: dead trees all the way to the horizon
+
+The round five render is in place as a working hero, but the far third of the
+frame is open golden farmland, so the dead orchard stops well short of the
+horizon and the picture loses its scale. Prompt 12 fills the whole landscape.
+
+## Prompt 12: the dead orchard to the horizon (recommended)
+
+> A vast dead orchard seen from a drone at about forty-five degrees, filling
+> the entire frame and running unbroken all the way to a distant flat horizon.
+> Hundreds of thousands of trees in rough rows, bare gray skeletons, dead and
+> leafless, covering every part of the land from the foreground to the horizon
+> line with no open fields, no farmland and no clearings anywhere in the
+> distance. At the center stands one enormous tree, three times the height and
+> canopy spread of anything else, in full leaf, its leaves gold and dense and
+> countless, catching low late-afternoon sun so the canopy shimmers. Ringed
+> tightly around it, a small cluster of deep green healthy trees and thick
+> green grass. Just beyond that ring the trees thin and yellow, and beyond that
+> they are bare and gray, and they stay bare and gray for the entire rest of
+> the image, out to the horizon in every direction. The ground goes from green
+> grass at the center to dry cracked rust and clay earth everywhere else. The
+> change is uneven, not a clean circle: a few green trees stand far out alone,
+> a few bare ones stand close in. Warm low sunlight from the left, long shadows
+> across the dead rows, clear sky, late golden hour. The gold is real leaves
+> catching real sunlight, reflective, not emitting light: no glow, no light
+> rays, no sparkles, no lens flare, nothing magical. Realistic documentary
+> drone photography, deep focus from foreground to horizon, 3:2 landscape with
+> open sky at the top. No people, no text, no logos.
+
+The three phrases doing the work are "running unbroken all the way to a distant
+flat horizon", "no open fields, no farmland and no clearings anywhere in the
+distance", and "deep focus from foreground to horizon". The round five prompt
+said "stretching to a flat horizon" and the generator read that as the prairie
+reaching the horizon, not the orchard.
+
 ## Chosen
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
