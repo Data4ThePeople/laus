@@ -65,6 +65,44 @@ down their roots, and it is the only one of the three that shows people
 benefiting rather than just a place doing better. The risk is that a single
 sheltering tree reads as warm, and the post is not warm.
 
+## Round three: the vault, without the character
+
+Scrooge McDuck and Mr. Burns are both owned characters and cannot go on a
+published page. The archetype behind them is not owned, and the part everyone
+actually pictures is the vault.
+
+## Prompt 7: the vault and the diving board (recommended)
+
+> The interior of an enormous bank vault, photographed wide from the doorway,
+> the massive round steel door swung open in the foreground edge of frame. The
+> vault is filled shoulder deep and wall to wall with loose gold coins,
+> stretching back into the dark. High above the coins, a small white wooden
+> diving board juts out from a narrow steel catwalk near the ceiling, empty.
+> Cold overhead industrial light, long shadows, dust in the air. Muted and
+> slightly grim rather than sparkling; brass and bronze tones, gray steel, deep
+> shadow. Realistic photography, wide lens, 3:2 landscape. No people, no text,
+> no logos, no characters.
+
+Why this one: the diving board is the whole reference and it does the work
+without anyone owning it. It is funny on sight and slightly bleak on a second
+look, which is the register of your post. It reads at thumbnail. And an empty
+diving board says the thing your essay says: the money is real, the person is
+not coming to save anybody.
+
+## Prompt 8: the coin in the town
+
+> A single gold coin the size of an office building, standing on its edge,
+> planted in the middle of a small flat American prairie town of low rooftops
+> and wide empty streets. The coin is weathered and enormous, its face worn
+> smooth and blank, casting a long shadow across half the town. The town around
+> it looks ordinary and lived in. Overcast daylight, muted documentary color,
+> rust and bone ground tones, realistic photography with a slightly wide lens,
+> 3:2 landscape. No people, no text, no logos.
+
+Why you might want it: it is the Omaha and Bentonville finding in one picture,
+one fortune landing in one small place and changing everything around it. Less
+funny, more directly about the data.
+
 ## Chosen
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
