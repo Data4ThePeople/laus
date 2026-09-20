@@ -19,7 +19,7 @@ Since: 2026-09-20
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | 2026-09-20 | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
-| 2d | Hero 1680x1080 + alt text | | Prompt 13 render in place, alt 426 chars, shipped as JPG |
+| 2d | Hero 1680x1080 + alt text | | Prompt 14 render in place, alt 461 chars, shipped as JPG |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -30,9 +30,6 @@ None.
 
 ## Open items
 
-- The hero's green ring is a clean circle. The post says the maps do not prove
-  causality; a perfect halo around the gold tree implies they do. Raised with
-  Eric at 2d; his call.
 - Political content addressed in 2a: the fifth billionaire paragraph is now
   about the decisions rather than the officeholder, and the Middle East
   paragraph points at the documented conflict of interest rather than motive.
@@ -61,6 +58,13 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Hero replaced with the round eight render. The clean green halo is
+  gone: the green is now a ragged off-center band with several bare dead trees
+  standing inside it and six living trees far out alone in the dead orchard, so
+  the image no longer claims the causality the post disclaims. The gold tree is
+  slightly less dominant than in round seven, which is the price. The round
+  seven source is recoverable from commit 9066677 if we want it back.
 
 - 2026-09-20 Step 2d: hero settled on the seventh prompt. A drone view of a
   dead orchard running to the horizon with one enormous tree cast in solid gold

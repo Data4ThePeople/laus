@@ -8,7 +8,7 @@ date: 2026-09-20
 time: 16:30:00-04:00
 section: Data 4 Thought
 hero: images/betting-the-house-on-billionaires-hero-1680x1080.jpg
-hero_alt: Aerial photograph of a vast dead orchard at sunset. Bare gray trees in long rows fill the frame all the way to a flat horizon, standing in dry tan dirt. At the center stands one much larger tree made entirely of gold metal, its trunk, branches and thousands of leaves cast in gold and catching the low sun. A tight circle of living green trees and thick grass grows at its base. Everything beyond that circle is bare and dead.
+hero_alt: Aerial photograph of a vast dead orchard at sunset. Bare gray trees in long rows fill the frame to a flat horizon, standing in dry tan dirt. At the center stands one much larger tree made entirely of gold metal, its trunk, branches and thousands of leaves cast in gold and catching the low sun. A ragged band of green grass runs past its base, with several bare dead trees standing inside the green, and a handful of living green trees far out in the dead rows.
 meta_title:
 description:
 keywords:
