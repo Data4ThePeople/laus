@@ -8,7 +8,7 @@ date: 2026-09-20
 time: 16:30:00-04:00
 section: Data 4 Thought
 hero: images/betting-the-house-on-billionaires-hero-1680x1080.jpg
-hero_alt: Aerial photograph of a dry prairie in late afternoon light. At the center stands one very large tree in full gold autumn leaf, lit by low sun. The trees closest to it are deep green and healthy and the grass beneath them is thick. Farther out the trees thin and yellow, then become bare gray skeletons, and at the right edge the ground turns to cracked red dirt scattered with fallen dead wood. Flat farmland runs to the horizon.
+hero_alt: Aerial photograph of a vast dead orchard at sunset. Bare gray trees in long rows fill the frame all the way to a flat horizon, standing in dry tan dirt. At the center stands one much larger tree made entirely of gold metal, its trunk, branches and thousands of leaves cast in gold and catching the low sun. A tight circle of living green trees and thick grass grows at its base. Everything beyond that circle is bare and dead.
 meta_title:
 description:
 keywords:

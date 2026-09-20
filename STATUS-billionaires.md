@@ -19,7 +19,7 @@ Since: 2026-09-20
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | 2026-09-20 | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
-| 2d | Hero 1680x1080 + alt text | | AI image path; prompts 1 to 3 rejected, new directions open |
+| 2d | Hero 1680x1080 + alt text | | Prompt 13 render in place, alt 426 chars, shipped as JPG |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
@@ -30,8 +30,9 @@ None.
 
 ## Open items
 
-- Hero concept is open. Prompt 1 (farmhouse on coin columns) did not work.
-  Eric is thinking about other directions.
+- The hero's green ring is a clean circle. The post says the maps do not prove
+  causality; a perfect halo around the gold tree implies they do. Raised with
+  Eric at 2d; his call.
 - Political content addressed in 2a: the fifth billionaire paragraph is now
   about the decisions rather than the officeholder, and the Middle East
   paragraph points at the documented conflict of interest rather than motive.
@@ -60,6 +61,21 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2d: hero settled on the seventh prompt. A drone view of a
+  dead orchard running to the horizon with one enormous tree cast in solid gold
+  at the center and a tight ring of living green at its base. Seven rounds: the
+  farmhouse on coin columns, the green island and the tilted scale were
+  rejected; the bridge, lit grid and one-tree set followed; Eric took the one
+  tree and added the gradient; then bigger and living; then dead trees to the
+  horizon; then literal metal rather than autumn leaves. Scrooge McDuck and
+  Mr. Burns were asked about and declined as owned characters; the vault and
+  diving board was offered as the archetype instead and not used.
+- 2026-09-20 Hero shipped as JPG, not the PNG the process names. The same frame
+  is 3.8 MB as PNG and 1.06 MB as JPG at quality 92, because PNG is the wrong
+  container for a photograph. The importer reads the hero path from front
+  matter and does not care about the extension. Worth folding back into
+  PROCESS.md as "PNG for chart heroes, JPG for photographic ones".
 
 - 2026-09-20 Prompt 1 rejected. Hero concept back open; Eric is working on
   other directions before any new prompts are written.
