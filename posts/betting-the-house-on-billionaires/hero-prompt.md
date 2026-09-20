@@ -103,6 +103,48 @@ Why you might want it: it is the Omaha and Bentonville finding in one picture,
 one fortune landing in one small place and changing everything around it. Less
 funny, more directly about the data.
 
+## Round four: the gold tree and the gradient (Eric's idea, recommended)
+
+Eric's revision of prompt 6. One gold tree, the trees nearest it healthy, and
+the health falling away with distance until the far trees are bare. This is the
+finding drawn as a picture: Benton at 71%, Washington next door at 41%, the
+rest of Arkansas falling away, and the same shape around Sarpy and Douglas in
+Nebraska.
+
+## Prompt 9: the gold tree, from above and to the side
+
+> A wide prairie seen from an elevated three-quarter aerial view, about
+> forty-five degrees, stretching to a flat horizon under a pale overcast sky.
+> The land is covered with hundreds of trees, evenly spaced like a failed
+> orchard. At the center stands one tree made of solid matte gold, its trunk
+> and bare branches cast in dull metal, roughly the same size as the others.
+> The trees closest to the gold tree are full and deep green and healthy. A
+> little farther out they thin and yellow, canopies half empty. Farther still
+> they are bare gray skeletons, and at the far edges of the frame they are dead
+> and falling. The ground follows the same change: green grass at the center,
+> dry cracked rust and clay earth at the edges. The change is uneven and
+> irregular, not a clean circle: a few healthy trees stand far out on their
+> own, and a few bare ones stand close in. Matte gold, not glowing, not
+> luminous, no light rays, no sparkle, nothing magical. Realistic documentary
+> landscape photography, natural diffuse light, muted color, deep focus. 3:2
+> landscape with open sky at the top. No people, no text, no logos.
+
+## Prompt 10: the same idea, straight down
+
+> Aerial photograph looking straight down at a vast prairie covered with
+> hundreds of evenly spaced trees. At the center, one tree of solid matte gold.
+> The canopies nearest it are full and deep green, then thinning and yellow,
+> then bare gray, then dead and gone toward the edges of the frame, so the
+> whole image reads as an irregular gradient from the center outward. A few
+> green canopies sit far out on their own and a few bare ones sit near the
+> center. Ground tones move from green to cracked rust clay. High altitude,
+> flat even light, fine detail, muted documentary color, no vignetting. 3:2
+> landscape. No people, no text, no logos.
+
+Straight down reads like one of the maps, which is either the point or too
+close to it. The three-quarter view in prompt 9 keeps the gold tree legible as
+a tree, which is what carries the idea.
+
 ## Chosen
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
