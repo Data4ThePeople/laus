@@ -16,7 +16,7 @@ Since: 2026-09-20
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-09-20 | Nebraska and Arkansas cut of the existing classified panel; DATASETS.md written; tie-out below |
-| 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and waiting on accept/reject |
+| 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -81,6 +81,9 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
   and the sourcing pass), 11 source links added inline, and a "How we measured
   this" note added after a divider. 12 edits proposed in chat as a numbered
   list, waiting on accept/reject.
+- 2026-09-20 Step 2a: Eric accepted all 12 edits. Applied. The biggest one
+  replaces the darkest-green sentence with the real counties: Benton at 71% in
+  Arkansas, Sarpy at 52% in Nebraska with Douglas at 24%.
 - 2026-09-20 Standing-constraint flag raised with Eric: the fiscal sponsor does
   not permit political commentary, and the draft's fifth billionaire paragraph
   attributes trade policy, immigration policy and a war to a sitting
