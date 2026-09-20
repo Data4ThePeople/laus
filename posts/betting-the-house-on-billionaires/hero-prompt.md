@@ -145,6 +145,39 @@ Straight down reads like one of the maps, which is either the point or too
 close to it. The three-quarter view in prompt 9 keeps the gold tree legible as
 a tree, which is what carries the idea.
 
+## Round five: same frame, bigger and living gold tree
+
+The round four render got the gradient and the drone angle right. The gold tree
+came out bare, gray-gold and no larger than its neighbors, because prompt 9
+asked for bare branches, matte metal, the same size as the others and no glow.
+Prompt 11 reverses all four and moves the light so gold has something to catch.
+
+## Prompt 11: the gold tree, full canopy, low sun (recommended)
+
+> A wide prairie seen from an elevated drone view, about forty-five degrees,
+> stretching to a flat horizon. The land is covered with hundreds of trees in
+> rough rows, like a failing orchard. At the center stands one enormous tree,
+> three times the height and canopy spread of every other tree in the frame,
+> dominating the picture. It is in full leaf and its leaves are gold: dense,
+> countless, individually visible, catching the low late-afternoon sun so the
+> whole canopy shimmers and flickers where the light moves through it. The tree
+> is vigorously alive, heavy with leaves, its bark warm brown, its canopy
+> perfectly full with no gaps. The trees nearest it are healthy and deep green.
+> A little farther out they thin and yellow. Farther still they are bare gray
+> skeletons, and at the edges of the frame they are dead and fallen. The ground
+> follows: thick green grass at the center, dry cracked rust and clay earth at
+> the edges. The change is uneven, not a clean circle, with a few healthy trees
+> far out on their own and a few bare ones close in. Warm low sunlight from the
+> left, long shadows across the grass, clear sky, late golden hour. The gold is
+> real leaves catching real sunlight, reflective and shimmering, not emitting
+> light: no glow, no light rays, no sparkles, no lens flare, nothing magical.
+> Realistic documentary drone photography, deep focus, 3:2 landscape with open
+> sky at the top. No people, no text, no logos.
+
+If the tool can work from the round four image, run this as a variation on it
+rather than from scratch. The frame, the horizon and the falling-away gradient
+are already right and worth keeping.
+
 ## Chosen
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
