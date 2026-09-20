@@ -27,6 +27,7 @@ Disclaimer: While this post is rooted in data, much of it reflects my opinion ba
 
 ## America is run by billionaires
 
+::: dropcap
 Lately, it feels like America is only as strong as its billionaires.
 
 We have one billionaire who is [using his own balance sheet to lower drug pricing](https://www.markcubancostplusdrugcompany.com/) by working around an entire system designed to drive prices up. While I applaud his efforts, the irony is none of it would be necessary if the FTC took action to break up anticompetitive vertical integrations and our congress would pass bipartisan regulation to benefit patients over business interests. Those in the know with drug pricing know the problem lies in lack of transparency and anticompetitive contracting practices. Our government has had no interest in tackling these issues (as it would hurt businesses) so our fate is left in a billionaire's hands instead.

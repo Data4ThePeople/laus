@@ -17,8 +17,8 @@ Since: 2026-09-20
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-09-20 | Nebraska and Arkansas cut of the existing classified panel; DATASETS.md written; tie-out below |
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
-| 2b | Eric's edit, Claude's look-over | | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
-| 2c | Slice markup | | |
+| 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
+| 2c | Slice markup | | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
 | 2f | Pushed to Prismic (draft) | | |
@@ -30,9 +30,6 @@ None.
 
 ## Open items
 
-- The Prismic importer hardcodes `image/png` on upload (`to_prismic.py:561`).
-  Both maps in this post are GIFs. Fix the content type before step 2f or the
-  animation will not survive the push.
 - Hero is not chosen. The post has no static chart, so 2d is either an AI image
   or a padded still frame from one of the two maps.
 - Political content addressed in 2a: the fifth billionaire paragraph is now
@@ -63,6 +60,19 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2b confirmed. Step 2c opened.
+- 2026-09-20 Step 2c: one fence added, `::: dropcap` above "Lately, it feels
+  like America is only as strong as its billionaires", because the post opens
+  with the disclaimer blurb and the automatic first-paragraph drop cap would
+  have landed on the disclaimer. Everything else came from the defaults.
+  Convert-only run gives 17 slices. Captions and the source line keep their
+  italics, all 14 links carry target=_blank, both alt texts are under 500
+  characters (364 and 377).
+- 2026-09-20 Importer fixed and pushed (commit 6094214 in ~/.claude/tools/prismic):
+  asset uploads hardcoded `image/png`, which would have stripped the animation
+  from both GIFs at 2f. It now reads the type from the file suffix and falls
+  back to PNG for anything unrecognized.
 
 - 2026-09-20 Step 2b: Eric edited POST.md directly. He cut the immigration
   paragraph, split the Benton/Sarpy/Douglas numbers into their own sentences,

@@ -1,0 +1,539 @@
+{
+  "page_title": "Is America betting the house on its billionaires?",
+  "page_subtitle": "Nebraska and Arkansas are turning red on our labor force map. Most of the green that is left sits next to two of the best-known fortunes in the country.",
+  "published_date": "2026-09-20",
+  "updated_date": "2026-09-20",
+  "make_this_main_post": false,
+  "slices": [
+    {
+      "slice_type": "highlited_page_blurb",
+      "slice_label": null,
+      "variation": "noTitle",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Disclaimer: While this post is rooted in data, much of it reflects my opinion based on my experience of America. Take what you want from it and leave the rest.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "America is run by billionaires",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "drop_cap",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "drop_cap_text": [
+          {
+            "type": "paragraph",
+            "text": "Lately, it feels like America is only as strong as its billionaires.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "We have one billionaire who is using his own balance sheet to lower drug pricing by working around an entire system designed to drive prices up. While I applaud his efforts, the irony is none of it would be necessary if the FTC took action to break up anticompetitive vertical integrations and our congress would pass bipartisan regulation to benefit patients over business interests. Those in the know with drug pricing know the problem lies in lack of transparency and anticompetitive contracting practices. Our government has had no interest in tackling these issues (as it would hurt businesses) so our fate is left in a billionaire's hands instead.",
+            "spans": [
+              {
+                "start": 31,
+                "end": 80,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.markcubancostplusdrugcompany.com/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "There's another billionaire whose company flew about half of everything that reached orbit last year, and roughly 85% of what left the United States. NASA used to do this sort of frontier work. Now, we have outsourced control to a billionaire. In his free time, he also led a program to get rid of a bunch of government employees (in the name of efficiency) which had the unintended (?) consequence of leaving VA hospitals short of custodial staff.",
+            "spans": [
+              {
+                "start": 42,
+                "end": 100,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.space.com/space-exploration/private-spaceflight/spacex-shatters-its-rocket-launch-record-yet-again-167-orbital-flights-in-2025",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 402,
+                "end": 447,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.vaoig.gov/reports/national-healthcare-review/oig-determination-veterans-health-administrations-severe-1",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "What about the billionaire we have tasked with negotiating foreign policy in the Middle East? He did it for months as a private citizen before anyone gave him a title. His own investment fund takes its money from the governments sitting on the other side of the table.",
+            "spans": [
+              {
+                "start": 97,
+                "end": 135,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.timesofisrael.com/jared-kushners-unofficial-role-in-trump-administration-sparks-ethical-questions/",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 217,
+                "end": 267,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.citizensforethics.org/legal-action/letters/white-house-must-reveal-and-resolve-jared-kushners-financial-conflicts-of-interest/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Or the billionaires running the biggest AI labs, who have just warned us about the existential risk that AI could present and urged us to slow down the pace of development, only for our government to tell us not to worry about their warnings?",
+            "spans": [
+              {
+                "start": 63,
+                "end": 121,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.washingtonpost.com/technology/2026/09/12/ais-existential-threatsuddenly-has-washingtonsattention/",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 200,
+                "end": 241,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.cnn.com/2026/09/13/politics/ai-washington-regulation-politics-obama-trump",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "Can billionaires prop up their own communities?",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "But this post is not about these billionaires. It's a post on the local labor force dynamics that we have been exploring for months.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "You see, there are two states with very well-known billionaires (one is a family, not a person) who are tied to very specific cities that are off the beaten path. That's Warren Buffett (Omaha, NE) and Walmart founders, the Walton family (Bentonville, AR).",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Here's what's interesting. When you play our labor force visualizations for Nebraska and Arkansas over time (from 2010 through 2026) what you will see is a wave of red engulfing both states. Recall that red signifies labor forces that are in structural decline \u2013 those that have dropped more than 10% over the past 20 years. Go find a city manager and talk to them (as I did). Ask them what keeps them up at night and they will likely tell you the labor force. That's because if the number of people working in your city grows, so does the tax base that funds it. And if people have jobs, they pay property tax and they spend money. The virtuous cycle of economic growth compounds. Now if your labor force is going in the opposite direction, it all works in reverse. Fewer people looking for work? Fewer employers will want to move operations to your city. We've written about this many times. It bears repeating again.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "So, take a look at these two maps. Watch the sea of red descend over these states like the plague and then notice the remaining green. The deepest darkest green sits in one metro in each state, and in each case it is the metro our billionaires call home. Arkansas's darkest county is Benton, where Walmart is headquartered. Benton County has experienced 71% growth in its labor force over the last 20 years. Nebraska's leader is Sarpy County, the county next door to Buffett's Omaha, with 52% growth over 20 years. Omaha's own Douglas County is right behind Sarpy at 24% growth.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "In Nebraska, 4 of 93 counties were in structural loss in January 2010. In July 2026 it is 59 of 93.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Animated map of Nebraska, January 2010 to July 2026, with each county shaded by the change in its civilian labor force against the same month 20 years earlier. Counties turn from green and gray to red across most of the state, leaving a green cluster around Omaha in the east. Sarpy County is the darkest green at 52% growth, with Douglas County next to it at 24%.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "Nebraska, 20-year change in labor force by county, January 2010 to July 2026. Structural loss in red goes from 4 counties to 59 of 93.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 134,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "Arkansas starts from a worse place and ends in a similar one: 12 counties in structural loss in January 2010, 45 in July 2026.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Animated map of Arkansas, January 2010 to July 2026, with each county shaded by the change in its civilian labor force against the same month 20 years earlier. Red spreads across the south and east of the state while the northwest corner stays dark green. Benton County, home of Walmart, is the darkest green in Arkansas at 71% growth, with Washington County next to it at 41%.",
+          "copyright": null
+        },
+        "source_text": [
+          {
+            "type": "paragraph",
+            "text": "Arkansas, 20-year change in labor force by county, January 2010 to July 2026. Structural loss in red goes from 12 counties to 45 of 75.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 135,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "To be clear these charts do not prove causality. Not even close. Walmart's HQ is in Benton County, and it has attracted suppliers and other members of the supply chain the way a porch light pulls in moths. More than 1,300 Walmart suppliers now keep an office in Northwest Arkansas, most of them within 30 miles of Bentonville. But then there is the fact that Bentonville has become one of the top mountain biking destinations in the country simply because members of the Walton family liked mountain biking\u2026 and championed, designed, and heavily funded Bentonville's trail infrastructure from scratch. Clearly, we can't dismiss the Walton family's role in pouring money into their hometown to turn it into a labor force juggernaut.",
+            "spans": [
+              {
+                "start": 206,
+                "end": 239,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.arkansasedc.com/industries/walmart-suppliers",
+                  "target": "_blank"
+                }
+              },
+              {
+                "start": 512,
+                "end": 552,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.outsideonline.com/outdoor-adventure/biking/single-track-minds/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Omaha's growth is impossible to directly attribute to Warren Buffett and Berkshire Hathaway. But Warren Buffett is arguably the most famous investor of all time and spent his whole career tied to his hometown. He has also minted crops of millionaires in Omaha who invested with him early on, who have poured money back into the city. This is correlation, not causality. But again, it's hard to not at least wonder what would have happened to Omaha had Warren Buffett decided to move to Palm Beach 50 years ago.",
+            "spans": [
+              {
+                "start": 222,
+                "end": 259,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.cnbc.com/2024/05/18/touring-omaha-with-a-warren-buffett-author.html",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "America's billionaire concentration risk",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "This is the model that America has chosen to test out. Let just under 1,000 people accumulate $8.4 trillion and watch them drive GDP growth for America. The rest of us may not benefit, but when the powers that be are just looking at the aggregate numbers, growth is growth \u2013 does it matter how we get it?",
+            "spans": [
+              {
+                "start": 94,
+                "end": 107,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "I think it does. First off, my bias is clear here. I would prefer to live in a country where all people had great opportunity to improve their standard of living. But that's my bias, and it's OK if you don't agree. So instead, I will make a different argument for why betting the house on billionaires is a mistake. There is too much concentration risk.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "You know that term, right? Every financial planner talks of the benefit of diversification in your investments. Spread your money across lots of different investments so you don't lose too much money if one of them flops. I think we can think of economic development the same way. It would make sense to spread our growth across as many Americans as possible, not just to make the typical American happier, but to make America's growth less concentrated in so few people. Because as we are learning, billionaires are not investments, they are people - irrational, messy, biased, people \u2013 just like us. Except they are not like us. One of them had no clue what groceries cost. How can we expect them to fix our problems when they can't identify with our problems?",
+            "spans": [
+              {
+                "start": 643,
+                "end": 674,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.geekwire.com/2018/dont-go-grocery-shopping-bill-gates-software-mogul-appears-ellen-badly-flunks-grocery-price-quiz/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "So, in my view we have bet the house on our billionaires. We are waiting for these 989 knights in shining armor to save the rest of us.",
+            "spans": [
+              {
+                "start": 83,
+                "end": 111,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Some of them are really trying and I am grateful for their efforts. But that's beside the point. What they are doing is what functioning government and policy used to do. And we elect these people, so we used to have some say in this. But in this new model, we have no say. Money talks. And so, America is only as strong as its billionaires.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Maybe that's why it feels like America has grown so weak.",
+            "spans": [],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "divider_dots",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {}
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "heading2",
+            "text": "How we measured this",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "Both maps come from the same county data as our labor force map: the civilian labor force by county from the Bureau of Labor Statistics Local Area Unemployment Statistics program, not seasonally adjusted. Each county is compared to the same calendar month 20 years earlier, so a July frame is always measured against July. A county is in structural loss, our red, when its labor force is more than 10% below that mark, and in hyper-growth, our darkest green, when it is more than 40% above it. The frames run from January 2010 to July 2026. Months from 2026 are preliminary until the spring revision.",
+            "spans": [
+              {
+                "start": 44,
+                "end": 63,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/labor-force-history-viz",
+                  "target": "_blank"
+                }
+              }
+            ],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "What this does not tell you: the labor force counts people who live in a county, not people who work there, so a county can grow because a neighboring county's workers moved in. The 20-year window also means a county's color today is partly a story about 2006. And nothing on these maps can separate what a single employer or a single family did from the migration, births, deaths and retirements happening around them.",
+            "spans": [],
+            "direction": "ltr"
+          },
+          {
+            "type": "paragraph",
+            "text": "U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 67,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    }
+  ],
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Is America betting the house on its billionaires?\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-09-20T16:30:00-04:00\",\n  \"dateModified\": \"2026-09-20T16:30:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires\"\n  }\n}"
+}
