@@ -96,10 +96,16 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
   not permit political commentary, and the draft's fifth billionaire paragraph
   attributed trade policy, immigration policy and a war to a sitting
   officeholder.
-- 2026-09-20 Eric agreed. Paragraph five rewritten to be about the three
-  decisions and the fact that none of them needed a vote in Congress, keeping
-  both sources and the space lasers line, dropping "most polarizing billionaire
-  of our lifetimes", "presided over" and the Patek Philippe watch. The Middle
-  East paragraph now names the sovereign wealth in the envoy's own fund instead
-  of insinuating a motive. The DOGE sentence was left alone: it names a program
-  and a documented staffing outcome, not a party.
+- 2026-09-20 Eric agreed. The Middle East paragraph now points at the sovereign
+  wealth in the envoy's own fund instead of insinuating a motive, and was later
+  broken into a question plus two one-fact sentences. The DOGE sentence was left
+  alone: it names a program and a documented staffing outcome, not a party.
+- 2026-09-20 The fifth billionaire paragraph was cut entirely, after two
+  rewrites. The deciding reason was not risk. The other four examples are
+  private people doing what government used to do, which is the thesis; a
+  sitting president making trade, immigration and war decisions is the office
+  doing its own job, so the paragraph argued against the section it sat in.
+  The immigration point it carried moved to the maps section as one short
+  paragraph on the four ways a county's labor force can change, which also sets
+  up the limits note. Source swapped to the BLS foreign-born release itself:
+  19.1% of the labor force in 2025.

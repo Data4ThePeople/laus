@@ -37,8 +37,6 @@ What about the billionaire we have tasked with negotiating foreign policy in the
 
 Or the billionaires running the biggest AI labs, who have just [warned us about the existential risk that AI could present](https://www.washingtonpost.com/technology/2026/09/12/ais-existential-threatsuddenly-has-washingtonsattention/) and urged us to slow down the pace of development, only for our government to [tell us not to worry about their warnings](https://www.cnn.com/2026/09/13/politics/ai-washington-regulation-politics-obama-trump)?
 
-And then there is the part that ties all of this back to the labor force. Trading relationships across the globe have been dismantled. So have our relations with immigrants, who have [largely been responsible for filling the gaps in our labor force](https://www.bls.gov/news.release/forbrn.nr0.htm). And a war has produced what the International Energy Agency calls the [largest supply shock in the history of the oil market](https://www.aljazeera.com/news/2026/3/24/how-does-the-current-global-oil-crisis-compare-with-the-1973-oil-embargo). We're not arguing about causality here. Feel free to blame all of it on space lasers or Martians if you want. What I would point out is that not one of those three things required a vote in Congress, and the people who did decide them are, more and more, the richest people in the country.
-
 ## Can billionaires prop up their own communities?
 
 But this post is not about these billionaires. It's a post on the local labor force dynamics that we have been exploring for months.
@@ -58,6 +56,8 @@ Arkansas starts from a worse place and ends in a similar one: 12 counties in str
 
 ![Animated map of Arkansas, January 2010 to July 2026, with each county shaded by the change in its civilian labor force against the same month 20 years earlier. Red spreads across the south and east of the state while the northwest corner stays dark green. Benton County, home of Walmart, is the darkest green in Arkansas at 71% growth, with Washington County next to it at 41%.](images/02-labor-force-arkansas.gif)
 *Arkansas, 20-year change in labor force by county, January 2010 to July 2026. Structural loss in red goes from 12 counties to 45 of 75.*
+
+A county's labor force only changes four ways: people come of age, people retire, people die, and people move in or out. That last one is why immigration turns up in county data at all, since foreign-born workers were [19.1% of the American labor force in 2025](https://www.bls.gov/news.release/forbrn.nr0.htm), close to one in five.
 
 To be clear these charts do not prove causality. Not even close. Walmart's HQ is in Benton County, and it has attracted suppliers and other members of the supply chain the way a porch light pulls in moths. [More than 1,300 Walmart suppliers](https://www.arkansasedc.com/industries/walmart-suppliers) now keep an office in Northwest Arkansas, most of them within 30 miles of Bentonville. But then there is the fact that Bentonville has become one of the top mountain biking destinations in the country simply because members of the Walton family liked mountain biking… and [championed, designed, and heavily funded](https://www.outsideonline.com/outdoor-adventure/biking/single-track-minds/) Bentonville's trail infrastructure from scratch. Clearly, we can't dismiss the Walton family's role in pouring money into their hometown to turn it into a labor force juggernaut.
 
