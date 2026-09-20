@@ -254,6 +254,52 @@ five each got half right. "Not a living tree and not autumn foliage" is there
 because every generator's first instinct on "gold tree" is a yellow cottonwood
 in October, which is exactly what came back last time.
 
+## Round eight: break the halo
+
+The round seven render is in place and is the fallback. Its one problem is that
+the green came back as a clean circle centered on the gold tree, which claims
+the tree caused the green. The post says the maps do not prove causality, so
+prompt 14 keeps everything else and makes the green ragged, off-center and
+leaky, with exceptions on both sides of it.
+
+## Prompt 14: the same scene, irregular green
+
+> A vast dead orchard seen from a drone at about forty-five degrees, filling
+> the entire frame and running unbroken all the way to a distant flat horizon.
+> Hundreds of thousands of trees in rough rows, bare gray skeletons, dead and
+> leafless, covering every part of the land from the foreground to the horizon
+> with no open fields and no clearings in the distance. At the center stands one
+> enormous tree cast entirely from solid gold metal, three times the height and
+> canopy spread of anything else. Its trunk, bark, branches and every one of its
+> thousands of leaves are gold metal: the leaves are thin hammered sheets of
+> gold, dense and countless, filling the canopy completely with no gaps, each
+> reflecting the low sun. It is a metal sculpture of a tree in full summer leaf,
+> heavy and solid and clearly man-made, not a living tree and not autumn
+> foliage. Around its base grows living green, but the green is not a circle and
+> not centered on the tree: it is a ragged, lopsided, irregular patch, much
+> wider on one side than the other, with no clean edge, spilling out in a long
+> uneven tongue that follows one row of the orchard far off to one side and
+> thins away into the dirt. Four or five bare dead gray trees stand inside the
+> green patch, alive with nothing. Six or seven healthy deep green trees stand
+> far out alone in the dead orchard, hundreds of yards from the gold tree, with
+> dead trees all around them. The ground shades raggedly from thick green grass
+> to dry cracked rust and clay earth, with patches of each mixed into the other.
+> Warm low sunlight from the left, long shadows across the dead rows, clear sky,
+> late golden hour. The gold reflects real sunlight, polished and metallic, and
+> does not emit light: no glow, no light rays, no god rays, no sparkle effects,
+> no lens flare, no leaves that look like lit bulbs, nothing magical or fantasy.
+> Realistic documentary drone photography, deep focus from foreground to
+> horizon, 3:2 landscape with open sky at the top. No people, no text, no logos.
+
+The clauses that matter are "not a circle and not centered on the tree",
+"spilling out in a long uneven tongue", "bare dead gray trees stand inside the
+green patch", and "healthy deep green trees stand far out alone". Round seven
+asked for uneven in a single phrase and the generator ignored it; this asks four
+separate times and names counts, which is usually what it takes.
+
+If the tool can run a variation on the round seven image, do that. The orchard,
+the horizon, the sculpture and the light are all right.
+
 ## Chosen
 
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
