@@ -66,5 +66,7 @@ a side.
 
 ## Chosen
 
+Prompt 1, the house on a few pillars. Chosen by Eric on September 20, 2026.
+
 File: images/betting-the-house-on-billionaires-hero-source.<ext>
 Alt (under 500 characters): <written once the image exists>
