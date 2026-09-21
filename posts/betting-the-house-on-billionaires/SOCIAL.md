@@ -12,37 +12,37 @@ a whole is up 7.4%.
 
 ---
 
-## X — 260 of 280 characters (link counted as 23)
+## X — 278 of 280 characters (link counted as 23)
 
 ```
-Watch what Walmart has meant to its hometown.
+Watch what Walmart meant to Benton County, AR: labor force up 71% in 20 years. Washington County next door, up 41%.
 
-Benton County, AR: labor force up 71% over 20 years. Neighboring Washington County up 41%.
+The other 73? Down 1.3%. Those two are the only reason the state grew.
 
-The other 73 Arkansas counties? Down 1.3%.
+Now look at the sea of red. How do we bring those counties back?
+```
+Then the link on its own line: `https://www.data4thepeople.com/p/betting-the-house-on-billionaires`
+Attach: `images/02-labor-force-arkansas.gif`
 
-Those two are the only reason the state grew at all.
+Two characters of slack. Do not add anything to this one without re-counting.
+
+---
+
+## Bluesky — 281 of 300 characters (full URL counted)
+
+```
+Benton County, Arkansas, home of Walmart: labor force up 71% over 20 years. Washington County next door, up 41%.
+
+The other 73 counties? Down 1.3%.
+
+Now look at the sea of red. How do we bring those counties back?
 ```
 Then the link on its own line: `https://www.data4thepeople.com/p/betting-the-house-on-billionaires`
 Attach: `images/02-labor-force-arkansas.gif`
 
 ---
 
-## Bluesky — 279 of 300 characters (full URL counted)
-
-```
-Benton County, Arkansas, home of Walmart: labor force up 71% over 20 years. Neighboring Washington County up 41%.
-
-The other 73 Arkansas counties? Down 1.3%.
-
-Those two are the only reason the state grew at all.
-```
-Then the link on its own line: `https://www.data4thepeople.com/p/betting-the-house-on-billionaires`
-Attach: `images/02-labor-force-arkansas.gif`
-
----
-
-## LinkedIn — 1,577 of 3,000 characters
+## LinkedIn — 1,724 of 3,000 characters
 
 The first two lines are what people see before "see more", so they carry the number.
 
@@ -60,6 +60,8 @@ We found the same shape in Nebraska. The state's fastest-growing county is Sarpy
 None of this proves causality, and we say so plainly in the post. Benton County has more going on than one company: more than 1,600 Walmart supplier offices sit within a short drive, and the Walton family spent decades and a great deal of money turning Bentonville into a mountain biking destination. Saline County, outside Little Rock, is growing just as fast with no Walton connection at all.
 
 But it is hard not to wonder what would have happened to these places if those fortunes had been built somewhere else. That question, and what it says about how much of America's growth now rests on very few people, is today's Data 4 Thought.
+
+Now look again at the sea of red. That is the harder question, and the one we would rather be arguing about: how do we bring those counties back?
 
 https://www.data4thepeople.com/p/betting-the-house-on-billionaires
 ```
