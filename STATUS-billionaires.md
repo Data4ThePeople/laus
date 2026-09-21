@@ -59,6 +59,14 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
 
+- 2026-09-20 Eric found a safe way to put the fifth billionaire back: the AI
+  paragraph now reads "only for our government (run by another billionaire) to
+  tell us not to worry". It states who holds the office without attaching a
+  verdict to him, and the critique in that sentence is about AI policy, not
+  politics. It also makes the section heading literal rather than rhetorical.
+  Materially less exposed than the paragraph cut earlier, which had attributed
+  trade policy, immigration policy and a war to him. Draft re-pushed.
+
 - 2026-09-20 Step 2f re-push at Eric's direction, two markup changes. A
   `::: spacer 20px` now sits between the "America is run by billionaires"
   heading and the drop cap. A `::: divider` now sits above "Common questions"

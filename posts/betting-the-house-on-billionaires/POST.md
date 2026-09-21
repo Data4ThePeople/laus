@@ -38,7 +38,7 @@ There's another billionaire whose company [flew about half of everything that re
 
 What about the billionaire we have tasked with negotiating foreign policy in the Middle East? He [did it for months as a private citizen](https://www.timesofisrael.com/jared-kushners-unofficial-role-in-trump-administration-sparks-ethical-questions/) before anyone gave him a title. Meanwhile, his own investment fund takes its money from the [governments sitting on the other side of the table](https://www.citizensforethics.org/legal-action/letters/white-house-must-reveal-and-resolve-jared-kushners-financial-conflicts-of-interest/).
 
-Or the billionaires running the biggest AI labs, who have just [warned us about the existential risk that AI could present](https://www.washingtonpost.com/technology/2026/09/12/ais-existential-threatsuddenly-has-washingtonsattention/) and urged us to slow down the pace of development, only for our government to [tell us not to worry about their warnings](https://www.cnn.com/2026/09/13/politics/ai-washington-regulation-politics-obama-trump)?
+Or the billionaires running the biggest AI labs, who have just [warned us about the existential risk that AI could present](https://www.washingtonpost.com/technology/2026/09/12/ais-existential-threatsuddenly-has-washingtonsattention/) and urged us to slow down the pace of development, only for our government (run by another billionaire) to [tell us not to worry about their warnings](https://www.cnn.com/2026/09/13/politics/ai-washington-regulation-politics-obama-trump)?
 
 ## Can billionaires prop up their own communities?
 
