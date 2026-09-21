@@ -20,8 +20,8 @@ Since: 2026-09-20
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | 2026-09-20 | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
 | 2d | Hero 1680x1080 + alt text | 2026-09-20 | Prompt 14 render in place, alt 461 chars, shipped as JPG |
-| 2e | SEO | | Meta title 50 chars, description 139, 8 keywords; Article + FAQPage schema; 3 edits accepted |
-| 2f | Pushed to Prismic (draft) | | |
+| 2e | SEO | 2026-09-20 | Meta title 50 chars, description 139, 8 keywords; Article + FAQPage schema; 3 edits accepted |
+| 2f | Pushed to Prismic (draft) | | New draft arBzbhEAAC4AKLO_, 25 slices, 3 assets |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -58,6 +58,16 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2e confirmed. Step 2f: dry run clean, then published. Created
+  draft arBzbhEAAC4AKLO_ in the Migration Release, never live. 25 slices, three
+  assets uploaded: both GIFs and the hero JPG. Tags and author left empty.
+  Cannot verify from here: PRISMIC_READ_TOKEN is not in the env, so --verify
+  does not run and Eric checks the draft in the dashboard.
+- 2026-09-20 First push in this project to carry animated GIFs. The importer's
+  content-type fix (commit 6094214) is what should keep them animated, but it
+  has not been checked against a live asset. Confirm in the Prismic preview
+  that both maps still play before this goes anywhere near live.
 
 - 2026-09-20 Step 2d confirmed. Step 2e opened.
 - 2026-09-20 Step 2e: front matter written, meta title 50 characters,
