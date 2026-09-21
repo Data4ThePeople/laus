@@ -66,7 +66,7 @@ Omaha's growth is impossible to directly attribute to Warren Buffett and Berkshi
 
 ## America's billionaire concentration risk
 
-This is the model that America has chosen to test out. Let just under 1,000 people accumulate [$8.4 trillion](https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/) and watch them drive GDP growth for America. The rest of us may not benefit, but when the powers that be are just looking at the aggregate numbers, growth is growth – does it matter how we get it?
+This is the model that America has chosen to test out. Let just under 1,000 people accumulate [$8.4 trillion](https://www.forbes.com/sites/chasewithorn/2026/03/10/2026-worlds-billionaires-list-facts-and-figures/) and watch them drive GDP growth for America. The rest of us may not benefit much, but when the powers that be are just looking at the aggregate numbers, growth is growth – does it matter how we get it?
 
 I think it does. First off, my bias is clear here. I would prefer to live in a country where all people had great opportunity to improve their standard of living. But that's my bias, and it's OK if you don't agree. So instead, I will make a different argument for why betting the house on billionaires is a mistake. There is too much concentration risk.
 
