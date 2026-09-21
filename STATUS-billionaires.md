@@ -7,22 +7,22 @@ STATUS-five-takeaways.md (Data 4 Thought takeaways, complete)
 
 ## Current
 
-Post: betting-the-house-on-billionaires
-Step: 2a
-Since: 2026-09-20
+Post: betting-the-house-on-billionaires (complete)
+Step: complete
+Since: 2026-09-21
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-09-20 | Nebraska and Arkansas cut of the existing classified panel; DATASETS.md written; tie-out below |
-| 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
+| 2a | Draft with brackets resolved | 2026-09-20 | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
 | 2c | Slice markup | 2026-09-20 | 26 slices after 2e and Eric's 2f fences; two dropcap/spacer fences, two dividers |
 | 2d | Hero 1680x1080 + alt text | 2026-09-20 | Prompt 14 render in place, alt 461 chars, shipped as JPG |
 | 2e | SEO | 2026-09-20 | Meta title 50 chars, description 139, 8 keywords; Article + FAQPage schema; 3 edits accepted |
 | 2f | Pushed to Prismic (draft) | 2026-09-20 | Draft arBzbhEAAC4AKLO_, 26 slices, 3 assets; re-pushed with Eric's fences |
-| 2g | Mailchimp teaser | | EMAIL.md drafted; static two-up July 2026 map instead of a GIF |
+| 2g | Mailchimp teaser | 2026-09-21 | Static two-up July 2026 map instead of a GIF; Eric rewrote body two, 3 edits accepted |
 
 ## Stale
 
@@ -58,6 +58,17 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-21 Step 2g: subject and preview reworked twice at Eric's direction.
+  Subject now takes the title, "Betting the house on our billionaires" (37
+  characters); the full title is 49 and truncates. Preview carries the idea
+  rather than one state's numbers. Eric rewrote body part two, adding the
+  Bentonville counterfactual to balance the Omaha one and closing on the
+  concentration-risk question instead of the Palm Beach line. Three edits
+  proposed on his text and accepted.
+- 2026-09-21 Step 2g done. betting-the-house-on-billionaires complete: every
+  step 1 through 2g confirmed. The Prismic draft arBzbhEAAC4AKLO_ sits in the
+  Migration Release, never live.
 
 - 2026-09-20 Link audit on all 15 URLs in the post. One dead: the Arkansas EDC
   Walmart suppliers page, which serves HTTP 200 with an "Oops! Sorry. This page
