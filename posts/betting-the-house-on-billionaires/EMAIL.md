@@ -44,13 +44,13 @@ Two maps side by side titled 20-year change in labor force by county, July 2026.
 ## 5. Body, part two
 
 ```
-In January 2010, 4 of Nebraska's 93 counties were in structural loss, meaning a labor force more than 10% below where it stood 20 years earlier. In July 2026 it is 59. Arkansas went from 12 of 75, to 45 of 75 in structural loss.
+In January 2010, 4 of Nebraska's 93 counties were in structural loss, meaning a labor force more than 10% below where it stood 20 years earlier. In July 2026 it is 59. Arkansas went from 12 of 75 to 45.
 
 What green is left sits in one metro in each state. Arkansas's darkest county is Benton, where Walmart is headquartered, up 71% over 20 years. Nebraska's is Sarpy, the county next door to Buffett's Omaha, up 52%.
 
-These maps do not prove causality. But it is hard not to wonder what would have happened to Omaha had Warren Buffett decided to move to Palm Beach 50 years ago, or to Bentonville if the Walton family had decided to move Walmart's HQ to Texas to avoid paying state taxes.
+These maps do not prove causality. But it is hard not to wonder what would have happened to Omaha had Warren Buffett decided to move to Palm Beach 50 years ago, or to Bentonville if the Walton family had decided to move Walmart's HQ to Texas.
 
-Maybe this is all a coincidence. Maybe it's not. But the contrast within these two states had us thinking deeply about how reliant America as a whole has become on its billionaires - and how much risk we are taking on because of it.
+Maybe this is all a coincidence. Maybe it's not. But the contrast within these two states had us thinking deeply about how reliant America as a whole has become on its billionaires. And how much risk we are taking on because of it.
 ```
 
 ## 6. Call to action
