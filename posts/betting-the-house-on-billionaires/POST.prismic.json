@@ -53,6 +53,16 @@
       }
     },
     {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
       "slice_type": "drop_cap",
       "slice_label": null,
       "variation": "default",
@@ -264,8 +274,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "r6z-JJEHDSQD_rWM",
           "alt": "Animated map of Nebraska, January 2010 to July 2026, with each county shaded by the change in its civilian labor force against the same month 20 years earlier. Counties turn from green and gray to red across most of the state, leaving a green cluster around Omaha in the east. Sarpy County is the darkest green at 52% growth, with Douglas County next to it at 24%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 660,
+            "height": 529
+          }
         },
         "source_text": [
           {
@@ -318,8 +333,13 @@
       "items": [],
       "primary": {
         "image": {
+          "id": "hv55lHq90dY-0n3r",
           "alt": "Animated map of Arkansas, January 2010 to July 2026, with each county shaded by the change in its civilian labor force against the same month 20 years earlier. Red spreads across the south and east of the state while the northwest corner stays dark green. Benton County, home of Walmart, is the darkest green in Arkansas at 71% growth, with Washington County next to it at 41%.",
-          "copyright": null
+          "copyright": null,
+          "dimensions": {
+            "width": 660,
+            "height": 529
+          }
         },
         "source_text": [
           {
@@ -569,14 +589,12 @@
       }
     },
     {
-      "slice_type": "spacer",
+      "slice_type": "divider_dots",
       "slice_label": null,
       "variation": "default",
       "version": "initial",
       "items": [],
-      "primary": {
-        "spacer_value": "20px"
-      }
+      "primary": {}
     },
     {
       "slice_type": "paragarph_text",
@@ -695,5 +713,23 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"Is America betting the house on its billionaires?\",\n      \"description\": \"Nebraska has 59 of 93 counties in structural labor force loss, Arkansas 45 of 75. The green that is left sits around Omaha and Bentonville.\",\n      \"datePublished\": \"2026-09-20T16:30:00-04:00\",\n      \"dateModified\": \"2026-09-20T16:30:00-04:00\",\n      \"articleSection\": \"Data 4 Thought\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"nebraska labor force\",\n        \"arkansas labor force\",\n        \"labor force decline by county\",\n        \"bentonville economy\",\n        \"omaha economy\",\n        \"counties losing workers\",\n        \"structural labor force decline\",\n        \"wealth concentration\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many Nebraska counties are losing workers?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In July 2026, 59 of Nebraska's 93 counties had a civilian labor force more than 10% below where it stood 20 years earlier. In January 2010 that was 4 counties.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Which Arkansas counties are growing fastest?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Benton County, where Walmart is headquartered, is up 71% over 20 years, the largest gain in the state. Washington County next to it is up 41%, and Saline County, outside Little Rock, is up 44%.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Do billionaires make their hometowns grow?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"This data cannot answer that. It shows that the fastest-growing counties in both states are the ones holding Omaha and Bentonville, and that most of both states is shrinking. It does not show why.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
+  "featured_image": {
+    "id": "7IPO_qzTnGugTN1M",
+    "alt": "Aerial photograph of a vast dead orchard at sunset. Bare gray trees in long rows fill the frame to a flat horizon, standing in dry tan dirt. At the center stands one much larger tree made entirely of gold metal, its trunk, branches and thousands of leaves cast in gold and catching the low sun. A ragged band of green grass runs past its base, with several bare dead trees standing inside the green, and a handful of living green trees far out in the dead rows.",
+    "copyright": null,
+    "dimensions": {
+      "width": 1680,
+      "height": 1080
+    }
+  },
+  "meta_image": {
+    "id": "7IPO_qzTnGugTN1M",
+    "alt": "Aerial photograph of a vast dead orchard at sunset. Bare gray trees in long rows fill the frame to a flat horizon, standing in dry tan dirt. At the center stands one much larger tree made entirely of gold metal, its trunk, branches and thousands of leaves cast in gold and catching the low sun. A ragged band of green grass runs past its base, with several bare dead trees standing inside the green, and a handful of living green trees far out in the dead rows.",
+    "copyright": null,
+    "dimensions": {
+      "width": 1680,
+      "height": 1080
+    }
+  },
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"headline\": \"Is America betting the house on its billionaires?\",\n      \"description\": \"Nebraska has 59 of 93 counties in structural labor force loss, Arkansas 45 of 75. The green that is left sits around Omaha and Bentonville.\",\n      \"image\": \"https://images.prismic.io/data4thepeople/7IPO_qzTnGugTN1M_betting-the-house-on-billionaires-hero-1680x1080.jpg?auto=format,compress\",\n      \"datePublished\": \"2026-09-20T16:30:00-04:00\",\n      \"dateModified\": \"2026-09-20T16:30:00-04:00\",\n      \"articleSection\": \"Data 4 Thought\",\n      \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n      \"inLanguage\": \"en-US\",\n      \"isAccessibleForFree\": true,\n      \"keywords\": [\n        \"nebraska labor force\",\n        \"arkansas labor force\",\n        \"labor force decline by county\",\n        \"bentonville economy\",\n        \"omaha economy\",\n        \"counties losing workers\",\n        \"structural labor force decline\",\n        \"wealth concentration\"\n      ],\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Eric Pachman\",\n        \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n      },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Data 4 The People\",\n        \"url\": \"https://data4thepeople.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires\"\n      },\n      \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires#article\"\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"@id\": \"https://www.data4thepeople.com/p/betting-the-house-on-billionaires#faq\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How many Nebraska counties are losing workers?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"In July 2026, 59 of Nebraska's 93 counties had a civilian labor force more than 10% below where it stood 20 years earlier. In January 2010 that was 4 counties.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Which Arkansas counties are growing fastest?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Benton County, where Walmart is headquartered, is up 71% over 20 years, the largest gain in the state. Washington County next to it is up 41%, and Saline County, outside Little Rock, is up 44%.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Do billionaires make their hometowns grow?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"This data cannot answer that. It shows that the fastest-growing counties in both states are the ones holding Omaha and Bentonville, and that most of both states is shrinking. It does not show why.\"\n          }\n        }\n      ]\n    }\n  ]\n}"
 }

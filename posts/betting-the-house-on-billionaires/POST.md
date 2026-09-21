@@ -27,6 +27,8 @@ Disclaimer: While this post is rooted in data, much of it reflects my opinion ba
 
 ## America is run by billionaires
 
+::: spacer 20px
+
 ::: dropcap
 Lately, it feels like America is only as strong as its billionaires.
 
@@ -85,6 +87,8 @@ Both maps come from the same county data as [our labor force map](https://www.da
 What this does not tell you: the labor force counts people who live in a county, not people who work there, so a county can grow because a neighboring county's workers moved in. The 20-year window also means a county's color today is partly a story about 2006. And nothing on these maps can separate what a single employer or a single family did from the migration, births, deaths and retirements happening around them.
 
 *U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
+
+::: divider
 
 ## Common questions
 

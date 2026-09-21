@@ -18,10 +18,10 @@ Since: 2026-09-20
 | 1  | Exploration and analysis | 2026-09-20 | Nebraska and Arkansas cut of the existing classified panel; DATASETS.md written; tie-out below |
 | 2a | Draft with brackets resolved | | POST.md written, six brackets resolved, 12 edits proposed and all 12 accepted and applied |
 | 2b | Eric's edit, Claude's look-over | 2026-09-20 | Eric cut the immigration paragraph and rewrote the closer; 9 look-over items proposed and all accepted |
-| 2c | Slice markup | 2026-09-20 | 17 slices; one dropcap fence, one divider, two captioned GIFs, 14 links |
+| 2c | Slice markup | 2026-09-20 | 26 slices after 2e and Eric's 2f fences; two dropcap/spacer fences, two dividers |
 | 2d | Hero 1680x1080 + alt text | 2026-09-20 | Prompt 14 render in place, alt 461 chars, shipped as JPG |
 | 2e | SEO | 2026-09-20 | Meta title 50 chars, description 139, 8 keywords; Article + FAQPage schema; 3 edits accepted |
-| 2f | Pushed to Prismic (draft) | | New draft arBzbhEAAC4AKLO_, 25 slices, 3 assets |
+| 2f | Pushed to Prismic (draft) | | Draft arBzbhEAAC4AKLO_, 26 slices, 3 assets; re-pushed with Eric's fences |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
@@ -58,6 +58,16 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2f re-push at Eric's direction, two markup changes. A
+  `::: spacer 20px` now sits between the "America is run by billionaires"
+  heading and the drop cap. A `::: divider` now sits above "Common questions"
+  in place of the automatic spacer. 26 slices. The importer suppresses the
+  automatic heading spacer when a divider precedes the heading, so there is no
+  doubled gap. Assets were cached and not re-uploaded. Same draft.
+- 2026-09-20 Note for PROCESS.md: the page now carries two sets of divider
+  dots, above "How we measured this" and above "Common questions", where the
+  process says divider dots mark one place only. Eric asked for the second one.
 
 - 2026-09-20 Step 2e confirmed. Step 2f: dry run clean, then published. Created
   draft arBzbhEAAC4AKLO_ in the Migration Release, never live. 25 slices, three
