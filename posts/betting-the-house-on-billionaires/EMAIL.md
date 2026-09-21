@@ -3,8 +3,8 @@
 Post URL: https://www.data4thepeople.com/p/betting-the-house-on-billionaires
 
 ```
-Subject:  59 of 93 Nebraska counties shrinking
-Preview:  Arkansas is 45 of 75. The growth that is left sits around Omaha and Bentonville.
+Subject:  Betting the house on our billionaires
+Preview:  Nebraska has 59 of 93 counties shrinking. The green left sits in two towns.
 ```
 
 ## 1. Hero
