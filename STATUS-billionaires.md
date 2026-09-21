@@ -21,8 +21,8 @@ Since: 2026-09-20
 | 2c | Slice markup | 2026-09-20 | 26 slices after 2e and Eric's 2f fences; two dropcap/spacer fences, two dividers |
 | 2d | Hero 1680x1080 + alt text | 2026-09-20 | Prompt 14 render in place, alt 461 chars, shipped as JPG |
 | 2e | SEO | 2026-09-20 | Meta title 50 chars, description 139, 8 keywords; Article + FAQPage schema; 3 edits accepted |
-| 2f | Pushed to Prismic (draft) | | Draft arBzbhEAAC4AKLO_, 26 slices, 3 assets; re-pushed with Eric's fences |
-| 2g | Mailchimp teaser | | |
+| 2f | Pushed to Prismic (draft) | 2026-09-20 | Draft arBzbhEAAC4AKLO_, 26 slices, 3 assets; re-pushed with Eric's fences |
+| 2g | Mailchimp teaser | | EMAIL.md drafted; static two-up July 2026 map instead of a GIF |
 
 ## Stale
 
@@ -58,6 +58,19 @@ Nebraska hyper-growth counties, July 2026: Sarpy only.
 Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
+
+- 2026-09-20 Step 2f confirmed. Step 2g opened.
+- 2026-09-20 Step 2g: the GIFs cannot go in the email. Outlook and several
+  other clients show only the first frame, and frame one of both maps is
+  January 2010, which is almost entirely green. A reader on those clients would
+  see the opposite of the story. Eric had the same feedback independently.
+  Built `images/03-july-2026-ne-ar.png` instead: Nebraska and Arkansas at July
+  2026 side by side, composed from the last frame of each GIF, with one shared
+  legend, a title and the source line. The email links it to the post and the
+  line above it says to click through to watch it play.
+- 2026-09-20 Email hero exported at 1200x772 rather than full size. At 1680
+  wide the photograph would not go under the 300KB limit at any usable quality;
+  at 1200 it is 269KB, and email renders at 600px so nothing is lost.
 
 - 2026-09-20 Eric found a safe way to put the fifth billionaire back: the AI
   paragraph now reads "only for our government (run by another billionaire) to
