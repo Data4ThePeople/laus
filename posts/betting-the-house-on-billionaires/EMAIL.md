@@ -4,7 +4,7 @@ Post URL: https://www.data4thepeople.com/p/betting-the-house-on-billionaires
 
 ```
 Subject:  Betting the house on our billionaires
-Preview:  Nebraska has 59 of 93 counties shrinking. The green left sits in two towns.
+Preview:  What Nebraska and Arkansas might be telling us about billionaires and prosperity.
 ```
 
 ## 1. Hero
