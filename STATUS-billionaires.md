@@ -59,6 +59,15 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
 
+- 2026-09-21 SOCIAL.md written from Eric's scaffold: one post each for X (260
+  of 280), Bluesky (279 of 300) and LinkedIn (1,577 of 3,000), all attaching
+  the Arkansas GIF. The scaffold's XX% is -1.3%, our own sum of the 73 Arkansas
+  counties outside Benton and Washington, 1,146,981 workers in July 2026
+  against 1,161,557 twenty years earlier. Labeled as editorial in the file,
+  since it is a sum and not a published series. The stronger framing that came
+  out of it: those two counties added 115,303 workers while the other 73 lost
+  14,576, so they are the only reason Arkansas grew at all.
+
 - 2026-09-21 Step 2g: subject and preview reworked twice at Eric's direction.
   Subject now takes the title, "Betting the house on our billionaires" (37
   characters); the full title is 49 and truncates. Preview carries the idea
