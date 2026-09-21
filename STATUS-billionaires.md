@@ -59,6 +59,17 @@ Arkansas hyper-growth counties, July 2026: Benton, Saline, Washington.
 
 ## Log
 
+- 2026-09-20 Link audit on all 15 URLs in the post. One dead: the Arkansas EDC
+  Walmart suppliers page, which serves HTTP 200 with an "Oops! Sorry. This page
+  does not exist" body, so a status check passes it. Replaced with the Talk
+  Business supply-side piece and the claim rewritten to its series: 48 supplier
+  offices in 1994 to more than 1,600 by 2018. The "within 30 miles" detail came
+  from the dead page and was dropped. Draft re-pushed. Four URLs (Washington
+  Post, CNN, Forbes, GeekWire, Times of Israel) return 403 or 451 to automated
+  fetch; Eric confirmed in a browser that they all resolve.
+- 2026-09-20 Lesson for the next post: check the response body, not just the
+  status code. A soft 404 returns 200.
+
 - 2026-09-20 Step 2f confirmed. Step 2g opened.
 - 2026-09-20 Step 2g: the GIFs cannot go in the email. Outlook and several
   other clients show only the first frame, and frame one of both maps is
