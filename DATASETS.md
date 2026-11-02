@@ -103,8 +103,13 @@ by industry. One cell is thousands of jobs in a state, industry and month.
 `BLS_API_KEY`. Series used: `SMS26000000000000001` (Michigan total nonfarm,
 seasonally adjusted), `SMS26000003000000001` (Michigan manufacturing,
 seasonally adjusted), `SMU26000003133600001` (Michigan transportation
-equipment manufacturing, NAICS 336, not seasonally adjusted). Cached under
-`data/ces/`.
+equipment manufacturing, NAICS 336, not seasonally adjusted), plus U.S.
+totals `CES0000000001` and `CES3000000001`. The same cache holds two LAUS
+statewide series for Michigan, seasonally adjusted, used only for the
+labor force versus jobs chart: `LASST260000000000006` (labor force) and
+`LASST260000000000005` (employed), stored in thousands. Cached in
+`data/ces/mi_ces.csv`; the LAUS seasonally adjusted series has no October
+2025 value.
 
 **Version and vintage.** Pulled November 2, 2026, through September 2026. The
 latest month is preliminary and is revised the next month. Every March, BLS
@@ -119,7 +124,7 @@ not published for every state or month. Use only the series listed above.
 **Suppressed, censored or masked values.** Michigan detail below NAICS 336 is
 not used because it is not published in every month.
 
-**Missing data.** None in the series we use: all five run January 2015 to
+**Missing data.** None in the five CES series: all run January 2015 to
 September 2026 with every month present, including October 2025.
 
 **Revisions.** Monthly and annual. We refresh the whole series each pull.
@@ -191,8 +196,10 @@ state, by trading partner country.
 **Where it comes from.** Census International Trade API,
 `https://api.census.gov/data/timeseries/intltrade/exports/statehs` (field
 `ALL_VAL_MO`) and `.../imports/statehs` (field `GEN_VAL_MO`), key
-`CENSUS_API_KEY`. Partner codes: Canada 1220, Mexico 2010. Cached under
-`data/trade/`.
+`CENSUS_API_KEY`. Partner codes: Canada 1220, Mexico 2010, all countries
+"-". U.S. totals for comparison come from `.../exports/hs` and
+`.../imports/hs` with the same fields. Cached in `data/trade/mi_trade.csv`
+(column `geo` is MI or US).
 
 **Version and vintage.** Pulled November 2, 2026, through August 2026.
 Monthly figures are revised with the annual revision each June.
