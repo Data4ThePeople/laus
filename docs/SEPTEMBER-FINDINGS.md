@@ -75,7 +75,17 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 
 - Trade with Canada fell in 2025 and partly recovered in 2026. The labor force
   decline is a 2026 event. The two do not line up in time.
-- Tariff dates and rates: `docs/TARIFF-TIMELINE.md` (in progress).
+- Tariff dates and rates: `docs/TARIFF-TIMELINE.md` (32 rows, each linked
+  to a primary source; uncertain items listed separately).
+- The newest measures sit at or past the edge of the trade data, which ends
+  in August 2026: U.S. Section 338 duties of 50% on listed Canadian goods
+  from August 22, 2026 (applying regardless of USMCA origin, per the White
+  House), the motor vehicle list stacking on Section 232 from September 15,
+  an import ban from September 29, a new product list from October 30, and
+  Canada's new tariffs and 50% steel and aluminum surtaxes from September 8,
+  2026. Their effect on Michigan trade is not yet in any published data.
+- Wording: the Section 338 proclamation titles characterize Canada's
+  conduct. Cite them by number, not title.
 
 ### How much Michigan relies on Canada (January to August 2026, dollars)
 

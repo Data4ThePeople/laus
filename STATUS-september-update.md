@@ -35,3 +35,4 @@ None.
 - 2026-11-02 Hero idea from Eric for 2d: an AI image of the Michigan state flag at half staff. Use it as the starting prompt in hero-prompt.md.
 - 2026-11-02 Michigan check: the 20 flips sit in the "balance of Michigan" LAUS model area (77 counties, -8.7% yoy); the six Detroit metro counties rose 0.6%. CES payroll jobs in Michigan are flat. Findings in docs/SEPTEMBER-FINDINGS.md. Waiting on Eric for the spotlight framing.
 - 2026-11-02 Eric chose the framing: Michigan spotlight as "the map turned in 2026, here is what is behind it" (Detroit vs rest-of-state model split, flat payroll and QCEW jobs, trade with Canada and tariff dates as context with the timing caveat).
+- 2026-11-02 Tariff timeline done (docs/TARIFF-TIMELINE.md, primary sources; Section 338 proclamations 11048 and 11076 spot-checked in the Federal Register API).
