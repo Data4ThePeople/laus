@@ -1,9 +1,9 @@
 """Fetch the non-LAUS sources for the September 2026 Michigan spotlight.
 
 Writes small CSV caches (committed, so the post rebuilds without the APIs):
-    data/ces/mi_ces.csv          CES Michigan payroll jobs, monthly
+    data/ces/mi_ces.csv          CES payroll jobs (MI, U.S.) and LAUS MI statewide SA, monthly
     data/qcew/mi_qcew.csv        QCEW Michigan counties, selected industries
-    data/trade/mi_trade.csv      Census Michigan exports and imports by partner
+    data/trade/mi_trade.csv      Census exports and imports by partner, Michigan and U.S.
 
 Method and limits for each source are in DATASETS.md.
 
@@ -33,6 +33,9 @@ CES_SERIES = {
     "SMU26000003133600001": "mi_transport_equip_mfg_nsa",
     "CES0000000001": "us_total_nonfarm_sa",
     "CES3000000001": "us_manufacturing_sa",
+    # LAUS statewide, seasonally adjusted, for the jobs-vs-residents comparison
+    "LASST260000000000006": "mi_laus_labor_force_sa",
+    "LASST260000000000005": "mi_laus_employed_sa",
 }
 # QCEW industry codes: 10 = all industries (own_code 0), the rest private (own_code 5)
 QCEW_INDUSTRIES = {"10": 0, "31-33": 5, "336": 5, "3361": 5, "3362": 5, "3363": 5}
@@ -58,6 +61,8 @@ def fetch_ces() -> pd.DataFrame:
                 if not d["period"].startswith("M") or d["period"] == "M13":
                     continue
                 val = pd.to_numeric(d["value"], errors="coerce")  # "-" = not collected
+                if s["seriesID"].startswith("LA"):
+                    val = val / 1000  # LAUS publishes persons; store thousands like CES
                 rows.append({"series": CES_SERIES[s["seriesID"]], "series_id": s["seriesID"],
                              "date": f'{d["year"]}-{d["period"][1:]}-01', "jobs_k": val})
     df = pd.DataFrame(rows).drop_duplicates(["series_id", "date"])
@@ -90,23 +95,23 @@ def fetch_trade() -> pd.DataFrame:
     key = get_key("CENSUS_API_KEY")
     base = "https://api.census.gov/data/timeseries/intltrade"
     rows = []
-    for flow, path, field in [("exports", "exports/statehs", "ALL_VAL_MO"),
-                              ("imports", "imports/statehs", "GEN_VAL_MO")]:
-        for code, name in PARTNERS.items():
-            params = {"get": f"STATE,{field}", "STATE": "MI", "time": "from 2022-01", "key": key}
-            if code != "-":
-                params["CTY_CODE"] = code
-            else:
-                params["CTY_CODE"] = "-"  # all countries total
-            r = requests.get(f"{base}/{path}", params=params, timeout=120)
-            r.raise_for_status()
-            j = r.json()
-            hdr = j[0]
-            for rec in j[1:]:
-                d = dict(zip(hdr, rec))
-                rows.append({"flow": flow, "partner": name, "date": d["time"] + "-01",
-                             "value_usd": float(d[field])})
-    return pd.DataFrame(rows).sort_values(["flow", "partner", "date"])
+    # geo MI: state series (exports by origin of movement, imports by destination);
+    # geo US: national totals, for comparing Michigan's reliance on Canada
+    for geo, suffix in [("MI", "statehs"), ("US", "hs")]:
+        for flow, field in [("exports", "ALL_VAL_MO"), ("imports", "GEN_VAL_MO")]:
+            for code, name in PARTNERS.items():  # CTY_CODE "-" = all countries
+                params = {"get": field, "CTY_CODE": code, "time": "from 2022-01", "key": key}
+                if geo == "MI":
+                    params["STATE"] = "MI"
+                r = requests.get(f"{base}/{flow}/{suffix}", params=params, timeout=120)
+                r.raise_for_status()
+                j = r.json()
+                hdr = j[0]
+                for rec in j[1:]:
+                    d = dict(zip(hdr, rec))
+                    rows.append({"geo": geo, "flow": flow, "partner": name,
+                                 "date": d["time"] + "-01", "value_usd": float(d[field])})
+    return pd.DataFrame(rows).sort_values(["geo", "flow", "partner", "date"])
 
 
 def main() -> None:

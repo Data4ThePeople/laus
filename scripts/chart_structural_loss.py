@@ -73,23 +73,33 @@ def render(out: Path, minimal: bool = False) -> Path:
 
     arrow = dict(arrowstyle="-", color=MUTED, linewidth=0.9, shrinkA=0, shrinkB=4)
     ax.scatter([last_d], [last.share], s=44, color=CORAL, zorder=5, edgecolor=BG, linewidth=1.5)
-    ax.annotate(f"July 2026: {last.share:.0f}% of counties,\n{int(last.sl):,} of {int(last.total):,}",
-                xy=(last_d, last.share), xytext=(-14, 34), textcoords="offset points",
-                color=INK, fontsize=10, fontweight="bold", ha="right", va="bottom",
-                linespacing=1.5, arrowprops=arrow)
+    peak = g.share.idxmax()
+    if peak == last_d:
+        ax.annotate(f"{last_d:%B %Y}: {last.share:.0f}% of counties,\n{int(last.sl):,} of {int(last.total):,}",
+                    xy=(last_d, last.share), xytext=(-14, 34), textcoords="offset points",
+                    color=INK, fontsize=10, fontweight="bold", ha="right", va="bottom",
+                    linespacing=1.5, arrowprops=arrow)
+    else:                            # latest is below the record: call out both
+        ax.annotate(f"{last_d:%B %Y}: {last.share:.0f}% of counties,\n{int(last.sl):,} of {int(last.total):,}",
+                    xy=(last_d, last.share), xytext=(-4, -110), textcoords="offset points",
+                    color=INK, fontsize=10, fontweight="bold", ha="right", va="top",
+                    linespacing=1.5, arrowprops=arrow)
+        ax.annotate(f"Record, {peak:%B %Y}: {g.loc[peak, 'share']:.1f}%",
+                    xy=(peak, g.loc[peak, "share"]), xytext=(-20, 22), textcoords="offset points",
+                    color=MUTED, fontsize=9, ha="right", va="bottom", arrowprops=arrow)
     if minimal:                      # hero version: one call-out, nothing else
         fig.savefig(out, facecolor=BG)
         print(f"wrote {out} (minimal)")
         return out
     ax.annotate(f"COVID peak, {covid:%B %Y}: {g.loc[covid, 'share']:.1f}%",
-                xy=(covid, g.loc[covid, "share"]), xytext=(10, 26), textcoords="offset points",
-                color=MUTED, fontsize=9, ha="left", va="bottom", arrowprops=arrow)
+                xy=(covid, g.loc[covid, "share"]), xytext=(-8, 22), textcoords="offset points",
+                color=MUTED, fontsize=9, ha="right", va="bottom", arrowprops=arrow)
     ax.annotate(f"{first_d:%B %Y}: {first.share:.0f}%, {int(first.sl):,} counties",
                 xy=(first_d, first.share), xytext=(14, -26), textcoords="offset points",
                 color=MUTED, fontsize=9, va="top", arrowprops=arrow)
     ax.annotate("No county data,\nOctober 2025",
                 xy=(pd.Timestamp("2025-10-01"), float(bridged.loc["2025-10-01"])),
-                xytext=(-18, -46), textcoords="offset points", color=MUTED, fontsize=8.5,
+                xytext=(-30, -60), textcoords="offset points", color=MUTED, fontsize=8.5,
                 ha="right", va="center", linespacing=1.4, arrowprops=arrow)
 
     out.parent.mkdir(parents=True, exist_ok=True)

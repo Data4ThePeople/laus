@@ -77,6 +77,24 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
   decline is a 2026 event. The two do not line up in time.
 - Tariff dates and rates: `docs/TARIFF-TIMELINE.md` (in progress).
 
+### How much Michigan relies on Canada (January to August 2026, dollars)
+
+- Canada took 38.8% of Michigan's goods exports, against 14.3% for the U.S.
+  as a whole.
+- Canada supplied 25.5% of Michigan's goods imports, against 11.2% for the U.S.
+
+## Charts (outputs/charts/, rebuilt by scripts)
+
+| File | Script | What it shows |
+|---|---|---|
+| sep26-01-structural-loss-over-time.png | chart_structural_loss.py --out | U.S. share in Structural Loss, 2010 to Sep 2026; record July 2026 (39.8%) |
+| sep26-02-mi-county-map.png | chart_michigan.py | 20 entered, 33 already, 30 not |
+| sep26-03-mi-labor-force-jobs.png | chart_michigan.py | MI labor force -4.9% vs payroll jobs +0.2% since Jan 2025, SA |
+| sep26-04-mi-canada-share.png | chart_michigan.py | Canada's share of MI vs U.S. trade |
+
+Framing (Eric, Nov 2, 2026): the gap between the labor force and job counts
+is called out as something to keep an eye on, not explained.
+
 ## Open questions
 
 - Whether the rest-of-Michigan decline survives the early-2027 revision.
