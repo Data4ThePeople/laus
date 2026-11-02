@@ -52,6 +52,12 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 - Payroll jobs located in Michigan (CES, seasonally adjusted), September
   2025 to September 2026: total +0.04%, manufacturing -0.3%. Transportation
   equipment manufacturing (not seasonally adjusted) +0.4%.
+- QCEW, a full count of jobs from unemployment insurance tax records, runs
+  only through March 2026. March 2025 to March 2026: Michigan +0.1%
+  (4,166,401 to 4,170,449); Detroit metro -0.2%; rest of Michigan +0.4%.
+  Over the same months, LAUS labor force: Detroit metro +0.2%, rest of
+  Michigan -4.9%; LAUS employed residents statewide -2.4% (4,779,337 to
+  4,666,224). CES total nonfarm, March: -0.2%.
 - Household survey side of LAUS: employed Michigan residents fell from
   4,797,679 to 4,559,610 (-5.0%); unemployed were flat (232,015 to 231,968);
   unemployment rate 4.6% to 4.8%.
