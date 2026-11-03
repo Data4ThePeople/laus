@@ -178,3 +178,40 @@ Eric's question: is the drop fewer prime-age workers?
   1.5). Script: `scripts/cps_prime_age_error.py`.
 - Reading: close to the margin of error. It can be stated as "the survey
   suggests", not as a measured decline.
+
+### Michigan vs Ohio outside the big metros (Nov 3, 2026)
+
+Script: `scripts/cps_mi_oh.py`. County lists from the OMB 2023 delineation
+(`data/geo_ref/omb_cbsa_2023.csv`). "Outside 500k+ metros": Michigan drops
+Detroit and Grand Rapids; Ohio drops Cleveland, Columbus, Cincinnati, Dayton,
+Akron and Toledo (Akron is in the same CPS size class as Dayton and Toledo
+and cannot be separated). CPS uses its own metro-size and metro-status codes.
+
+LAUS labor force, change from the same month of 2025:
+
+| Area | Counties | Jan | Apr | Sep |
+|---|---|---|---|---|
+| Michigan outside 500k+ metros | 72 | -3.5% | -6.6% | -8.7% |
+| Ohio outside 500k+ metros | 59 | -1.5% | -1.5% | -1.2% |
+| Michigan nonmetro | 53 | -3.6% | -6.1% | -8.3% |
+| Ohio nonmetro | 47 | -1.7% | -1.2% | -0.9% |
+
+CPS participation, January to September averages (change in points; z =
+change / household-bootstrap SE; second z assumes a design effect of 2.0):
+
+| Area | Ages | 2025 | 2026 | Change | z |
+|---|---|---|---|---|---|
+| Michigan outside 500k+ metros | 16+ | 59.2% | 54.6% | -4.6 | 3.0 / 2.1 |
+| Ohio outside 500k+ metros | 16+ | 61.3% | 60.0% | -1.4 | 1.0 / 0.7 |
+| Michigan outside 500k+ metros | 25-54 | 84.6% | 82.4% | -2.2 | 1.3 / 0.9 |
+| Ohio outside 500k+ metros | 25-54 | 82.1% | 82.4% | +0.3 | 0.2 / 0.1 |
+
+- The LAUS gap between the two states outside the big metros is large
+  (Michigan -8.7%, Ohio -1.2% in September).
+- In the CPS, Michigan's all-adult drop outside the big metros clears the
+  error on its own; Ohio's does not. The difference between the two states
+  (-3.2 points) is about 1.6 times its error, so not clearly beyond it.
+  Part of any all-adult change can come from the sample's age mix.
+- Prime age: neither state's change is distinguishable from zero outside
+  the big metros. Nonmetro CPS samples are too small to use (about 110
+  prime-age Michiganders a month).
