@@ -112,7 +112,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 | sep26-07-mi-participation.png | chart_michigan.py | Participation rate, MI, OH, U.S., SA, Jan 2024 to Sep 2026 |
 | sep26-08-mi-oh-balance-of-state.png | chart_michigan.py | Rest of MI (outside Detroit, 77 counties) vs rest of OH (outside Cleveland, 82 counties), monthly yoy, 2026. Replaced the outside-500k+-metros chart Nov 3, per Eric, because Michigan's other metros fell as much as its rural counties |
 | sep26-09-septembers-bands.png | chart_septembers_bands.py | All six bands, share of counties, every September 2012 to 2026 (added Nov 3, per Eric) |
-| sep26-10-cps-response.png | chart_cps_response.py | CPS household response rate, monthly, Jan 2013 to Sep 2026 (added Nov 3, per Eric) |
+| sep26-10-cps-response.png | chart_cps_response.py | CPS household response rate, monthly, Jan 2013 to Sep 2026 (added Nov 3, per Eric); not in the post (Eric, Nov 3: one chart only for the survey note) |
 | sep26-11-state-gaps.png | chart_state_gaps.py | States with a 2+ point gap between employed residents and jobs, monthly 2015 to Sep 2026; QCEW through Mar 2026, CES after (added Nov 3, per Eric) |
 
 Beat 1 shows only the last 15 Septembers (Eric, Nov 2, 2026). Tariff piece shelved for now (Eric, Nov 2, 2026).

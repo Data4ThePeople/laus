@@ -49,19 +49,14 @@ The chart below shows the share of counties in each band for every September sin
 
 One state accounts for half of that net increase. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
 
-We are treating these figures with caution. BLS builds state and county labor force estimates from several sources. One of the main ones is the Current Population Survey, a monthly survey of households, and fewer households are answering it. Its response rate fell from 89.8% in September 2013 to 65.7% in September 2026. The chart below shows each month.
-
-![Line chart of the Current Population Survey household response rate, monthly, January 2013 to September 2026. The rate falls slowly from 89.8% in September 2013 to the low 80s by early 2020, drops sharply in spring 2020, partly recovers, then keeps falling to 65.7% in September 2026. There is a gap at October 2025, when no estimate was published.](images/sep26-10-cps-response.png)
-*Fewer households are answering the jobs survey. Source: U.S. Bureau of Labor Statistics (CPS); Data 4 The People analysis.*
-
-One way to check the survey-based numbers is against counts of jobs. The Quarterly Census of Employment and Wages (QCEW) counts jobs from employers' unemployment insurance tax records, but it runs about six months behind. For April to September 2026 we use the BLS payroll survey of employers, which has tracked QCEW closely: across states, its one-year change has differed from QCEW's by less than half a point on average since 2015. Employed residents and jobs count different things, people where they live versus jobs where they are, but they usually move together.
-
-That changed in 2026. In September 2025, no state had employed residents trailing jobs by 2 points or more. By June 2026 there were 18, matching the high of August 2021. In September there were 14, and Michigan had the largest gap: employed residents fell 5.0% from a year earlier while payroll jobs were flat. The chart below shows the number of states with a gap of 2 points or more, in either direction, each month since 2015.
+We are treating these numbers with caution. County labor force figures are built from state estimates that lean heavily on a household survey, and in 2026 that survey has drifted away from counts of jobs. In September, the count of employed residents trailed job counts by 2 points or more in 14 states, and Michigan's gap was the largest. Before 2020, that never happened in more than four states in a month. The chart below shows each month since 2015.
 
 ![Bar chart of the number of states, of 50 plus DC, where the one-year change in employed residents differs from the one-year change in jobs by 2 points or more, monthly from January 2015 to September 2026. Bars above the line count states where employed residents ran ahead; bars below count states where they trailed. Before 2020, counts stay under 5. In 2020 and early 2021, up to 28 states ran ahead. Trailing counts reach 18 in August 2021, are 0 to 3 through 2025, then rise to 18 in June 2026 and 14 in September 2026.](images/sep26-11-state-gaps.png)
 *Employed residents trail jobs in as many states as in 2021. Source: U.S. Bureau of Labor Statistics (LAUS, QCEW, CES); Data 4 The People analysis.*
 
-We cannot say that falling response rates caused these gaps. The gaps were also wide from 2021 to 2023, then narrowed in 2024 and 2025 while response kept falling. Still, numbers built on a survey that fewer people answer call for more caution, and that is true of many public data sets. BLS is expected to revise the 2026 figures in early 2027, and tax-record counts for April to September will show whether the gaps hold up.
+In 2020, COVID was a shock to the demographics of our labor force. Models that hadn't really been stressed in the past were stressed, and the BLS tried to make changes in real time. It reminds me of a shock to a refinery and the operator trying to monkey with the controllers to get the system back to homeostasis. But if you move the controllers too much, you can make the problem worse. This seems to be happening now, leading to two different measures for the workforce. One says Michigan is losing employed residents at an alarming clip. The other one says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
+
+Fewer households now answer the survey. Its response rate fell from 89.8% in September 2013 to 65.7% in September 2026. We do not yet know what is behind the gap, and we are looking into it for a future post. BLS is expected to revise the 2026 figures in early 2027.
 
 ::: divider
 
