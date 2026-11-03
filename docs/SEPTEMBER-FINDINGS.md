@@ -14,9 +14,9 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 - Not a September record: 2022 (36.2%) and 2021 (35.5%) were higher.
   September 2026 is the third-highest September since the series starts in
   2010.
-- Every month of 2026 so far is above the same month of 2025. The gap
-  narrowed from 3.6 points in July (39.8% vs 36.2%) to 1.2 points in
-  September (35.2% vs 34.0%).
+- Not in the post (Eric, Nov 3, 2026): the July 2026 all-time monthly
+  record (39.8%) and the month-by-month 2026 vs 2025 gap. Beat 1 compares
+  Septembers only.
 - October 2025 shows 50% but covers only Puerto Rico's 78 municipios (the
   shutdown gap). Exclude it from any "record" statement.
 
