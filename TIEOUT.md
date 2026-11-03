@@ -89,3 +89,26 @@ files, the BLS API and the Census API again and recomputed with its own code.
   universe (St. John the Baptist, a returning Katrina parish, is in SL).
   Only 7 of the 20 Michigan entrants fell more than the balance of Michigan
   (-8.7%); 13 fell less.
+
+## Second independent tie-out (fresh agent, November 3, 2026): jobs chart and CPS
+
+- Jobs chart: every value, the line shapes and the October 2025 gap match a
+  fresh pull. Wording flags: subtitle omits "nonfarm"; no preliminary note;
+  "not falling" is right at the endpoint ("holding steady" is a little more
+  exact). No implied cause.
+- Fair comparison: a fair side-by-side (the two employment measures BLS
+  publishes for states), not like-for-like (residence vs place of work,
+  people vs jobs). CES is an input to the LAUS model.
+- CPS: statewide and age-group values match `scripts/cps_michigan.py`
+  (participation 61.37 to 58.16; shift-share -1.31 / -1.92; prime age
+  85.8 to 83.3 outside the Detroit group, 83.0 to 81.5 inside).
+- Not supported: the prime-age drop outside Detroit is inside the 95% margin
+  of error (SE about 1.3 to 1.9 points); Detroit vs rest cannot be told
+  apart; the age-mix split is likely sample noise. DATASETS.md CPS section
+  updated to say so.
+- Its claim that DATASETS mislabels LAUS units: not a difference. The API
+  returns persons; `scripts/fetch_sources.py` divides by 1,000, so the cache
+  is in thousands as DATASETS says.
+- Its leading-zero bug check: `scripts/cps_michigan.py` converts county codes
+  to numbers before matching, so Macomb and Livingston are included (its
+  corrected values equal ours).

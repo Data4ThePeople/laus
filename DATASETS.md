@@ -301,10 +301,17 @@ not its age mix, so the age mix within Michigan comes from the sample and
 moves month to month.
 
 **Suppressed, censored or masked values.** Counties are identified only where
-the population is large enough. In Michigan, Wayne, Oakland, Macomb and
-Livingston are identified among the Detroit metro counties; St. Clair and
-Lapeer are not, so a CPS "Detroit" group is those four counties and the
-rest-of-state group includes St. Clair and Lapeer.
+the population is large enough, and identification changes over the period:
+in Michigan, Monroe and Calhoun have far fewer identified people in 2026 than
+in early 2025, Cass appears only from August 2025, and Livingston's
+identified sample falls from about 30 to 45 people a month to about 15 to
+27. Among the Detroit metro counties, Wayne, Oakland, Macomb and Livingston
+are identified in every month; St. Clair and Lapeer are not, so a CPS
+"Detroit" group is those four counties and the rest-of-state group includes
+St. Clair and Lapeer. The API returns county codes without leading zeros
+("93", "99"); match them as numbers or zero-pad them, or Macomb and
+Livingston drop out silently. Armed forces members (`PRPERTYP` 3) have
+`PEMLR` -1 and fall out of the civilian universe.
 
 **Missing data.** None for January to September in these years.
 
@@ -316,11 +323,20 @@ rest-of-state group includes St. Clair and Lapeer.
 check of it. Results tell us where in the survey a LAUS change shows up
 (participation, age groups), not whether it is right.
 
-**Uncertainty.** A state sample this size has wide error bars. For a rate near
-84% based on a few hundred prime-age people a month outside Detroit, the
-sampling error is on the order of a couple of points, about the size of the
-change we see. Treat results as directional, at lower confidence than the
-published LAUS figures.
+**Uncertainty.** A state sample this size has wide error bars. The
+independent tie-out (November 3, 2026) estimated the standard error of the
+2025 to 2026 change in prime-age participation outside the Detroit group
+(-2.5 points) at about 1.3 to 1.9 points, using a household-cluster bootstrap
+plus an assumed design effect of 1.5 to 2.0 (an assumption, not a published
+figure). The change is inside the 95% margin of error under every
+assumption tried, and the difference between the Detroit group (-1.5) and
+the rest (-2.5) is well inside it. The age-mix split is also unreliable:
+the prime-age share fell almost 2 points in one year in the sample, faster
+than Michigan's population ages, so most of that "age-mix effect" is likely
+sample noise. Use the CPS only for the statewide direction (lower
+participation, not fewer adults), at lower confidence than the published
+LAUS figures. Use Census population estimates, not the CPS, for any
+statement about aging.
 
 **License and attribution.** Public domain. `U.S. Census Bureau, Current
 Population Survey`.
