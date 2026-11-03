@@ -182,6 +182,15 @@ Treat same-month year-over-year changes as the comparison.
 **License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
 (CES)`.
 
+**All-state comparison.** `scripts/employed_vs_payroll.py` pulls
+`LASST<ff>0000000000005` (employed residents, SA) and
+`SMS<ff>000000000000001` (total nonfarm, SA) for the 50 states and DC,
+January 1990 to September 2026, into `data/ces/state_emp_vs_payroll.csv`
+(values as published: employed residents in persons, payroll jobs in
+thousands; only one-year percent changes are compared). The gap is the
+one-year change in employed residents minus the one-year change in payroll
+jobs, in percentage points.
+
 ## Quarterly Census of Employment and Wages, county by industry (U.S. Bureau of Labor Statistics)
 
 **What it is.** Jobs and wages at every employer covered by unemployment

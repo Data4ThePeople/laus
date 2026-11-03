@@ -227,3 +227,33 @@ small-place story the data does not support. Eric chose to replace it with
 the two BLS balance-of-state areas (MI outside Detroit -8.7%, OH outside
 Cleveland -1.4% in September) and to add the metro sentence. The 500k+
 grouping table above is kept as exploration only.
+
+### Employed residents vs payroll jobs: how unusual is the gap? (Nov 3, 2026)
+
+Eric's question: how can employed residents fall while payroll jobs do not?
+Script: `scripts/employed_vs_payroll.py`. One-year change, SA, September 2026:
+
+| State | Employed residents (LAUS) | Payroll jobs (CES) | Gap, points |
+|---|---|---|---|
+| Connecticut | -3.6% | +0.9% | -4.5 |
+| Arizona | -3.7% | +0.6% | -4.2 |
+| Michigan | -3.6% | +0.0% | -3.7 |
+| New Mexico | -2.2% | +1.3% | -3.5 |
+| Minnesota | -2.2% | +1.2% | -3.4 |
+
+- 17 states have a gap of 2 points or more in Sep 2026; 12 in Sep 2022; 0 to 2
+  in every other September 2015 to 2025 (2020 skipped). Median state gap -1.2.
+- Michigan's gap widened every month of 2026, from -1.3 in January to -3.7
+  in September. Its only larger gap since 1991 was May 2021 (-4.4).
+- Of 21,828 state-months since 1991, 0.26% have a gap at or below -4.5.
+- U.S.: CPS employment -0.3%, CES payroll +0.3% (Sep 2026).
+- QCEW (tax-record count), Michigan, all jobs: Jan 2026 +0.9%, Feb +0.5%,
+  Mar +0.3% from a year earlier (Q2 2026 not posted). LAUS employed residents
+  in the same months: -1.3%, -1.4%, -1.6%.
+- Reading: the concept differences (residence vs workplace, people vs jobs,
+  self-employed, multiple jobs, commuters) usually keep the two within about
+  a point a year. They do not plausibly cover about 175,000 people. The
+  household side (LAUS, which leans on the CPS) is weak in many states in
+  2026; the employer side and the tax records are not. Which is closer to
+  right will not be known until revisions; 2022's gaps did not all close.
+
