@@ -46,16 +46,16 @@ November 2 and 3 and the four charts.
 | Where | Text | Source | Verdict |
 |---|---|---|---|
 | Beat 4 | BLS estimates the Detroit metro and the rest of Michigan with separate models | LAUS technical note: Detroit-Warren-Dearborn "and their respective balances of state are produced using a similar model-based approach" | supported |
-| Beat 5 | BLS re-estimates the 2026 state figures in early 2027 | Technical note: "In most years, historical data for the most recent five years are revised near the beginning of each calendar year" | partly: say "BLS usually revises", since the note says "in most years" |
+| Beat 5 | BLS re-estimates the 2026 state figures in early 2027 | Technical note: "In most years, historical data for the most recent five years are revised near the beginning of each calendar year" | supported with "usually" (fixed in findings Nov 3) |
 | Chart 1 | "Structural labor force loss, every September since 2012"; "more than 10% below the same month 20 years earlier" | Method (strict < -10%) | supported |
 | Chart 2 | "Michigan: 20 counties fell into structural loss in a year"; "53 of 83 are now in structural loss, up from 33" | Numbers above | supported |
 | Chart 2 | Labels Muskegon, Berrien, Calhoun, Jackson | Four largest entrants by labor force | supported |
 | Chart 3 | "Michigan's labor force is falling. Its job count is not." | -4.9% vs +0.2% since Jan 2025 | supported; 2026 values are preliminary |
 | Chart 3 | "Labor force counts residents working or looking for work. Payroll jobs count positions at Michigan employers." | DATASETS.md, CES and LAUS sections | supported |
-| Chart 4 | "Michigan trades with Canada far more than the nation does" | Shares are 38.8% vs 14.3%; in dollars the U.S. trades far more with Canada than Michigan does | not as worded: the title compares volume, the chart shows shares. Fix: "Canada is a far bigger share of Michigan's trade than the nation's" |
+| Chart 4 | "Michigan trades with Canada far more than the nation does" | Shares are 38.8% vs 14.3%; in dollars the U.S. trades far more with Canada than Michigan does | fixed Nov 3: title now "Canada is a far bigger share of Michigan's trade than the nation's" | 
 
 ## Flags for Eric
 
-1. **Two Michigan labor force drops.** Beat 3 uses the unadjusted series, Sep to Sep: -4.7%, matching the county data. Chart 3 uses the seasonally adjusted series from Jan 2025: -4.9%. On the seasonally adjusted series, Sep to Sep is -3.6%. BLS smooths the adjusted state series, and the two do not move in step. Each number is right for its series; the post should name which one it is using.
-2. **Chart 4 title** compares volume while the chart shows shares (see Words).
-3. **Revision wording**: "usually" rather than "will" (see Words).
+1. **Two Michigan labor force drops.** Beat 3 uses the unadjusted series, Sep to Sep: -4.7%, matching the county data. Chart 3 uses the seasonally adjusted series from Jan 2025: -4.9%. On the seasonally adjusted series, Sep to Sep is -3.6%. BLS smooths the adjusted state series, and the two do not move in step. Each number is right for its series; the post should name which one it is using. Recorded in the findings doc Nov 3.
+2. **Chart 4 title**: fixed Nov 3.
+3. **Revision wording**: fixed Nov 3.

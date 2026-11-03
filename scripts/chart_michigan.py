@@ -167,7 +167,7 @@ def canada_share() -> Path:
     ax.set_yticks(ticks); ax.set_yticklabels(labels, color=MUTED, fontsize=10)
     ax.invert_yaxis(); ax.set_xticks([]); ax.grid(False)
     ax.set_xlim(0, share.values.max() * 1.25)
-    frame(fig, "Michigan trades with Canada far more than the nation does",
+    frame(fig, "Canada is a far bigger share of Michigan's trade than the nation's",
           f"Canada's share of all goods exports and imports, January to {last:%B %Y}, in dollars", top=0.80)
     _restamp_source(fig, TRADE)
     fig.subplots_adjust(left=0.2)

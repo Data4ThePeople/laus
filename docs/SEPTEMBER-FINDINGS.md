@@ -62,8 +62,13 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
   4,797,679 to 4,559,610 (-5.0%); unemployed were flat (232,015 to 231,968);
   unemployment rate 4.6% to 4.8%.
 - LAUS state data for the most recent five years are revised near the
-  beginning of each calendar year (same technical note). The 2026 Michigan
-  figures will be re-estimated in early 2027.
+  beginning of each calendar year "in most years" (same technical note). Post
+  wording: BLS usually revises the 2026 figures in early 2027.
+- Which series each number uses (say so in the post): the -4.7% one-year drop
+  is the unadjusted statewide series, September to September, matching the
+  county data. The jobs chart uses the seasonally adjusted series from January
+  2025 (-4.9%). On the adjusted series, September to September is -3.6%; BLS
+  smooths the adjusted state series, so the two do not move in step.
 
 ### Trade with Canada (Census, dollars, not inflation-adjusted)
 
