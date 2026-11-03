@@ -1,10 +1,10 @@
 ---
-title: Michigan's map turned in 2026
-subtitle: Michigan accounts for half of the net new counties in structural labor force loss this year. Payroll jobs in the state do not show the same drop.
-slug: michigan-map-turned
+title: Where did Michigan's workers go?
+subtitle: Michigan's labor force fell 4.7% in a year, the most of any state, and 20 more counties fell into structural loss. Payroll jobs at Michigan employers held steady.
+slug: where-did-michigans-workers-go
 date: 2026-11-03
 section: Data 4 Thought
-hero: images/michigan-map-turned-hero-1680x1080.png
+hero: images/where-did-michigans-workers-go-hero-1680x1080.png
 hero_alt:
 meta_title:
 description:
@@ -16,7 +16,7 @@ caption_spacer: 20px
 dividers: false
 ---
 
-# Michigan's map turned in 2026
+# Where did Michigan's workers go?
 
 <!-- First cut by Claude at Eric's request (Nov 3, 2026): charts and facts only. Eric adds color. -->
 

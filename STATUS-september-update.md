@@ -8,7 +8,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 
 ## Current
 
-Post: michigan-map-turned
+Post: where-did-michigans-workers-go
 Step: 2a
 Since: 2026-11-03
 
@@ -40,3 +40,4 @@ None.
 - 2026-11-03 Second independent tie-out (jobs chart, CPS): values match; prime-age outside-Detroit change and CPS age split not supported. Eric chose beat 5: published LAUS participation rate first, CPS statewide direction at lower confidence, Census estimates for aging; prime-age and age-split numbers left out. "Nonfarm" added to the jobs chart subtitle.
 - 2026-11-03 Step 1 confirmed by Eric. Next: 2a, needs a slug.
 - 2026-11-03 Step 2a opened. Slug: michigan-map-turned. posts/michigan-map-turned/ created; four charts copied to images/. Waiting for Eric's draft.
+- 2026-11-03 Title changed to "Where did Michigan's workers go?" with a new subtitle; slug changed from michigan-map-turned to where-did-michigans-workers-go (folder renamed). Canada chart dropped; the last section becomes Eric's close.
