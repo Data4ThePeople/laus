@@ -177,6 +177,55 @@ codes for multi-site employers are the main error source.
 **License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
 (QCEW)`.
 
+## Current Employment Statistics, state payroll jobs (U.S. Bureau of Labor Statistics)
+
+**What it is.** Monthly estimate of payroll jobs at employers in each state,
+from a sample survey of employers. We use total nonfarm, not seasonally
+adjusted, only for the months QCEW does not yet cover.
+
+**Where it comes from.** BLS public API v2, key `BLS_API_KEY`. Series
+`SMU<ff>000000000000001` for the 50 states and DC and `CEU0000000001` for the
+U.S., 2014 to September 2026, cached in `data/ces/ces_states_nsa.csv` by
+`scripts/cps_quality.py`.
+
+**Version and vintage.** Pulled November 3, 2026. September 2026 is
+preliminary. Data through September 2025 have been benchmarked to QCEW.
+
+**Coverage.** Nonfarm payroll jobs by place of work. Excludes the
+self-employed, farm workers and private household workers. Counts jobs, not
+people.
+
+**Changes over time.** Annual benchmark to QCEW each March, which replaces
+earlier estimates for the prior year and more.
+
+**Suppressed, censored or masked values.** None at the state total level.
+
+**Missing data.** None for the months used; CES has an October 2025 value
+where LAUS does not.
+
+**Revisions.** Revised the next month, again at the annual benchmark.
+April to September 2026 will be benchmarked to QCEW in early 2027.
+
+**Units and rounding.** Thousands of jobs, one decimal. Only one-year percent
+changes are used.
+
+**Known quirks.** How we combine it with QCEW: for each state and month we
+use the gap against QCEW where QCEW is published (through March 2026) and
+the gap against CES after that (`data/ces/state_gaps_monthly.csv`, column
+`source`). Across states, the CES one-year change has differed from QCEW's
+by 0.07 to 0.21 points on average in each year 2015 to 2024, up to 0.46 in
+late 2025 and 0.36 to 0.39 in January to March 2026. In Michigan, CES ran
+below QCEW in early 2026 (January to March: CES -0.04% to -0.21%, QCEW
++0.29% to +0.92%), so using CES here, if anything, makes Michigan's gap
+smaller, not larger.
+
+**Uncertainty.** BLS publishes sampling error for state CES estimates; we do
+not use it. Treat the April to September 2026 gaps as provisional until
+QCEW is out.
+
+**License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
+(CES)`.
+
 ## CPS household response rate (U.S. Bureau of Labor Statistics)
 
 **What it is.** The share of eligible housing units in the Current Population

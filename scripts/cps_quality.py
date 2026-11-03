@@ -6,8 +6,12 @@
    one-year % change in QCEW employment (all ownerships, all industries,
    average of the quarter's three months). QCEW is a count from unemployment
    insurance tax records, not a survey.
+3. The same comparison by month, against QCEW where it exists and against
+   CES payroll jobs (not seasonally adjusted) for the months QCEW does not yet
+   cover; plus how closely CES has tracked QCEW. Writes
+   data/ces/state_gaps_monthly.csv for scripts/chart_state_gaps.py.
 Caches: data/qcew/state_total/qcew_states.csv, data/ces/laus_employed_nsa.csv,
-data/ces/cps_response_rate.csv.
+data/ces/ces_states_nsa.csv, data/ces/cps_response_rate.csv.
 
 Run:  .venv/bin/python scripts/cps_quality.py [--refresh]
 """
@@ -31,6 +35,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QCEW = os.path.join(ROOT, "data", "qcew", "state_total", "qcew_states.csv")
 LAUS = os.path.join(ROOT, "data", "ces", "laus_employed_nsa.csv")
 RESP = os.path.join(ROOT, "data", "ces", "cps_response_rate.csv")
+CES = os.path.join(ROOT, "data", "ces", "ces_states_nsa.csv")
+MONTHLY = os.path.join(ROOT, "data", "ces", "state_gaps_monthly.csv")
 UA = {"User-Agent": f"Data 4 The People research ({os.environ.get('D4TP_CONTACT', 'https://www.data4thepeople.org')})"}
 
 
@@ -49,6 +55,30 @@ def fetch_qcew(last=(2026, 1)) -> pd.DataFrame:
     return pd.concat(rows, ignore_index=True)
 
 
+def yoy(x: pd.DataFrame) -> pd.DataFrame:
+    """One-year % change by calendar month; a missing month stays missing (no row shifting)."""
+    x = x.reindex(pd.date_range(x.index.min(), x.index.max(), freq="MS"))
+    return (x / x.shift(12) - 1) * 100
+
+
+def monthly() -> pd.DataFrame:
+    """Per state and month: one-year change in LAUS employed, QCEW jobs and CES jobs, all NSA."""
+    la = pd.read_csv(LAUS, dtype={"id": str}, parse_dates=["date"])
+    la["fips"] = la.id.str[5:7].where(la.id != "LNU02000000", "US")
+    ce = pd.read_csv(CES, dtype={"id": str}, parse_dates=["date"])
+    ce["fips"] = ce.id.str[3:5].where(ce.id != "CEU0000000001", "US")
+    qc = pd.read_csv(QCEW, dtype={"area_fips": str})
+    qc["fips"] = qc.area_fips.str[:2].where(qc.area_fips != "US000", "US")
+    q = pd.concat([pd.DataFrame({"fips": qc.fips, "v": qc[f"month{m}_emplvl"],
+                                 "date": pd.to_datetime(dict(year=qc.year, month=(qc.qtr - 1) * 3 + m, day=1))})
+                   for m in (1, 2, 3)])
+    out = []
+    for name, x in [("emp", la), ("qcew", q), ("ces", ce)]:
+        y = yoy(x.pivot_table(index="date", columns="fips", values="v")).stack().rename(name)
+        out.append(y)
+    return pd.concat(out, axis=1).rename_axis(["date", "fips"]).reset_index()
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--refresh", action="store_true")
@@ -60,6 +90,8 @@ def main() -> None:
     if a.refresh or not os.path.exists(LAUS):
         ids = [f"LAUST{f}0000000000005" for f in FIPS] + ["LNU02000000"]
         pd.concat([bls(ids, 2012, 2026)], ignore_index=True).to_csv(LAUS, index=False)
+    if a.refresh or not os.path.exists(CES):
+        bls([f"SMU{f}000000000000001" for f in FIPS] + ["CEU0000000001"], 2014, 2026).to_csv(CES, index=False)
     if a.refresh or not os.path.exists(RESP):
         bls(["LNU09300000"], 2013, 2026).to_csv(RESP, index=False)
 
@@ -94,5 +126,28 @@ def main() -> None:
     print("== 2026 Q1, lowest 10 states"); print(last.head(10)[["emp_yoy", "jobs_yoy", "gap"]].round(2))
 
 
+    m = monthly()
+    m["gap_qcew"], m["gap_ces"] = m.emp - m.qcew, m.emp - m.ces
+    m["gap"] = m.gap_qcew.fillna(m.gap_ces)            # QCEW where it exists, CES after
+    m["source"] = m.gap_qcew.notna().map({True: "QCEW", False: "CES"}).where(m.gap.notna())
+    m.to_csv(MONTHLY, index=False)
+    sm = m[m.fips != "US"]
+    print("== CES minus QCEW one-year change, mean absolute difference across states (points)")
+    d = (sm.ces - sm.qcew).abs().groupby(sm.date).mean().dropna()
+    print(d.groupby(d.index.year).agg(["min", "max"]).round(2).to_string())
+    t = sm[sm.date >= "2025-01-01"].groupby("date").agg(
+        source=("source", "first"), n_le_2=("gap", lambda x: (x <= -2).sum()), mean_abs=("gap", lambda x: x.abs().mean()),
+        n_le_2_ces=("gap_ces", lambda x: (x <= -2).sum()))
+    print("== Monthly, states with employed residents trailing jobs by 2+ points (QCEW where available, CES after)")
+    print(t.round(2).to_string())
+    print("== September mean absolute gap vs CES, 2015 on")
+    sep = sm[sm.date.dt.month == 9].groupby("date").gap_ces.apply(lambda x: x.abs().mean())
+    print(sep.loc["2015":].round(2).to_string())
+    print("== Michigan"); print(m[(m.fips == "26") & (m.date >= "2025-09-01")][["date", "emp", "qcew", "ces"]].round(2).to_string(index=False))
+    print("== Sep 2026 lowest 8 (CES)")
+    print(sm[sm.date == "2026-09-01"].nsmallest(8, "gap_ces")[["fips", "emp", "ces", "gap_ces"]].round(2).to_string(index=False))
+
+
 if __name__ == "__main__":
     main()
+
