@@ -45,7 +45,7 @@ The chart below shows the share of counties in each band for every September sin
 ![Six small bar charts, one per band, showing the share of U.S. counties and Puerto Rico municipios in that band each September from 2012 to 2026. Structural Loss rises from 12.3% to 35.2%. At-risk Contraction rises from 18.0% to 25.0%. Below-trend Growth falls from 22.9% to 18.2%. Keeping Pace falls from 16.1% to 9.9%. Superstars falls from 18.2% to 7.4%. Hyper-Growth falls from 12.4% to 4.3%.](images/sep26-09-septembers-bands.png)
 *Fewer fast-growing counties than in any September since 2012. Source: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
 
-## A note on the 2026 numbers
+## But can we trust the data?
 
 One state accounts for half of that net increase. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
 
