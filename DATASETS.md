@@ -340,3 +340,40 @@ statement about aging.
 
 **License and attribution.** Public domain. `U.S. Census Bureau, Current
 Population Survey`.
+
+## Population estimates by county and age (U.S. Census Bureau)
+
+**What it is.** Estimated resident population on July 1 of each year, by
+county, age group, sex, race and Hispanic origin. We use the total by
+five-year age group.
+
+**Where it comes from.** `https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/asrh/cc-est2025-alldata-26.csv`
+(Michigan), cached in `data/popest/`. No key.
+
+**Version and vintage.** Vintage 2025, covering April 1, 2020 through July 1,
+2025. Each new vintage revises every earlier year back to 2020. No 2026
+estimate exists yet.
+
+**Coverage.** Every Michigan county. Estimates, not counts: built from the
+2020 Census base plus births, deaths and migration.
+
+**Changes over time.** `YEAR` codes: 1 is the April 1, 2020 base, 2 to 7 are
+July 1, 2020 to 2025. `AGEGRP` 0 is the total; 1 to 18 are five-year groups
+(6 to 11 are ages 25 to 54; 14 to 18 are 65 and over).
+
+**Suppressed, censored or masked values.** None.
+
+**Missing data.** None.
+
+**Revisions.** Every vintage. We use Vintage 2025 only.
+
+**Units and rounding.** People.
+
+**Known quirks.** Age groups are five-year bands, so "16 and over" cannot be
+matched exactly; we use adults 20 and over as the base for shares.
+
+**Uncertainty.** Census publishes no error bars for these estimates.
+Migration is the least certain part, especially for recent years.
+
+**License and attribution.** Public domain. `U.S. Census Bureau, Population
+Estimates Program`.

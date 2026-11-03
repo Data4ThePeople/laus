@@ -133,7 +133,7 @@ def labor_force_vs_jobs(month: str) -> Path:
     ax.grid(axis="y", color=GRID, linewidth=0.8)
     frame(fig, "Fewer Michiganders are working, but payroll jobs are not falling",
           f"Change since January 2025, seasonally adjusted, through {last:%B %Y}. Employed residents counts\n"
-          "people living in Michigan who have a job. Payroll jobs count positions at Michigan employers.",
+          "people living in Michigan who have a job. Payroll jobs count nonfarm jobs at Michigan employers.",
           top=0.79)
     _restamp_source(fig, LAUS_CES)
     fig.subplots_adjust(right=0.89)

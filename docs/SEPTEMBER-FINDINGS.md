@@ -121,11 +121,16 @@ is called out as something to keep an eye on, not explained.
 
 ## Participation and age (Nov 3, 2026)
 
-Decision (Eric, Nov 3, 2026): beat 5 uses the CPS result (finding 3 below):
-the drop shows up as lower participation, including among prime-age
-residents, not as fewer people. Say confidence is lower because the Michigan
-sample is small, and that it points in a direction rather than proves it.
-Lead with the published LAUS participation rate, which is the firmer number.
+Decision (Eric, Nov 3, 2026, after the second independent tie-out), beat 5:
+- Lead with the published LAUS participation rate: 60.8% to 58.5%.
+- CPS statewide direction: adult population held steady, participation fell
+  (61.4% to 58.2%, January to September averages). Say confidence is lower
+  because the Michigan sample is small.
+- Census population estimates: aging lowers the labor force roughly 0.5% to
+  1% a year, too slow to explain the drop.
+- Left out: prime-age participation outside Detroit (inside the margin of
+  error), Detroit vs rest in the CPS (cannot be told apart), and the CPS
+  age-mix split (likely sample noise).
 Script: `scripts/cps_michigan.py`. The CPS "Detroit" group is Wayne, Oakland,
 Macomb and Livingston only (St. Clair and Lapeer are not identified in CPS).
 

@@ -43,6 +43,8 @@ November 2 and 3 and the four charts.
 | 5 | CPS age mix -1.3 points, within age -1.9 points | Same | Same | supported as computed; rough given sample |
 | 5 | CPS prime age outside Wayne, Oakland, Macomb, Livingston: 85.8% to 83.3% | Same; St. Clair and Lapeer have 0 identified records | Same | supported as computed; lower confidence |
 | 5 | CPS sample about 1,570 people a month in 2026 (1,670 in 2025, 1,800 in 2024) | Same | 1,568.6; 1,667.4; 1,804.9 | supported |
+| 5 | Census estimates: Michigan prime-age (25-54) population +0.6% in each of 2024 and 2025; 65+ share of adults up about 0.6 points a year since 2020 | `data/popest/cc-est2025-alldata-26.csv` | +0.59%, +0.57%; 20 entrants 29.3% to 29.9%, Detroit 6 24.7% to 25.3%, rest 26.3% to 26.8% | supported |
+| 5 | Aging lowers the labor force roughly 0.5% to 1% a year | 0.6 points of adults moving from groups with about 60% to 85% participation to one with about 15% | Arithmetic estimate, about 0.4 points of participation, about 0.7% of the labor force | supported as an estimate; say "roughly" |
 | 6 | Canada share Jan to Aug 2026: MI exports 38.8%, US 14.3%; MI imports 25.5%, US 11.2% | Cache, all 8 months present | Same | supported |
 | 6 | Trade cache matches Census | Aug 2026 MI exports and imports to Canada, fresh API | Exact match | supported |
 
@@ -56,7 +58,7 @@ November 2 and 3 and the four charts.
 | Chart 2 | "Michigan: 20 counties fell into structural loss in a year"; "53 of 83 are now in structural loss, up from 33" | Numbers above | supported |
 | Chart 2 | Labels Muskegon, Berrien, Calhoun, Jackson | Four largest entrants by labor force | supported |
 | Chart 3 | "Fewer Michiganders are working, but payroll jobs are not falling" (retitled Nov 3) | Employed residents -4.5%, payroll +0.2% since Jan 2025 | supported; 2026 values are model estimates, usually revised early 2027 |
-| Chart 3 | "Employed residents counts people living in Michigan who have a job. Payroll jobs count positions at Michigan employers." | DATASETS.md, CES and LAUS sections | supported |
+| Chart 3 | "Employed residents counts people living in Michigan who have a job. Payroll jobs count nonfarm jobs at Michigan employers." ("nonfarm" added Nov 3) | DATASETS.md, CES and LAUS sections | supported |
 | Chart 4 | "Michigan trades with Canada far more than the nation does" | Shares are 38.8% vs 14.3%; in dollars the U.S. trades far more with Canada than Michigan does | fixed Nov 3: title now "Canada is a far bigger share of Michigan's trade than the nation's" | 
 
 ## Flags for Eric
