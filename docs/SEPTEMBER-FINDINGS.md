@@ -112,6 +112,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 | sep26-07-mi-participation.png | chart_michigan.py | Participation rate, MI, OH, U.S., SA, Jan 2024 to Sep 2026 |
 | sep26-08-mi-oh-balance-of-state.png | chart_michigan.py | Rest of MI (outside Detroit, 77 counties) vs rest of OH (outside Cleveland, 82 counties), monthly yoy, 2026. Replaced the outside-500k+-metros chart Nov 3, per Eric, because Michigan's other metros fell as much as its rural counties |
 | sep26-09-septembers-bands.png | chart_septembers_bands.py | All six bands, share of counties, every September 2012 to 2026 (added Nov 3, per Eric) |
+| sep26-10-cps-response.png | chart_cps_response.py | CPS household response rate, monthly, Jan 2013 to Sep 2026 (added Nov 3, per Eric) |
 
 Beat 1 shows only the last 15 Septembers (Eric, Nov 2, 2026). Tariff piece shelved for now (Eric, Nov 2, 2026).
 
@@ -257,4 +258,22 @@ Script: `scripts/employed_vs_payroll.py`. One-year change, SA, September 2026:
   household side (LAUS, which leans on the CPS) is weak in many states in
   2026; the employer side and the tax records are not. Which is closer to
   right will not be known until revisions; 2022's gaps did not all close.
+
+### Employed residents vs QCEW jobs, and CPS response rates (Nov 3, 2026)
+
+Eric does not trust CES either, so the check uses QCEW (tax records).
+Script: `scripts/cps_quality.py`. One-year change, same quarter, LAUS employed
+residents (NSA, quarter average) minus QCEW jobs (quarter average), points.
+
+- Mean absolute state gap: 0.5 to 0.9 in 2015 to 2019; 1.6 to 2.5 in 2020 Q2
+  to 2021 Q2; 1.1 to 1.4 in 2021 Q3 to 2023 Q1; 0.6 to 0.8 from 2023 Q3 to
+  2025 Q3; 1.1 in 2026 Q1.
+- 2026 Q1, gap of 2 points or more: Connecticut -2.8, Vermont -2.7, Michigan
+  -2.6, Idaho -2.4. Michigan: employed -2.1%, QCEW +0.6%.
+- U.S.: CPS employment vs QCEW, -0.5 points in 2026 Q1.
+- CPS response rate: 89.8% (Sep 2013), 82.7% (2019 average), 65.7% (Sep 2026).
+- Reading: response has fallen steadily, but the gaps have not grown
+  steadily with it; they spiked in 2020 to 2023, eased in 2024 and 2025, and
+  widened again in 2026 Q1. No causal link shown. QCEW for Q2 and Q3 2026,
+  when Michigan's payroll gap grew most, is not out yet.
 

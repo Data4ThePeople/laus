@@ -119,266 +119,98 @@ with the balance-of-Michigan series, not the statewide one. Ohio works the
 same way: the Cleveland MSA (Ashtabula, Cuyahoga, Geauga, Lake, Lorain,
 Medina; CBSA 17410) and the other 82 Ohio counties, published as
 `LAUBS390000000000006` (county sum 4,744,759 against 4,744,760 in September
-2026). The post compares the two balance-of-state areas month by month,
-using county sums with the OMB 2023 county lists.
+2026).
 
-## Current Employment Statistics, state payroll jobs (U.S. Bureau of Labor Statistics)
+**State employed residents.** For the survey check, `scripts/cps_quality.py`
+pulls `LAUST<ff>0000000000005` (employed residents, not seasonally adjusted)
+for the 50 states and DC, and `LNU02000000` (U.S. CPS employment, not
+seasonally adjusted), 2012 to September 2026, into
+`data/ces/laus_employed_nsa.csv`. Quarterly values are the average of the
+quarter's three months; a quarter missing a month (Q4 2025, because of the
+October 2025 gap) is dropped. LAUS state estimates are models that use the
+CPS, payroll survey counts and unemployment insurance claims as inputs, so
+they are not pure survey readings. The seasonally adjusted series moves
+differently: Michigan employed residents fell 2.0% (not adjusted) and 1.3%
+(adjusted) from January 2025 to January 2026. Compare like with like.
 
-**What it is.** Monthly count of payroll jobs at employers located in a state,
-by industry. One cell is thousands of jobs in a state, industry and month.
+## Quarterly Census of Employment and Wages, state totals (U.S. Bureau of Labor Statistics)
 
-**Where it comes from.** BLS public API v2 (`api.bls.gov`), key
-`BLS_API_KEY`. Series used: `SMS26000000000000001` (Michigan total nonfarm,
-seasonally adjusted), `SMS26000003000000001` (Michigan manufacturing,
-seasonally adjusted), `SMU26000003133600001` (Michigan transportation
-equipment manufacturing, NAICS 336, not seasonally adjusted), plus U.S.
-totals `CES0000000001` and `CES3000000001`. The same cache holds two LAUS
-statewide series for Michigan, seasonally adjusted, stored in thousands:
-`LASST260000000000005` (employed residents), which the jobs chart compares
-with CES total nonfarm, and `LASST260000000000006` (labor force). The chart
-uses employed residents rather than the labor force because payroll jobs
-cannot include unemployed people; employed residents and payroll jobs are
-the two employment measures BLS publishes side by side for states. The cache
-also holds statewide labor force, not seasonally adjusted, for Michigan,
-Ohio, Illinois, Minnesota, Indiana and Wisconsin (`LAUST<fips>0000000000006`,
-thousands) and the U.S. CPS labor force `LNU01000000` (already in
-thousands), for the state comparison chart; and participation rates,
-seasonally adjusted, in percent: `LASST260000000000008` (Michigan),
-`LASST390000000000008` (Ohio) and `LNS11300000` (U.S.). The rates have no
-October 2025 value. Cached in
-`data/ces/mi_ces.csv`; the LAUS seasonally adjusted series has no October
-2025 value.
+**What it is.** Jobs at every employer covered by unemployment insurance, for
+each month of each quarter. We use the state and U.S. totals: all ownerships
+(`own_code` 0), all industries, `agglvl_code` 50 (state) and 10 (U.S.).
 
-**Version and vintage.** Pulled November 2, 2026, through September 2026. The
-latest month is preliminary and is revised the next month. Every March, BLS
-re-benchmarks state series to QCEW counts, which can move the prior two years.
+**Where it comes from.** QCEW open data CSV files, one per quarter,
+`https://data.bls.gov/cew/data/api/<year>/<qtr>/industry/10.csv`. No key; the
+same browser-like User-Agent as LAUS. `scripts/cps_quality.py` keeps only the
+state and U.S. rows, in `data/qcew/state_total/qcew_states.csv`.
 
-**Coverage.** Nonfarm employers. Excludes the self-employed, farm workers and
-household workers. A sample survey of employers, not a full count.
+**Version and vintage.** Pulled November 3, 2026. 2014 Q1 to 2026 Q1; the
+open data files start in 2014, and Q2 2026 was not yet posted. About five to
+six months behind.
 
-**Changes over time.** Industry codes follow NAICS; motor vehicle detail is
-not published for every state or month. Use only the series listed above.
+**Coverage.** Over 95% of U.S. jobs. It is a full count from tax filings, not
+a sample. Excludes the self-employed, most farm workers, some religious
+workers and military.
 
-**Suppressed, censored or masked values.** Michigan detail below NAICS 336 is
-not used because it is not published in every month.
+**Changes over time.** None that affect state totals.
 
-**Missing data.** None in the five CES series: all run January 2015 to
-September 2026 with every month present, including October 2025.
+**Suppressed, censored or masked values.** None at the state total level.
 
-**Revisions.** Monthly and annual. We refresh the whole series each pull.
+**Missing data.** None for the quarters used.
 
-**Units and rounding.** Thousands of jobs, one decimal.
+**Revisions.** Revised for up to four quarters, then final. 2025 and 2026
+quarters can still change.
 
-**Known quirks.** This counts jobs where they are, not people where they live.
-A worker with two jobs counts twice; a Michigan resident working in Ohio is
-not counted. It is not the same thing as the LAUS labor force, which counts
-residents working or looking for work. Use it as a separate check, never as a
-second measure of the same quantity.
+**Units and rounding.** Jobs, whole numbers, by place of work. Quarterly value
+is the average of the three monthly counts.
 
-**Uncertainty.** CES is a sample survey, and BLS publishes sampling error for
-state estimates; small month-to-month moves in a state can sit within it.
-Treat same-month year-over-year changes as the comparison.
+**Known quirks.** Counts jobs where they are, not people where they live. A
+person with two covered jobs counts twice; a self-employed person not at
+all; cross-state commuters count in the state where they work. These
+differences usually move slowly, so the one-year change in QCEW jobs and in
+LAUS employed residents usually stays within about a point. The comparison
+is one-year change against one-year change, same quarter, never levels.
 
-**License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
-(CES)`.
-
-**All-state comparison.** `scripts/employed_vs_payroll.py` pulls
-`LASST<ff>0000000000005` (employed residents, SA) and
-`SMS<ff>000000000000001` (total nonfarm, SA) for the 50 states and DC,
-January 1990 to September 2026, into `data/ces/state_emp_vs_payroll.csv`
-(values as published: employed residents in persons, payroll jobs in
-thousands; only one-year percent changes are compared). The gap is the
-one-year change in employed residents minus the one-year change in payroll
-jobs, in percentage points.
-
-## Quarterly Census of Employment and Wages, county by industry (U.S. Bureau of Labor Statistics)
-
-**What it is.** Jobs and wages at every employer covered by unemployment
-insurance, by county and industry, for each month of each quarter.
-
-**Where it comes from.** QCEW open data CSV files,
-`https://data.bls.gov/cew/data/api/<year>/<qtr>/area/<fips>.csv`. No key; the
-same browser-like User-Agent as LAUS. Cached under `data/qcew/`.
-
-**Version and vintage.** Latest available quarter is Q1 2026 (Q2 2026 not yet
-posted on November 2, 2026). About five to six months behind.
-
-**Coverage.** Over 95% of U.S. jobs: every employer that pays unemployment
-insurance. It is a full count from tax filings, not a sample. Excludes the
-self-employed and some farm and religious workers.
-
-**Changes over time.** NAICS revisions in 2017 and 2022 do not touch
-manufacturing at the levels we use (NAICS 31-33, 336, 3361 to 3363).
-
-**Suppressed, censored or masked values.** Cells that would reveal one
-employer are suppressed (`disclosure_code` "N", employment shown as zero). In
-small Michigan counties, auto-industry cells are often suppressed. We report
-suppressed cells as suppressed, never as zero, and use the next level up
-(manufacturing total) where the detail is hidden. Michigan counties with a
-suppressed transportation equipment (NAICS 336) cell: 34 of 66 in Q1 2026. For
-manufacturing (NAICS 31-33), 4 of 83. County exposure therefore uses the
-manufacturing share of all jobs.
-
-**Missing data.** Suppression is the main gap; see above.
-
-**Revisions.** Revised for up to four quarters, then final.
-
-**Units and rounding.** Jobs, whole numbers; place of work.
-
-**Known quirks.** Place of work, like CES. A county's auto employment share
-says where the plants are, not where their workers live. Workers commute
-across county lines, so exposure by county is approximate.
-
-**Uncertainty.** No sampling error (it is a census). Misreported industry or
-location codes for multi-site employers are the main error source.
+**Uncertainty.** No sampling error (it is a census). Misreported location
+codes for multi-site employers are the main error source.
 
 **License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
 (QCEW)`.
 
-## Current Population Survey microdata, Michigan (U.S. Census Bureau for BLS)
+## CPS household response rate (U.S. Bureau of Labor Statistics)
 
-**What it is.** The monthly household survey behind the national unemployment
-rate and the main input to the LAUS state model. One row per person
-interviewed: age (`PRTAGE`), labor force status (`PEMLR`: 1-2 employed, 3-4
-unemployed, 5-7 not in the labor force) and the composite weight
-(`PWCMPWGT`) that BLS uses for official labor force figures.
+**What it is.** The share of eligible housing units in the Current Population
+Survey sample that completed an interview, each month. BLS definition:
+completed interviews divided by eligible housing units
+(https://www.bls.gov/cps/methods/response_rates.htm).
 
-**Where it comes from.** Census API, `https://api.census.gov/data/<year>/cps/basic/<mon>`,
-key `CENSUS_API_KEY`, Michigan only, pulled by `scripts/cps_michigan.py`
-into `data/cps/mi_cps.csv`. January to September of 2024, 2025 and 2026.
+**Where it comes from.** BLS public API v2, series `LNU09300000`, key
+`BLS_API_KEY`, cached in `data/ces/cps_response_rate.csv` by
+`scripts/cps_quality.py`.
 
-**Version and vintage.** Pulled November 3, 2026. Microdata are not revised;
-the weights reflect the population controls in force each January.
+**Version and vintage.** Pulled November 3, 2026; January 2013 to September
+2026.
 
-**Coverage.** Civilian, noninstitutional, age 16 and over. About 1,570
-Michigan adults a month in 2026, down from about 1,670 in 2025 and 1,800
-in 2024. People stay in the sample for several months in a row, so pooling
-nine months does not give nine times as many separate people.
+**Coverage.** National. BLS does not publish state response rates in this
+series.
 
-**Changes over time.** New population controls each January change the
-weights. The weights hold Michigan's total adult population to the control,
-not its age mix, so the age mix within Michigan comes from the sample and
-moves month to month.
-
-**Suppressed, censored or masked values.** Counties are identified only where
-the population is large enough, and identification changes over the period:
-in Michigan, Monroe and Calhoun have far fewer identified people in 2026 than
-in early 2025, Cass appears only from August 2025, and Livingston's
-identified sample falls from about 30 to 45 people a month to about 15 to
-27. Among the Detroit metro counties, Wayne, Oakland, Macomb and Livingston
-are identified in every month; St. Clair and Lapeer are not, so a CPS
-"Detroit" group is those four counties and the rest-of-state group includes
-St. Clair and Lapeer. The API returns county codes without leading zeros
-("93", "99"); match them as numbers or zero-pad them, or Macomb and
-Livingston drop out silently. Armed forces members (`PRPERTYP` 3) have
-`PEMLR` -1 and fall out of the civilian universe.
-
-**Missing data.** None for January to September in these years.
-
-**Revisions.** None to microdata.
-
-**Units and rounding.** Weighted people; rates computed from weighted sums.
-
-**Known quirks.** This is the survey LAUS is built on, not an independent
-check of it. Results tell us where in the survey a LAUS change shows up
-(participation, age groups), not whether it is right.
-
-**Uncertainty.** A state sample this size has wide error bars. The
-independent tie-out (November 3, 2026) estimated the standard error of the
-2025 to 2026 change in prime-age participation outside the Detroit group
-(-2.5 points) at about 1.3 to 1.9 points, using a household-cluster bootstrap
-plus an assumed design effect of 1.5 to 2.0 (an assumption, not a published
-figure). The change is inside the 95% margin of error under every
-assumption tried, and the difference between the Detroit group (-1.5) and
-the rest (-2.5) is well inside it. The age-mix split is also unreliable:
-the prime-age share fell almost 2 points in one year in the sample, faster
-than Michigan's population ages, so most of that "age-mix effect" is likely
-sample noise. For statewide prime-age (25-54) participation, 84.6% to 82.5%
-(-2.1 points), the standard error is about 1.0 with household clustering
-only and about 1.2 to 1.4 with an assumed design effect of 1.5 to 2.0, so
-the change sits close to the 95% margin of error (third independent
-tie-out, November 3, 2026). Use the CPS only for the statewide direction (lower
-participation, not fewer adults), at lower confidence than the published
-LAUS figures. Use Census population estimates, not the CPS, for any
-statement about aging.
-
-**License and attribution.** Public domain. `U.S. Census Bureau, Current
-Population Survey`.
-
-## Population estimates by county and age (U.S. Census Bureau)
-
-**What it is.** Estimated resident population on July 1 of each year, by
-county, age group, sex, race and Hispanic origin. We use the total by
-five-year age group.
-
-**Where it comes from.** `https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/asrh/cc-est2025-alldata-26.csv`
-(Michigan), cached in `data/popest/`. No key.
-
-**Version and vintage.** Vintage 2025, covering April 1, 2020 through July 1,
-2025. Each new vintage revises every earlier year back to 2020. No 2026
-estimate exists yet.
-
-**Coverage.** Every Michigan county. Estimates, not counts: built from the
-2020 Census base plus births, deaths and migration.
-
-**Changes over time.** `YEAR` codes: 1 is the April 1, 2020 base, 2 to 7 are
-July 1, 2020 to 2025. `AGEGRP` 0 is the total; 1 to 18 are five-year groups
-(6 to 11 are ages 25 to 54; 14 to 18 are 65 and over).
+**Changes over time.** None to the definition. A sharp drop in spring 2020
+when in-person interviews stopped.
 
 **Suppressed, censored or masked values.** None.
 
-**Missing data.** None.
+**Missing data.** October 2025 (appropriations lapse).
 
-**Revisions.** Every vintage. We use Vintage 2025 only.
+**Revisions.** Not revised.
 
-**Units and rounding.** People.
+**Units and rounding.** Percent, one decimal.
 
-**Known quirks.** Age groups are five-year bands, so "16 and over" cannot be
-matched exactly; we use adults 20 and over as the base for shares.
+**Known quirks.** A national rate. It does not show whether response fell
+more in some states than others, and a lower rate does not by itself make an
+estimate wrong; it raises the risk that the people who answer differ from
+those who do not.
 
-**Uncertainty.** Census publishes no error bars for these estimates.
-Migration is the least certain part, especially for recent years.
+**Uncertainty.** None stated.
 
-**License and attribution.** Public domain. `U.S. Census Bureau, Population
-Estimates Program`.
-
-## Metropolitan area definitions (U.S. Office of Management and Budget, via the Census Bureau)
-
-**What it is.** The list of counties in each metropolitan and micropolitan
-statistical area, one row per county.
-
-**Where it comes from.** OMB Bulletin 23-01 delineation file,
-`https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx`,
-converted once to `data/geo_ref/omb_cbsa_2023.csv`.
-
-**Version and vintage.** July 2023 delineation, the current one. Earlier
-definitions differ: Ashtabula County joined the Cleveland area and Ottawa
-County, OH moved from Toledo to Sandusky in 2023.
-
-**Coverage.** Every U.S. county. We use it for Michigan and Ohio.
-
-**Changes over time.** Redrawn after each census and updated in between.
-
-**Suppressed, censored or masked values.** None.
-
-**Missing data.** None for Michigan and Ohio.
-
-**Revisions.** New bulletins replace old ones; we use one vintage throughout.
-
-**Units and rounding.** Not applicable.
-
-**Known quirks.** We use the county lists for two things: the Detroit and
-Cleveland metro areas that BLS estimates separately (see LAUS, "Substate
-model areas"), and the one-year change for named metro areas, as the sum of
-their counties' labor force. Michigan metros named in the post: Grand Rapids-
-Wyoming-Kentwood, Lansing-East Lansing, Kalamazoo-Portage, Flint and Ann
-Arbor. "Ohio's six metro areas of 500,000 or more people" uses Census Vintage
-2025 metro population totals under the 2023 delineation: Cleveland, Columbus,
-Cincinnati (Ohio counties only), Dayton-Kettering-Beavercreek, Akron and
-Toledo. The closest miss is Youngstown-Warren (423,678). Under the pre-2023
-delineation the list could differ, so the vintage matters.
-
-**Uncertainty.** None; it is a definition.
-
-**License and attribution.** Public domain. `U.S. Office of Management and
-Budget, metropolitan statistical area delineations (2023)`.
+**License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
+(CPS)`.
