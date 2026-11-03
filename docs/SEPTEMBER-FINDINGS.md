@@ -168,3 +168,13 @@ Eric's question: is the drop fewer prime-age workers?
     does not produce an 8.7% one-year drop. No 2026 estimate exists yet.
 - LAUS publishes no county population or participation rate. County
   participation for 2026 cannot be computed.
+
+### Statewide prime-age participation (Nov 3, 2026)
+
+- CPS, January to September averages, Michigan, ages 25 to 54: 84.6% (2025)
+  to 82.5% (2026), -2.1 points. About 713 and 625 people a month.
+- Household-cluster bootstrap SE 1.0 (z 2.15). With an assumed design
+  effect of 1.5 to 2.0 for geographic clustering, SE 1.2 to 1.4 (z 1.75 to
+  1.5). Script: `scripts/cps_prime_age_error.py`.
+- Reading: close to the margin of error. It can be stated as "the survey
+  suggests", not as a measured decline.
