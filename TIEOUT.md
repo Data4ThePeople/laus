@@ -59,3 +59,28 @@ November 2 and 3 and the four charts.
 1. **Two Michigan labor force drops.** Beat 3 uses the unadjusted series, Sep to Sep: -4.7%, matching the county data. Chart 3 uses the seasonally adjusted series from Jan 2025: -4.9%. On the seasonally adjusted series, Sep to Sep is -3.6%. BLS smooths the adjusted state series, and the two do not move in step. Each number is right for its series; the post should name which one it is using. Recorded in the findings doc Nov 3.
 2. **Chart 4 title**: fixed Nov 3.
 3. **Revision wording**: fixed Nov 3.
+
+## Independent tie-out (fresh agent, November 3, 2026)
+
+Given the sources, DATASETS.md and the four chart PNGs only. Pulled LAUS flat
+files, the BLS API and the Census API again and recomputed with its own code.
+
+- Numbers: no differences. Every number on the four charts matches, as do
+  the beat figures it recomputed (national counts, Michigan counts, state
+  ranks, Detroit and rest-of-state changes, CES, Canada shares).
+- It confirmed the Detroit MSA county list (six-county sum matches the BLS
+  MSA series), the separate-model wording, and the five-year revision.
+- Could not check: map colors by geometry (checked by eye only); OMB
+  delineation files not downloaded.
+- Wording flags: Chart 4 title (already fixed); Chart 1 says "U.S. counties"
+  but includes 78 Puerto Rico municipios (38 in SL; without PR, Sep 2026 is
+  34.9%); Chart 3 states a model estimate as fact; Chart 2 "fell" may read as
+  20 separate local events.
+- Method flags, fixed in DATASETS.md Nov 3: balance-of-Michigan series and
+  substate model areas added; classification on unrounded values stated;
+  revision timing and five-year window stated; Puerto Rico in the universe
+  stated.
+- Other: Sep 2025 vs Sep 2026 raw difference is +41; +40 on the common
+  universe (St. John the Baptist, a returning Katrina parish, is in SL).
+  Only 7 of the 20 Michigan entrants fell more than the balance of Michigan
+  (-8.7%); 13 fell less.

@@ -20,7 +20,8 @@ User-Agent with a contact address, read from `D4TP_CONTACT` in the central
 **Version and vintage.** Monthly release, about three weeks after the reference
 month. Current pull: November 2, 2026 (files posted October 28, 2026), covering
 January 1990 through September 2026. Each release can revise recent months,
-and the annual spring processing revises several prior years at once. The
+and the annual revision at the start of each calendar year re-estimates up to
+five prior years at once (published with the January data, usually in March). The
 November pull revised July 2026 slightly (Structural Loss 1,281 to 1,279);
 April 2025 and April 2026 did not move.
 
@@ -60,8 +61,11 @@ the classified universe twice: once in the gap year and once 20 years later.
 Counties missing from one snapshot and present in another are coverage gaps,
 not recoveries, and we report them separately.
 
-**Revisions.** BLS revises history. The annual spring processing re-estimates
-several prior years, so a county can cross a band boundary without anything
+**Revisions.** BLS revises history. At the beginning of each calendar year
+BLS revises up to five years of previous data ("in most years", per the LAUS
+technical note), so the revision expected in early 2027 would re-estimate 2022
+through 2026, including every 2025 and 2026 month used here. A county can
+cross a band boundary in a revision without anything
 changing on the ground. Months from the current year are preliminary. We do not
 pin a vintage; we refresh the whole series on each pull and re-run the
 validation table in `CLAUDE.md`.
@@ -75,6 +79,13 @@ CO, McMullen TX) are real, not errors; small resort, energy and fishing
 counties can swing more than 15% month to month. That is why every comparison
 in this project is same-month. Band edges are left-closed: exactly -10.0% is
 At-risk, not Structural Loss (checked against Lincoln County, NE).
+Classification uses the unrounded percent change, so a county at -10.001%
+is Structural Loss even though it prints as "-10.0%" at one decimal (Emmet
+and Genesee, MI, in September 2025; Ross, OH, and Bee, TX, in September
+2026). About 46 counties sat within a quarter point of the line in September
+2026, so the national count is sensitive to revisions. The classified
+universe includes Puerto Rico's 78 municipios; in September 2026, 38 of them
+were in Structural Loss.
 
 **Uncertainty.** BLS publishes no confidence interval for county labor force
 levels. It states that sub-state estimates are model-based and less reliable
@@ -93,6 +104,18 @@ direction. Before reading a cluster of counties in one state as local news,
 compare each county's change with its state's. Michigan's 83 counties summed
 to 4,791,575 in September 2026, against 4,791,578 in the published statewide
 series `LAUST260000000000006` (rounding).
+
+**Substate model areas.** In five states BLS models one large metro area and
+the balance of the state separately, each controlled to the state total
+(LAUS technical note, https://www.bls.gov/news.release/laus.tn.htm). The
+five metros are Chicago, Cleveland, Detroit-Warren-Dearborn, Miami and
+Seattle. In Michigan, counties outside the Detroit-Warren-Dearborn MSA
+(Lapeer, Livingston, Macomb, Oakland, St. Clair, Wayne) are shares of the
+balance-of-Michigan estimate, published as `LAUBS260000000000006`
+(2,867,651 in September 2025, 2,617,302 in September 2026). The six-county
+sum matches the published MSA series `LAUMT261982000000006` within one
+person. For a Michigan county outside the Detroit metro, compare its change
+with the balance-of-Michigan series, not the statewide one.
 
 ## Current Employment Statistics, state payroll jobs (U.S. Bureau of Labor Statistics)
 
