@@ -36,6 +36,18 @@ CES_SERIES = {
     # LAUS statewide, seasonally adjusted, for the jobs-vs-residents comparison
     "LASST260000000000006": "mi_laus_labor_force_sa",
     "LASST260000000000005": "mi_laus_employed_sa",
+    # statewide labor force, not seasonally adjusted, for the state comparison chart
+    "LAUST260000000000006": "mi_laus_labor_force_nsa",
+    "LAUST390000000000006": "oh_laus_labor_force_nsa",
+    "LAUST170000000000006": "il_laus_labor_force_nsa",
+    "LAUST270000000000006": "mn_laus_labor_force_nsa",
+    "LAUST180000000000006": "in_laus_labor_force_nsa",
+    "LAUST550000000000006": "wi_laus_labor_force_nsa",
+    "LNU01000000": "us_cps_labor_force_nsa",
+    # participation rate, seasonally adjusted (percent, not scaled)
+    "LASST260000000000008": "mi_laus_lfpr_sa",
+    "LASST390000000000008": "oh_laus_lfpr_sa",
+    "LNS11300000": "us_cps_lfpr_sa",
 }
 # QCEW industry codes: 10 = all industries (own_code 0), the rest private (own_code 5)
 QCEW_INDUSTRIES = {"10": 0, "31-33": 5, "336": 5, "3361": 5, "3362": 5, "3363": 5}
@@ -61,8 +73,10 @@ def fetch_ces() -> pd.DataFrame:
                 if not d["period"].startswith("M") or d["period"] == "M13":
                     continue
                 val = pd.to_numeric(d["value"], errors="coerce")  # "-" = not collected
-                if s["seriesID"].startswith("LA"):
-                    val = val / 1000  # LAUS publishes persons; store thousands like CES
+                sid = s["seriesID"]
+                if sid.startswith("LA") and sid.endswith(("05", "06")):
+                    val = val / 1000  # LAUS levels are persons; store thousands like CES
+                # LNU01000000 is already in thousands; rates (08, LNS113) stay in percent
                 rows.append({"series": CES_SERIES[s["seriesID"]], "series_id": s["seriesID"],
                              "date": f'{d["year"]}-{d["period"][1:]}-01', "jobs_k": val})
     df = pd.DataFrame(rows).drop_duplicates(["series_id", "date"])

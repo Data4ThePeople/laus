@@ -133,7 +133,14 @@ statewide series for Michigan, seasonally adjusted, stored in thousands:
 with CES total nonfarm, and `LASST260000000000006` (labor force). The chart
 uses employed residents rather than the labor force because payroll jobs
 cannot include unemployed people; employed residents and payroll jobs are
-the two employment measures BLS publishes side by side for states. Cached in
+the two employment measures BLS publishes side by side for states. The cache
+also holds statewide labor force, not seasonally adjusted, for Michigan,
+Ohio, Illinois, Minnesota, Indiana and Wisconsin (`LAUST<fips>0000000000006`,
+thousands) and the U.S. CPS labor force `LNU01000000` (already in
+thousands), for the state comparison chart; and participation rates,
+seasonally adjusted, in percent: `LASST260000000000008` (Michigan),
+`LASST390000000000008` (Ohio) and `LNS11300000` (U.S.). The rates have no
+October 2025 value. Cached in
 `data/ces/mi_ces.csv`; the LAUS seasonally adjusted series has no October
 2025 value.
 

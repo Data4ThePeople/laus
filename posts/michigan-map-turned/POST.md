@@ -42,7 +42,10 @@ Michigan now has 53 of its 83 counties in structural loss, up from 33 a year ear
 
 ## A statewide drop
 
-Michigan's labor force fell 4.7% from September 2025 to September 2026, from 5,029,694 to 4,791,578. That is the largest drop of any state. The U.S. labor force fell 0.5% over the same year. Among Michigan's neighbors, Ohio fell 1.2%, Illinois 1.4%, Minnesota 1.5% and Indiana 0.3%, while Wisconsin rose 2.6%.
+Michigan's labor force fell 4.7% from September 2025 to September 2026, from 5,029,694 to 4,791,578. That is the largest drop of any state. The U.S. labor force fell 0.5% over the same year. Among Michigan's neighbors, Ohio fell 1.2%, Illinois 1.4%, Minnesota 1.5% and Indiana 0.3%, while Wisconsin rose 2.6%. The chart below compares them.
+
+![Horizontal bar chart of the change in civilian labor force from September 2025 to September 2026. Michigan fell 4.7%, the United States 0.5%, Minnesota 1.5%, Illinois 1.4%, Ohio 1.2% and Indiana 0.3%. Wisconsin rose 2.6%. Michigan's bar is highlighted.](images/sep26-05-mi-vs-neighbors.png)
+*Michigan's labor force fell more than any other state's. Source: U.S. Bureau of Labor Statistics (LAUS, CPS); Data 4 The People analysis.*
 
 BLS builds its county numbers so that they add up to the state total. When the state number falls this much, the counties fall with it. 19 of the 20 counties that entered structural loss fell faster than the state as a whole.
 
@@ -52,7 +55,10 @@ Because each county is compared with the same month 20 years earlier, we also ch
 
 The decline is not spread evenly. The six counties of the Detroit metro area (Wayne, Oakland, Macomb, Livingston, Lapeer and St. Clair) grew 0.6% together. The other 77 counties fell 8.7%, from 2,867,647 to 2,617,300.
 
-That drop grew through the year. Compared with the same month a year earlier, the 77 counties were down 3.6% in January, 6.6% in April and 8.7% in September.
+Compared with the same month a year earlier, the 77 counties were down 3.6% in January, 6.6% in April and 8.7% in September. The drop eased to about 7% in July and August before reaching its largest point in September. The chart below shows each month for both areas.
+
+![Line chart of the change in civilian labor force from the same month a year earlier, January to September 2026, for two parts of Michigan. The six Detroit metro counties stay between minus 0.4% and plus 2.3% and end at plus 0.6%. The other 77 counties fall from minus 3.6% in January to minus 7.9% in June, ease to about minus 7% in July and August, and end at minus 8.7% in September.](images/sep26-06-mi-detroit-vs-rest.png)
+*Michigan's labor force drop is outside the Detroit metro. Source: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
 
 This split matches how BLS builds its estimates. BLS estimates the Detroit metro area and the rest of Michigan as two separate areas, then divides each total among its counties. All 20 counties that entered structural loss are outside the Detroit metro, so they move with one shared estimate.
 
@@ -67,7 +73,10 @@ The next chart compares employed Michigan residents with payroll jobs at Michiga
 ![Line chart from January 2024 to September 2026 showing the change since January 2025 in two Michigan series, seasonally adjusted. Payroll jobs stay within a fraction of a percent of zero and end at plus 0.2%. Employed residents decline slowly through 2025, then fall faster in 2026 and end at minus 4.5%. The employed residents line has a gap at October 2025, when no estimate was published.](images/sep26-03-mi-labor-force-jobs.png)
 *Fewer Michiganders are working, but payroll jobs are not falling. Source: U.S. Bureau of Labor Statistics (LAUS, CES); Data 4 The People analysis.*
 
-The gap shows up in participation, not in population. Michigan's labor force participation rate, the share of adults who are working or looking for work, fell from 60.8% in September 2025 to 58.5% in September 2026 (seasonally adjusted). Over the same year, Ohio's fell from 62.3% to 61.2% and the nation's from 62.5% to 61.8%.
+The gap shows up in participation, not in population. Michigan's labor force participation rate, the share of adults who are working or looking for work, fell from 60.8% in September 2025 to 58.5% in September 2026 (seasonally adjusted). Over the same year, Ohio's fell from 62.3% to 61.2% and the nation's from 62.5% to 61.8%. The chart below shows all three since January 2024.
+
+![Line chart of the labor force participation rate, seasonally adjusted, January 2024 to September 2026. The United States and Ohio stay between about 61% and 63% and end at 61.8% and 61.2%. Michigan starts near 62%, declines through 2025, falls faster in 2026 and ends at 58.5%. All three lines have a gap at October 2025, when no estimate was published.](images/sep26-07-mi-participation.png)
+*Participation fell faster in Michigan than in Ohio or the U.S. Source: U.S. Bureau of Labor Statistics (LAUS, CPS); Data 4 The People analysis.*
 
 The household survey behind these estimates points the same way. Averaged over January to September, it shows about the same number of adults in Michigan as a year earlier (8.23 million in 2025 and 8.24 million in 2026), while the share in the labor force fell from 61.4% to 58.2%. Our confidence in this is lower, because the survey reaches about 1,570 Michigan adults a month. It points in a direction rather than settling the question.
 

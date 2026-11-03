@@ -45,6 +45,10 @@ November 2 and 3 and the four charts.
 | 5 | CPS sample about 1,570 people a month in 2026 (1,670 in 2025, 1,800 in 2024) | Same | 1,568.6; 1,667.4; 1,804.9 | supported |
 | 5 | Census estimates: Michigan prime-age (25-54) population +0.6% in each of 2024 and 2025; 65+ share of adults up about 0.6 points a year since 2020 | `data/popest/cc-est2025-alldata-26.csv` | +0.59%, +0.57%; 20 entrants 29.3% to 29.9%, Detroit 6 24.7% to 25.3%, rest 26.3% to 26.8% | supported |
 | 5 | Aging lowers the labor force roughly 0.5% to 1% a year | 0.6 points of adults moving from groups with about 60% to 85% participation to one with about 15% | Arithmetic estimate, about 0.4 points of participation, about 0.7% of the labor force | supported as an estimate; say "roughly" |
+| 3 | Chart 5 (neighbors): MI -4.7, US -0.5, MN -1.5, IL -1.4, OH -1.2, IN -0.3, WI +2.6 | Cache vs own fresh API pull (section 4 of tieout script) and first independent tie-out | Same | supported |
+| 4 | Chart 6 (Detroit vs rest), monthly 2026: rest -3.6, -4.1, -4.9, -6.6, -7.1, -7.9, -7.2, -7.0, -8.7; Detroit -0.2 to +2.3, Sep +0.6 | County panel, full monthly index | Jan, Apr, Sep match both earlier checks; other months from the same panel | supported; Feb, Mar, May to Aug not independently checked |
+| 4 | Draft said the drop "grew through the year" | Monthly series eased in Jul and Aug | Reworded Nov 3 | fixed |
+| 5 | Chart 7 (participation): MI 61.8 (Jan 2024) to 58.5; OH 61.2; US 61.8; Oct 2025 missing for all three | Cache; Sep values match fresh API | Same | supported |
 | 6 | Canada share Jan to Aug 2026: MI exports 38.8%, US 14.3%; MI imports 25.5%, US 11.2% | Cache, all 8 months present | Same | supported |
 | 6 | Trade cache matches Census | Aug 2026 MI exports and imports to Canada, fresh API | Exact match | supported |
 
