@@ -106,7 +106,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 | sep26-01-structural-loss-over-time.png | chart_structural_loss.py --out | Monthly series, 2010 to Sep 2026; not used in beat 1 |
 | sep26-02-mi-county-map.png | chart_michigan.py | 20 entered, 33 already, 30 not |
 | sep26-03-mi-labor-force-jobs.png | chart_michigan.py | MI employed residents -4.5% vs payroll jobs +0.2% since Jan 2025, SA (switched from labor force Nov 3, per Eric) |
-| sep26-04-mi-canada-share.png | chart_michigan.py | Canada's share of MI vs U.S. trade |
+| sep26-04-mi-canada-share.png | chart_michigan.py | Canada's share of MI vs U.S. trade; not in the post (Eric, Nov 3: the last section becomes his close) |
 | sep26-05-mi-vs-neighbors.png | chart_michigan.py | One-year labor force change, MI, neighbors, U.S. (added Nov 3, per Eric) |
 | sep26-06-mi-detroit-vs-rest.png | chart_michigan.py | Detroit metro vs rest of MI, monthly yoy, 2026 (rest eased to about -7% in Jul and Aug) |
 | sep26-07-mi-participation.png | chart_michigan.py | Participation rate, MI, OH, U.S., SA, Jan 2024 to Sep 2026 |

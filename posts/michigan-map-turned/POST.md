@@ -86,10 +86,7 @@ Aging does not appear to account for a drop this fast. Census population estimat
 
 We are not trying to explain this drop here. In our view, it is worth keeping an eye on, especially given how much Michigan relies on Canada.
 
-From January to August 2026, Canada bought 38.8% of the goods Michigan exported, compared with 14.3% for the nation as a whole. Canada supplied 25.5% of Michigan's goods imports, compared with 11.2% for the nation. The chart below compares the two.
-
-![Bar chart comparing Canada's share of goods trade for Michigan and the United States, January to August 2026, in dollars. Exports to Canada: Michigan 39%, United States 14%. Imports from Canada: Michigan 26%, United States 11%.](images/sep26-04-mi-canada-share.png)
-*Canada is a far bigger share of Michigan's trade than the nation's. Source: U.S. Census Bureau, International Trade; Data 4 The People analysis.*
+From January to August 2026, Canada bought 38.8% of the goods Michigan exported, compared with 14.3% for the nation as a whole. Canada supplied 25.5% of Michigan's goods imports, compared with 11.2% for the nation.
 
 What to watch next: BLS usually revises the past five years of state and county labor force data early in each calendar year, so the 2026 Michigan figures are expected to be re-estimated in early 2027. The monthly releases between now and then will show whether the drop outside the Detroit area continues.
 
