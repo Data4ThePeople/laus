@@ -36,8 +36,13 @@ November 2 and 3 and the four charts.
 | 4 | Rest of state -3.6% Jan, -6.6% Apr, -8.7% Sep | Panel, same month yoy | Same | supported |
 | 4 | Median county -8.6% | Panel | -8.6% | supported |
 | 5 | Payroll jobs +0.04%, manufacturing -0.3% (Sep yoy, SA) | Cache vs fresh API | +0.04%, -0.27% both | supported |
-| 5 | Chart: employed residents -4.5%, jobs +0.2% since Jan 2025, SA (chart switched from labor force Nov 3) | Cache `LASST260000000000005` and CES | -4.55%, +0.22% | supported; employed series not yet re-pulled fresh, re-check at the next tie-out |
+| 5 | Chart: employed residents -4.5%, jobs +0.2% since Jan 2025, SA (chart switched from labor force Nov 3) | Cache `LASST260000000000005` and CES | -4.55%, +0.22% | supported; fresh API Nov 3: 4,803,978 to 4,585,469 (-4.55%), Oct 2025 missing, matches cache |
 | 5 | Chart: no labor force estimate Oct 2025 | Cache | Missing in LAUS SA, present in CES | supported |
+| 5 | MI participation 60.8% to 58.5% (Sep yoy, SA) | Fresh API `LASST260000000000008` | 60.8, 58.5 | supported |
+| 5 | CPS Jan-Sep avg: 16+ population 8.23M to 8.24M; participation 61.4% to 58.2% | `scripts/cps_michigan.py`, Census CPS API | Same | supported (own computation; small sample) |
+| 5 | CPS age mix -1.3 points, within age -1.9 points | Same | Same | supported as computed; rough given sample |
+| 5 | CPS prime age outside Wayne, Oakland, Macomb, Livingston: 85.8% to 83.3% | Same; St. Clair and Lapeer have 0 identified records | Same | supported as computed; lower confidence |
+| 5 | CPS sample about 1,570 people a month in 2026 (1,670 in 2025, 1,800 in 2024) | Same | 1,568.6; 1,667.4; 1,804.9 | supported |
 | 6 | Canada share Jan to Aug 2026: MI exports 38.8%, US 14.3%; MI imports 25.5%, US 11.2% | Cache, all 8 months present | Same | supported |
 | 6 | Trade cache matches Census | Aug 2026 MI exports and imports to Canada, fresh API | Exact match | supported |
 
