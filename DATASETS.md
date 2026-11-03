@@ -235,67 +235,6 @@ location codes for multi-site employers are the main error source.
 **License and attribution.** Public domain. `U.S. Bureau of Labor Statistics
 (QCEW)`.
 
-## U.S. international trade by state (U.S. Census Bureau)
-
-**What it is.** Monthly dollar value of goods exports from and imports to each
-state, by trading partner country.
-
-**Where it comes from.** Census International Trade API,
-`https://api.census.gov/data/timeseries/intltrade/exports/statehs` (field
-`ALL_VAL_MO`) and `.../imports/statehs` (field `GEN_VAL_MO`), key
-`CENSUS_API_KEY`. Partner codes: Canada 1220, Mexico 2010, all countries
-"-". U.S. totals for comparison come from `.../exports/hs` and
-`.../imports/hs` with the same fields. Cached in `data/trade/mi_trade.csv`
-(column `geo` is MI or US).
-
-**Version and vintage.** Pulled November 2, 2026, through August 2026.
-Monthly figures are revised with the annual revision each June.
-
-**Coverage.** Goods only, not services. Nominal dollars, not adjusted for
-prices or seasons. State export data based on ZIP codes begin January 2006.
-
-**Changes over time.** None that affect 2023 to 2026.
-
-**Suppressed, censored or masked values.** None at the state-by-country total.
-
-**Missing data.** None: every month January 2022 to August 2026 is present for
-Canada, Mexico and the world total, both flows.
-
-**Revisions.** Annual. We refresh the whole series each pull.
-
-**Units and rounding.** Dollars. Not inflation-adjusted, so compare the same
-months a year apart and say "in dollars".
-
-**Known quirks.** Exports are by "origin of movement", the state where goods
-start their trip to the port, which can be a consolidation point rather than
-where they were made. Imports are by "state of destination" as known when the
-entry is filed, which may not be where goods are used. Census advises against
-computing state trade balances from the two. Sources:
-`https://www2.census.gov/programs-surveys/trade/aip/elom.html`,
-`https://www2.census.gov/programs-surveys/trade/aip/state_import_FAQ.html`.
-Auto parts can cross the Michigan-Ontario border several times before final
-assembly, so trade values count some parts more than once.
-
-**Uncertainty.** Census publishes no sampling error (administrative records);
-the main error is misreported state of origin.
-
-**License and attribution.** Public domain. `U.S. Census Bureau, International
-Trade`.
-
-## Tariff measures affecting U.S.-Canada trade (U.S. and Canadian government notices)
-
-**What it is.** Dates, rates and covered goods for U.S. and Canadian tariff
-measures since January 2025. Kept in `docs/TARIFF-TIMELINE.md`, every row
-linked to a primary source (Federal Register, CBP, Supreme Court, Department
-of Finance Canada, Canada Gazette).
-
-**Known quirks.** Measures changed often, some were struck down or refunded,
-and USMCA-qualifying goods were treated differently at each stage. Use
-effective dates, not announcement dates. Rows without a primary source are
-listed as unconfirmed and are not used in the post.
-
-**License and attribution.** Government works; cite each notice.
-
 ## Current Population Survey microdata, Michigan (U.S. Census Bureau for BLS)
 
 **What it is.** The monthly household survey behind the national unemployment

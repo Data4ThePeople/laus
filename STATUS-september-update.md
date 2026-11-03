@@ -8,8 +8,8 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 
 ## Current
 
-Post: where-did-michigans-workers-go
-Step: 2b
+Post: labor-force-september-2026
+Step: 2a
 Since: 2026-11-03
 
 ## Steps
@@ -27,7 +27,8 @@ Since: 2026-11-03
 
 ## Stale
 
-None.
+- 2a (2026-11-03): post pivoted from the Michigan spotlight to a short national update; the draft needs Eric's confirmation again.
+- Hero idea (Michigan flag at half staff) no longer fits; pick a new one in 2d.
 
 ## Log
 
@@ -45,3 +46,4 @@ None.
 - 2026-11-03 Revision caveat added to the "largest drop of any state" sentence, per Eric.
 - 2026-11-03 Step 2a confirmed by Eric. Next: 2b, Eric's edit and Claude's look-over.
 - 2026-11-03 Step 2b opened. Waiting for Eric's edit of POST.md.
+- 2026-11-03 Employed residents vs payroll jobs check: Michigan's gap (-3.7 points, Sep 2026) is rare but shared by 17 states with gaps of 2+ points; QCEW sides with payroll. Eric: the CPS vs CES gap needs its own study; the post pivots to a short national update until he vets the CPS data. Slug changed to labor-force-september-2026; Michigan sections and six Michigan charts dropped from the post (kept in outputs/ and git history); trade and tariff sources removed from DATASETS.md. Back to 2a.

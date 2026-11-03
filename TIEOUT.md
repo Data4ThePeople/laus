@@ -145,3 +145,7 @@ files, the BLS API and the Census API again and recomputed with its own code.
 - DATASETS.md fixed Nov 3: population vintage for the 500k+ grouping named,
   CPS link softened to "close to", statewide prime-age error added.
 - Nov 3: revision caveat added to the "largest drop of any state" sentence ("so far", Arizona at 4.0%, preliminary, early-2027 revision), per Eric.
+
+## Scope change (Nov 3, 2026)
+
+The post is now a short national update (`posts/labor-force-september-2026/`). Rows for charts 2 to 8, beat 5 and the trade chart record checks on the dropped Michigan draft. Rows still used by the post: beat 1 (national counts, Septembers chart), the Michigan net-entrant count and state ranks, and the employed residents vs payroll jobs figures (MI -3.6% vs +0.0%, Sep 2026 SA; see docs/SEPTEMBER-FINDINGS.md). The CT, AZ, MN examples come from `scripts/employed_vs_payroll.py` and have not been independently checked.
