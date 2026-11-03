@@ -56,6 +56,8 @@ We are treating these numbers with caution. County labor force figures are built
 
 In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and the BLS tried to make changes in real time. It reminds me of a shock to a refinery and the operator trying to monkey with the controllers to get the system back to homeostasis. But if you move the controllers too much, you can make the problem worse. Something like that may be happening now. The result is that the two primary surveys of our workforce are spitting out polar opposite signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
 
+We will be coming back to this wonky but immensely important topic in the coming weeks and months. Our goal here at Data 4 The People is to bring public data to you in a form that can bring insight, spur discussion, and lead to positive change. But we have to go into working with public data with a skeptical eye, especially as government agencies rely on models stretched thin to gross up surveys with worsening response rates. We'll do our best to uncover discrepancies between datasets to help you understand what to trust, and what to hold lightly.
+
 ::: divider
 
 ## What this does not tell you
