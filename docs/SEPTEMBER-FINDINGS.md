@@ -110,6 +110,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 | sep26-05-mi-vs-neighbors.png | chart_michigan.py | One-year labor force change, MI, neighbors, U.S. (added Nov 3, per Eric) |
 | sep26-06-mi-detroit-vs-rest.png | chart_michigan.py | Detroit metro vs rest of MI, monthly yoy, 2026 (rest eased to about -7% in Jul and Aug) |
 | sep26-07-mi-participation.png | chart_michigan.py | Participation rate, MI, OH, U.S., SA, Jan 2024 to Sep 2026 |
+| sep26-08-mi-oh-outside-metros.png | chart_michigan.py | MI vs OH outside metros of 500k+, monthly yoy, 2026 (added Nov 3, per Eric) |
 
 Beat 1 shows only the last 15 Septembers (Eric, Nov 2, 2026). Tariff piece shelved for now (Eric, Nov 2, 2026).
 

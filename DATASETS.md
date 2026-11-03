@@ -384,3 +384,41 @@ Migration is the least certain part, especially for recent years.
 
 **License and attribution.** Public domain. `U.S. Census Bureau, Population
 Estimates Program`.
+
+## Metropolitan area definitions (U.S. Office of Management and Budget, via the Census Bureau)
+
+**What it is.** The list of counties in each metropolitan and micropolitan
+statistical area, one row per county.
+
+**Where it comes from.** OMB Bulletin 23-01 delineation file,
+`https://www2.census.gov/programs-surveys/metro-micro/geographies/reference-files/2023/delineation-files/list1_2023.xlsx`,
+converted once to `data/geo_ref/omb_cbsa_2023.csv`.
+
+**Version and vintage.** July 2023 delineation, the current one. Earlier
+definitions differ: Ashtabula County joined the Cleveland area and Ottawa
+County, OH moved from Toledo to Sandusky in 2023.
+
+**Coverage.** Every U.S. county. We use it for Michigan and Ohio.
+
+**Changes over time.** Redrawn after each census and updated in between.
+
+**Suppressed, censored or masked values.** None.
+
+**Missing data.** None for Michigan and Ohio.
+
+**Revisions.** New bulletins replace old ones; we use one vintage throughout.
+
+**Units and rounding.** Not applicable.
+
+**Known quirks.** "Metro areas of 500,000 or more" is our grouping, chosen to
+match the CPS metro-size code (`GTCBSASZ` 4 and up). In Michigan it is
+Detroit-Warren-Dearborn and Grand Rapids-Wyoming-Kentwood; in Ohio it is
+Cleveland, Columbus, Cincinnati (Ohio counties only), Dayton-Kettering-
+Beavercreek, Akron and Toledo. The Cleveland county list sums to the
+published LAUS Cleveland series, and the other 82 Ohio counties to the
+published balance-of-Ohio series (`LAUBS390000000000006`).
+
+**Uncertainty.** None; it is a definition.
+
+**License and attribution.** Public domain. `U.S. Office of Management and
+Budget, metropolitan statistical area delineations (2023)`.

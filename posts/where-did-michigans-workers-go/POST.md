@@ -60,6 +60,11 @@ Compared with the same month a year earlier, the 77 counties were down 3.6% in J
 ![Line chart of the change in civilian labor force from the same month a year earlier, January to September 2026, for two parts of Michigan. The six Detroit metro counties stay between minus 0.4% and plus 2.3% and end at plus 0.6%. The other 77 counties fall from minus 3.6% in January to minus 7.9% in June, ease to about minus 7% in July and August, and end at minus 8.7% in September.](images/sep26-06-mi-detroit-vs-rest.png)
 *Michigan's labor force drop is outside the Detroit metro. Source: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
 
+Ohio does not show the same pattern. BLS also estimates Cleveland and the rest of Ohio as separate areas. Outside Ohio's six metro areas of 500,000 or more people, the labor force fell 1.2% from September 2025 to September 2026. Outside Michigan's two, Detroit and Grand Rapids, it fell 8.7%. The chart below shows each month.
+
+![Line chart of the change in civilian labor force from the same month a year earlier, January to September 2026, for counties outside metro areas of 500,000 or more. Ohio's 59 counties stay between minus 0.7% and minus 2.2% and end at minus 1.2%. Michigan's 72 counties fall from minus 3.5% in January to minus 7.9% in June, ease to about minus 7% in July and August, and end at minus 8.7% in September.](images/sep26-08-mi-oh-outside-metros.png)
+*Michigan fell far more than Ohio outside the big metros. Source: U.S. Bureau of Labor Statistics (LAUS); OMB 2023 metro areas; Data 4 The People analysis.*
+
 This split matches how BLS builds its estimates. BLS estimates the Detroit metro area and the rest of Michigan as two separate areas, then divides each total among its counties. All 20 counties that entered structural loss are outside the Detroit metro, so they move with one shared estimate.
 
 ## Job counts do not show the same drop
