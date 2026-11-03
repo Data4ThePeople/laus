@@ -148,7 +148,7 @@ Eric's question: is the drop fewer prime-age workers?
     (2024) to 479,300 (2025); 65+ share of adults rose 29.3% to 29.9%.
     The 65+ share has risen about 0.6 points a year since 2020 in each group
     of counties (20 entrants, Detroit 6, rest).
-  - Aging at that pace lowers the labor force by well under 1% a year. It
+  - Aging at that pace lowers the labor force by roughly 0.5% to 1% a year (0.6 points moving from groups with about 60% to 85% participation to one with about 15%). It
     does not produce an 8.7% one-year drop. No 2026 estimate exists yet.
 - LAUS publishes no county population or participation rate. County
   participation for 2026 cannot be computed.
