@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: where-did-michigans-workers-go
-Step: 2b (not started)
+Step: 2b
 Since: 2026-11-03
 
 ## Steps
@@ -44,3 +44,4 @@ None.
 - 2026-11-03 Third independent tie-out: numbers match; chart 8's "outside the big metros" framing flagged because Michigan's other metros fell 8% to 10%. Eric chose to swap chart 8 for rest of Michigan vs rest of Ohio (BLS balance-of-state areas) and add a sentence with the metro numbers.
 - 2026-11-03 Revision caveat added to the "largest drop of any state" sentence, per Eric.
 - 2026-11-03 Step 2a confirmed by Eric. Next: 2b, Eric's edit and Claude's look-over.
+- 2026-11-03 Step 2b opened. Waiting for Eric's edit of POST.md.
