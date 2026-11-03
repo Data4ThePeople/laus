@@ -27,7 +27,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
   up from 33.
 - Michigan's labor force fell 4.7% from September 2025 to September 2026
   (5,029,694 to 4,791,578 in the BLS statewide series), the largest drop of
-  any state. Next: Arizona (-4.1%). Neighbors: Ohio -1.3%, Illinois -1.4%,
+  any state. Next: Arizona (-4.0%). Neighbors: Ohio -1.2%, Illinois -1.4%,
   Minnesota -1.5%, Indiana -0.3%, Wisconsin +2.6%. U.S.: -0.5%.
 - The flips are not a 20-year-base effect: none of the 20 would have crossed
   -10% on the change in the 2006 base month alone. 19 of 20 fell faster
