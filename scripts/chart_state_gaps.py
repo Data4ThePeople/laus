@@ -33,9 +33,13 @@ def main() -> None:
     ax.bar(t.index[ok & ~ces], -t.trail[ok & ~ces], width=w, color=CORAL)
     ax.bar(t.index[ces], -t.trail[ces], width=w, color=CORAL + "88", edgecolor=CORAL, linewidth=0.6)
     ax.axhline(0, color=MUTED, linewidth=0.8)
-    ax.text(pd.Timestamp("2015-03-01"), 24, "Employed residents ran 2+ points ahead of jobs", color=TEAL,
+    covid = pd.Timestamp("2020-02-15")   # between the February and March 2020 bars
+    ax.axvline(covid, color=INK, linewidth=0.9, linestyle=(0, (3, 3)))
+    ax.text(covid - pd.Timedelta(days=40), 29.5, "COVID-19\nMarch 2020", ha="right", va="top", color=INK,
+            fontsize=8.5, fontweight="bold", linespacing=1.3)
+    ax.text(pd.Timestamp("2015-03-01"), 24, "Employed residents ran\n2+ points ahead of jobs", color=TEAL,
             fontsize=9, fontweight="bold", va="center")
-    ax.text(pd.Timestamp("2015-03-01"), -16, "Employed residents trailed jobs by 2+ points", color=CORAL,
+    ax.text(pd.Timestamp("2015-03-01"), -16, "Employed residents trailed\njobs by 2+ points", color=CORAL,
             fontsize=9, fontweight="bold", va="center")
     for d, v, ha in [(pd.Timestamp("2021-08-01"), t.trail["2021-08-01"], "center"),
                      (pd.Timestamp("2026-06-01"), t.trail["2026-06-01"], "right")]:
