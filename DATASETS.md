@@ -274,3 +274,53 @@ effective dates, not announcement dates. Rows without a primary source are
 listed as unconfirmed and are not used in the post.
 
 **License and attribution.** Government works; cite each notice.
+
+## Current Population Survey microdata, Michigan (U.S. Census Bureau for BLS)
+
+**What it is.** The monthly household survey behind the national unemployment
+rate and the main input to the LAUS state model. One row per person
+interviewed: age (`PRTAGE`), labor force status (`PEMLR`: 1-2 employed, 3-4
+unemployed, 5-7 not in the labor force) and the composite weight
+(`PWCMPWGT`) that BLS uses for official labor force figures.
+
+**Where it comes from.** Census API, `https://api.census.gov/data/<year>/cps/basic/<mon>`,
+key `CENSUS_API_KEY`, Michigan only, pulled by `scripts/cps_michigan.py`
+into `data/cps/mi_cps.csv`. January to September of 2024, 2025 and 2026.
+
+**Version and vintage.** Pulled November 3, 2026. Microdata are not revised;
+the weights reflect the population controls in force each January.
+
+**Coverage.** Civilian, noninstitutional, age 16 and over. About 1,570
+Michigan adults a month in 2026, down from about 1,670 in 2025 and 1,800
+in 2024. People stay in the sample for several months in a row, so pooling
+nine months does not give nine times as many separate people.
+
+**Changes over time.** New population controls each January change the
+weights. The weights hold Michigan's total adult population to the control,
+not its age mix, so the age mix within Michigan comes from the sample and
+moves month to month.
+
+**Suppressed, censored or masked values.** Counties are identified only where
+the population is large enough. In Michigan, Wayne, Oakland, Macomb and
+Livingston are identified among the Detroit metro counties; St. Clair and
+Lapeer are not, so a CPS "Detroit" group is those four counties and the
+rest-of-state group includes St. Clair and Lapeer.
+
+**Missing data.** None for January to September in these years.
+
+**Revisions.** None to microdata.
+
+**Units and rounding.** Weighted people; rates computed from weighted sums.
+
+**Known quirks.** This is the survey LAUS is built on, not an independent
+check of it. Results tell us where in the survey a LAUS change shows up
+(participation, age groups), not whether it is right.
+
+**Uncertainty.** A state sample this size has wide error bars. For a rate near
+84% based on a few hundred prime-age people a month outside Detroit, the
+sampling error is on the order of a couple of points, about the size of the
+change we see. Treat results as directional, at lower confidence than the
+published LAUS figures.
+
+**License and attribution.** Public domain. `U.S. Census Bureau, Current
+Population Survey`.

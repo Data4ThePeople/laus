@@ -119,7 +119,15 @@ is called out as something to keep an eye on, not explained.
 - QCEW county manufacturing exposure vs labor force change (data cached,
   not yet run).
 
-## Participation and age (Nov 3, 2026; exploration, not in the beats)
+## Participation and age (Nov 3, 2026)
+
+Decision (Eric, Nov 3, 2026): beat 5 uses the CPS result (finding 3 below):
+the drop shows up as lower participation, including among prime-age
+residents, not as fewer people. Say confidence is lower because the Michigan
+sample is small, and that it points in a direction rather than proves it.
+Lead with the published LAUS participation rate, which is the firmer number.
+Script: `scripts/cps_michigan.py`. The CPS "Detroit" group is Wayne, Oakland,
+Macomb and Livingston only (St. Clair and Lapeer are not identified in CPS).
 
 Eric's question: is the drop fewer prime-age workers?
 
@@ -137,8 +145,8 @@ Eric's question: is the drop fewer prime-age workers?
   - Shift-share on those averages: the older age mix accounts for -1.3
     points, lower participation within age groups for -1.9 points. Given
     the sample, treat the split as rough.
-  - Prime age (25-54), outside the six Detroit metro counties: participation
-    85.8% to 83.3%.
+  - Prime age (25-54), outside Wayne, Oakland, Macomb and Livingston:
+    participation 85.8% to 83.3%. In those four counties: 83.0% to 81.5%.
   - Sample size: about 1,570 Michigan people age 16+ per month in 2026,
     down from about 1,670 in 2025 and 1,800 in 2024.
 - **Census population estimates** (Vintage 2025, `cc-est2025-alldata-26.csv`,
