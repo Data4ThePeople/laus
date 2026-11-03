@@ -118,3 +118,37 @@ is called out as something to keep an eye on, not explained.
 - Whether the rest-of-Michigan decline survives the early-2027 revision.
 - QCEW county manufacturing exposure vs labor force change (data cached,
   not yet run).
+
+## Participation and age (Nov 3, 2026; exploration, not in the beats)
+
+Eric's question: is the drop fewer prime-age workers?
+
+- **LAUS statewide participation** (seasonally adjusted, `LASST260000000000008`):
+  Michigan 60.8% in Sep 2025 to 58.5% in Sep 2026 (-2.3 points). Ohio 62.3%
+  to 61.2%; U.S. 62.5% to 61.8%. The labor force divided by the participation
+  rate gives a 16+ population that rose slightly, so the drop is in
+  participation, not in the number of adults.
+- **CPS microdata for Michigan** (Census API `cps/basic`, composite weight
+  `PWCMPWGT`, January to September averages): participation 61.4% (2025) to
+  58.2% (2026). Weighted 16+ population 8.23 million to 8.24 million.
+  - The CPS weights control Michigan's total adult population, not its age
+    mix, so the age mix within the state comes from the sample and swings
+    month to month (prime-age weighted count ranges 3.50 to 3.96 million).
+  - Shift-share on those averages: the older age mix accounts for -1.3
+    points, lower participation within age groups for -1.9 points. Given
+    the sample, treat the split as rough.
+  - Prime age (25-54), outside the six Detroit metro counties: participation
+    85.8% to 83.3%.
+  - Sample size: about 1,570 Michigan people age 16+ per month in 2026,
+    down from about 1,670 in 2025 and 1,800 in 2024.
+- **Census population estimates** (Vintage 2025, `cc-est2025-alldata-26.csv`,
+  July 1 each year, through 2025):
+  - Prime-age population in Michigan rose 0.6% in each of 2024 and 2025.
+  - In the 20 counties that entered Structural Loss: prime age 477,800
+    (2024) to 479,300 (2025); 65+ share of adults rose 29.3% to 29.9%.
+    The 65+ share has risen about 0.6 points a year since 2020 in each group
+    of counties (20 entrants, Detroit 6, rest).
+  - Aging at that pace lowers the labor force by well under 1% a year. It
+    does not produce an 8.7% one-year drop. No 2026 estimate exists yet.
+- LAUS publishes no county population or participation rate. County
+  participation for 2026 cannot be computed.
