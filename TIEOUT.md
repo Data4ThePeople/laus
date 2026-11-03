@@ -120,3 +120,26 @@ files, the BLS API and the Census API again and recomputed with its own code.
 - Its leading-zero bug check: `scripts/cps_michigan.py` converts county codes
   to numbers before matching, so Macomb and Livingston are included (its
   corrected values equal ours).
+
+## Third independent tie-out (fresh agent, November 3, 2026): charts 5 to 8 and the prime-age sentence
+
+- Numbers: no differences. Neighbors chart (all seven values; Michigan last
+  of 50 states, DC and PR, next Arizona -4.05%); Detroit vs rest by month
+  (six-county sum within 2 people of the MSA series, 77-county sum within 7
+  of the balance-of-Michigan series, every month); participation (end
+  values, shapes, October 2025 gap for all three); Michigan vs Ohio outside
+  500k+ metros (metro lists confirmed with Vintage 2025 totals, county
+  counts 72 and 59, every month).
+- Prime-age sentence: 84.60% to 82.45%; SE 1.01 (household clustering), 1.24
+  and 1.43 at design effects 1.5 and 2.0. "Close to the margin of error" is
+  fair; "within" would overstate.
+- Could not check: CPS design effect (assumed); chart positions by eye only.
+- Wording flags: (1) chart 8's "outside the big metros" framing suggests a
+  small-place story, but Grand Rapids fell 8.8% (confirmed: Lansing -10.2%,
+  Flint -8.7%, Kalamazoo -9.2%, Ann Arbor -8.4%; Ohio's six big metros -0.5%
+  to -2.3%); (2) chart 6 split reflects two BLS model areas, not independent
+  measurements; (3) "neighbors" includes water-border states (minor); (4)
+  "more than any other state" rests on a 0.7-point lead over Arizona and
+  preliminary data.
+- DATASETS.md fixed Nov 3: population vintage for the 500k+ grouping named,
+  CPS link softened to "close to", statewide prime-age error added.

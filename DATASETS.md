@@ -340,7 +340,11 @@ assumption tried, and the difference between the Detroit group (-1.5) and
 the rest (-2.5) is well inside it. The age-mix split is also unreliable:
 the prime-age share fell almost 2 points in one year in the sample, faster
 than Michigan's population ages, so most of that "age-mix effect" is likely
-sample noise. Use the CPS only for the statewide direction (lower
+sample noise. For statewide prime-age (25-54) participation, 84.6% to 82.5%
+(-2.1 points), the standard error is about 1.0 with household clustering
+only and about 1.2 to 1.4 with an assumed design effect of 1.5 to 2.0, so
+the change sits close to the 95% margin of error (third independent
+tie-out, November 3, 2026). Use the CPS only for the statewide direction (lower
 participation, not fewer adults), at lower confidence than the published
 LAUS figures. Use Census population estimates, not the CPS, for any
 statement about aging.
@@ -410,8 +414,13 @@ County, OH moved from Toledo to Sandusky in 2023.
 
 **Units and rounding.** Not applicable.
 
-**Known quirks.** "Metro areas of 500,000 or more" is our grouping, chosen to
-match the CPS metro-size code (`GTCBSASZ` 4 and up). In Michigan it is
+**Known quirks.** "Metro areas of 500,000 or more" is our grouping, using
+Census Vintage 2025 metro population totals under the 2023 delineation. The
+closest misses are Lansing-East Lansing, MI (479,722) and Youngstown-Warren,
+OH (423,678); under the pre-2023 delineation Lansing and Youngstown were each
+around 540,000, so the vintage matters. It is close to, not the same as, the
+CPS metro-size code (`GTCBSASZ` 4 and up): the CPS still uses some pre-2023
+metro codes for Ohio and leaves most of the Cleveland area unidentified. In Michigan it is
 Detroit-Warren-Dearborn and Grand Rapids-Wyoming-Kentwood; in Ohio it is
 Cleveland, Columbus, Cincinnati (Ohio counties only), Dayton-Kettering-
 Beavercreek, Akron and Toledo. The Cleveland county list sums to the
