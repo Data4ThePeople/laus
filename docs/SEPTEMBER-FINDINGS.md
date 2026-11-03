@@ -111,6 +111,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 | sep26-06-mi-detroit-vs-rest.png | chart_michigan.py | Detroit metro vs rest of MI, monthly yoy, 2026 (rest eased to about -7% in Jul and Aug) |
 | sep26-07-mi-participation.png | chart_michigan.py | Participation rate, MI, OH, U.S., SA, Jan 2024 to Sep 2026 |
 | sep26-08-mi-oh-balance-of-state.png | chart_michigan.py | Rest of MI (outside Detroit, 77 counties) vs rest of OH (outside Cleveland, 82 counties), monthly yoy, 2026. Replaced the outside-500k+-metros chart Nov 3, per Eric, because Michigan's other metros fell as much as its rural counties |
+| sep26-09-septembers-bands.png | chart_septembers_bands.py | All six bands, share of counties, every September 2012 to 2026 (added Nov 3, per Eric) |
 
 Beat 1 shows only the last 15 Septembers (Eric, Nov 2, 2026). Tariff piece shelved for now (Eric, Nov 2, 2026).
 

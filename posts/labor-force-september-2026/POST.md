@@ -34,6 +34,17 @@ The chart below shows the share of counties in structural loss for every Septemb
 ![Bar chart of the share of U.S. counties and Puerto Rico municipios in structural labor force loss each September from 2012 to 2026. The share rises from 12.3% in 2012 to 26.6% in 2019, jumps to 33.8% in 2020, peaks at 36.2% in 2022, falls to 31.6% in 2024, then rises to 34.0% in 2025 and 35.2% in 2026, which is highlighted.](images/sep26-01-septembers.png)
 *Structural labor force loss, every September since 2012. Source: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
 
+## The other five bands
+
+Structural loss is one of six bands. Fast growth has become rarer. In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier, the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).
+
+At the other end, 60.3% of counties had a smaller labor force than 20 years earlier, counting structural loss and at-risk contraction together. That is close to 2021 and 2022 (61.0% in both) and up from 30.4% in 2012.
+
+The chart below shows the share of counties in each band for every September since 2012.
+
+![Six small bar charts, one per band, showing the share of U.S. counties and Puerto Rico municipios in that band each September from 2012 to 2026. Structural Loss rises from 12.3% to 35.2%. At-risk Contraction rises from 18.0% to 25.0%. Below-trend Growth falls from 22.9% to 18.2%. Keeping Pace falls from 16.1% to 9.9%. Superstars falls from 18.2% to 7.4%. Hyper-Growth falls from 12.4% to 4.3%.](images/sep26-09-septembers-bands.png)
+*Fewer fast-growing counties than in any September since 2012. Source: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
+
 ## A note on the 2026 numbers
 
 One state accounts for half of that net increase. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
