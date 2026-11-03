@@ -115,7 +115,12 @@ balance-of-Michigan estimate, published as `LAUBS260000000000006`
 (2,867,651 in September 2025, 2,617,302 in September 2026). The six-county
 sum matches the published MSA series `LAUMT261982000000006` within one
 person. For a Michigan county outside the Detroit metro, compare its change
-with the balance-of-Michigan series, not the statewide one.
+with the balance-of-Michigan series, not the statewide one. Ohio works the
+same way: the Cleveland MSA (Ashtabula, Cuyahoga, Geauga, Lake, Lorain,
+Medina; CBSA 17410) and the other 82 Ohio counties, published as
+`LAUBS390000000000006` (county sum 4,744,759 against 4,744,760 in September
+2026). The post compares the two balance-of-state areas month by month,
+using county sums with the OMB 2023 county lists.
 
 ## Current Employment Statistics, state payroll jobs (U.S. Bureau of Labor Statistics)
 
@@ -414,18 +419,16 @@ County, OH moved from Toledo to Sandusky in 2023.
 
 **Units and rounding.** Not applicable.
 
-**Known quirks.** "Metro areas of 500,000 or more" is our grouping, using
-Census Vintage 2025 metro population totals under the 2023 delineation. The
-closest misses are Lansing-East Lansing, MI (479,722) and Youngstown-Warren,
-OH (423,678); under the pre-2023 delineation Lansing and Youngstown were each
-around 540,000, so the vintage matters. It is close to, not the same as, the
-CPS metro-size code (`GTCBSASZ` 4 and up): the CPS still uses some pre-2023
-metro codes for Ohio and leaves most of the Cleveland area unidentified. In Michigan it is
-Detroit-Warren-Dearborn and Grand Rapids-Wyoming-Kentwood; in Ohio it is
-Cleveland, Columbus, Cincinnati (Ohio counties only), Dayton-Kettering-
-Beavercreek, Akron and Toledo. The Cleveland county list sums to the
-published LAUS Cleveland series, and the other 82 Ohio counties to the
-published balance-of-Ohio series (`LAUBS390000000000006`).
+**Known quirks.** We use the county lists for two things: the Detroit and
+Cleveland metro areas that BLS estimates separately (see LAUS, "Substate
+model areas"), and the one-year change for named metro areas, as the sum of
+their counties' labor force. Michigan metros named in the post: Grand Rapids-
+Wyoming-Kentwood, Lansing-East Lansing, Kalamazoo-Portage, Flint and Ann
+Arbor. "Ohio's six metro areas of 500,000 or more people" uses Census Vintage
+2025 metro population totals under the 2023 delineation: Cleveland, Columbus,
+Cincinnati (Ohio counties only), Dayton-Kettering-Beavercreek, Akron and
+Toledo. The closest miss is Youngstown-Warren (423,678). Under the pre-2023
+delineation the list could differ, so the vintage matters.
 
 **Uncertainty.** None; it is a definition.
 

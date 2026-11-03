@@ -290,11 +290,11 @@ def participation(month: str) -> Path:
     return out
 
 
-BIG_METROS = {"MI": ["19820", "24340"],                                       # Detroit, Grand Rapids
-              "OH": ["17410", "18140", "17140", "19430", "10420", "45780"]}   # Cleveland, Columbus, Cincinnati, Dayton, Akron, Toledo
+MODEL_METROS = {"MI": ("19820", "Detroit"), "OH": ("17410", "Cleveland")}   # BLS substate model areas
 
 
-def outside_metros(month: str) -> Path:
+def balance_of_state(month: str) -> Path:
+    """Michigan outside the Detroit metro vs Ohio outside the Cleveland metro: the BLS balance-of-state areas."""
     d = pd.Timestamp(f"{month}-01")
     omb = pd.read_csv(DATA / "geo_ref" / "omb_cbsa_2023.csv", dtype=str)
     omb["fips"] = omb["FIPS State Code"] + omb["FIPS County Code"]
@@ -303,28 +303,28 @@ def outside_metros(month: str) -> Path:
     ax.axhline(0, color=GRID, linewidth=1.0)
     res = {}
     for st, colour, name in [("OH", SKY, "Ohio"), ("MI", CORAL, "Michigan")]:
-        big = set(omb[omb["CBSA Code"].isin(BIG_METROS[st])].fips)
-        q = p[(p.state == st) & ~p.fips.isin(big)]
+        code, metro = MODEL_METROS[st]
+        q = p[(p.state == st) & ~p.fips.isin(set(omb[omb["CBSA Code"] == code].fips))]
         g = q.groupby("date").labor_force.sum()
         g = g.reindex(pd.date_range(g.index.min(), g.index.max(), freq="MS"))
         yoy = ((g / g.shift(12) - 1) * 100).loc[f"{d.year}-01-01":d]
         res[name] = yoy
         ax.plot(yoy.index, yoy, color=colour, linewidth=2.2, marker="o", markersize=4)
-        ax.annotate(f"{name}, {q.fips.nunique()} counties\n{yoy.iloc[-1]:+.1f}%", xy=(yoy.index[-1], yoy.iloc[-1]),
-                    xytext=(10, 0), textcoords="offset points", color=colour, fontsize=9.5,
-                    fontweight="bold", va="center", linespacing=1.4)
+        ax.annotate(f"{name} outside\n{metro}, {q.fips.nunique()} counties\n{yoy.iloc[-1]:+.1f}%",
+                    xy=(yoy.index[-1], yoy.iloc[-1]), xytext=(10, 0), textcoords="offset points", color=colour,
+                    fontsize=9.5, fontweight="bold", va="center", linespacing=1.4)
     idx = res["Michigan"].index
     ax.set_xlim(idx.min() - pd.DateOffset(days=12), d + pd.DateOffset(months=4))
     ax.set_xticks(idx); ax.set_xticklabels([f"{t:%b}" for t in idx])
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:+.0f}%" if v else "0%"))
     ax.grid(axis="y", color=GRID, linewidth=0.8)
-    frame(fig, "Michigan fell far more than Ohio outside the big metros",
+    ax.set_ylim(-10, 0.6)
+    frame(fig, "The rest of Michigan fell far more than the rest of Ohio",
           f"Change in civilian labor force from the same month a year earlier, {d.year}, not seasonally adjusted.\n"
-          "Counties outside metro areas of 500,000 or more people (Michigan: Detroit, Grand Rapids;\n"
-          "Ohio: Cleveland, Columbus, Cincinnati, Dayton, Akron, Toledo).", top=0.75)
+          "Counties outside the Detroit and Cleveland metro areas, which BLS estimates separately.", top=0.77)
     _restamp_source(fig, "U.S. Bureau of Labor Statistics (LAUS); OMB 2023 metro areas; Data 4 The People analysis.")
     fig.subplots_adjust(right=0.8)
-    out = OUT / "sep26-08-mi-oh-outside-metros.png"
+    out = OUT / "sep26-08-mi-oh-balance-of-state.png"
     fig.savefig(out, facecolor=BG)
     print(f"wrote {out}"); print(pd.DataFrame(res).round(2).to_string())
     return out
@@ -341,7 +341,7 @@ def main() -> None:
     neighbors(a.month)
     detroit_vs_rest(a.month)
     participation(a.month)
-    outside_metros(a.month)
+    balance_of_state(a.month)
 
 
 if __name__ == "__main__":

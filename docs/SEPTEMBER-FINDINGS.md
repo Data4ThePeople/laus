@@ -110,7 +110,7 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 | sep26-05-mi-vs-neighbors.png | chart_michigan.py | One-year labor force change, MI, neighbors, U.S. (added Nov 3, per Eric) |
 | sep26-06-mi-detroit-vs-rest.png | chart_michigan.py | Detroit metro vs rest of MI, monthly yoy, 2026 (rest eased to about -7% in Jul and Aug) |
 | sep26-07-mi-participation.png | chart_michigan.py | Participation rate, MI, OH, U.S., SA, Jan 2024 to Sep 2026 |
-| sep26-08-mi-oh-outside-metros.png | chart_michigan.py | MI vs OH outside metros of 500k+, monthly yoy, 2026 (added Nov 3, per Eric) |
+| sep26-08-mi-oh-balance-of-state.png | chart_michigan.py | Rest of MI (outside Detroit, 77 counties) vs rest of OH (outside Cleveland, 82 counties), monthly yoy, 2026. Replaced the outside-500k+-metros chart Nov 3, per Eric, because Michigan's other metros fell as much as its rural counties |
 
 Beat 1 shows only the last 15 Septembers (Eric, Nov 2, 2026). Tariff piece shelved for now (Eric, Nov 2, 2026).
 
@@ -216,3 +216,14 @@ change / household-bootstrap SE; second z assumes a design effect of 2.0):
 - Prime age: neither state's change is distinguishable from zero outside
   the big metros. Nonmetro CPS samples are too small to use (about 110
   prime-age Michiganders a month).
+
+### Chart 8 reframed: balance of state (Nov 3, 2026)
+
+The third independent tie-out found that Michigan's other metro areas fell
+about as much as its rural counties (Sep yoy: Grand Rapids -8.8%, Lansing
+-10.2%, Kalamazoo -9.2%, Flint -8.7%, Ann Arbor -8.4%), while Ohio's six
+500k+ metros fell 0.5% to 2.3%. The "outside the big metros" chart implied a
+small-place story the data does not support. Eric chose to replace it with
+the two BLS balance-of-state areas (MI outside Detroit -8.7%, OH outside
+Cleveland -1.4% in September) and to add the metro sentence. The 500k+
+grouping table above is kept as exploration only.
