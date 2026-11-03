@@ -42,3 +42,4 @@ None.
 - 2026-11-03 Step 2a opened. Slug: michigan-map-turned. posts/michigan-map-turned/ created; four charts copied to images/. Waiting for Eric's draft.
 - 2026-11-03 Title changed to "Where did Michigan's workers go?" with a new subtitle; slug changed from michigan-map-turned to where-did-michigans-workers-go (folder renamed). Canada chart dropped; the last section becomes Eric's close.
 - 2026-11-03 Third independent tie-out: numbers match; chart 8's "outside the big metros" framing flagged because Michigan's other metros fell 8% to 10%. Eric chose to swap chart 8 for rest of Michigan vs rest of Ohio (BLS balance-of-state areas) and add a sentence with the metro numbers.
+- 2026-11-03 Revision caveat added to the "largest drop of any state" sentence, per Eric.

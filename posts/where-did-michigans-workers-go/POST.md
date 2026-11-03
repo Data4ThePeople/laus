@@ -42,7 +42,7 @@ Michigan now has 53 of its 83 counties in structural loss, up from 33 a year ear
 
 ## A statewide drop
 
-Michigan's labor force fell 4.7% from September 2025 to September 2026, from 5,029,694 to 4,791,578. That is the largest drop of any state. The U.S. labor force fell 0.5% over the same year. Among Michigan's neighbors, Ohio fell 1.2%, Illinois 1.4%, Minnesota 1.5% and Indiana 0.3%, while Wisconsin rose 2.6%. The chart below compares them.
+Michigan's labor force fell 4.7% from September 2025 to September 2026, from 5,029,694 to 4,791,578. That is the largest drop of any state so far, ahead of Arizona at 4.0%. The 2026 figures are preliminary, and BLS is expected to revise them in early 2027, so the ranking could change. The U.S. labor force fell 0.5% over the same year. Among Michigan's neighbors, Ohio fell 1.2%, Illinois 1.4%, Minnesota 1.5% and Indiana 0.3%, while Wisconsin rose 2.6%. The chart below compares them.
 
 ![Horizontal bar chart of the change in civilian labor force from September 2025 to September 2026. Michigan fell 4.7%, the United States 0.5%, Minnesota 1.5%, Illinois 1.4%, Ohio 1.2% and Indiana 0.3%. Wisconsin rose 2.6%. Michigan's bar is highlighted.](images/sep26-05-mi-vs-neighbors.png)
 *Michigan's labor force fell more than any other state's. Source: U.S. Bureau of Labor Statistics (LAUS, CPS); Data 4 The People analysis.*

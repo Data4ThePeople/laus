@@ -144,3 +144,4 @@ files, the BLS API and the Census API again and recomputed with its own code.
   preliminary data.
 - DATASETS.md fixed Nov 3: population vintage for the 500k+ grouping named,
   CPS link softened to "close to", statewide prime-age error added.
+- Nov 3: revision caveat added to the "largest drop of any state" sentence ("so far", Arizona at 4.0%, preliminary, early-2027 revision), per Eric.
