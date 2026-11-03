@@ -128,9 +128,12 @@ seasonally adjusted), `SMS26000003000000001` (Michigan manufacturing,
 seasonally adjusted), `SMU26000003133600001` (Michigan transportation
 equipment manufacturing, NAICS 336, not seasonally adjusted), plus U.S.
 totals `CES0000000001` and `CES3000000001`. The same cache holds two LAUS
-statewide series for Michigan, seasonally adjusted, used only for the
-labor force versus jobs chart: `LASST260000000000006` (labor force) and
-`LASST260000000000005` (employed), stored in thousands. Cached in
+statewide series for Michigan, seasonally adjusted, stored in thousands:
+`LASST260000000000005` (employed residents), which the jobs chart compares
+with CES total nonfarm, and `LASST260000000000006` (labor force). The chart
+uses employed residents rather than the labor force because payroll jobs
+cannot include unemployed people; employed residents and payroll jobs are
+the two employment measures BLS publishes side by side for states. Cached in
 `data/ces/mi_ces.csv`; the LAUS seasonally adjusted series has no October
 2025 value.
 

@@ -102,10 +102,10 @@ recomputed from `data/*.parquet` and the caches in `data/ces`, `data/qcew` and
 
 | File | Script | What it shows |
 |---|---|---|
-| sep26-01-septembers.png | chart_septembers.py | U.S. share in Structural Loss, every September 2012 to 2026 (beat 1, per Eric) |
+| sep26-01-septembers.png | chart_septembers.py | Share of U.S. counties and Puerto Rico municipios in Structural Loss, every September 2012 to 2026 (beat 1, per Eric) |
 | sep26-01-structural-loss-over-time.png | chart_structural_loss.py --out | Monthly series, 2010 to Sep 2026; not used in beat 1 |
 | sep26-02-mi-county-map.png | chart_michigan.py | 20 entered, 33 already, 30 not |
-| sep26-03-mi-labor-force-jobs.png | chart_michigan.py | MI labor force -4.9% vs payroll jobs +0.2% since Jan 2025, SA |
+| sep26-03-mi-labor-force-jobs.png | chart_michigan.py | MI employed residents -4.5% vs payroll jobs +0.2% since Jan 2025, SA (switched from labor force Nov 3, per Eric) |
 | sep26-04-mi-canada-share.png | chart_michigan.py | Canada's share of MI vs U.S. trade |
 
 Beat 1 shows only the last 15 Septembers (Eric, Nov 2, 2026). Tariff piece shelved for now (Eric, Nov 2, 2026).

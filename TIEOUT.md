@@ -36,7 +36,7 @@ November 2 and 3 and the four charts.
 | 4 | Rest of state -3.6% Jan, -6.6% Apr, -8.7% Sep | Panel, same month yoy | Same | supported |
 | 4 | Median county -8.6% | Panel | -8.6% | supported |
 | 5 | Payroll jobs +0.04%, manufacturing -0.3% (Sep yoy, SA) | Cache vs fresh API | +0.04%, -0.27% both | supported |
-| 5 | Chart: labor force -4.9%, jobs +0.2% since Jan 2025, SA | Cache vs fresh API | -4.89%, +0.22% | supported |
+| 5 | Chart: employed residents -4.5%, jobs +0.2% since Jan 2025, SA (chart switched from labor force Nov 3) | Cache `LASST260000000000005` and CES | -4.55%, +0.22% | supported; employed series not yet re-pulled fresh, re-check at the next tie-out |
 | 5 | Chart: no labor force estimate Oct 2025 | Cache | Missing in LAUS SA, present in CES | supported |
 | 6 | Canada share Jan to Aug 2026: MI exports 38.8%, US 14.3%; MI imports 25.5%, US 11.2% | Cache, all 8 months present | Same | supported |
 | 6 | Trade cache matches Census | Aug 2026 MI exports and imports to Canada, fresh API | Exact match | supported |
@@ -47,11 +47,11 @@ November 2 and 3 and the four charts.
 |---|---|---|---|
 | Beat 4 | BLS estimates the Detroit metro and the rest of Michigan with separate models | LAUS technical note: Detroit-Warren-Dearborn "and their respective balances of state are produced using a similar model-based approach" | supported |
 | Beat 5 | BLS re-estimates the 2026 state figures in early 2027 | Technical note: "In most years, historical data for the most recent five years are revised near the beginning of each calendar year" | supported with "usually" (fixed in findings Nov 3) |
-| Chart 1 | "Structural labor force loss, every September since 2012"; "more than 10% below the same month 20 years earlier" | Method (strict < -10%) | supported |
+| Chart 1 | "Structural labor force loss, every September since 2012"; "Share of U.S. counties and Puerto Rico municipios ... more than 10% below the same month 20 years earlier" (relabeled Nov 3) | Method (strict < -10%); universe includes 78 PR municipios | supported |
 | Chart 2 | "Michigan: 20 counties fell into structural loss in a year"; "53 of 83 are now in structural loss, up from 33" | Numbers above | supported |
 | Chart 2 | Labels Muskegon, Berrien, Calhoun, Jackson | Four largest entrants by labor force | supported |
-| Chart 3 | "Michigan's labor force is falling. Its job count is not." | -4.9% vs +0.2% since Jan 2025 | supported; 2026 values are preliminary |
-| Chart 3 | "Labor force counts residents working or looking for work. Payroll jobs count positions at Michigan employers." | DATASETS.md, CES and LAUS sections | supported |
+| Chart 3 | "Fewer Michiganders are working, but payroll jobs are not falling" (retitled Nov 3) | Employed residents -4.5%, payroll +0.2% since Jan 2025 | supported; 2026 values are model estimates, usually revised early 2027 |
+| Chart 3 | "Employed residents counts people living in Michigan who have a job. Payroll jobs count positions at Michigan employers." | DATASETS.md, CES and LAUS sections | supported |
 | Chart 4 | "Michigan trades with Canada far more than the nation does" | Shares are 38.8% vs 14.3%; in dollars the U.S. trades far more with Canada than Michigan does | fixed Nov 3: title now "Canada is a far bigger share of Michigan's trade than the nation's" | 
 
 ## Flags for Eric

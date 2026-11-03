@@ -1,7 +1,7 @@
 """Charts for the Michigan spotlight in the September 2026 update.
 
     sep26-02-mi-county-map.png      counties that entered Structural Loss in the past year
-    sep26-03-mi-labor-force-jobs.png  Michigan labor force vs payroll jobs, indexed
+    sep26-03-mi-labor-force-jobs.png  Michigan employed residents vs payroll jobs, indexed
     sep26-04-mi-canada-share.png    Canada's share of Michigan trade vs the U.S.
 
 Every value is recomputed at render time from data/classified.parquet,
@@ -108,14 +108,14 @@ def labor_force_vs_jobs(month: str) -> Path:
     c = pd.read_csv(DATA / "ces" / "mi_ces.csv", parse_dates=["date"])
     w = c.pivot(index="date", columns="series", values="jobs_k").loc["2024-01-01":f"{month}-01"]
     base = pd.Timestamp("2025-01-01")
-    lf = w.mi_laus_labor_force_sa / w.mi_laus_labor_force_sa[base] * 100 - 100
+    lf = w.mi_laus_employed_sa / w.mi_laus_employed_sa[base] * 100 - 100   # residents with a job
     jobs = w.mi_total_nonfarm_sa / w.mi_total_nonfarm_sa[base] * 100 - 100
     fig, ax = figure(8.4, 5.0)
     ax.axhline(0, color=GRID, linewidth=1.0)
     ax.plot(jobs.index, jobs, color=SKY, linewidth=2.2, solid_capstyle="round")
     ax.plot(lf.index, lf, color=CORAL, linewidth=2.2, solid_capstyle="round")
     last = lf.dropna().index[-1]
-    for s, col, label in [(jobs, SKY, "Payroll jobs"), (lf, CORAL, "Labor force")]:
+    for s, col, label in [(jobs, SKY, "Payroll jobs"), (lf, CORAL, "Employed residents")]:
         v = s[last]
         ax.scatter([last], [v], s=40, color=col, zorder=5, edgecolor=BG, linewidth=1.4)
         ax.annotate(f"{label}\n{v:+.1f}%", xy=(last, v), xytext=(10, 0), textcoords="offset points",
@@ -131,15 +131,15 @@ def labor_force_vs_jobs(month: str) -> Path:
                     linespacing=1.4, arrowprops=dict(arrowstyle="-", color=MUTED, linewidth=0.9))
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:+.0f}%" if v else "0%"))
     ax.grid(axis="y", color=GRID, linewidth=0.8)
-    frame(fig, "Michigan's labor force is falling. Its job count is not.",
-          f"Change since January 2025, seasonally adjusted, through {last:%B %Y}.\nLabor force counts "
-          "residents working or looking for work. Payroll jobs count positions at Michigan employers.",
+    frame(fig, "Fewer Michiganders are working, but payroll jobs are not falling",
+          f"Change since January 2025, seasonally adjusted, through {last:%B %Y}. Employed residents counts\n"
+          "people living in Michigan who have a job. Payroll jobs count positions at Michigan employers.",
           top=0.79)
     _restamp_source(fig, LAUS_CES)
-    fig.subplots_adjust(right=0.93)
+    fig.subplots_adjust(right=0.89)
     out = OUT / "sep26-03-mi-labor-force-jobs.png"
     fig.savefig(out, facecolor=BG)
-    print(f"wrote {out}: through {last:%Y-%m}, labor force {lf[last]:+.2f}%, jobs {jobs[last]:+.2f}%")
+    print(f"wrote {out}: through {last:%Y-%m}, employed residents {lf[last]:+.2f}%, jobs {jobs[last]:+.2f}%")
     return out
 
 

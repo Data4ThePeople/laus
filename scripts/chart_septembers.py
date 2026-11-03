@@ -50,8 +50,9 @@ def main() -> None:
     ax.grid(axis="y", color=GRID, linewidth=0.8)
     last = g.iloc[-1]
     frame(fig, f"Structural labor force loss, every {d:%B} since {g.index[0]}",
-          f"Share of U.S. counties whose labor force is more than 10% below the same month 20 years earlier.\n"
-          f"{d:%B %Y}: {int(last.sl):,} of {int(last.total):,} counties.", top=0.78)
+          f"Share of U.S. counties and Puerto Rico municipios whose labor force is more than 10% below\n"
+          f"the same month 20 years earlier. "
+          f"{d:%B %Y}: {int(last.sl):,} of {int(last.total):,}.", top=0.78)
     fig.savefig(OUT, facecolor=BG)
     print(f"wrote {OUT}"); print(g.round(1).to_string())
 
