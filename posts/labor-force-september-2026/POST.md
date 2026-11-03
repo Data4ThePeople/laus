@@ -56,8 +56,6 @@ We are treating these numbers with caution. County labor force figures are built
 
 In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and the BLS tried to make changes in real time. It reminds me of a shock to a refinery and the operator trying to monkey with the controllers to get the system back to homeostasis. But if you move the controllers too much, you can make the problem worse. Something like that may be happening now. The result is that the two primary surveys of our workforce are spitting out polar opposite signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
 
-Fewer households now answer the survey. Its response rate fell from 89.8% in September 2013 to 65.7% in September 2026. We do not yet know what is behind the gap, and we are looking into it for a future post. BLS is expected to revise the 2026 figures in early 2027.
-
 ::: divider
 
 ## What this does not tell you
@@ -70,4 +68,4 @@ Fewer households now answer the survey. Its response rate fell from 89.8% in Sep
 
 ## How we built this
 
-Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Response rates are BLS series LNU09300000. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus).
+Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus).
