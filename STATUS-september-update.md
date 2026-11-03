@@ -9,14 +9,14 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: none yet
-Step: 1
-Since: 2026-11-02
+Step: 2a (waiting for slug)
+Since: 2026-11-03
 
 ## Steps
 
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
-| 1  | Exploration and analysis | | |
+| 1  | Exploration and analysis | 2026-11-03 | Six beats; findings in docs/SEPTEMBER-FINDINGS.md; tie-outs in TIEOUT.md |
 | 2a | Draft with brackets resolved | | |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
@@ -38,3 +38,4 @@ None.
 - 2026-11-02 Tariff timeline done (docs/TARIFF-TIMELINE.md, primary sources; Section 338 proclamations 11048 and 11076 spot-checked in the Federal Register API).
 - 2026-11-03 Tariff piece shelved. Beat 1 shows the last 15 Septembers; July record dropped. Own and independent tie-outs done (TIEOUT.md): no number differences; fixes made to the Canada chart title, revision wording, Puerto Rico label and DATASETS.md. Jobs chart now compares employed residents with payroll jobs. Eric chose to explain the Michigan drop with the CPS participation finding, stated as lower confidence and directional because the sample is small.
 - 2026-11-03 Second independent tie-out (jobs chart, CPS): values match; prime-age outside-Detroit change and CPS age split not supported. Eric chose beat 5: published LAUS participation rate first, CPS statewide direction at lower confidence, Census estimates for aging; prime-age and age-split numbers left out. "Nonfarm" added to the jobs chart subtitle.
+- 2026-11-03 Step 1 confirmed by Eric. Next: 2a, needs a slug.
