@@ -155,3 +155,12 @@ The post is now a short national update (`posts/labor-force-september-2026/`). R
 - Nov 3: payroll survey added for Apr to Sep 2026 (per Eric). `scripts/cps_quality.py` monthly comparison, NSA: states with employed residents trailing jobs by 2+ points: Sep 2025 0 (QCEW); Jan to Mar 2026 7, 4, 6 (QCEW); Apr to Sep 2026 12, 7, 18, 17, 15, 14 (CES); prior high 18 in Aug 2021 (QCEW). Michigan Sep 2026: employed -4.96%, CES +0.03%, gap -4.99, largest of 51. CES vs QCEW mean absolute difference across states: 0.07 to 0.46 per month, 2015 to Mar 2026. Chart `sep26-11-state-gaps.png` from `scripts/chart_state_gaps.py`. Before 2020, no month above 4 in either direction. Own check only; not independently checked.
 - Superseded: the "four states in January to March" (quarterly) sentence and Michigan's -2.1% vs +0.6% are no longer in the post.
 
+## Fourth independent tie-out (Nov 3, 2026): labor-force-september-2026
+
+Fresh agent, raw data pulled again (LAUS la.data.64.County posted Oct 28, 2026; BLS API state LAUST..05 and SMU..01; QCEW industry/10 files 2014 Q1 to 2026 Q1), own code, no access to scripts, data, outputs, docs or this file.
+
+- Numbers: every number in the post reproduced exactly. National counts (1,132 of 3,214; +40 on 3,207; 129 in, 89 out), all 15 Septembers bars and the ranking, all six-band endpoints and section numbers (374, 11.64%; 983, 30.58%; 60.27%, 60.98%, 30.37%), state net gains (MI 20/0, MN 10/0, OK 10 in 1 out, TN 9/0; next IA 7), every state-gap count stated (Sep 2026 14, Jun 2026 18, Aug 2021 18, pre-2020 max 4 both directions, ahead peak 28 in Mar 2021, 2025 trailing 0 to 3), Michigan Sep 2026 -4.96% vs +0.03%, gap -4.99, largest (next AZ -4.70).
+- DATASETS.md difference: "CES vs QCEW 0.07 to 0.21 in each year 2015 to 2024" did not reproduce (monthly means 0.071 to 0.368; 2021 is highest). Fixed Nov 3 to monthly range 0.07 to 0.37 and pooled 0.16. Not in the post.
+- Wording flags: (1) Katrina bullet says the parishes have no Sep 2025 data; they lack Sep 2005, so no 20-year change; (2) subtitle "up 40 from a year earlier": raw counts differ by 41, 40 is the matched universe; (3) "polar opposite signals" overstates (jobs flat, not rising), and LAUS is a model and QCEW a census; (4) the refinery paragraph implies a cause, hedged with "may", and sits against the bullet "This post does not say what caused the change"; (5) chart title fits June 2026 (18), September is 14.
+- Could not check: whether BLS model changes play a part in 2026; which side of the gap is wrong; the interactive map.
+

@@ -213,7 +213,8 @@ changes are used.
 use the gap against QCEW where QCEW is published (through March 2026) and
 the gap against CES after that (`data/ces/state_gaps_monthly.csv`, column
 `source`). Across states, the CES one-year change has differed from QCEW's
-by 0.07 to 0.21 points on average in each year 2015 to 2024, up to 0.46 in
+by 0.07 to 0.37 points in each month 2015 to 2024 (monthly mean across
+states; 0.16 pooled over all state-months 2015 to March 2026), up to 0.46 in
 late 2025 and 0.36 to 0.39 in January to March 2026. In Michigan, CES ran
 below QCEW in early 2026 (January to March: CES -0.04% to -0.21%, QCEW
 +0.29% to +0.92%), so using CES here, if anything, makes Michigan's gap
