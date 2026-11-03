@@ -49,6 +49,7 @@ November 2 and 3 and the four charts.
 | 4 | Chart 6 (Detroit vs rest), monthly 2026: rest -3.6, -4.1, -4.9, -6.6, -7.1, -7.9, -7.2, -7.0, -8.7; Detroit -0.2 to +2.3, Sep +0.6 | County panel, full monthly index | Jan, Apr, Sep match both earlier checks; other months from the same panel | supported; Feb, Mar, May to Aug not independently checked |
 | 4 | Draft said the drop "grew through the year" | Monthly series eased in Jul and Aug | Reworded Nov 3 | fixed |
 | 5 | Chart 7 (participation): MI 61.8 (Jan 2024) to 58.5; OH 61.2; US 61.8; Oct 2025 missing for all three | Cache; Sep values match fresh API | Same | supported |
+| 5 | CPS prime age (25-54) statewide 84.6% to 82.5%, "close to the margin of error" | `scripts/cps_prime_age_error.py`: household bootstrap SE 1.0 (z 2.15); with assumed design effect 1.5 to 2.0, z 1.75 to 1.5 | Same | supported as worded; not independently checked |
 | 6 | Canada share Jan to Aug 2026: MI exports 38.8%, US 14.3%; MI imports 25.5%, US 11.2% | Cache, all 8 months present | Same | supported |
 | 6 | Trade cache matches Census | Aug 2026 MI exports and imports to Canada, fresh API | Exact match | supported |
 
