@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2g
+Step: complete
 Since: 2026-11-03
 
 ## Steps
@@ -23,7 +23,7 @@ Since: 2026-11-03
 | 2d | Hero 1680x1080 + alt text | 2026-11-04 | Reconfirmed; September chart, padded; alt 393 chars |
 | 2e | SEO | 2026-11-04 | Reconfirmed; description updated to match the rewrite |
 | 2f | Pushed to Prismic (draft) | 2026-11-04 | Draft auqkIhIAACwAbEjm, Migration Release; Nov 4, 6:30 a.m. Eastern; heading spacers 5px (Eric, in Prismic) |
-| 2g | Mailchimp teaser | | |
+| 2g | Mailchimp teaser | 2026-11-04 | EMAIL.md approved; Michigan chart in the email |
 
 ## Stale
 
@@ -85,3 +85,4 @@ Since: 2026-11-03
 - 2026-11-04 Heading spacers set to 5px in POST.md to match Eric's Prismic edits (not re-pushed). New standing rule in SLICES.md and PROCESS.md.
 - 2026-11-04 Step 2f done.
 - 2026-11-04 Step 2g opened: EMAIL.md drafted from Eric's text (Michigan chart as the email chart); hero JPG 91KB.
+- 2026-11-04 Step 2g done. Post complete. Social posts next (Eric).
