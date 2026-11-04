@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2e (not started)
+Step: 2e
 Since: 2026-11-03
 
 ## Steps
@@ -77,3 +77,4 @@ Since: 2026-11-03
 - 2026-11-04 Step 2c done (re-run).
 - 2026-11-04 Step 2d re-check: hero unchanged, hero check ok, source matches the September chart.
 - 2026-11-04 Step 2d done (reconfirmed).
+- 2026-11-04 Step 2e re-check: meta description updated to match the rewrite.
