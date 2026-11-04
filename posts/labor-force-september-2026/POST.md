@@ -2,7 +2,8 @@
 title: "September 2026 update: 35% of counties in structural labor force loss"
 subtitle: 1,132 U.S. counties were in structural loss in September, a net increase of 40 among counties with data in both years. Half the increase is in Michigan, and we are checking those numbers.
 slug: labor-force-september-2026
-date: 2026-11-03
+date: 2026-11-04
+time: 06:30:00-05:00
 section: Data 4 Thought
 hero: images/labor-force-september-2026-hero-1680x1080.png
 hero_alt: Bar chart of the share of U.S. counties and Puerto Rico municipios in structural labor force loss each September from 2012 to 2026. The share rises from 12.3% in 2012 to 26.6% in 2019, jumps to 33.8% in 2020, peaks at 36.2% in 2022, falls to 31.6% in 2024, then rises to 34.0% in 2025 and 35.2% in 2026, which is highlighted. In September 2026, 1,132 of 3,214 counties were in structural loss.

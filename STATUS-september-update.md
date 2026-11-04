@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2f (not started)
+Step: 2f
 Since: 2026-11-03
 
 ## Steps
@@ -67,3 +67,4 @@ Since: 2026-11-03
 - 2026-11-03 Step 2d done.
 - 2026-11-03 Step 2e: meta title, description, keywords written; links to labor-force-history-viz and five-takeaways added.
 - 2026-11-03 Step 2e done.
+- 2026-11-03 Step 2f: date set to 2026-11-04, time 06:30 Eastern (EST, -05:00; DST ended Nov 1). Pushed to Prismic as draft auqkIhIAACwAbEjm in the Migration Release; 4 images uploaded. Tags and author empty.
