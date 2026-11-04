@@ -101,7 +101,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "Looking at the 3,207 counties with data in both years, the count rose by 40 from September 2025. In all, 129 counties entered the structural loss group while 89 left it.",
+            "text": "Looking at the 3,207 counties with data in both years, the number of counties in structural loss rose by 40 from September 2025. In all, 129 counties entered the structural loss group while 89 left it.",
             "spans": [],
             "direction": "ltr"
           },
@@ -172,13 +172,13 @@
           },
           {
             "type": "paragraph",
-            "text": "Structural loss is one of six bands. Fast growth has become rarer. In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier, the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).",
+            "text": "In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier, the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).",
             "spans": [],
             "direction": "ltr"
           },
           {
             "type": "paragraph",
-            "text": "At the other end, 60.3% of counties had a smaller labor force than 20 years earlier, counting structural loss and at-risk contraction together. That is close to 2021 and 2022 (61.0% in both) and up from 30.4% in 2012.",
+            "text": "At the other end, 60.3% of counties had a smaller labor force than 20 years earlier, counting structural loss and at-risk contraction together. That is close to 2021 and 2022 (61.0% in both) and up from just 30.4% in 2012.",
             "spans": [],
             "direction": "ltr"
           },
@@ -255,13 +255,61 @@
           },
           {
             "type": "paragraph",
-            "text": "For now, we are treating these numbers with caution. County labor force figures are built from state estimates that lean heavily on a household survey, and in 2026 that survey has drifted away from the counts of jobs that employers report. In September, the one-year change in employed residents trailed the change in jobs by 2 points or more in 14 states, and Michigan's gap was the largest. From 2015 to 2019, that never happened in more than four states in a month.",
+            "text": "Initially, the rest of this post was about Michigan and its rapid labor force decline in 2026. But as we worked through our validation steps of the data, something concerning arose. Michigan's labor data in this BLS database disagrees with Michigan's data in another BLS labor database. Now, the two databases are different. They are based on surveys of different people. The data in our labor force visualization comes mainly from a survey of American households. The other data comes from a survey of businesses. If we asked the first group of Michiganders, \"how many of you are employed,\" and the second group, \"how many employed people do you have,\" the answers should be at least similar, right? They are not. The employer data says jobs are flat in Michigan. The population data says that employed residents are down an astounding 4.5% since January 2025. The chart below shows both Michigan measures since January 2024.",
             "spans": [],
             "direction": "ltr"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "blog_body_content_image",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "image": {
+          "alt": "Line chart from January 2024 to September 2026 showing the change since January 2025 in two Michigan series, seasonally adjusted. Payroll jobs stay within a fraction of a percent of zero and end at plus 0.2%. Employed residents decline slowly through 2025, then fall faster in 2026 and end at minus 4.5%. The employed residents line has a gap at October 2025, when no estimate was published.",
+          "copyright": null
+        },
+        "source_text": [
           {
             "type": "paragraph",
-            "text": "The chart below shows each month since 2015. For each state, we compare two numbers: how much the count of employed residents (based on the household survey) changed from a year earlier, and how much the count of jobs (as reported by employers) changed. If those two numbers are within 2 points of each other, the state is not counted. Michigan in September is a state that is counted. Its employed residents fell 5.0% while its jobs were about flat (up 0.03%), a gap of about 5 points.",
+            "text": "Michigan's two measures of work split apart in 2026. Source: U.S. Bureau of Labor Statistics (LAUS, CES); Data 4 The People analysis.",
+            "spans": [
+              {
+                "start": 0,
+                "end": 133,
+                "type": "em"
+              }
+            ],
+            "direction": "ltr"
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
+          {
+            "type": "paragraph",
+            "text": "So, we went looking through other states' data. The chart below shows the problem. It takes a minute to sink in, but it's worth the effort. For each state, we compare two numbers: how much the count of employed residents (based on the household survey) changed from a year earlier, and how much the count of jobs (as reported by employers) changed. If those two numbers are within 2 percentage points of each other, the state is not counted.",
             "spans": [],
             "direction": "ltr"
           },
@@ -326,7 +374,7 @@
         "paragraph_text": [
           {
             "type": "paragraph",
-            "text": "In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and BLS tried to make changes in real time. It reminds me of a shock to a refinery and the control room operator trying to monkey with the valves to get the system back to homeostasis. But if you move the valves too much, you risk making the problem worse. Something like that may be happening now. The result is that the two primary measures of our workforce are spitting out conflicting signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.",
+            "text": "Clearly, in 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and BLS tried to make changes in real time. It reminds me of a shock to a refinery and the control room operator trying to monkey with the valves to get the system back to homeostasis. But if you move the valves too much, you risk making the problem worse. Something like that may be happening now. The result is that the two primary measures of our workforce are spitting out conflicting signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.",
             "spans": [],
             "direction": "ltr"
           },

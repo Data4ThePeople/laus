@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2c (not started)
+Step: 2c
 Since: 2026-11-03
 
 ## Steps
@@ -73,3 +73,4 @@ Since: 2026-11-03
 - 2026-11-04 Back to 2b (Eric: "i ended up making a lot of changes"). First section in: "But can we trust the latest data?", with the Michigan employed vs payroll chart (sep26-03) back in per his bracket.
 - 2026-11-04 2b: accepted 1, 2, 3, 5, 6 on the data-trust section; Michigan chart retitled; DATASETS.md covers the SA Michigan series.
 - 2026-11-04 Step 2b done (second time). 2c, 2d, 2e and 2f to re-run.
+- 2026-11-04 Step 2c re-run: 35 blocks, 22 slices, 4 chart images (Michigan chart sep26-03 new).
