@@ -21,6 +21,8 @@ dividers: false
 
 ## The national picture
 
+::: spacer 20px
+
 The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below, from our free [interactive labor force map](https://www.data4thepeople.com/p/labor-force-history-viz), shows every county's 20-year change, month by month, through September 2026.
 
 <iframe src="https://data4thepeople.github.io/laus/" width="100%" height="780" style="border:0" title="Twenty-year change in labor force by county"></iframe>
@@ -35,6 +37,8 @@ The chart below shows the share of counties in structural loss for every Septemb
 
 ## The other five bands
 
+::: spacer 20px
+
 In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier, the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).
 
 At the other end, 60.3% of counties had a smaller labor force than 20 years earlier, counting structural loss and at-risk contraction together. That is close to 2021 and 2022 (61.0% in both) and up from just 30.4% in 2012.
@@ -45,6 +49,8 @@ The chart below shows the share of counties in each band for every September sin
 *Fewer fast-growing counties than in any September since 2012. Source: U.S. Bureau of Labor Statistics (LAUS); Data 4 The People analysis.*
 
 ## But can we trust the latest data?
+
+::: spacer 20px
 
 One state accounts for half of the net increase of 40 counties. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
 
