@@ -1,6 +1,6 @@
 ---
 title: "September 2026 update: 35% of counties in structural labor force loss"
-subtitle: 1,132 U.S. counties were in structural loss in September, up 40 from a year earlier. Half the increase is in Michigan, and we are checking those numbers.
+subtitle: 1,132 U.S. counties were in structural loss in September, a net increase of 40 among counties with data in both years. Half the increase is in Michigan, and we are checking those numbers.
 slug: labor-force-september-2026
 date: 2026-11-03
 section: Data 4 Thought
@@ -47,14 +47,14 @@ The chart below shows the share of counties in each band for every September sin
 
 ## But can we trust the data?
 
-One state accounts for half of that net increase. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
+One state accounts for half of the net increase of 40 counties. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
 
-We are treating these numbers with caution. County labor force figures are built from state estimates that lean heavily on a household survey, and in 2026 that survey has drifted away from counts of jobs. In September, the count of employed residents trailed job counts by 2 points or more in 14 states, and Michigan's gap was the largest. Before 2020, that never happened in more than four states in a month. The chart below shows each month since 2015.
+We are treating these numbers with caution. County labor force figures are built from state estimates that lean heavily on a household survey, and in 2026 that survey has drifted away from counts of jobs. In September, the one-year change in employed residents trailed the change in jobs by 2 points or more in 14 states, and Michigan's gap was the largest. From 2015 to 2019, that never happened in more than four states in a month. The chart below shows each month since 2015.
 
 ![Bar chart, monthly from January 2015 to September 2026, of the number of states, of 50 plus DC, where the one-year change in employed residents differs from jobs by 2 points or more. Bars above the line: employed residents ran ahead; below: they trailed. A dashed line marks March 2020. Before it, counts stay under 5. Up to 28 states ran ahead in 2020 and early 2021. Trailing counts reach 18 in August 2021, are 0 to 3 in 2025, then 18 in June 2026 and 14 in September 2026.](images/sep26-11-state-gaps.png)
-*Employed residents trail jobs in as many states as in 2021. Source: U.S. Bureau of Labor Statistics (LAUS, QCEW, CES); Data 4 The People analysis.*
+*Employed residents trailed jobs in as many states in June 2026 as at the 2021 high. Source: U.S. Bureau of Labor Statistics (LAUS, QCEW, CES); Data 4 The People analysis.*
 
-In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and the BLS tried to make changes in real time. It reminds me of a shock to a refinery and the operator trying to monkey with the controllers to get the system back to homeostasis. But if you move the controllers too much, you can make the problem worse. Something like that may be happening now. The result is that the two primary surveys of our workforce are spitting out polar opposite signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
+In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and BLS tried to make changes in real time. It reminds me of a shock to a refinery and the operator trying to monkey with the controllers to get the system back to homeostasis. But if you move the controllers too much, you can make the problem worse. Something like that may be happening now. The result is that the two primary surveys of our workforce are spitting out conflicting signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
 
 We will be coming back to this wonky but immensely important topic in the coming weeks and months. Our goal here at Data 4 The People is to bring public data to you in a form that can bring insight, spur discussion, and lead to positive change. But we have to go into working with public data with a skeptical eye, especially as government agencies rely on models stretched thin to gross up surveys with [worsening response rates](https://www.bls.gov/cps/methods/response_rates.htm). We'll do our best to uncover discrepancies between datasets to help you understand what to trust, and what to hold lightly.
 
@@ -65,8 +65,8 @@ We will be coming back to this wonky but immensely important topic in the coming
 - County labor force figures are model estimates, not direct counts. BLS controls them to a state or area total, so a small county's number is partly a share of a larger estimate.
 - The 2026 figures are preliminary and are expected to change in the early-2027 revision.
 - Employed residents and job counts measure different things: people where they live versus jobs where they are. They are not expected to match exactly. QCEW counts are about six months behind, so April to September 2026 uses the payroll survey, which is itself a sample survey and will be checked against QCEW when those counts come out.
-- Seven New Orleans-area parishes have no data for September 2025 because of a gap in 2005 after Hurricane Katrina. That is why the year-over-year comparison uses 3,207 counties.
-- This post does not say what caused the change.
+- Seven New Orleans-area parishes have no 20-year comparison for September 2025 because their September 2005 data are missing after Hurricane Katrina. That is why the year-over-year comparison uses 3,207 counties.
+- We do not yet know what is causing the gap between the surveys and the job counts. The refinery comparison is a possibility, not a finding.
 
 ## How we built this
 

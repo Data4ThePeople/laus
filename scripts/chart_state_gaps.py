@@ -52,10 +52,10 @@ def main() -> None:
     ax.set_xlim(pd.Timestamp("2014-11-01"), pd.Timestamp("2026-12-01"))
     ax.grid(axis="y", color=GRID, linewidth=0.8)
     last = t.index[ok][-1]
-    frame(fig, "Employed residents trail jobs in as many states as in 2021",
+    frame(fig, "Employed residents trailed jobs in as many states in June 2026\nas at the 2021 high",
           "Number of states (of 50 plus DC) where the one-year change in employed residents differs from the\n"
           "one-year change in jobs by 2 points or more. Monthly, not seasonally adjusted. Jobs from tax records\n"
-          f"(QCEW) through March 2026, payroll survey (CES) April to {last:%B %Y}. No estimate Oct 2025.", top=0.74)
+          f"(QCEW) through March 2026, payroll survey (CES) April to {last:%B %Y}. No estimate Oct 2025.", top=0.68, sub_y=0.845)
     fig.text(0.055, 0.035, "U.S. Bureau of Labor Statistics (LAUS, QCEW, CES); Data 4 The People analysis.",
              color=MUTED, fontsize=8.5, backgroundcolor=BG)
     fig.savefig(OUT, facecolor=BG)

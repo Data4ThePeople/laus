@@ -164,3 +164,5 @@ Fresh agent, raw data pulled again (LAUS la.data.64.County posted Oct 28, 2026; 
 - Wording flags: (1) Katrina bullet says the parishes have no Sep 2025 data; they lack Sep 2005, so no 20-year change; (2) subtitle "up 40 from a year earlier": raw counts differ by 41, 40 is the matched universe; (3) "polar opposite signals" overstates (jobs flat, not rising), and LAUS is a model and QCEW a census; (4) the refinery paragraph implies a cause, hedged with "may", and sits against the bullet "This post does not say what caused the change"; (5) chart title fits June 2026 (18), September is 14.
 - Could not check: whether BLS model changes play a part in 2026; which side of the gap is wrong; the interactive map.
 
+
+- 2026-11-03: Wording fixes from the fourth tie-out applied (Katrina bullet now says September 2005 is missing; subtitle says net increase of 40 among counties with data in both years; state-gap chart title now cites June 2026 at 18). No numbers changed.

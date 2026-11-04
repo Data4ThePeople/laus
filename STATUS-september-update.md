@@ -52,3 +52,5 @@ Since: 2026-11-03
 - 2026-11-03 Note section cut to one chart (state gaps) and three short paragraphs, per Eric; response-rate chart removed from the post (kept in outputs/). Eric's paragraph on 2020 and the refinery analogy added after the chart (typo fixes only). Follow-up study notes in docs/FOLLOWUP-CPS-QCEW-GAP.md.
 - 2026-11-03 Eric removed the response-rate paragraph; response rates are no longer in the post (DATASETS.md section removed; notes stay in docs/FOLLOWUP-CPS-QCEW-GAP.md).
 - 2026-11-03 Eric's closing paragraph added; "worsening response rates" links to the BLS response-rate page; response-rate source restored in DATASETS.md.
+
+- 2026-11-03: Eric accepted edits 1-4 and 6-10 (rejected 5, title unchanged): subtitle and body wording, Katrina bullet corrected, cause bullet rewritten, state-gap chart retitled for June 2026 (two-line title).

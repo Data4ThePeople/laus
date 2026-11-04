@@ -30,10 +30,10 @@ def figure(width: float = 8.4, height: float = 5.0):
     return fig, ax
 
 
-def frame(fig, title: str, subtitle: str, top: float = 0.80) -> None:
+def frame(fig, title: str, subtitle: str, top: float = 0.80, sub_y: float = 0.893) -> None:
     """Title, subtitle, source line and credit, in the house positions."""
     fig.text(0.055, 0.955, title, color=INK, fontsize=15, fontweight="bold", va="top")
-    fig.text(0.055, 0.893, subtitle, color=MUTED, fontsize=10, va="top")
+    fig.text(0.055, sub_y, subtitle, color=MUTED, fontsize=10, va="top")
     fig.text(0.055, 0.035, SOURCE, color=MUTED, fontsize=8.5)
     fig.text(0.945, 0.035, CREDIT, color=MUTED, fontsize=8.5, ha="right")
     fig.subplots_adjust(left=0.075, right=0.975, top=top, bottom=0.115)
