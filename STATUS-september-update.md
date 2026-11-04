@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2c (not started)
+Step: 2c
 Since: 2026-11-03
 
 ## Steps
@@ -61,3 +61,4 @@ Since: 2026-11-03
 - 2026-11-03 Step 2b opened.
 - 2026-11-03 2b look-over: accepted items 1-4 (numeral start, QCEW defined, "measures" not "surveys", unused image removed).
 - 2026-11-03 Step 2b done.
+- 2026-11-03 Step 2c opened. HTML note removed from POST.md (it had become the drop cap). Embed still fits 780px at desktop widths (checked at 600, 780, 1000, 1280).

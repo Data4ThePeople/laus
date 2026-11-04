@@ -18,8 +18,6 @@ dividers: false
 
 # September 2026 update: 35% of counties in structural labor force loss
 
-<!-- Short national update (Eric, Nov 3, 2026). The Michigan spotlight is on hold until the CPS vs QCEW gap is vetted. -->
-
 ## The national picture
 
 The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below shows every county's 20-year change, month by month, through September 2026.
