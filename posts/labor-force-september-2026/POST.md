@@ -6,9 +6,9 @@ date: 2026-11-03
 section: Data 4 Thought
 hero: images/labor-force-september-2026-hero-1680x1080.png
 hero_alt: Bar chart of the share of U.S. counties and Puerto Rico municipios in structural labor force loss each September from 2012 to 2026. The share rises from 12.3% in 2012 to 26.6% in 2019, jumps to 33.8% in 2020, peaks at 36.2% in 2022, falls to 31.6% in 2024, then rises to 34.0% in 2025 and 35.2% in 2026, which is highlighted. In September 2026, 1,132 of 3,214 counties were in structural loss.
-meta_title:
-description:
-keywords:
+meta_title: Labor Force Decline by County: September 2026 Update
+description: In September 2026, 35% of U.S. counties had a labor force more than 10% below 20 years earlier. Why we are treating the newest numbers with caution.
+keywords: labor force by county, structural labor force decline, counties losing workers, county labor force data, labor force September 2026, household survey vs payroll jobs, CPS response rates, Michigan labor force
 schema_type: article
 drop_cap: true
 heading_spacer: 20px
@@ -20,7 +20,7 @@ dividers: false
 
 ## The national picture
 
-The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below shows every county's 20-year change, month by month, through September 2026.
+The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below, from our free [interactive labor force map](https://www.data4thepeople.com/p/labor-force-history-viz), shows every county's 20-year change, month by month, through September 2026.
 
 <iframe src="https://data4thepeople.github.io/laus/" width="100%" height="780" style="border:0" title="Twenty-year change in labor force by county"></iframe>
 ::: spacer 20px
@@ -72,4 +72,4 @@ We will be coming back to this wonky but immensely important topic in the coming
 
 ## How we built this
 
-Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus).
+Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus). For a guide to reading the map, see [Five takeaways from our new labor force map](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline).

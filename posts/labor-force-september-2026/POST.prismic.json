@@ -3,6 +3,9 @@
   "page_subtitle": "1,132 U.S. counties were in structural loss in September, a net increase of 40 among counties with data in both years. Half the increase is in Michigan, and we are checking those numbers.",
   "published_date": "2026-11-03",
   "updated_date": "2026-11-03",
+  "meta_title": "Labor Force Decline by County: September 2026 Update",
+  "meta_description": "In September 2026, 35% of U.S. counties had a labor force more than 10% below 20 years earlier. Why we are treating the newest numbers with caution.",
+  "meta_keywords": "labor force by county, structural labor force decline, counties losing workers, county labor force data, labor force September 2026, household survey vs payroll jobs, CPS response rates, Michigan labor force",
   "make_this_main_post": false,
   "slices": [
     {
@@ -32,8 +35,19 @@
         "drop_cap_text": [
           {
             "type": "paragraph",
-            "text": "The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below shows every county's 20-year change, month by month, through September 2026.",
-            "spans": [],
+            "text": "The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below, from our free interactive labor force map, shows every county's 20-year change, month by month, through September 2026.",
+            "spans": [
+              {
+                "start": 373,
+                "end": 400,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/labor-force-history-viz",
+                  "target": "_blank"
+                }
+              }
+            ],
             "direction": "ltr"
           }
         ]
@@ -402,7 +416,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our GitHub repository.",
+            "text": "Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our GitHub repository. For a guide to reading the map, see Five takeaways from our new labor force map.",
             "spans": [
               {
                 "start": 653,
@@ -413,6 +427,16 @@
                   "url": "https://github.com/Data4ThePeople/laus",
                   "target": "_blank"
                 }
+              },
+              {
+                "start": 708,
+                "end": 751,
+                "type": "hyperlink",
+                "data": {
+                  "link_type": "Web",
+                  "url": "https://www.data4thepeople.com/p/five-takeaways-labor-force-decline",
+                  "target": "_blank"
+                }
               }
             ],
             "direction": "ltr"
@@ -421,5 +445,5 @@
       }
     }
   ],
-  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"September 2026 update: 35% of counties in structural labor force loss\",\n  \"description\": \"\",\n  \"datePublished\": \"2026-11-03T07:00:00-04:00\",\n  \"dateModified\": \"2026-11-03T07:00:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/labor-force-september-2026\"\n  }\n}"
+  "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"September 2026 update: 35% of counties in structural labor force loss\",\n  \"description\": \"In September 2026, 35% of U.S. counties had a labor force more than 10% below 20 years earlier. Why we are treating the newest numbers with caution.\",\n  \"datePublished\": \"2026-11-03T07:00:00-04:00\",\n  \"dateModified\": \"2026-11-03T07:00:00-04:00\",\n  \"articleSection\": \"Data 4 Thought\",\n  \"license\": \"https://www.data4thepeople.com/terms-of-use\",\n  \"inLanguage\": \"en-US\",\n  \"isAccessibleForFree\": true,\n  \"keywords\": [\n    \"labor force by county\",\n    \"structural labor force decline\",\n    \"counties losing workers\",\n    \"county labor force data\",\n    \"labor force September 2026\",\n    \"household survey vs payroll jobs\",\n    \"CPS response rates\",\n    \"Michigan labor force\"\n  ],\n  \"author\": {\n    \"@type\": \"Person\",\n    \"name\": \"Eric Pachman\",\n    \"url\": \"https://www.data4thepeople.com/authors/eric-pachman\"\n  },\n  \"publisher\": {\n    \"@type\": \"Organization\",\n    \"name\": \"Data 4 The People\",\n    \"url\": \"https://data4thepeople.com\"\n  },\n  \"mainEntityOfPage\": {\n    \"@type\": \"WebPage\",\n    \"@id\": \"https://www.data4thepeople.com/p/labor-force-september-2026\"\n  }\n}"
 }

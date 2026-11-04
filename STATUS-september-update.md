@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2e (not started)
+Step: 2e
 Since: 2026-11-03
 
 ## Steps
@@ -65,3 +65,4 @@ Since: 2026-11-03
 - 2026-11-03 Step 2d opened.
 - 2026-11-03 Hero: September structural-loss chart padded to 1680x1080 (hero pad); hero_alt set.
 - 2026-11-03 Step 2d done.
+- 2026-11-03 Step 2e: meta title, description, keywords written; links to labor-force-history-viz and five-takeaways added.
