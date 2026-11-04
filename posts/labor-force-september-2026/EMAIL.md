@@ -3,7 +3,7 @@
 Post URL: https://www.data4thepeople.com/p/labor-force-september-2026
 
 ```
-Subject:  Labor force update: 35% of counties
+Subject:  Labor force update, and a data warning
 Preview:  Michigan's two measures of work disagree, and it is not the only state.
 ```
 
