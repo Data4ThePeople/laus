@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2f (not started)
+Step: 2f
 Since: 2026-11-03
 
 ## Steps
@@ -79,3 +79,4 @@ Since: 2026-11-03
 - 2026-11-04 Step 2d done (reconfirmed).
 - 2026-11-04 Step 2e re-check: meta description updated to match the rewrite.
 - 2026-11-04 Step 2e done (reconfirmed).
+- 2026-11-04 Step 2f re-run: draft auqkIhIAACwAbEjm updated in the Migration Release (22 slices; Michigan chart uploaded). Date 2026-11-04, 06:30 Eastern.
