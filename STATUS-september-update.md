@@ -54,3 +54,5 @@ Since: 2026-11-03
 - 2026-11-03 Eric's closing paragraph added; "worsening response rates" links to the BLS response-rate page; response-rate source restored in DATASETS.md.
 
 - 2026-11-03: Eric accepted edits 1-4 and 6-10 (rejected 5, title unchanged): subtitle and body wording, Katrina bullet corrected, cause bullet rewritten, state-gap chart retitled for June 2026 (two-line title).
+
+- 2026-11-03: Eric edited the caution paragraph; accepted wording fix and a reading guide for the state-gap chart (Michigan example: -5.0% vs +0.03%, from data/ces/state_gaps_monthly.csv).
