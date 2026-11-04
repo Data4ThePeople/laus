@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2b
+Step: 2c (not started)
 Since: 2026-11-03
 
 ## Steps
@@ -18,7 +18,7 @@ Since: 2026-11-03
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-03 | Six beats; findings in docs/SEPTEMBER-FINDINGS.md; tie-outs in TIEOUT.md |
 | 2a | Draft with brackets resolved | 2026-11-03 | Reconfirmed after the pivot to a short national update; three charts plus live map; four independent tie-outs |
-| 2b | Eric's edit, Claude's look-over | | |
+| 2b | Eric's edit, Claude's look-over | 2026-11-03 | Look-over items 1-4 accepted; heading "But can we trust the latest data?" |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
 | 2e | SEO | | |
@@ -60,3 +60,4 @@ Since: 2026-11-03
 - 2026-11-03 Step 2a done (reconfirmed after the pivot).
 - 2026-11-03 Step 2b opened.
 - 2026-11-03 2b look-over: accepted items 1-4 (numeral start, QCEW defined, "measures" not "surveys", unused image removed).
+- 2026-11-03 Step 2b done.
