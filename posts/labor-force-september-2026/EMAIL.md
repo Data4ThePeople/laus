@@ -27,6 +27,10 @@ September 2026 update: 35% of counties in structural labor force loss
 The Bureau of Labor Statistics posted county labor force data through September 2026 on October 28. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier.
 
 One state accounts for half of the net increase of 40 counties. In Michigan, 20 counties entered structural loss in the past year and none left.
+
+Initially, this post was about Michigan and its rapid labor force decline in 2026. But as we worked through our validation steps, something concerning arose. Michigan's data in one BLS labor database disagrees with its data in another.
+
+If we asked a group of Michiganders, "how many of you are employed," and a group of employers, "how many employed people do you have," the answers should be at least similar, right? They are not. The employer data says jobs are flat in Michigan. The population data says employed residents are down an astounding 4.5% since January 2025.
 ```
 
 ## 4. Chart
@@ -40,10 +44,6 @@ Line chart from January 2024 to September 2026 showing the change since January 
 ## 5. Body, part two
 
 ```
-Initially, this post was about Michigan and its rapid labor force decline in 2026. But as we worked through our validation steps, something concerning arose. Michigan's data in one BLS labor database disagrees with its data in another.
-
-If we asked a group of Michiganders, "how many of you are employed," and a group of employers, "how many employed people do you have," the answers should be at least similar, right? They are not. The employer data says jobs are flat in Michigan. The population data says employed residents are down an astounding 4.5% since January 2025.
-
 So, we went looking through other states' data. What we found takes a minute to sink in, but it's worth the effort. Not knowing which measure is correct may be even scarier than knowing.
 ```
 
