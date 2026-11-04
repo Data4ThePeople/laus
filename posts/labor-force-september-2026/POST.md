@@ -21,7 +21,7 @@ dividers: false
 
 ## The national picture
 
-::: spacer 20px
+::: spacer 5px
 
 The Bureau of Labor Statistics (BLS) posted county labor force data through September 2026 on October 28, 2026. In September, 1,132 of 3,214 U.S. counties and Puerto Rico municipios were in structural labor force loss. That means their labor force was more than 10% below the same month 20 years earlier. It works out to 35.2% of all counties. The map below, from our free [interactive labor force map](https://www.data4thepeople.com/p/labor-force-history-viz), shows every county's 20-year change, month by month, through September 2026.
 
@@ -37,7 +37,7 @@ The chart below shows the share of counties in structural loss for every Septemb
 
 ## The other five bands
 
-::: spacer 20px
+::: spacer 5px
 
 In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier, the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).
 
@@ -50,7 +50,7 @@ The chart below shows the share of counties in each band for every September sin
 
 ## But can we trust the latest data?
 
-::: spacer 20px
+::: spacer 5px
 
 One state accounts for half of the net increase of 40 counties. In Michigan, 20 counties entered structural loss in the past year and none left. The next largest net gains were in Minnesota (10), Oklahoma (9) and Tennessee (9).
 
@@ -74,7 +74,7 @@ We will be coming back to this wonky but immensely important topic in the coming
 
 ## What this does not tell you
 
-::: spacer 20px
+::: spacer 5px
 
 - County labor force figures are model estimates, not direct counts. BLS controls them to a state or area total, so a small county's number is partly a share of a larger estimate.
 - The 2026 figures are preliminary and are expected to change in the early-2027 revision.
@@ -84,6 +84,6 @@ We will be coming back to this wonky but immensely important topic in the coming
 
 ## How we built this
 
-::: spacer 20px
+::: spacer 5px
 
 Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus). For a guide to reading the map, see [Five takeaways from our new labor force map](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline).

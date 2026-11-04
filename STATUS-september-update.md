@@ -83,3 +83,4 @@ Since: 2026-11-03
 - 2026-11-04 Explicit 20px spacers after "What this does not tell you" and "How we built this" (Eric); draft updated.
 - 2026-11-04 Spacers moved: 20px between each closing heading and its text (Eric meant this); end-of-post spacer removed; draft updated.
 - 2026-11-04 20px spacer after every ## heading, before its text (Eric); draft updated.
+- 2026-11-04 Heading spacers set to 5px in POST.md to match Eric's Prismic edits (not re-pushed). New standing rule in SLICES.md and PROCESS.md.
