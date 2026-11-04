@@ -4,7 +4,7 @@ Post: https://www.data4thepeople.com/p/labor-force-september-2026
 Map: https://data4thepeople.github.io/laus/
 Image for all three: `social/sep26-03-mi-labor-force-jobs.gif` (Michigan's two measures drawing in over 8 seconds, then holding 5; the last frame matches the chart in the post). Rebuild with `.venv/bin/python scripts/animate_michigan.py`.
 
-Every number is in the post or its chart text. The 14 states (September) and 18 (June) are in the state-gap chart's alt text and caption, not the body.
+Every number is in the body of the post.
 
 ---
 
@@ -38,7 +38,7 @@ One character of slack. Do not add anything without re-counting.
 
 ---
 
-## LinkedIn — 1,556 of 3,000 characters
+## LinkedIn — 1,414 of 3,000 characters
 
 The first two lines are what people see before "see more."
 
@@ -51,7 +51,7 @@ Initially, our September update was going to be about Michigan. But as we worked
 
 If we asked a group of Michiganders, "how many of you are employed," and a group of employers, "how many employed people do you have," the answers should be at least similar, right? They are not. The employer data says jobs are flat in Michigan. The household survey data says employed residents are down 4.5% since January 2025.
 
-So we went looking through other states' data. In September, the one-year change in employed residents trailed the change in jobs by 2 points or more in 14 states. In June it was 18, as many as at the 2021 high.
+So we went looking through other states' data. Michigan is not alone.
 
 COVID was a shock to our labor force and to the surveys that measure it, and BLS tried to make changes in real time. Something like that may be happening now. Not knowing which measure is correct may be even scarier than knowing.
 
