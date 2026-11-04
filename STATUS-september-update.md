@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2d
+Step: 2e (not started)
 Since: 2026-11-03
 
 ## Steps
@@ -20,14 +20,14 @@ Since: 2026-11-03
 | 2a | Draft with brackets resolved | 2026-11-03 | Reconfirmed after the pivot to a short national update; three charts plus live map; four independent tie-outs |
 | 2b | Eric's edit, Claude's look-over | 2026-11-04 | Reopened Nov 4 for Eric's Prismic edits; Michigan chart (sep26-03) back in, retitled |
 | 2c | Slice markup | 2026-11-04 | Re-run after 2b: 35 blocks, 22 slices, 4 charts |
-| 2d | Hero 1680x1080 + alt text | 2026-11-03 | September structural-loss chart, padded; alt 393 chars |
+| 2d | Hero 1680x1080 + alt text | 2026-11-04 | Reconfirmed; September chart, padded; alt 393 chars |
 | 2e | SEO | 2026-11-03 | Meta title, description, 8 keywords; links to tool page and five-takeaways |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
 
-- 2d, 2e (2026-11-04): back to 2b; Eric made many changes to the text. 2f draft in Prismic (auqkIhIAACwAbEjm) is out of date; re-run 2c to 2f, and the importer will update the same draft.
+- 2e (2026-11-04): back to 2b; Eric made many changes to the text. 2f draft in Prismic (auqkIhIAACwAbEjm) is out of date; re-run 2c to 2f, and the importer will update the same draft.
 
 
 ## Log
@@ -76,3 +76,4 @@ Since: 2026-11-03
 - 2026-11-04 Step 2c re-run: 35 blocks, 22 slices, 4 chart images (Michigan chart sep26-03 new).
 - 2026-11-04 Step 2c done (re-run).
 - 2026-11-04 Step 2d re-check: hero unchanged, hero check ok, source matches the September chart.
+- 2026-11-04 Step 2d done (reconfirmed).
