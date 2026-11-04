@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2a
+Step: 2b (not started)
 Since: 2026-11-03
 
 ## Steps
@@ -17,7 +17,7 @@ Since: 2026-11-03
 | Step | What | Confirmed | Notes |
 |---|---|---|---|
 | 1  | Exploration and analysis | 2026-11-03 | Six beats; findings in docs/SEPTEMBER-FINDINGS.md; tie-outs in TIEOUT.md |
-| 2a | Draft with brackets resolved | 2026-11-03 | Claude's first cut per Eric; eight charts; three independent tie-outs |
+| 2a | Draft with brackets resolved | 2026-11-03 | Reconfirmed after the pivot to a short national update; three charts plus live map; four independent tie-outs |
 | 2b | Eric's edit, Claude's look-over | | |
 | 2c | Slice markup | | |
 | 2d | Hero 1680x1080 + alt text | | |
@@ -27,7 +27,6 @@ Since: 2026-11-03
 
 ## Stale
 
-- 2a (2026-11-03): post pivoted from the Michigan spotlight to a short national update; the draft needs Eric's confirmation again.
 - Hero idea (Michigan flag at half staff) no longer fits; pick a new one in 2d.
 
 ## Log
@@ -58,3 +57,4 @@ Since: 2026-11-03
 - 2026-11-03: Eric edited the caution paragraph; accepted wording fix and a reading guide for the state-gap chart (Michigan example: -5.0% vs +0.03%, from data/ces/state_gaps_monthly.csv).
 
 - 2026-11-03: Eric edited the chart walk-through and refinery paragraph; accepted paragraph split, source wording, and "roughly agree" fix.
+- 2026-11-03 Step 2a done (reconfirmed after the pivot).
