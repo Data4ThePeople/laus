@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2f
+Step: 2b
 Since: 2026-11-03
 
 ## Steps
@@ -26,6 +26,8 @@ Since: 2026-11-03
 | 2g | Mailchimp teaser | | |
 
 ## Stale
+
+- 2c, 2d, 2e (2026-11-04): back to 2b; Eric made many changes to the text. 2f draft in Prismic (auqkIhIAACwAbEjm) is out of date; re-run 2c to 2f, and the importer will update the same draft.
 
 
 ## Log
@@ -68,3 +70,4 @@ Since: 2026-11-03
 - 2026-11-03 Step 2e: meta title, description, keywords written; links to labor-force-history-viz and five-takeaways added.
 - 2026-11-03 Step 2e done.
 - 2026-11-03 Step 2f: date set to 2026-11-04, time 06:30 Eastern (EST, -05:00; DST ended Nov 1). Pushed to Prismic as draft auqkIhIAACwAbEjm in the Migration Release; 4 images uploaded. Tags and author empty.
+- 2026-11-04 Back to 2b (Eric: "i ended up making a lot of changes"). First section in: "But can we trust the latest data?", with the Michigan employed vs payroll chart (sep26-03) back in per his bracket.
