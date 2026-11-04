@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2g (not started)
+Step: 2g
 Since: 2026-11-03
 
 ## Steps
@@ -84,3 +84,4 @@ Since: 2026-11-03
 - 2026-11-04 20px spacer after every ## heading, before its text (Eric); draft updated.
 - 2026-11-04 Heading spacers set to 5px in POST.md to match Eric's Prismic edits (not re-pushed). New standing rule in SLICES.md and PROCESS.md.
 - 2026-11-04 Step 2f done.
+- 2026-11-04 Step 2g opened: EMAIL.md drafted from Eric's text (Michigan chart as the email chart); hero JPG 91KB.
