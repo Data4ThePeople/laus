@@ -59,3 +59,4 @@ Since: 2026-11-03
 - 2026-11-03: Eric edited the chart walk-through and refinery paragraph; accepted paragraph split, source wording, and "roughly agree" fix.
 - 2026-11-03 Step 2a done (reconfirmed after the pivot).
 - 2026-11-03 Step 2b opened.
+- 2026-11-03 2b look-over: accepted items 1-4 (numeral start, QCEW defined, "measures" not "surveys", unused image removed).

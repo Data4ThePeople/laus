@@ -27,7 +27,7 @@ The Bureau of Labor Statistics (BLS) posted county labor force data through Sept
 <iframe src="https://data4thepeople.github.io/laus/" width="100%" height="780" style="border:0" title="Twenty-year change in labor force by county"></iframe>
 ::: spacer 20px
 
-Looking at the 3,207 counties with data in both years, the count rose by 40 from September 2025. 129 counties entered the structural loss group while 89 left it.
+Looking at the 3,207 counties with data in both years, the count rose by 40 from September 2025. In all, 129 counties entered the structural loss group while 89 left it.
 
 The chart below shows the share of counties in structural loss for every September since 2012. September 2026 is the third highest, behind two post-COVID years: 2022 (36.2%) and 2021 (35.5%).
 
@@ -58,7 +58,7 @@ Each pair of bars is one month. A bar below the line counts the states where emp
 ![Bar chart, monthly from January 2015 to September 2026, of the number of states, of 50 plus DC, where the one-year change in employed residents differs from jobs by 2 points or more. Bars above the line: employed residents ran ahead; below: they trailed. A dashed line marks March 2020. Before it, counts stay under 5. Up to 28 states ran ahead in 2020 and early 2021. Trailing counts reach 18 in August 2021, are 0 to 3 in 2025, then 18 in June 2026 and 14 in September 2026.](images/sep26-11-state-gaps.png)
 *Employed residents trailed jobs in as many states in June 2026 as at the 2021 high. Source: U.S. Bureau of Labor Statistics (LAUS, QCEW, CES); Data 4 The People analysis.*
 
-In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and BLS tried to make changes in real time. It reminds me of a shock to a refinery and the control room operator trying to monkey with the valves to get the system back to homeostasis. But if you move the valves too much, you risk making the problem worse. Something like that may be happening now. The result is that the two primary surveys of our workforce are spitting out conflicting signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
+In 2020, COVID was a shock to our labor force and to the surveys that measure it. Models that hadn't really been stressed in the past were stressed, and BLS tried to make changes in real time. It reminds me of a shock to a refinery and the control room operator trying to monkey with the valves to get the system back to homeostasis. But if you move the valves too much, you risk making the problem worse. Something like that may be happening now. The result is that the two primary measures of our workforce are spitting out conflicting signals for some states. One says Michigan is losing employed residents at an alarming clip. The count of jobs says nothing is changing. Not knowing which one is correct may be even scarier than knowing.
 
 We will be coming back to this wonky but immensely important topic in the coming weeks and months. Our goal here at Data 4 The People is to bring public data to you in a form that can bring insight, spur discussion, and lead to positive change. But we have to go into working with public data with a skeptical eye, especially as government agencies rely on models stretched thin to gross up surveys with [worsening response rates](https://www.bls.gov/cps/methods/response_rates.htm). We'll do our best to uncover discrepancies between datasets to help you understand what to trust, and what to hold lightly.
 
@@ -68,7 +68,7 @@ We will be coming back to this wonky but immensely important topic in the coming
 
 - County labor force figures are model estimates, not direct counts. BLS controls them to a state or area total, so a small county's number is partly a share of a larger estimate.
 - The 2026 figures are preliminary and are expected to change in the early-2027 revision.
-- Employed residents and job counts measure different things: people where they live versus jobs where they are. They are not expected to match exactly. QCEW counts are about six months behind, so April to September 2026 uses the payroll survey, which is itself a sample survey and will be checked against QCEW when those counts come out.
+- Employed residents and job counts measure different things: people where they live versus jobs where they are. They are not expected to match exactly. Job counts from employer tax records (QCEW) are about six months behind, so April to September 2026 uses the payroll survey, which is itself a sample survey and will be checked against QCEW when those counts come out.
 - Seven New Orleans-area parishes have no 20-year comparison for September 2025 because their September 2005 data are missing after Hurricane Katrina. That is why the year-over-year comparison uses 3,207 counties.
 - We do not yet know what is causing the gap between the surveys and the job counts. The refinery comparison is a possibility, not a finding.
 
