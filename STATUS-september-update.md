@@ -80,3 +80,4 @@ Since: 2026-11-03
 - 2026-11-04 Step 2e re-check: meta description updated to match the rewrite.
 - 2026-11-04 Step 2e done (reconfirmed).
 - 2026-11-04 Step 2f re-run: draft auqkIhIAACwAbEjm updated in the Migration Release (22 slices; Michigan chart uploaded). Date 2026-11-04, 06:30 Eastern.
+- 2026-11-04 Explicit 20px spacers after "What this does not tell you" and "How we built this" (Eric); draft updated.
