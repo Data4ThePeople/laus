@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2e
+Step: 2f (not started)
 Since: 2026-11-03
 
 ## Steps
@@ -21,7 +21,7 @@ Since: 2026-11-03
 | 2b | Eric's edit, Claude's look-over | 2026-11-03 | Look-over items 1-4 accepted; heading "But can we trust the latest data?" |
 | 2c | Slice markup | 2026-11-03 | 34 blocks; embed 780px; HTML note removed |
 | 2d | Hero 1680x1080 + alt text | 2026-11-03 | September structural-loss chart, padded; alt 393 chars |
-| 2e | SEO | | |
+| 2e | SEO | 2026-11-03 | Meta title, description, 8 keywords; links to tool page and five-takeaways |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
@@ -66,3 +66,4 @@ Since: 2026-11-03
 - 2026-11-03 Hero: September structural-loss chart padded to 1680x1080 (hero pad); hero_alt set.
 - 2026-11-03 Step 2d done.
 - 2026-11-03 Step 2e: meta title, description, keywords written; links to labor-force-history-viz and five-takeaways added.
+- 2026-11-03 Step 2e done.
