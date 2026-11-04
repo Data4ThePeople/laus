@@ -26,7 +26,7 @@ The Bureau of Labor Statistics (BLS) posted county labor force data through Sept
 <iframe src="https://data4thepeople.github.io/laus/" width="100%" height="780" style="border:0" title="Twenty-year change in labor force by county"></iframe>
 ::: spacer 20px
 
-Looking at the 3,207 counties with data in both years, the count rose by 40 from September 2025. In all, 129 counties entered the structural loss group while 89 left it.
+Looking at the 3,207 counties with data in both years, the number of counties in structural loss rose by 40 from September 2025. In all, 129 counties entered the structural loss group while 89 left it.
 
 The chart below shows the share of counties in structural loss for every September since 2012. September 2026 is the third highest, behind two post-COVID years: 2022 (36.2%) and 2021 (35.5%).
 
