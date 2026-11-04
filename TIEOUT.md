@@ -166,3 +166,5 @@ Fresh agent, raw data pulled again (LAUS la.data.64.County posted Oct 28, 2026; 
 
 
 - 2026-11-03: Wording fixes from the fourth tie-out applied (Katrina bullet now says September 2005 is missing; subtitle says net increase of 40 among counties with data in both years; state-gap chart title now cites June 2026 at 18). No numbers changed.
+
+- 2026-11-04: Michigan employed vs payroll chart (sep26-03) back in the post, retitled "Michigan's two measures of work split apart in 2026". Text now says -4.5% since January 2025 to match the chart (SA). Same values as the first tie-out of this chart (-4.5%, +0.2%).

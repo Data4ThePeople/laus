@@ -136,7 +136,7 @@ def labor_force_vs_jobs(month: str) -> Path:
                     linespacing=1.4, arrowprops=dict(arrowstyle="-", color=MUTED, linewidth=0.9))
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:+.0f}%" if v else "0%"))
     ax.grid(axis="y", color=GRID, linewidth=0.8)
-    frame(fig, "Fewer Michiganders are working, but payroll jobs are not falling",
+    frame(fig, "Michigan's two measures of work split apart in 2026",
           f"Change since January 2025, seasonally adjusted, through {last:%B %Y}. Employed residents counts\n"
           "people living in Michigan who have a job. Payroll jobs count nonfarm jobs at Michigan employers.",
           top=0.79)

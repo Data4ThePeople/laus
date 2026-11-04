@@ -133,6 +133,14 @@ they are not pure survey readings. The seasonally adjusted series moves
 differently: Michigan employed residents fell 2.0% (not adjusted) and 1.3%
 (adjusted) from January 2025 to January 2026. Compare like with like.
 
+**Michigan chart (sep26-03).** The post's Michigan chart uses the seasonally
+adjusted series instead: `LASST260000000000005` (Michigan employed residents)
+against CES `SMS26000000000000001` (Michigan total nonfarm payroll jobs,
+seasonally adjusted), each as the percent change from January 2025, January
+2024 to September 2026, pulled by `scripts/fetch_sources.py` into
+`data/ces/mi_ces.csv`. Both are adjusted, so they compare like with like.
+September 2026: employed residents -4.5%, payroll jobs +0.2%.
+
 ## Quarterly Census of Employment and Wages, state totals (U.S. Bureau of Labor Statistics)
 
 **What it is.** Jobs at every employer covered by unemployment insurance, for
@@ -181,7 +189,8 @@ codes for multi-site employers are the main error source.
 
 **What it is.** Monthly estimate of payroll jobs at employers in each state,
 from a sample survey of employers. We use total nonfarm, not seasonally
-adjusted, only for the months QCEW does not yet cover.
+adjusted, only for the months QCEW does not yet cover. The Michigan chart
+also uses the seasonally adjusted Michigan series (see the LAUS section).
 
 **Where it comes from.** BLS public API v2, key `BLS_API_KEY`. Series
 `SMU<ff>000000000000001` for the 50 states and DC and `CEU0000000001` for the
