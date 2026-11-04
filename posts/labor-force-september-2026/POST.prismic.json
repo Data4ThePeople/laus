@@ -424,7 +424,28 @@
             "text": "What this does not tell you",
             "spans": [],
             "direction": "ltr"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
           {
             "type": "list-item",
             "text": "County labor force figures are model estimates, not direct counts. BLS controls them to a state or area total, so a small county's number is partly a share of a larger estimate.",
@@ -481,7 +502,28 @@
             "text": "How we built this",
             "spans": [],
             "direction": "ltr"
-          },
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "spacer",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "spacer_value": "20px"
+      }
+    },
+    {
+      "slice_type": "paragarph_text",
+      "slice_label": null,
+      "variation": "default",
+      "version": "initial",
+      "items": [],
+      "primary": {
+        "paragraph_text": [
           {
             "type": "paragraph",
             "text": "Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our GitHub repository. For a guide to reading the map, see Five takeaways from our new labor force map.",
@@ -510,16 +552,6 @@
             "direction": "ltr"
           }
         ]
-      }
-    },
-    {
-      "slice_type": "spacer",
-      "slice_label": null,
-      "variation": "default",
-      "version": "initial",
-      "items": [],
-      "primary": {
-        "spacer_value": "20px"
       }
     }
   ],

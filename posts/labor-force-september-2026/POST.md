@@ -68,16 +68,16 @@ We will be coming back to this wonky but immensely important topic in the coming
 
 ## What this does not tell you
 
+::: spacer 20px
+
 - County labor force figures are model estimates, not direct counts. BLS controls them to a state or area total, so a small county's number is partly a share of a larger estimate.
 - The 2026 figures are preliminary and are expected to change in the early-2027 revision.
 - Employed residents and job counts measure different things: people where they live versus jobs where they are. They are not expected to match exactly. Job counts from employer tax records (QCEW) are about six months behind, so April to September 2026 uses the payroll survey, which is itself a sample survey and will be checked against QCEW when those counts come out.
 - Seven New Orleans-area parishes have no 20-year comparison for September 2025 because their September 2005 data are missing after Hurricane Katrina. That is why the year-over-year comparison uses 3,207 counties.
 - We do not yet know what is causing the gap between the surveys and the job counts. The refinery comparison is a possibility, not a finding.
 
-::: spacer 20px
-
 ## How we built this
 
-Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus). For a guide to reading the map, see [Five takeaways from our new labor force map](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline).
-
 ::: spacer 20px
+
+Each county is compared with its own labor force in the same month 20 years earlier, using BLS Local Area Unemployment Statistics (not seasonally adjusted). A county is in structural loss when that change is below -10.0%. Comparisons over time always use the same month. For the survey check, we compare each state's one-year change in employed residents (Local Area Unemployment Statistics) with its one-year change in jobs, month by month, not seasonally adjusted: jobs from the BLS Quarterly Census of Employment and Wages through March 2026, and from the BLS Current Employment Statistics payroll survey after that. Code and method notes are in our [GitHub repository](https://github.com/Data4ThePeople/laus). For a guide to reading the map, see [Five takeaways from our new labor force map](https://www.data4thepeople.com/p/five-takeaways-labor-force-decline).
