@@ -9,7 +9,7 @@ STATUS-billionaires.md (Betting the house on billionaires, complete)
 ## Current
 
 Post: labor-force-september-2026
-Step: 2e
+Step: 2f (not started)
 Since: 2026-11-03
 
 ## Steps
@@ -21,13 +21,13 @@ Since: 2026-11-03
 | 2b | Eric's edit, Claude's look-over | 2026-11-04 | Reopened Nov 4 for Eric's Prismic edits; Michigan chart (sep26-03) back in, retitled |
 | 2c | Slice markup | 2026-11-04 | Re-run after 2b: 35 blocks, 22 slices, 4 charts |
 | 2d | Hero 1680x1080 + alt text | 2026-11-04 | Reconfirmed; September chart, padded; alt 393 chars |
-| 2e | SEO | 2026-11-03 | Meta title, description, 8 keywords; links to tool page and five-takeaways |
+| 2e | SEO | 2026-11-04 | Reconfirmed; description updated to match the rewrite |
 | 2f | Pushed to Prismic (draft) | | |
 | 2g | Mailchimp teaser | | |
 
 ## Stale
 
-- 2e (2026-11-04): back to 2b; Eric made many changes to the text. 2f draft in Prismic (auqkIhIAACwAbEjm) is out of date; re-run 2c to 2f, and the importer will update the same draft.
+- 2f (2026-11-04): back to 2b; Eric made many changes to the text. 2f draft in Prismic (auqkIhIAACwAbEjm) is out of date; re-run 2c to 2f, and the importer will update the same draft.
 
 
 ## Log
@@ -78,3 +78,4 @@ Since: 2026-11-03
 - 2026-11-04 Step 2d re-check: hero unchanged, hero check ok, source matches the September chart.
 - 2026-11-04 Step 2d done (reconfirmed).
 - 2026-11-04 Step 2e re-check: meta description updated to match the rewrite.
+- 2026-11-04 Step 2e done (reconfirmed).
