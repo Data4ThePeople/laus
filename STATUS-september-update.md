@@ -86,3 +86,4 @@ Since: 2026-11-03
 - 2026-11-04 Step 2f done.
 - 2026-11-04 Step 2g opened: EMAIL.md drafted from Eric's text (Michigan chart as the email chart); hero JPG 91KB.
 - 2026-11-04 Step 2g done. Post complete. Social posts next (Eric).
+- 2026-11-04 Social posts done (SOCIAL.md, animated Michigan GIF). Eric: done for now. Follow-up study of the CPS vs QCEW gap is next (docs/FOLLOWUP-CPS-QCEW-GAP.md); check Q2 2026 QCEW in about December.
