@@ -35,9 +35,9 @@ The chart below shows the share of counties in structural loss for every Septemb
 
 ## The other five bands
 
-Structural loss is one of six bands. Fast growth has become rarer. In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier, the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).
+In September 2026, 374 counties (11.6%) had a labor force at least 20% larger than 20 years earlier - the Superstars and Hyper-Growth bands together. That is the lowest share of any September since 2012, when it was 983 counties (30.6%).
 
-At the other end, 60.3% of counties had a smaller labor force than 20 years earlier, counting structural loss and at-risk contraction together. That is close to 2021 and 2022 (61.0% in both) and up from 30.4% in 2012.
+At the other end, 60.3% of counties had a smaller labor force than 20 years earlier, counting structural loss and at-risk contraction together. That is close to 2021 and 2022 (61.0% in both) and up from just 30.4% in 2012.
 
 The chart below shows the share of counties in each band for every September since 2012.
 
